@@ -159,6 +159,8 @@
                 const tieneOrden = keys.some(k =>
                     k === "ORDEN" ||
                     k === "ORDEN#" ||
+                    k === "NOORDENDETRABAJO" ||
+                    k.includes("ORDENDETRABAJO") ||
                     k.startsWith("ORDEN") ||
                     k.endsWith("ORDEN") ||
                     k.includes("NUMEROORDEN") ||
@@ -226,7 +228,16 @@
 
         const cols = {
             fecha: indice(headers,["FECHA","FECHA PLANILLA","FECHA PROGRAMADA"]),
-            orden: indice(headers,["ORDEN","ORDEN #","N ORDEN","NUMERO ORDEN"]),
+            orden: indice(headers,[
+                "NO. ORDEN DE TRABAJO",
+                "NO ORDEN DE TRABAJO",
+                "N° ORDEN DE TRABAJO",
+                "ORDEN DE TRABAJO",
+                "ORDEN",
+                "ORDEN #",
+                "N ORDEN",
+                "NUMERO ORDEN"
+            ]),
             tipo: indice(headers,["TIPO"]),
             ope: indice(headers,["OPE","OPERACION"]),
             codigo_area: indice(headers,["CODIGO AREA","CÓDIGO ÁREA"]),
@@ -242,7 +253,18 @@
             turno: indice(headers,["TURNO"])
         };
 
+        if(cols.fecha < 0){
+            throw new Error("Se encontró la hoja, pero no se encontró la columna FECHA.");
+        }
+        if(cols.orden < 0){
+            throw new Error(
+                "Se encontró la hoja, pero no se encontró la columna NO. ORDEN DE TRABAJO."
+            );
+        }
+
         const valor = (row,key) => cols[key] >= 0 ? row[cols[key]] : "";
+
+        console.log("COLUMNAS PLANILLA DETECTADAS:", cols);
 
         const rows = [];
         for(let i=headerIndex+1;i<matriz.length;i++){
@@ -533,7 +555,10 @@
             reconstruirFiltros();
             actualizarDashboard(false);
             const cruzadas=cruzarProgramacion().length;
-            $("archivoCargado").textContent=`${file.name} · ${fmt.format(state.programacion.length)} filas válidas · ${fmt.format(cruzadas)} OT encontradas en SAP`;
+            $("archivoCargado").textContent=
+                `${file.name} · Hoja: ${resultado.nombre} · ` +
+                `${fmt.format(state.programacion.length)} filas válidas · ` +
+                `${fmt.format(cruzadas)} OT encontradas en SAP`;
         }catch(err){
             console.error(err);
             $("archivoCargado").textContent="No se pudo cargar la planilla.";

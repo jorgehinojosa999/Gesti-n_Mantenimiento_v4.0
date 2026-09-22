@@ -126,6 +126,57 @@
         setFuente("statusMapa","Mapa",true);
     }
 
+    async function cargarProgramacionPublicada(){
+        const r = await fetch(
+            `../data/programacion.json?t=${Date.now()}`,
+            {cache:"no-store"}
+        );
+
+        if(!r.ok){
+            if(r.status === 404){
+                state.programacion = [];
+                return {cantidad:0, ultima_actualizacion:"--"};
+            }
+            throw new Error(
+                `No se pudo cargar programacion.json (HTTP ${r.status}).`
+            );
+        }
+
+        const d = await r.json();
+        const rows = Array.isArray(d) ? d : (d.data || []);
+
+        state.programacion = rows.map((x,i)=>{
+            const fechaObj = fechaDesdeDMY(x.fecha);
+            const orden = normalizarOrden(x.orden);
+            if(!fechaObj || !orden) return null;
+
+            return {
+                id: x.id ?? i,
+                fecha: x.fecha || fechaDMY(fechaObj),
+                fecha_obj: fechaObj,
+                orden,
+                tipo: normalizarTexto(x.tipo),
+                ope: normalizarTexto(x.ope),
+                codigo_area: normalizarTexto(x.codigo_area),
+                nombre_area: normalizarTexto(x.nombre_area),
+                equipo: normalizarTexto(x.equipo),
+                actividad: normalizarTexto(x.actividad),
+                ejecutante: normalizarTexto(x.ejecutante),
+                hora_programada: normalizarTexto(x.hora_programada),
+                tiempo_real_asignado: normalizarTexto(x.tiempo_real_asignado),
+                ocho: normalizarTexto(x.ocho),
+                hora_fin: normalizarTexto(x.hora_fin),
+                dia: normalizarTexto(x.dia),
+                turno: normalizarTexto(x.turno)
+            };
+        }).filter(Boolean);
+
+        return {
+            cantidad: state.programacion.length,
+            ultima_actualizacion: d.ultima_actualizacion || "--"
+        };
+    }
+
     function setFuente(id,nombre,ok){
         const el = $(id);
         if(!el) return;
@@ -561,7 +612,7 @@
             $("archivoCargado").textContent=
                 `${file.name} · Hoja: ${resultado.nombre} · ` +
                 `${fmt.format(state.programacion.length)} filas válidas · ` +
-                `${fmt.format(cruzadas)} OT encontradas en SAP`;
+                `${fmt.format(cruzadas)} OT encontradas en SAP · Vista temporal`;
         }catch(err){
             console.error(err);
             $("archivoCargado").textContent="No se pudo cargar la planilla.";
@@ -576,7 +627,19 @@
         btn.disabled=true;btn.textContent="Actualizando...";
         try{
             await cargarSAP();
-            if(state.programacion.length) actualizarDashboard(true);
+            const prog = await cargarProgramacionPublicada();
+
+            if(state.programacion.length){
+                reconstruirFiltros();
+                actualizarDashboard(false);
+                const cruzadas = cruzarProgramacion().length;
+                $("archivoCargado").textContent =
+                    `Última programación publicada · ${fmt.format(state.programacion.length)} filas · ` +
+                    `${fmt.format(cruzadas)} OT encontradas en SAP`;
+            }else{
+                $("archivoCargado").textContent =
+                    "No existe programación publicada todavía.";
+            }
         }catch(err){
             console.error(err);alert(err.message);
             setFuente("statusIW39","IW39",false);setFuente("statusIW47","IW47",false);setFuente("statusMapa","Mapa",false);
@@ -605,7 +668,19 @@
     (async()=>{
         try{
             await cargarSAP();
-            $("archivoCargado").textContent="Datos SAP listos. Importe la planilla Excel para visualizar las OT.";
+            const prog = await cargarProgramacionPublicada();
+
+            if(state.programacion.length){
+                reconstruirFiltros();
+                actualizarDashboard(false);
+                const cruzadas = cruzarProgramacion().length;
+                $("archivoCargado").textContent =
+                    `Última programación publicada · ${fmt.format(state.programacion.length)} filas · ` +
+                    `${fmt.format(cruzadas)} OT encontradas en SAP`;
+            }else{
+                $("archivoCargado").textContent =
+                    "Datos SAP listos. Aún no existe programacion.json publicado.";
+            }
         }catch(err){
             console.error(err);
             $("archivoCargado").textContent="No se pudieron cargar los datos SAP.";

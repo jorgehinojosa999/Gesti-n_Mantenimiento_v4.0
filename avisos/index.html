@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Control Avisos SAP</title>
+
+    <!-- =====================================================
+         CSS
+         ===================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="./styles.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="app-shell">
+
+
+    <!-- =====================================================
+         SIDEBAR
+         ===================================================== -->
+
+    <aside class="sidebar">
+
+
+        <!-- LOGO -->
+
+        <div class="brand">
+
+            <div class="brand-logo-wrap">
+
+                <img
+                    src="./img/tesalia_cbc_logo.png"
+                    alt="Tesalia CBC"
+                    class="brand-logo"
+                >
+
+            </div>
+
+
+            <div class="brand-text">
+
+                <span class="brand-title">
+                    CONTROL AVISOS
+                </span>
+
+                <span class="brand-subtitle">
+                    SAP · Ingeniería
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             FILTROS
+             ================================================= -->
+
+        <div class="sidebar-section-title">
+            FILTROS
+        </div>
+
+
+        <!-- MES -->
+
+        <div class="filter-group">
+
+            <label for="monthFilter">
+                Mes
+            </label>
+
+            <select id="monthFilter">
+
+                <option value="Todas">
+                    Todas
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- CLASIFICACIÓN -->
+
+        <div class="filter-group">
+
+            <label for="classFilter">
+                Clasificación Aviso
+            </label>
+
+            <select id="classFilter">
+
+                <option value="Todas">
+                    Todas
+                </option>
+
+                <option value="Emergente">
+                    Emergente
+                </option>
+
+                <option value="Correctivo">
+                    Correctivo
+                </option>
+
+                <option value="Mal levantada">
+                    Mal levantada
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- ESTADO FINAL -->
+
+        <div class="filter-group">
+
+            <div class="filter-label">
+                Estado Final Aviso
+            </div>
+
+            <div
+                class="checkbox-list"
+                id="statusChecks"
+            ></div>
+
+        </div>
+
+
+        <!-- ESTADO TIEMPO -->
+
+        <div class="filter-group">
+
+            <div class="filter-label">
+                Estado Tiempo
+            </div>
+
+            <div
+                class="checkbox-list"
+                id="timeChecks"
+            ></div>
+
+        </div>
+
+
+        <!-- RESPONSABLE -->
+
+        <div class="filter-group">
+
+            <div class="filter-label">
+                Responsable
+            </div>
+
+            <div
+                class="checkbox-list"
+                id="responsibleChecks"
+            ></div>
+
+        </div>
+
+
+        <!-- =================================================
+             BOTONES
+             ================================================= -->
+
+        <div class="sidebar-actions">
+
+
+            <button
+                id="btnRefresh"
+                class="btn btn-primary"
+            >
+                ↻ Actualizar ahora
+            </button>
+
+
+            <button
+                id="btnDownload"
+                class="btn btn-secondary"
+            >
+                ↓ Descargar detalle
+            </button>
+
+
+        </div>
+
+
+    </aside>
+
+
+    <!-- =====================================================
+         ÁREA PRINCIPAL
+         ===================================================== -->
+
+    <div class="main-area">
+
+
+        <!-- =================================================
+             CABECERA
+             ================================================= -->
+
+        <header class="topbar">
+
+
+            <div>
+
+                <div class="topbar-eyebrow">
+                    DASHBOARD DE MANTENIMIENTO
+                </div>
+
+                <h1>
+                    Control de Avisos SAP
+                </h1>
+
+                <p>
+                    Gestión automática de avisos,
+                    órdenes y notificaciones
+                </p>
+
+            </div>
+
+
+            <!-- ÚLTIMA ACTUALIZACIÓN -->
+
+            <div class="status-chip">
+
+                <span class="status-dot"></span>
+
+                <div>
+
+                    <span class="status-label">
+                        Última actualización SAP
+                    </span>
+
+                    <strong id="lastUpdate">
+                        --
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+        </header>
+
+
+        <!-- =================================================
+             CONTENIDO
+             ================================================= -->
+
+        <main class="content">
+
+
+            <!-- =================================================
+                 KPIs
+                 ================================================= -->
+
+            <section class="kpi-grid">
+
+
+                <!-- TOTAL -->
+
+                <article class="kpi-card kpi-blue">
+
+                    <div class="kpi-label">
+                        Avisos Totales
+                    </div>
+
+                    <div
+                        id="kpiTotal"
+                        class="kpi-value"
+                    >
+                        0
+                    </div>
+
+                </article>
+
+
+                <!-- CERRADOS -->
+
+                <article class="kpi-card kpi-green">
+
+                    <div class="kpi-label">
+                        Avisos Cerrados
+                    </div>
+
+                    <div
+                        id="kpiClosed"
+                        class="kpi-value"
+                    >
+                        0
+                    </div>
+
+                </article>
+
+
+                <!-- ABIERTOS -->
+
+                <article class="kpi-card kpi-red">
+
+                    <div class="kpi-label">
+                        Avisos Abiertos
+                    </div>
+
+                    <div
+                        id="kpiOpen"
+                        class="kpi-value"
+                    >
+                        0
+                    </div>
+
+                </article>
+
+
+                <!-- % CIERRE -->
+
+                <article class="kpi-card kpi-purple">
+
+                    <div class="kpi-label">
+                        % Cierre
+                    </div>
+
+                    <div
+                        id="kpiPct"
+                        class="kpi-value"
+                    >
+                        0.0%
+                    </div>
+
+                </article>
+
+
+                <!-- PROMEDIO -->
+
+                <article class="kpi-card kpi-orange">
+
+                    <div class="kpi-label">
+                        Promedio Días Notificación
+                    </div>
+
+                    <div
+                        id="kpiAvg"
+                        class="kpi-value"
+                    >
+                        0.0
+                    </div>
+
+                </article>
+
+
+            </section>
+
+
+            <!-- =================================================
+                 GRÁFICOS SUPERIORES
+                 ================================================= -->
+
+            <section class="charts-grid charts-grid-four">
+
+
+                <!-- ESTADO FINAL -->
+
+                <article class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span class="panel-kicker">
+                                ESTADO
+                            </span>
+
+                            <h2>
+                                Estado Final Aviso
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="chart-canvas-wrap">
+
+                        <canvas id="pie"></canvas>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ESTADO TIEMPO -->
+
+                <article class="panel panel-time">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span class="panel-kicker">
+                                CUMPLIMIENTO
+                            </span>
+
+                            <h2>
+                                Estado Tiempo
+                            </h2>
+
+                        </div>
+
+
+                        <span class="panel-badge">
+                            % + Cantidad
+                        </span>
+
+                    </div>
+
+
+                    <div class="chart-canvas-wrap">
+
+                        <canvas id="pieTiempo"></canvas>
+
+                    </div>
+
+                </article>
+
+
+                <!-- RESPONSABLE -->
+
+                <article class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span class="panel-kicker">
+                                GESTIÓN
+                            </span>
+
+                            <h2>
+                                Avisos por Responsable y Estado Final
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="chart-canvas-wrap">
+
+                        <canvas id="resp"></canvas>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROMEDIO RESPONSABLE -->
+
+                <article class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span class="panel-kicker">
+                                EFICIENCIA
+                            </span>
+
+                            <h2>
+                                Promedio Días por Responsable
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="chart-canvas-wrap">
+
+                        <canvas id="avgResp"></canvas>
+
+                    </div>
+
+                </article>
+
+
+            </section>
+
+
+            <!-- =================================================
+                 GRÁFICOS INFERIORES
+                 ================================================= -->
+
+            <section class="charts-grid charts-grid-bottom">
+
+
+                <!-- AVISOS POR MES -->
+
+                <article class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span class="panel-kicker">
+                                TENDENCIA
+                            </span>
+
+                            <h2>
+                                Avisos por Mes y Estado Final
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="chart-canvas-wrap chart-large">
+
+                        <canvas id="month"></canvas>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROMEDIO MES -->
+
+                <article class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span class="panel-kicker">
+                                TIEMPO
+                            </span>
+
+                            <h2>
+                                Promedio Días Notificación por Mes
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="chart-canvas-wrap chart-large">
+
+                        <canvas id="avgMonth"></canvas>
+
+                    </div>
+
+                </article>
+
+
+            </section>
+
+
+            <!-- =================================================
+                 TABLA
+                 ================================================= -->
+
+            <section class="panel table-panel">
+
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <span class="panel-kicker">
+                            DETALLE
+                        </span>
+
+                        <h2>
+                            Detalle de Avisos
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+
+                    <table>
+
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Responsable
+                                </th>
+
+                                <th>
+                                    Notificación
+                                </th>
+
+                                <th>
+                                    Orden
+                                </th>
+
+                                <th>
+                                    Status sistema
+                                </th>
+
+                                <th>
+                                    Descripción
+                                </th>
+
+                                <th>
+                                    Descripción_1
+                                </th>
+
+                                <th>
+                                    Descripción_2
+                                </th>
+
+                                <th>
+                                    Fecha de aviso
+                                </th>
+
+                                <th>
+                                    Fecha contab.
+                                </th>
+
+                                <th>
+                                    Días Notificación
+                                </th>
+
+                                <th>
+                                    Estado Tiempo
+                                </th>
+
+                                <th>
+                                    Texto de notificación
+                                </th>
+
+                                <th>
+                                    Costo real
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="tbody"></tbody>
+
+
+                    </table>
+
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+
+<script src="./app.js"></script>
+
+
+</body>
+
+</html>

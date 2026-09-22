@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Control Órdenes SAP</title>
+    <title>Control Ã“rdenes SAP</title>
 
     <link rel="stylesheet" href="./styles.css?v=20260922">
 
@@ -24,18 +24,18 @@
             </div>
 
             <div class="brand-copy">
-                <div class="brand-title">CONTROL ÓRDENES</div>
-                <div class="brand-subtitle">SAP · Ingeniería</div>
+                <div class="brand-title">CONTROL Ã“RDENES</div>
+                <div class="brand-subtitle">SAP Â· IngenierÃ­a</div>
             </div>
         </div>
 
         <nav class="side-nav">
             <a href="../avisos/" class="nav-link">
-                ↗ Control Avisos
+                â†— Control Avisos
             </a>
 
             <a href="./" class="nav-link active">
-                ▣ Control Órdenes
+                â–£ Control Ã“rdenes
             </a>
         </nav>
 
@@ -78,7 +78,7 @@
         </div>
 
         <button id="btnActualizar" class="side-button primary" type="button">
-            ↻ Actualizar ahora
+            â†» Actualizar ahora
         </button>
 
         <button id="btnLimpiar" class="side-button" type="button">
@@ -104,12 +104,12 @@
         <header class="topbar">
             <div>
                 <div class="eyebrow">DASHBOARD DE MANTENIMIENTO</div>
-                <h1>Control de Órdenes de Trabajo SAP</h1>
-                <p>Gestión de órdenes de trabajo, estado SAP y notificaciones</p>
+                <h1>Control de Ã“rdenes de Trabajo SAP</h1>
+                <p>GestiÃ³n de Ã³rdenes de trabajo, estado SAP y notificaciones</p>
             </div>
 
             <div class="updated-card">
-                <div class="updated-label">● Última actualización</div>
+                <div class="updated-label">â— Ãšltima actualizaciÃ³n</div>
                 <strong id="ultimaActualizacion">--</strong>
             </div>
         </header>
@@ -120,7 +120,7 @@
             <!-- ACCIONES -->
             <div class="actions">
                 <label for="archivoExcel" class="btn primary">
-                    ↑ Importar Excel
+                    â†‘ Importar Excel
                 </label>
                 <input id="archivoExcel" type="file" accept=".xlsx,.xls,.xlsm" hidden>
                 <span id="archivoCargado" class="import-status">
@@ -132,17 +132,17 @@
             <section class="kpi-grid">
 
                 <article class="kpi-card kpi-blue">
-                    <div class="kpi-label">Órdenes Totales</div>
+                    <div class="kpi-label">Ã“rdenes Totales</div>
                     <div id="kpiTotal" class="kpi-value">0</div>
                 </article>
 
                 <article class="kpi-card kpi-green">
-                    <div class="kpi-label">Órdenes Cerradas</div>
+                    <div class="kpi-label">Ã“rdenes Cerradas</div>
                     <div id="kpiCerradas" class="kpi-value">0</div>
                 </article>
 
                 <article class="kpi-card kpi-red">
-                    <div class="kpi-label">Órdenes Abiertas</div>
+                    <div class="kpi-label">Ã“rdenes Abiertas</div>
                     <div id="kpiAbiertas" class="kpi-value">0</div>
                 </article>
 
@@ -152,7 +152,7 @@
                 </article>
 
                 <article class="kpi-card kpi-orange">
-                    <div class="kpi-label">Promedio Días Notificación</div>
+                    <div class="kpi-label">Promedio DÃ­as NotificaciÃ³n</div>
                     <div id="kpiPromedio" class="kpi-value">0.0</div>
                 </article>
 
@@ -193,7 +193,7 @@
                 <article class="panel">
                     <div class="panel-head">
                         <span class="panel-tag">RESPONSABLE</span>
-                        <h3>Órdenes por Responsable</h3>
+                        <h3>Ã“rdenes por Responsable</h3>
                     </div>
 
                     <div class="chart-area tall chart-scroll">
@@ -231,7 +231,7 @@
                 <article class="panel">
                     <div class="panel-head">
                         <span class="panel-tag">MES</span>
-                        <h3>Órdenes por Mes</h3>
+                        <h3>Ã“rdenes por Mes</h3>
                     </div>
 
                     <div class="chart-area">
@@ -242,7 +242,7 @@
                 <article class="panel">
                     <div class="panel-head">
                         <span class="panel-tag">PROMEDIO</span>
-                        <h3>Promedio de Días por Mes</h3>
+                        <h3>Promedio de DÃ­as por Mes</h3>
                     </div>
 
                     <div class="chart-area">
@@ -259,7 +259,7 @@
                 <div class="table-top">
                     <div>
                         <span class="panel-tag">DETALLE</span>
-                        <h3>Programación y estado SAP</h3>
+                        <h3>ProgramaciÃ³n y estado SAP</h3>
                     </div>
 
                     <div class="table-tools">
@@ -268,9 +268,9 @@
                             id="btnDescargarDetalle"
                             class="btn"
                             type="button"
-                            title="Descarga todos los registros de detalle según los filtros actuales"
+                            title="Descarga todos los registros de detalle segÃºn los filtros actuales"
                         >
-                            ↓ Descargar detalle
+                            â†“ Descargar detalle
                         </button>
 
                         <button
@@ -278,14 +278,14 @@
                             class="btn"
                             type="button"
                         >
-                            ← Anterior
+                            â† Anterior
                         </button>
 
                         <span
                             id="paginaDetalleInfo"
                             class="page-info"
                         >
-                            Página 1 de 1
+                            PÃ¡gina 1 de 1
                         </span>
 
                         <button
@@ -293,7 +293,7 @@
                             class="btn"
                             type="button"
                         >
-                            Siguiente →
+                            Siguiente â†’
                         </button>
 
                         <input
@@ -318,8 +318,8 @@
                                 <th>Total Costes Plan</th>
                                 <th>Costes Totales Reales</th>
                                 <th>Fecha Contab. IW47</th>
-                                <th>Texto Notificación IW47</th>
-                                <th>Días Notificación</th>
+                                <th>Texto NotificaciÃ³n IW47</th>
+                                <th>DÃ­as NotificaciÃ³n</th>
                             </tr>
                         </thead>
 
@@ -333,6 +333,6 @@
 
     </main>
 
-    <script src="./app.js?v=20260922_3"></script>
+    <script src="./app.js?v=20260922_4"></script>
 </body>
 </html>

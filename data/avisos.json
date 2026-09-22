@@ -1,7 +1,7 @@
 {
   "ok": true,
   "lastUpdate": "22/09/2026 11:23:00",
-  "version": "8520768886117124438",
+  "version": "6514665609085264406",
   "fromCache": false,
   "cantidadAvisos": 2911,
   "data": [
@@ -398,11 +398,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "transmision de presion",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -419,11 +419,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "CAMBIO EMPAQUE EMPIROMETRICO",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -776,11 +776,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de pinza rota",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -797,11 +797,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de abrasaderas de magueras refrii",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -986,11 +986,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Alarma por transitorio, en vigilancia",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -1301,11 +1301,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "PERNOS DAÑADOS LINEA BIDON",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -1385,11 +1385,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se reubica según necesidad del operador",
       "costoReal": 4.57,
-      "estadoFinal": "Aviso cerrado"
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "julio",
@@ -1427,11 +1427,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se cambia secionador",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "febrero",
@@ -1700,11 +1700,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "FUGA BEBIDA POR DISTRIBUIDOR",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "enero",
@@ -1742,11 +1742,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "CAMBIO RACORD LLENADORA",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -1784,11 +1784,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "TRABAMIENTO CADENA LINEA LATA",
-      "costoReal": 3.96,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -1826,11 +1826,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio mangiuera neumatica",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -1931,11 +1931,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "REVICION CABEZALES",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "febrero",
@@ -2036,11 +2036,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se cambia manguera de secador",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -2057,11 +2057,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "ROTIRA DE MANGUERA Y CAMBIO ABRAZADERA",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -2204,11 +2204,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "CAMBIO MANGUERA NEUMATICA",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -2813,11 +2813,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "rotura por caida de paquetes sensor en r",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -3443,11 +3443,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de pernos en poste",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "enero",
@@ -3653,11 +3653,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se cambia resrtes en cabezales 3,8,11",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -3674,11 +3674,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambipo resortes de cabezales 5",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -3758,11 +3758,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP MOVM NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se cambia resortes nuevos",
-      "costoReal": 71.73,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -3884,11 +3884,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cvambio de manguera de refrigeracion",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -3905,11 +3905,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "revicon de breker principal",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "febrero",
@@ -3947,11 +3947,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "soporte lineas de produccion.",
-      "costoReal": 37.85,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -4094,11 +4094,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "revicion de compresor chiller",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -4367,11 +4367,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se cambia sensor",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -4955,11 +4955,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Motor sin chaveta, se coloka y ok",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -5060,11 +5060,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "DANDA RODILLOS MAL ESTADO",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -5081,11 +5081,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "CAMBIO BANDA DE RODILLOS",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -5102,11 +5102,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "ABIE DMNV KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -5333,11 +5333,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se cambia manguera 8mm",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -5396,11 +5396,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se cambio candado de rodillos termo",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -7034,11 +7034,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se da reset y ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -7118,11 +7118,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se calibra ph, queda bien.",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -7160,11 +7160,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Momento funcional, quedo bien.",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -7244,11 +7244,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se reviza empeller no se encuentra nada | Motivo de anulación",
       "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "marzo",
@@ -7475,11 +7475,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "-SE CAMBIO DE CAJA, PARA EL CONTROL DE L",
       "costoReal": 4.78,
-      "estadoFinal": "Aviso cerrado"
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "agosto",
@@ -8273,11 +8273,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "SE CHEQUEA CAJETIN EXAGONAL, SE  AJUSTA",
       "costoReal": 10.93,
-      "estadoFinal": "Aviso cerrado"
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "febrero",
@@ -8525,11 +8525,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. IMPR KKMP MOVM NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 7.4,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "enero",
@@ -8714,11 +8714,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de racors de agua",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -8903,11 +8903,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se revisa sin novedad",
       "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "agosto",
@@ -9008,11 +9008,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de punta de varilla de estiro",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -9050,11 +9050,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de brazo transferencia",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -9260,11 +9260,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "pernos rotos guia lineal sistema estiro",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -9470,11 +9470,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se cambia sensor queda funcional",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -9638,11 +9638,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "calibracion guias carillera",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -9743,11 +9743,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "revicion de vavula",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -9848,11 +9848,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -9932,11 +9932,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "ABIE DMNV KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -10058,11 +10058,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "revicio  fuga de aceite",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -10583,11 +10583,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se revisa el sistema, todo ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -10730,11 +10730,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de pernos portamoldes",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -10793,11 +10793,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de varilla",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -10814,11 +10814,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de varilla en mal estado",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -10898,11 +10898,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de resorte peine translado",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "febrero",
@@ -11066,11 +11066,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio vailla y calibracion altura",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -11087,11 +11087,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "revicion servo motor",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -11381,11 +11381,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "calibracion brazo de leva",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -11402,11 +11402,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de esparagos compensacion",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -11423,11 +11423,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -11528,11 +11528,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "correccion de fuga de agua",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -11801,11 +11801,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio rodamiento de leva",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -11822,11 +11822,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "calibracion sensor de leva seguridad",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -11990,11 +11990,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "calibracion empaques conpensacion",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -12011,11 +12011,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "ABIE DMNV KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -12179,11 +12179,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio pin fondo de molde",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -12368,11 +12368,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP MOVM NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio pi n fondo de molde",
-      "costoReal": 185.6,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -12431,11 +12431,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio pernos bridas de molde",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -12620,11 +12620,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de esoarrgos compensacion",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -12704,11 +12704,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de coquilla",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -12788,11 +12788,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "revicon alarma compresor chiller",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "febrero",
@@ -13187,11 +13187,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "calibracion de varilla de estiro",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -13460,11 +13460,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -13565,11 +13565,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de pernos guia tope",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -13586,11 +13586,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de resorte pinza transferencia",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -13607,11 +13607,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "daño´pinza de transferencia envases",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -13649,11 +13649,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de leva de comando",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -13775,11 +13775,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de srsor placa sello",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -13859,11 +13859,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio cable de potencia servo",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -13901,11 +13901,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "revicon de brazo transferencia envases",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -13922,11 +13922,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "calibracion sincronismo rueda transferen",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -13943,11 +13943,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "calibracion de sensor leva de seguridad",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -13964,11 +13964,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "revicion de micros de seguridad",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -13985,11 +13985,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "alarma servomotor calibracion varilla",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -14027,11 +14027,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de brazo y pinza en mal estado",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -14090,11 +14090,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de lamparas horno preformas",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -14195,11 +14195,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de arandela sistema de estiro",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -14237,11 +14237,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de electrovalvua en mal estado",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -14258,11 +14258,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "camnio y calibracion rodamiento excentri",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -14447,11 +14447,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "SOLD. BASE Y COLOCASION CADENA",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -14846,11 +14846,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "CAMBIO MANGURA NEUMATICA Y ACOPLE",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -15476,11 +15476,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "REVICION PIÑONES Y GUIAS",
-      "costoReal": 6.88,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -15518,11 +15518,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de cadena",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -15581,11 +15581,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "ajuste de piñon",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -16337,11 +16337,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "soldadura de banderola",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -16421,11 +16421,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se vsuelda los 6 postes del bastidor",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -16778,11 +16778,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "SOLDADURA PUNTERSA MESA CARGA",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -16946,11 +16946,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se da mtto a electrovalvula",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -17282,11 +17282,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se cambia rodillo en lavadora carballo",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -17324,11 +17324,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "CAMBIO DE CADENA METALICA",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -17534,11 +17534,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "SE RESETEA GUARDA Y QUEDA OK",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -17702,11 +17702,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -17933,11 +17933,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "alarma fallo fase, se arregla selector",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -18101,11 +18101,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se suelda pernos nuevos en guias",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -18143,11 +18143,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "VARIADOR ALARMADO",
-      "costoReal": 1.72,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -18227,11 +18227,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Problema operativo, queda ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -18248,11 +18248,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se revisan las camaras",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -18332,11 +18332,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se da reset",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -18647,11 +18647,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se resetea y queda bien",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -18962,11 +18962,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se debe cambiar bujes de cangrejos",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -18983,11 +18983,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se coloca manguerqa neumatica y racord",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -19004,11 +19004,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "ATASCAMIENTO PISTONES",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -19025,11 +19025,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "XCAMBIO RESORTE DE PISTON",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -19277,11 +19277,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se cambia pernos en base de despresuriza",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -19466,11 +19466,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -19592,11 +19592,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Cavles rotos sensor inductivo",
-      "costoReal": 1.72,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -20726,11 +20726,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de tulipas",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -20789,11 +20789,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -20873,11 +20873,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio nde chaveta y piñon",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "enero",
@@ -20936,11 +20936,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio nde piñon",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -20957,11 +20957,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "CAMBIO PISTON TRAS. MESA CARG.",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -21524,11 +21524,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. NOTI JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se realiza cambio de piñon averiado",
       "costoReal": 4.57,
-      "estadoFinal": "Aviso cerrado"
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "junio",
@@ -21692,11 +21692,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. NOTI JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se extrae y se cambia pernos rotos.",
       "costoReal": 4.57,
-      "estadoFinal": "Aviso cerrado"
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "mayo",
@@ -22028,11 +22028,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se da reset",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -22217,11 +22217,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se resetea y se da seguimiento.",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -22259,11 +22259,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de sellos de campana",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -22280,11 +22280,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se da reset al variador",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -22448,11 +22448,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de rodamientos",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -22700,11 +22700,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se da MTTO al cabezal cambio de rodamien",
-      "costoReal": 13.76,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -22910,11 +22910,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio bujes centradores",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "enero",
@@ -22973,11 +22973,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Alarma por trabamiento mecanico, queda o",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -23288,11 +23288,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Alarma por desgaste mecánico",
-      "costoReal": 6.88,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "enero",
@@ -24296,11 +24296,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de piñon",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -24611,11 +24611,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de banda tornillo sin fin",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -24716,11 +24716,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "daño piñon duralon etiquetadora",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -24737,11 +24737,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "CAMBIO DE RODAMIENTO TULIPA",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -25304,11 +25304,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se realiza cambio de banda / operativa",
       "costoReal": 4.57,
-      "estadoFinal": "Aviso cerrado"
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "marzo",
@@ -25367,11 +25367,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de pernos",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "febrero",
@@ -25388,11 +25388,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "",
       "costoReal": 4.57,
-      "estadoFinal": "Aviso cerrado"
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "agosto",
@@ -25514,11 +25514,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se realiza cambio de banda / operativa",
       "costoReal": 4.57,
-      "estadoFinal": "Aviso cerrado"
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "mayo",
@@ -26081,11 +26081,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "DAÑO BANDA DE ARRASTRE",
-      "costoReal": 154.85,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -26375,11 +26375,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se cambia de banda de arrastre",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -26669,11 +26669,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "DAÑO BANDA DE ARRASTRE",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "enero",
@@ -26921,11 +26921,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "BANDA ARRASTRE MAL ESTADO",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -27068,11 +27068,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "CAMBIO BANDA ARRASTRE",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -27131,11 +27131,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de banda de arrastre",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -27257,11 +27257,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se cambia banda  del formato 200",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -27929,11 +27929,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "CAMBIO BANDA ARRASTRE",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -28601,11 +28601,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se cambia pernos m10x40 desgastados",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -28622,11 +28622,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se revisa valvulas y queda ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -28643,11 +28643,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "JUEGO PISTON CIERRE MARIPOSAS",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -28853,11 +28853,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se revisa que esta 0- 20 mA ,se cambia a",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -29000,11 +29000,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de piston yubo y porta tubo",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "febrero",
@@ -29042,11 +29042,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "ABIE DMNV KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -29210,11 +29210,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. IMPR DMNV NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -29336,11 +29336,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "TRABAMIENTO BANDA",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -29441,11 +29441,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se cambia sensor",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -29819,11 +29819,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se pule al mismo diametro del rodillo",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -30050,11 +30050,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "revicion de banda elevadora tapas",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "enero",
@@ -30155,11 +30155,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se realiza cambio de sensor de carrilera",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -30176,11 +30176,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se saca cuerpo extraño del elevador",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -30218,11 +30218,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "AJUSTE BANDA ELEV. TAPAS",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -30260,11 +30260,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se cambia racor, queda ok.",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -30302,11 +30302,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se revisa motor queda ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -30974,11 +30974,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Receta mal configurada por operador qued",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -31436,11 +31436,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "SE RESETEA DRIVE SERVO YA CUMPLIO VIDA U",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -31772,11 +31772,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se revisa servo sobrecalentado",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -31793,11 +31793,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP MOVM NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se desmonta rodillo de goma cambio de ro",
-      "costoReal": 25.3,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -31814,11 +31814,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de 4 rodamientos en tulipas",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -32192,11 +32192,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "ROTURA DE CANDADO CADENA DOBLE",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "enero",
@@ -32276,11 +32276,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -32549,11 +32549,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se coloca en pocision el eje del rodillo",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -32591,11 +32591,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se quita la alarma y queda ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -32612,11 +32612,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "CAMBIO CHAVETA",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -32759,11 +32759,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se coloca un nuevo sensor",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -32948,11 +32948,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "no se realiuzo por soporte lineas",
-      "costoReal": 8.41,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": 6.88,
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "septiembre",
@@ -33116,11 +33116,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se arregla electrovalvula",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -33347,11 +33347,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se cambia sensor inductivo tijeras",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -33389,11 +33389,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Bloqueo t{ermico por pinzas, se resetea",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -33641,11 +33641,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se repara sensor, queda ok.",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -33662,11 +33662,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Perdida puto o por daño mecanico.",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -33683,11 +33683,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "calibracion de sitema de tijeras",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -34292,11 +34292,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se revisa electrovalvula con funcionamie",
       "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "abril",
@@ -34439,11 +34439,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "COLOCACION GIA FORMATO 600",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -34544,11 +34544,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se cambia electroválvulas, ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -34607,11 +34607,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se cambia sensores, se reanuda operación",
-      "costoReal": 1.72,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -34712,11 +34712,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se cambia sensor, queda ok.",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -34775,11 +34775,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se cambia ficha, queda ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -35048,11 +35048,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se habilita JOG SACMI",
       "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "agosto",
@@ -35153,11 +35153,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se reseteo, se coloca soplo ya que se re",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -35258,11 +35258,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se vuelve a colocar ventilador se recupe",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -35279,11 +35279,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se revisa receta, ajusta parametros",
       "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "julio",
@@ -35489,11 +35489,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "CAMBIO TUERCA Y BISAGRAS",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -35510,11 +35510,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se cambia manguera, queda ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -35951,11 +35951,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "CAMBIO PERNOS SUJECION",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "febrero",
@@ -36707,11 +36707,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "SE REALIZA SINCRONIZACION",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -36959,11 +36959,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -36980,11 +36980,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de perno",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -37001,11 +37001,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "ROTURA POSTE LENAD. TRIBLOCK",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -37148,11 +37148,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "REVICION CILINDROS ELEVADORES",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -37232,11 +37232,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "FALLA SINCRINISMO",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "febrero",
@@ -37379,11 +37379,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -37610,11 +37610,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se cambia resistencia corte en galón que",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "enero",
@@ -37673,11 +37673,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se cambia resistencia, mala calidad mate",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -37694,11 +37694,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "SE CAMBIA CUCHILLA DE CORTER QUEDA OK",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -37715,11 +37715,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de resistencia de cuchilla",
-      "costoReal": 6.88,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -37946,11 +37946,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se cambia lámparas queda ok.",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -38009,11 +38009,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Cambio resistencia, queda ok.",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "enero",
@@ -38093,11 +38093,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se revisa extractor, esta operativo.",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -38450,11 +38450,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se realiza el cambio de tubo de venteo",
-      "costoReal": 4.47,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -38534,11 +38534,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se lubrica piston de apertura de valvula",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "febrero",
@@ -38639,11 +38639,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "ROTURA BANDA TRASN. LLENADORA",
-      "costoReal": 6.88,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -38681,11 +38681,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se realiza cabio de lamparas",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -38702,11 +38702,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Ventilador roto, se cambia y queda ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -38765,11 +38765,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio nde piston",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -38870,11 +38870,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "POBLEMAS DE LLENADO VAL. N°95",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -39143,11 +39143,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se resetea y continua produciendo",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "febrero",
@@ -39248,11 +39248,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Alarma por terminal mojada, se seca y ok",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -40235,11 +40235,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "CAMBIO PERNOS PLATOVELOS",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -40256,11 +40256,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se revisa queda ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "enero",
@@ -40487,11 +40487,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se resetea, queda ok",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -40529,11 +40529,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "CAMBIO CADENA",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -40823,11 +40823,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se coloca teflon en rodillo",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -40970,11 +40970,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se monta ventilador, queda ok.",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -41159,11 +41159,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio contactor por corto de resistenci",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "febrero",
@@ -41222,11 +41222,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se cambia terminales termo",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -41285,11 +41285,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -41369,11 +41369,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se verifica y queda ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -41516,11 +41516,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de manguera",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -41600,11 +41600,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se saca motor para reparación y cambio.",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "enero",
@@ -42146,11 +42146,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se coge el punto cero",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -42419,11 +42419,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se agarra el punto cero",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "enero",
@@ -42587,11 +42587,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se cambia matrimonio, queda ok.",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "enero",
@@ -42629,11 +42629,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Barrera sin repuesto",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -42734,11 +42734,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se coloca union 8mm",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -42902,11 +42902,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se planifica mantenimiento encoder para",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -43028,11 +43028,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se cambia de empaques",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -43196,11 +43196,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se realiza cambio de tubo",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -43385,11 +43385,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -43469,11 +43469,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se cambia lampara visor, queda ok se ada",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "febrero",
@@ -43490,11 +43490,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -43511,11 +43511,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -43721,11 +43721,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se destapona los chisguetes",
-      "costoReal": 6.88,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -43868,11 +43868,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -44435,11 +44435,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Termocupla funcional. no hay problema",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -44771,11 +44771,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "CAMBIO CENTRADORES Y PERNOS",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -44792,11 +44792,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "SOLDADURA GUIA INTERNA",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -44813,11 +44813,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "CAMBIO CENTRADORES BOTELLON",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -44834,11 +44834,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de manguera",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -44876,11 +44876,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se suelda bastago del piston",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -45149,11 +45149,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se repara alambre conductor",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -46241,11 +46241,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de brazo en mal estado",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "enero",
@@ -46451,11 +46451,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se instala lamparas",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -46535,11 +46535,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "revicion de motoreductor rodillos",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -46682,11 +46682,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se cambia boton, queda ok.",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -46976,11 +46976,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. NOTI IMPR JBFI KKMP PREC",
       "textoNotificacion": "colocacion de soplos",
       "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "agosto",
@@ -46997,11 +46997,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se coloca en posicion el eje de la malla",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -47837,11 +47837,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se cambia chuck de taponadora",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "junio",
@@ -47921,11 +47921,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de piñon en cabezal 12",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -48089,11 +48089,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se revisa sensor , queda ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "febrero",
@@ -49055,11 +49055,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se remacha banda",
-      "costoReal": 1.72,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -49979,11 +49979,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "ROTURA PINZA RINSE",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -50609,11 +50609,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "soldadura de cabezal",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -51113,11 +51113,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se quita alarma de bloqueo drive",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -51407,11 +51407,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se ajusta encoder, queda ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "abril",
@@ -51449,11 +51449,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio racor  manguera n|8",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "julio",
@@ -53255,11 +53255,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se revisa esta funcionando bien.",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "marzo",
@@ -53864,11 +53864,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se da mantenimiento bomba guitig queda o",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "enero",
@@ -53885,11 +53885,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se da mantenimiento, queda ok.",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "enero",
@@ -54179,11 +54179,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se coloca pernos mas largos",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -56006,11 +56006,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se revisa EV, requiere mantenimiento val",
       "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "abril",
@@ -57035,11 +57035,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de pinza en mal estado",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -57056,11 +57056,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "mayo",
@@ -57560,11 +57560,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "marmita 1 dañada",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "enero",
@@ -58211,11 +58211,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
       "textoNotificacion": "no se realiza soporte lineas",
-      "costoReal": 46.27,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": 37.85,
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "mayo",
@@ -58337,11 +58337,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "-SE DIO MTTO AL MOTOR DE LA BOMBA.",
       "costoReal": 4.78,
-      "estadoFinal": "Aviso cerrado"
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "marzo",
@@ -58442,11 +58442,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Problema sin causa conocida.",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -58463,11 +58463,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "cambio de cuchilla",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "septiembre",
@@ -58484,11 +58484,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "se cambia espejo",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -58526,11 +58526,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "Se calibra sensor dispensador etiqueta",
-      "costoReal": 1.72,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -58862,11 +58862,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN CERRADA",
-      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "lubricacion de sistema",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso cerrado"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -58904,10 +58904,10 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "REVISAR",
-      "estadoSAPOrden": "LIB. KKMP LINA PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
+      "costoReal": null,
       "estadoFinal": "REVISAR"
     },
     {
@@ -58925,11 +58925,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -58946,11 +58946,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -58967,11 +58967,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -58988,11 +58988,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59009,11 +59009,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59030,11 +59030,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59051,11 +59051,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59072,11 +59072,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59093,10 +59093,10 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "REVISAR",
-      "estadoSAPOrden": "LIB. KKMP LINA PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
+      "costoReal": null,
       "estadoFinal": "REVISAR"
     },
     {
@@ -59114,11 +59114,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59135,10 +59135,10 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "REVISAR",
-      "estadoSAPOrden": "LIB. KKMP LINA PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
+      "costoReal": null,
       "estadoFinal": "REVISAR"
     },
     {
@@ -59156,11 +59156,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59177,10 +59177,10 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "REVISAR",
-      "estadoSAPOrden": "LIB. KKMP LINA PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
+      "costoReal": null,
       "estadoFinal": "REVISAR"
     },
     {
@@ -59198,11 +59198,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59219,11 +59219,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59240,11 +59240,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59261,11 +59261,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59282,11 +59282,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59303,11 +59303,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59324,11 +59324,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59345,11 +59345,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59366,11 +59366,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59387,11 +59387,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59408,11 +59408,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59429,11 +59429,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59450,11 +59450,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "febrero",
@@ -59513,11 +59513,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "febrero",
@@ -59576,11 +59576,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59597,11 +59597,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59618,11 +59618,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59639,11 +59639,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59660,11 +59660,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59681,11 +59681,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59702,11 +59702,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59723,11 +59723,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59744,11 +59744,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59765,11 +59765,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59786,11 +59786,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59807,11 +59807,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59828,11 +59828,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59849,11 +59849,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59870,11 +59870,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59891,11 +59891,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59912,11 +59912,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59933,11 +59933,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59954,11 +59954,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59975,11 +59975,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -59996,11 +59996,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60017,11 +60017,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60038,11 +60038,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60059,11 +60059,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60080,11 +60080,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60101,11 +60101,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60122,11 +60122,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60143,11 +60143,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60164,11 +60164,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60185,11 +60185,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60206,11 +60206,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60227,11 +60227,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60248,11 +60248,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60269,11 +60269,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60290,11 +60290,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60311,11 +60311,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60332,11 +60332,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60353,11 +60353,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60374,11 +60374,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60395,11 +60395,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60416,11 +60416,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60437,11 +60437,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60458,11 +60458,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60479,11 +60479,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60500,11 +60500,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60521,11 +60521,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60542,11 +60542,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60563,11 +60563,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60584,11 +60584,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60605,11 +60605,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60626,11 +60626,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60647,11 +60647,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60668,11 +60668,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60689,11 +60689,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60710,11 +60710,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60731,11 +60731,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60752,11 +60752,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60773,11 +60773,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60794,11 +60794,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60815,11 +60815,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60836,11 +60836,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60857,11 +60857,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60878,11 +60878,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60899,11 +60899,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60920,11 +60920,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60941,11 +60941,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60962,11 +60962,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -60983,11 +60983,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -61004,11 +61004,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -61025,11 +61025,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -61046,11 +61046,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -61067,11 +61067,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -61088,11 +61088,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -61109,11 +61109,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     },
     {
       "mes": "agosto",
@@ -61130,11 +61130,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. KKMP PREC",
+      "estadoOT": null,
+      "estadoSAPOrden": null,
       "textoNotificacion": "",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": null,
+      "estadoFinal": "REVISAR"
     }
   ]
 }

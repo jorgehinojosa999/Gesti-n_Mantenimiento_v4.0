@@ -1,0 +1,139 @@
+*{box-sizing:border-box}
+:root{--sidebar:#14233a;--sidebar-deep:#101d31;--blue:#1d9bf0;--green:#22a85a;--red:#ef4444;--orange:#f97316;--purple:#7c3aed;--page:#f5f7fb;--card:#fff;--line:#dde5ee;--text:#102033;--muted:#718096}
+html,body{margin:0;min-height:100%;font-family:"Segoe UI",Arial,Helvetica,sans-serif;background:var(--page);color:var(--text)}
+body{overflow-x:hidden}
+.sidebar{position:fixed;inset:0 auto 0 0;width:216px;padding:16px 14px;background:linear-gradient(180deg,var(--sidebar),var(--sidebar-deep));color:#fff;overflow-y:auto;z-index:50}
+.brand{display:flex;align-items:center;gap:10px;padding:0 0 16px;border-bottom:1px solid rgba(255,255,255,.10)}
+.brand-mark{width:52px;height:36px;border-radius:7px;background:#fff;display:flex;align-items:center;justify-content:center;gap:2px;box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.brand-mini{font-size:8px;font-weight:800;color:#5b6b7d}
+.brand-cbc{font-size:9px;font-weight:900;color:#1c73ba}
+.brand-copy{min-width:0}
+.brand-title{font-size:12px;line-height:1.05;font-weight:900;letter-spacing:.2px}
+.brand-subtitle{margin-top:4px;font-size:8px;color:#c4d2e4}
+.side-nav{display:flex;flex-direction:column;gap:6px;margin:16px 0}
+.nav-link{display:block;padding:9px 10px;border-radius:6px;color:#d9e6f5;text-decoration:none;font-size:10px;font-weight:700}
+.nav-link:hover{background:#203654}
+.nav-link.active{background:#1e95e8;color:#fff}
+.side-separator{height:1px;margin:13px 0;background:rgba(255,255,255,.10)}
+.side-title{margin:10px 0 10px;color:#91b7e2;font-size:8px;font-weight:900;letter-spacing:1.2px}
+.filter-block{margin-bottom:12px}
+.filter-block label{display:block;margin-bottom:6px;font-size:9px;font-weight:700;color:#fff}
+.filter-block select{width:100%;height:34px;padding:0 10px;border:1px solid #3e5674;border-radius:7px;outline:none;background:#243650;color:#fff;font-size:10px}
+.filter-block select:focus{border-color:#1e9af1}
+.side-button{width:100%;height:34px;margin-top:7px;border:1px solid #405875;border-radius:7px;background:#21344e;color:#fff;font-size:10px;font-weight:800;cursor:pointer}
+.side-button.primary{background:#1e9bf0;border-color:#1e9bf0}
+.side-button:disabled{opacity:.6}
+.source-status{margin:8px 0;font-size:8px;font-weight:800}
+.source-status.ok{color:#39dd8d}.source-status.bad{color:#ff7373}
+.content{margin-left:216px;min-height:100vh;background:var(--page)}
+.topbar{min-height:94px;padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:18px;background:#fff;border-bottom:1px solid #e1e6ed}
+.eyebrow,.panel-tag{color:#0f7ac3;font-size:8px;font-weight:900;letter-spacing:1.2px}
+.topbar h1{margin:6px 0 5px;font-size:22px;line-height:1.05;font-weight:800}
+.topbar p{margin:0;color:#7c8898;font-size:9px}
+.updated-card{min-width:178px;padding:11px 14px;border:1px solid #dce4ed;border-radius:11px;background:#fff;color:#7c8898;font-size:8px;box-shadow:0 1px 3px rgba(15,23,42,.03)}
+.updated-label{margin-bottom:4px}.updated-card strong{color:#111827;font-size:9px}
+.page-body{padding:16px}
+.actions{display:flex;gap:8px;align-items:center;margin-bottom:12px}
+.btn{min-height:31px;padding:0 12px;display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid #d8e0e9;border-radius:7px;background:#fff;color:#172033;font-size:9px;font-weight:800;cursor:pointer;text-decoration:none}
+.btn:hover{background:#f8fafc}.btn.primary{background:#1e9bf0;border-color:#1e9bf0;color:#fff}.btn.danger{color:#d82323}
+.kpi-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-bottom:12px}
+.kpi-card{min-width:0;min-height:82px;padding:13px 12px;background:#fff;border:1px solid #dfe6ee;border-top:3px solid #1e9bf0;border-radius:10px;box-shadow:0 1px 2px rgba(15,23,42,.02)}
+.kpi-green{border-top-color:#22a85a}.kpi-red{border-top-color:#ef4444}.kpi-purple{border-top-color:#7c3aed}.kpi-orange{border-top-color:#f97316}
+.kpi-label{color:#536174;font-size:8px;font-weight:700}
+.kpi-value{margin-top:12px;font-size:24px;line-height:1;font-weight:900}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:12px}
+.panel{min-width:0;overflow:hidden;border:1px solid #dfe6ee;border-radius:10px;background:#fff;box-shadow:0 1px 2px rgba(15,23,42,.02)}
+.panel-head{padding:12px 12px 9px;border-bottom:1px solid #e8edf3}
+.panel-head h3{margin:5px 0 0;font-size:11px;font-weight:800}
+.chart-area{height:255px;padding:14px 16px 16px}
+.chart-area.tall{height:300px}
+.chart-area canvas{width:100%!important;height:100%!important;max-width:100%}
+.table-panel{margin-top:0}
+.table-top{padding:12px;display:flex;justify-content:space-between;align-items:center;gap:14px;border-bottom:1px solid #e8edf3}
+.table-top h3{margin:4px 0 0;font-size:11px}
+.table-tools{display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:8px}
+.table-tools input{width:250px;height:31px;padding:0 10px;border:1px solid #d7dfe8;border-radius:7px;outline:none;font-size:9px}
+.table-tools input:focus{border-color:#1e9bf0}
+#contador,.page-info{color:#64748b;font-size:9px}
+.table-wrap{width:100%;overflow:auto;max-height:620px}
+table{min-width:2200px;width:100%;border-collapse:collapse;font-size:8px}
+th,td{padding:8px 9px;border-bottom:1px solid #edf1f5;text-align:left;vertical-align:middle;white-space:nowrap}
+th{position:sticky;top:0;z-index:2;background:#f8fafc;color:#334155;font-weight:900}
+tbody tr:hover{background:#f9fbfd}
+.text-wrap{min-width:180px;max-width:260px;white-space:normal}
+.badge{display:inline-block;padding:4px 7px;border-radius:999px;font-size:8px;font-weight:800}
+.green-b,.badge.closed,.badge.orden-cerrada,.badge.dentro-de-tiempo{background:#dff7e7;color:#198344}
+.blue-b,.badge.open,.badge.orden-abierta{background:#e4efff;color:#2258a5}
+.red-b,.badge.fuera-de-tiempo{background:#fee2e2;color:#b91c1c}
+.orange-b,.badge.revisar,.badge.por-notificar{background:#fff0df;color:#c96a15}
+.gray-b{background:#eef2f7;color:#475569}
+.delete-row{border:0;border-radius:6px;padding:5px 8px;background:#fee2e2;color:#b91c1c;font-size:8px;font-weight:800;cursor:pointer}
+.modal{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(15,23,42,.55)}
+.modal.hidden{display:none}
+.modal-card{width:min(820px,95vw);max-height:90vh;overflow:auto;background:#fff;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.modal-head{padding:14px 17px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e5e7eb}
+.modal-head h2{margin:0;font-size:18px}
+.modal-x{border:0;background:transparent;font-size:24px;cursor:pointer}
+#formOrden{padding:15px 17px 17px}
+.form-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.form-grid label{font-size:9px;font-weight:700}
+.form-grid input{width:100%;height:34px;margin-top:5px;padding:0 8px;border:1px solid #d7dee7;border-radius:6px}
+.modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:16px}
+@media (max-width:1150px){.kpi-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:900px){.sidebar{position:relative;width:100%;height:auto}.content{margin-left:0}.grid-2,.kpi-grid,.form-grid{grid-template-columns:1fr}.topbar{align-items:flex-start;flex-direction:column}.table-tools{align-items:flex-start;justify-content:flex-start}.table-tools input{width:100%}}
+
+
+/* =========================================================
+   GRÁFICOS DE RESPONSABLE DESLIZANTES
+   El panel conserva exactamente su altura.
+   Solo el contenido interno crece y se desplaza verticalmente.
+========================================================= */
+
+.chart-scroll{
+    height:300px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding:0;
+    scrollbar-width:thin;
+    scrollbar-color:#b8c5d6 #f2f5f9;
+}
+
+.chart-scroll::-webkit-scrollbar{
+    width:8px;
+}
+
+.chart-scroll::-webkit-scrollbar-track{
+    background:#f2f5f9;
+    border-radius:10px;
+}
+
+.chart-scroll::-webkit-scrollbar-thumb{
+    background:#b8c5d6;
+    border-radius:10px;
+}
+
+.chart-scroll::-webkit-scrollbar-thumb:hover{
+    background:#8fa2b9;
+}
+
+.chart-scroll-inner{
+    position:relative;
+    width:100%;
+    min-height:280px;
+    padding:14px 16px 16px;
+}
+
+.chart-scroll-inner canvas{
+    width:100% !important;
+    height:100% !important;
+    max-width:100%;
+}
+
+
+/* Estado de la importación en la versión GitHub Pages */
+.import-status{
+    color:#64748b;
+    font-size:9px;
+    font-weight:600;
+    margin-left:4px;
+}

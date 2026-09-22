@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Órdenes SAP</title>
+
+    <link rel="stylesheet" href="./styles.css?v=20260922">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-mark">
+                <div class="brand-mini">tesalia</div>
+                <div class="brand-cbc">cbc</div>
+            </div>
+
+            <div class="brand-copy">
+                <div class="brand-title">CONTROL ÓRDENES</div>
+                <div class="brand-subtitle">SAP · Ingeniería</div>
+            </div>
+        </div>
+
+        <nav class="side-nav">
+            <a href="../avisos/" class="nav-link">
+                ↗ Control Avisos
+            </a>
+
+            <a href="./" class="nav-link active">
+                ▣ Control Órdenes
+            </a>
+        </nav>
+
+        <div class="side-separator"></div>
+
+        <div class="side-title">FILTROS</div>
+
+        <div class="filter-block">
+            <label for="filtroMes">Mes</label>
+            <select id="filtroMes">
+                <option value="">Todos</option>
+            </select>
+        </div>
+
+        <div class="filter-block">
+            <label for="filtroEstado">Estado de Orden</label>
+            <select id="filtroEstado">
+                <option value="">Todos</option>
+                <option value="ORDEN CERRADA">Orden cerrada</option>
+                <option value="ORDEN ABIERTA">Orden abierta</option>
+                <option value="REVISAR">Revisar</option>
+            </select>
+        </div>
+
+        <div class="filter-block">
+            <label for="filtroTiempo">Estado de Tiempo</label>
+            <select id="filtroTiempo">
+                <option value="">Todos</option>
+                <option value="DENTRO DE TIEMPO">Dentro de tiempo</option>
+                <option value="FUERA DE TIEMPO">Fuera de tiempo</option>
+                <option value="POR NOTIFICAR">Por notificar</option>
+            </select>
+        </div>
+
+        <div class="filter-block">
+            <label for="filtroResponsable">Responsable</label>
+            <select id="filtroResponsable">
+                <option value="">Todos</option>
+            </select>
+        </div>
+
+        <button id="btnActualizar" class="side-button primary" type="button">
+            ↻ Actualizar ahora
+        </button>
+
+        <button id="btnLimpiar" class="side-button" type="button">
+            Limpiar filtros
+        </button>
+
+        <div class="side-separator"></div>
+
+        <div class="side-title">FUENTES</div>
+
+        <div id="statusIW39" class="source-status">IW39: verificando...</div>
+        <div id="statusIW47" class="source-status">IW47: verificando...</div>
+        <div id="statusMapa" class="source-status">Mapa: verificando...</div>
+
+    </aside>
+
+
+    <!-- =========================
+         CONTENIDO
+    ========================== -->
+    <main class="content">
+
+        <header class="topbar">
+            <div>
+                <div class="eyebrow">DASHBOARD DE MANTENIMIENTO</div>
+                <h1>Control de Órdenes de Trabajo SAP</h1>
+                <p>Gestión de órdenes de trabajo, estado SAP y notificaciones</p>
+            </div>
+
+            <div class="updated-card">
+                <div class="updated-label">● Última actualización</div>
+                <strong id="ultimaActualizacion">--</strong>
+            </div>
+        </header>
+
+
+        <section class="page-body">
+
+            <!-- ACCIONES -->
+            <div class="actions">
+                <label for="archivoExcel" class="btn primary">
+                    ↑ Importar Excel
+                </label>
+                <input id="archivoExcel" type="file" accept=".xlsx,.xls,.xlsm" hidden>
+                <span id="archivoCargado" class="import-status">
+                    Cargue la planilla diaria para visualizar las OT.
+                </span>
+            </div>
+
+            <!-- KPI -->
+            <section class="kpi-grid">
+
+                <article class="kpi-card kpi-blue">
+                    <div class="kpi-label">Órdenes Totales</div>
+                    <div id="kpiTotal" class="kpi-value">0</div>
+                </article>
+
+                <article class="kpi-card kpi-green">
+                    <div class="kpi-label">Órdenes Cerradas</div>
+                    <div id="kpiCerradas" class="kpi-value">0</div>
+                </article>
+
+                <article class="kpi-card kpi-red">
+                    <div class="kpi-label">Órdenes Abiertas</div>
+                    <div id="kpiAbiertas" class="kpi-value">0</div>
+                </article>
+
+                <article class="kpi-card kpi-purple">
+                    <div class="kpi-label">% Cierre</div>
+                    <div id="kpiCierre" class="kpi-value">0.0%</div>
+                </article>
+
+                <article class="kpi-card kpi-orange">
+                    <div class="kpi-label">Promedio Días Notificación</div>
+                    <div id="kpiPromedio" class="kpi-value">0.0</div>
+                </article>
+
+            </section>
+
+
+            <!-- PRIMERA FILA -->
+            <section class="grid-2">
+
+                <article class="panel">
+                    <div class="panel-head">
+                        <span class="panel-tag">ESTADO</span>
+                        <h3>Estado de Orden</h3>
+                    </div>
+
+                    <div class="chart-area donut-area">
+                        <canvas id="chartEstadoOrden"></canvas>
+                    </div>
+                </article>
+
+                <article class="panel">
+                    <div class="panel-head">
+                        <span class="panel-tag">CUMPLIMIENTO</span>
+                        <h3>Estado de Tiempo</h3>
+                    </div>
+
+                    <div class="chart-area donut-area">
+                        <canvas id="chartEstadoTiempo"></canvas>
+                    </div>
+                </article>
+
+            </section>
+
+
+            <!-- SEGUNDA FILA -->
+            <section class="grid-2">
+
+                <article class="panel">
+                    <div class="panel-head">
+                        <span class="panel-tag">RESPONSABLE</span>
+                        <h3>Órdenes por Responsable</h3>
+                    </div>
+
+                    <div class="chart-area tall chart-scroll">
+                        <div
+                            id="innerChartResponsable"
+                            class="chart-scroll-inner"
+                        >
+                            <canvas id="chartResponsable"></canvas>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="panel">
+                    <div class="panel-head">
+                        <span class="panel-tag">PROMEDIO</span>
+                        <h3>Promedio por Responsable</h3>
+                    </div>
+
+                    <div class="chart-area tall chart-scroll">
+                        <div
+                            id="innerChartPromedioResponsable"
+                            class="chart-scroll-inner"
+                        >
+                            <canvas id="chartPromedioResponsable"></canvas>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+
+            <!-- TERCERA FILA -->
+            <section class="grid-2">
+
+                <article class="panel">
+                    <div class="panel-head">
+                        <span class="panel-tag">MES</span>
+                        <h3>Órdenes por Mes</h3>
+                    </div>
+
+                    <div class="chart-area">
+                        <canvas id="chartOrdenesMes"></canvas>
+                    </div>
+                </article>
+
+                <article class="panel">
+                    <div class="panel-head">
+                        <span class="panel-tag">PROMEDIO</span>
+                        <h3>Promedio de Días por Mes</h3>
+                    </div>
+
+                    <div class="chart-area">
+                        <canvas id="chartPromedioMes"></canvas>
+                    </div>
+                </article>
+
+            </section>
+
+
+            <!-- DETALLE -->
+            <section class="panel table-panel">
+
+                <div class="table-top">
+                    <div>
+                        <span class="panel-tag">DETALLE</span>
+                        <h3>Programación y estado SAP</h3>
+                    </div>
+
+                    <div class="table-tools">
+
+                        <button
+                            id="btnDescargarDetalle"
+                            class="btn"
+                            type="button"
+                            title="Descarga todos los registros de detalle según los filtros actuales"
+                        >
+                            ↓ Descargar detalle
+                        </button>
+
+                        <button
+                            id="btnAnteriorDetalle"
+                            class="btn"
+                            type="button"
+                        >
+                            ← Anterior
+                        </button>
+
+                        <span
+                            id="paginaDetalleInfo"
+                            class="page-info"
+                        >
+                            Página 1 de 1
+                        </span>
+
+                        <button
+                            id="btnSiguienteDetalle"
+                            class="btn"
+                            type="button"
+                        >
+                            Siguiente →
+                        </button>
+
+                        <input
+                            id="buscar"
+                            type="search"
+                            placeholder="Buscar orden, equipo, responsable..."
+                        >
+
+                        <span id="contador">0 registros</span>
+                    </div>
+                </div>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Fecha Planilla</th>
+                                <th>Estado Orden</th>
+                                <th>Estado Tiempo</th>
+                                <th>Orden</th>
+                                <th>Status SAP</th>
+                                <th>Total Costes Plan</th>
+                                <th>Costes Totales Reales</th>
+                                <th>Fecha Contab. IW47</th>
+                                <th>Texto Notificación IW47</th>
+                                <th>Días Notificación</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tablaDetalle"></tbody>
+                    </table>
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="./app.js?v=20260922"></script>
+</body>
+</html>

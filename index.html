@@ -1,57 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Gestión de Mantenimiento SAP</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f7fb;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .contenedor {
-            text-align: center;
-            background: white;
-            padding: 50px;
-            border-radius: 15px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.12);
-        }
-
-        h1 {
-            color: #10233f;
-        }
-
-        p {
-            color: #667085;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Portal de Mantenimiento SAP</title>
+<style>
+*{box-sizing:border-box} :root{--nav:#14233a;--deep:#101d31;--blue:#1d9bf0;--page:#f5f7fb;--text:#102033;--muted:#718096;--line:#dde5ee}
+html,body{margin:0;min-height:100%;font-family:"Segoe UI",Arial,sans-serif;background:var(--page);color:var(--text)}
+.shell{display:flex;min-height:100vh}.sidebar{width:216px;position:fixed;inset:0 auto 0 0;padding:18px 14px;background:linear-gradient(180deg,var(--nav),var(--deep));color:#fff}
+.brand{padding:2px 4px 18px;border-bottom:1px solid rgba(255,255,255,.1)}.brand strong{display:block;font-size:15px}.brand span{display:block;margin-top:5px;font-size:9px;color:#c4d2e4}
+.nav{display:grid;gap:7px;margin-top:18px}.nav a{padding:10px;border-radius:7px;text-decoration:none;color:#d9e6f5;font-size:11px;font-weight:700}.nav a:hover,.nav a.active{background:var(--blue);color:#fff}
+.future{margin:24px 4px 8px;font-size:8px;font-weight:900;letter-spacing:1.3px;color:#91b7e2}.soon{padding:9px 10px;color:#8295ac;font-size:10px}
+.main{margin-left:216px;width:calc(100% - 216px)}.top{padding:28px 34px;background:#fff;border-bottom:1px solid var(--line)}.eyebrow{font-size:9px;font-weight:900;letter-spacing:1.4px;color:#0f7ac3}.top h1{margin:7px 0 5px;font-size:28px}.top p{margin:0;color:var(--muted);font-size:12px}
+.body{padding:28px 34px}.welcome{margin-bottom:20px}.welcome h2{margin:0 0 6px;font-size:18px}.welcome p{margin:0;color:var(--muted);font-size:11px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{display:flex;flex-direction:column;min-height:250px;padding:24px;background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:0 3px 12px rgba(15,23,42,.04)}.icon{width:46px;height:46px;display:grid;place-items:center;border-radius:12px;background:#eaf6ff;color:#168ddd;font-size:22px;font-weight:900}.card h3{margin:18px 0 7px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:11px;line-height:1.6}.features{margin:16px 0 22px;padding:0;list-style:none;color:#526174;font-size:10px;line-height:1.9}.open{margin-top:auto;display:inline-flex;align-self:flex-start;padding:10px 15px;border-radius:8px;background:var(--blue);color:#fff;text-decoration:none;font-size:10px;font-weight:800}.open:hover{filter:brightness(.95)}
+.next{margin-top:20px;padding:18px 20px;background:#fff;border:1px dashed #cbd5e1;border-radius:12px;color:#64748b;font-size:11px}.next strong{color:#334155}
+@media(max-width:850px){.sidebar{position:relative;width:100%}.shell{display:block}.main{margin-left:0;width:100%}.cards{grid-template-columns:1fr}.top,.body{padding:22px}}
+</style>
 </head>
-
-<body>
-
-    <div class="contenedor">
-
-        <h1>Gestión de Mantenimiento SAP</h1>
-
-        <p>
-            Portal de Control de Mantenimiento
-        </p>
-
-        <p>
-            GitHub Pages funcionando correctamente.
-        </p>
-
-    </div>
-
-</body>
-
-</html>
+<body><div class="shell">
+<aside class="sidebar"><div class="brand"><strong>PORTAL MANTENIMIENTO</strong><span>SAP · Ingeniería</span></div><nav class="nav"><a class="active" href="./">⌂ Inicio</a><a href="./avisos/">▣ Control Avisos</a><a href="./ordenes/">▣ Control Órdenes</a></nav><div class="future">PRÓXIMAMENTE</div><div class="soon">$ Presupuesto</div><div class="soon">▦ Repuestos</div><div class="soon">▤ Plan de Mantenimiento</div></aside>
+<main class="main"><header class="top"><div class="eyebrow">GESTIÓN DE MANTENIMIENTO</div><h1>Portal de Mantenimiento SAP</h1><p>Acceso centralizado a los módulos de Ingeniería y Mantenimiento</p></header><section class="body"><div class="welcome"><h2>Módulos disponibles</h2><p>Seleccione el módulo que desea consultar.</p></div><div class="cards">
+<article class="card"><div class="icon">A</div><h3>Control de Avisos SAP</h3><p>Seguimiento de avisos, estados, responsables, tiempos de notificación y detalle operativo.</p><ul class="features"><li>✓ Avisos abiertos y cerrados</li><li>✓ Estado de tiempo</li><li>✓ Seguimiento por responsable</li><li>✓ Descarga de detalle</li></ul><a class="open" href="./avisos/">Abrir Control Avisos →</a></article>
+<article class="card"><div class="icon">OT</div><h3>Control de Órdenes de Trabajo</h3><p>Seguimiento de la programación, estado SAP y notificaciones de las órdenes de trabajo.</p><ul class="features"><li>✓ Programación publicada</li><li>✓ Estados IW39 e IW47</li><li>✓ Cumplimiento de notificación</li><li>✓ Consulta y descarga de detalle</li></ul><a class="open" href="./ordenes/">Abrir Control Órdenes →</a></article></div><div class="next"><strong>Portal preparado para crecer:</strong> posteriormente podremos incorporar Presupuesto, Repuestos, Plan de Mantenimiento y otros módulos sin cambiar la dirección principal.</div></section></main>
+</div></body></html>

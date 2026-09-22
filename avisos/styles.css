@@ -567,3 +567,11 @@ tbody tr:hover {
     }
 
 }
+
+
+/* NAVEGACIÓN PORTAL UNIFICADO */
+.side-nav{display:flex;flex-direction:column;gap:6px;margin:0 0 14px}
+.nav-link{display:block;padding:9px 10px;border-radius:7px;color:#d9e6f5;text-decoration:none;font-size:11px;font-weight:700}
+.nav-link:hover{background:rgba(255,255,255,.08)}
+.nav-link.active{background:var(--blue);color:#fff}
+.side-separator{height:1px;margin:0 0 14px;background:rgba(255,255,255,.10)}

@@ -8,12 +8,6 @@
 // CONFIGURACIÓN
 // =========================================================
 
-// Desde:
-// /avisos/index.html
-//
-// Lee:
-// /data/avisos.json
-
 const DATA_URL = "../data/avisos.json";
 
 
@@ -22,9 +16,7 @@ const DATA_URL = "../data/avisos.json";
 // =========================================================
 
 let DATA = [];
-
 let VERSION_ACTUAL = "";
-
 let ULTIMA_ACTUALIZACION = "";
 
 
@@ -146,20 +138,47 @@ function safeText(value) {
 }
 
 
-function numberValue(value) {
+// =========================================================
+// CONVERTIR A NÚMERO VÁLIDO
+// IMPORTANTE:
+// null, undefined y "" NO se convierten en cero.
+// =========================================================
+
+function validNumber(value) {
+
+    if (
+        value === null ||
+        value === undefined ||
+        value === ""
+    ) {
+
+        return null;
+
+    }
 
     const number =
         Number(value);
 
     if (
-        Number.isNaN(number)
+        !Number.isFinite(number)
     ) {
 
-        return 0;
+        return null;
 
     }
 
     return number;
+}
+
+
+function numberValue(value) {
+
+    const number =
+        validNumber(value);
+
+    return number === null
+        ? 0
+        : number;
 }
 
 
@@ -516,24 +535,33 @@ function renderKPIs(
             : 0;
 
 
+    // =====================================================
+    // PROMEDIO DÍAS NOTIFICACIÓN
+    //
+    // Python envía:
+    // "dias": 5
+    //
+    // Los valores null corresponden a registros que
+    // todavía no tienen días calculados y NO deben
+    // considerarse como cero.
+    // =====================================================
+
     const diasValidos =
         data
             .map(
                 item =>
-                    Number(
-                        item.diasNotificacion
+                    validNumber(
+                        item.dias
                     )
             )
             .filter(
                 value =>
-                    Number.isFinite(
-                        value
-                    )
+                    value !== null
             );
 
 
     const promedio =
-        diasValidos.length
+        diasValidos.length > 0
             ? (
                 diasValidos.reduce(
                     (sum, value) =>
@@ -1114,15 +1142,14 @@ function averageBy(
 
 
             const value =
-                Number(
+                validNumber(
                     item[valueField]
                 );
 
 
+            // No considerar registros sin días
             if (
-                !Number.isFinite(
-                    value
-                )
+                value === null
             ) {
 
                 return;
@@ -1242,13 +1269,14 @@ function renderCharts(
 
     // -----------------------------------------------------
     // PROMEDIO POR RESPONSABLE
+    // CORREGIDO: dias
     // -----------------------------------------------------
 
     const promedioResponsable =
         averageBy(
             data,
             "responsable",
-            "diasNotificacion"
+            "dias"
         )
         .sort(
             (a, b) =>
@@ -1290,13 +1318,14 @@ function renderCharts(
 
     // -----------------------------------------------------
     // PROMEDIO POR MES
+    // CORREGIDO: dias
     // -----------------------------------------------------
 
     const promedioMes =
         averageBy(
             data,
             "mes",
-            "diasNotificacion"
+            "dias"
         );
 
 
@@ -1353,7 +1382,8 @@ function renderTable(
 
                 item.fechaContab,
 
-                item.diasNotificacion,
+                // CORREGIDO
+                item.dias,
 
                 item.estadoTiempo,
 
@@ -1527,6 +1557,22 @@ async function loadData(
         );
 
 
+        // Verificación adicional
+        const registrosConDias =
+            DATA.filter(
+                item =>
+                    validNumber(
+                        item.dias
+                    ) !== null
+            ).length;
+
+
+        console.log(
+            "Registros con días válidos:",
+            registrosConDias
+        );
+
+
     } catch (
         error
     ) {
@@ -1689,7 +1735,8 @@ function downloadCSV() {
 
                 item.fechaContab,
 
-                item.diasNotificacion,
+                // CORREGIDO
+                item.dias,
 
                 item.estadoTiempo,
 
@@ -1891,8 +1938,8 @@ async function iniciar() {
     );
 
 
-    // Revisa periódicamente si GitHub publicó
-    // una versión nueva del JSON.
+    // Revisar cada 10 segundos si GitHub publicó
+    // una nueva versión del JSON.
 
     setInterval(
         checkVersion,

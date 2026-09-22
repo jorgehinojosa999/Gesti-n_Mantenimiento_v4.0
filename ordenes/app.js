@@ -135,8 +135,40 @@
     }
 
     function localizarTabla(workbook){
-        // Replica el criterio del Python local: revisar hasta las primeras 60 filas.
-        // Además tolera variantes como "ORDEN #", "N° ORDEN", "FECHA PLANILLA", etc.
+        // La planilla corporativa real usa la hoja PLANILLA DIARIA
+        // y los encabezados están en la primera fila.
+        const nombrePlanilla = workbook.SheetNames.find(
+            n => claveCabecera(n) === "PLANILLADIARIA"
+        );
+
+        if(nombrePlanilla){
+            const ws = workbook.Sheets[nombrePlanilla];
+            const matriz = XLSX.utils.sheet_to_json(ws,{
+                header:1,
+                defval:"",
+                raw:true,
+                blankrows:false
+            });
+
+            if(matriz.length){
+                const keys = (matriz[0] || []).map(claveCabecera);
+                const tieneFecha = keys.includes("FECHA");
+                const tieneOrden = keys.includes("NOORDENDETRABAJO");
+
+                console.log("PLANILLA DIARIA - ENCABEZADOS:", matriz[0]);
+                console.log("PLANILLA DIARIA - CLAVES:", keys);
+
+                if(tieneFecha && tieneOrden){
+                    return {
+                        nombre:nombrePlanilla,
+                        matriz,
+                        headerIndex:0
+                    };
+                }
+            }
+        }
+
+        // Respaldo para otras versiones de la planilla.
         for(const nombre of workbook.SheetNames){
             const ws = workbook.Sheets[nombre];
             const matriz = XLSX.utils.sheet_to_json(ws,{
@@ -148,51 +180,22 @@
 
             for(let i=0;i<Math.min(matriz.length,60);i++){
                 const keys = (matriz[i] || []).map(claveCabecera).filter(Boolean);
-
-                const tieneFecha = keys.some(k =>
-                    k === "FECHA" ||
-                    k.startsWith("FECHA") ||
-                    k.includes("FECHAPLANILLA") ||
-                    k.includes("FECHAPROGRAMADA")
-                );
-
+                const tieneFecha = keys.some(k => k === "FECHA" || k.startsWith("FECHA"));
                 const tieneOrden = keys.some(k =>
                     k === "ORDEN" ||
-                    k === "ORDEN#" ||
                     k === "NOORDENDETRABAJO" ||
                     k.includes("ORDENDETRABAJO") ||
-                    k.startsWith("ORDEN") ||
-                    k.endsWith("ORDEN") ||
-                    k.includes("NUMEROORDEN") ||
-                    k.includes("NORDEN")
+                    k.includes("NUMEROORDEN")
                 );
 
-                if(tieneOrden && tieneFecha){
-                    console.log(
-                        `PLANILLA: hoja='${nombre}', encabezado Excel fila=${i+1}`,
-                        matriz[i]
-                    );
+                if(tieneFecha && tieneOrden){
                     return {nombre, matriz, headerIndex:i};
                 }
             }
         }
 
-        // Diagnóstico útil para saber qué encabezados encontró realmente el navegador.
-        const diagnostico = workbook.SheetNames.map(nombre => {
-            const ws = workbook.Sheets[nombre];
-            const matriz = XLSX.utils.sheet_to_json(ws,{header:1,defval:"",raw:true});
-            const muestra = matriz.slice(0,60)
-                .filter(f => Array.isArray(f) && f.some(v => String(v ?? "").trim()))
-                .slice(0,5)
-                .map(f => f.map(v => String(v ?? "").trim()).filter(Boolean).slice(0,12));
-            return `${nombre}: ${JSON.stringify(muestra)}`;
-        }).join("\n");
-
-        console.error("ENCABEZADOS ENCONTRADOS EN EXCEL:\n" + diagnostico);
         throw new Error(
-            "No encontré una fila de encabezado con FECHA y ORDEN. " +
-            "Ahora se revisan las primeras 60 filas de todas las hojas. " +
-            "Abra F12 > Consola para ver los encabezados detectados."
+            "No se pudo localizar FECHA y NO. ORDEN DE TRABAJO en la planilla."
         );
     }
 

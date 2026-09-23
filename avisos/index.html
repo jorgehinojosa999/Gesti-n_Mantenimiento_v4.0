@@ -67,6 +67,14 @@
         </div>
 
 
+
+        <!-- NAVEGACIÓN DEL PORTAL -->
+        <nav style="display:flex;flex-direction:column;gap:8px;margin:16px 0 18px;">
+            <a href="../" style="display:block;padding:10px 12px;border-radius:7px;color:#fff;text-decoration:none;background:rgba(255,255,255,.08);font-weight:700;">⌂ Inicio</a>
+            <a href="./" style="display:block;padding:10px 12px;border-radius:7px;color:#fff;text-decoration:none;background:#2196e5;font-weight:700;">▣ Control Avisos</a>
+            <a href="../ordenes/" style="display:block;padding:10px 12px;border-radius:7px;color:#fff;text-decoration:none;background:rgba(255,255,255,.08);font-weight:700;">↗ Control Órdenes</a>
+        </nav>
+
         <!-- =================================================
              FILTROS
              ================================================= -->
@@ -94,21 +102,12 @@
 
         </div>
 
-
-        <!-- DÍA / FECHA DE AVISO -->
-
+        <!-- DÍA -->
         <div class="filter-group">
-
-            <label for="dayFilter">
-                Día - Fecha de aviso
-            </label>
-
+            <label for="dayFilter">Día - Fecha de aviso</label>
             <select id="dayFilter">
-                <option value="Todas">
-                    Todos los días
-                </option>
+                <option value="Todas">Todos los días</option>
             </select>
-
         </div>
 
 
@@ -704,7 +703,7 @@
      JAVASCRIPT
      ========================================================= -->
 
-<script src="./app.js?v=20260922_5"></script>
+<script src="./app.js"></script>
 
 
 </body>

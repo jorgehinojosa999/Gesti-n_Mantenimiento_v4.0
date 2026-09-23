@@ -386,8 +386,37 @@
             });
     }
 
+    function claveDia(f){
+        return f ? `${f.getFullYear()}-${String(f.getMonth()+1).padStart(2,"0")}-${String(f.getDate()).padStart(2,"0")}` : "";
+    }
+
+    function reconstruirFiltroDias(){
+        const sel = $("filtroDia");
+        if(!sel) return;
+
+        const actualDia = sel.value;
+        const mes = $("filtroMes").value;
+        const diasMap = new Map();
+
+        cruzarProgramacion().forEach(r => {
+            const f = r.fecha_obj;
+            if(!f) return;
+            const mesVal = `${f.getFullYear()}-${String(f.getMonth()+1).padStart(2,"0")}`;
+            if(mes && mesVal !== mes) return;
+            diasMap.set(claveDia(f), fechaDMY(f));
+        });
+
+        sel.innerHTML = '<option value="">Todos los días</option>';
+        [...diasMap.entries()].sort((a,b)=>a[0].localeCompare(b[0])).forEach(([value,label])=>{
+            const o=document.createElement("option"); o.value=value; o.textContent=label; sel.appendChild(o);
+        });
+
+        if([...sel.options].some(o=>o.value===actualDia)) sel.value=actualDia;
+    }
+
     function filasFiltradas(){
         const mes = $("filtroMes").value;
+        const dia = $("filtroDia").value;
         const estado = $("filtroEstado").value;
         const tiempo = $("filtroTiempo").value;
         const resp = $("filtroResponsable").value;
@@ -395,7 +424,9 @@
         return cruzarProgramacion().filter(r => {
             const f = r.fecha_obj;
             const mesVal = f ? `${f.getFullYear()}-${String(f.getMonth()+1).padStart(2,"0")}` : "";
+            const diaVal = claveDia(f);
             return (!mes || mesVal === mes) &&
+                   (!dia || diaVal === dia) &&
                    (!estado || r.estado_orden === estado) &&
                    (!tiempo || r.estado_tiempo === tiempo) &&
                    (!resp || r.ejecutante === resp);
@@ -428,6 +459,7 @@
 
         if([...$("filtroMes").options].some(o=>o.value===actualMes)) $("filtroMes").value=actualMes;
         if([...$("filtroResponsable").options].some(o=>o.value===actualResp)) $("filtroResponsable").value=actualResp;
+        reconstruirFiltroDias();
     }
 
     function renderKPIs(rows){
@@ -649,12 +681,18 @@
     });
 
     $("btnLimpiar").addEventListener("click",()=>{
-        $("filtroMes").value="";$("filtroEstado").value="";$("filtroTiempo").value="";
+        $("filtroMes").value="";$("filtroDia").value="";$("filtroEstado").value="";$("filtroTiempo").value="";
         $("filtroResponsable").value="";$("buscar").value="";
+        reconstruirFiltroDias();
         if(state.programacion.length) actualizarDashboard(false);
     });
 
-    ["filtroMes","filtroEstado","filtroTiempo","filtroResponsable"].forEach(id=>{
+    $("filtroMes")?.addEventListener("change",()=>{
+        reconstruirFiltroDias();
+        if(state.programacion.length) actualizarDashboard(false);
+    });
+
+    ["filtroDia","filtroEstado","filtroTiempo","filtroResponsable"].forEach(id=>{
         $(id)?.addEventListener("change",()=>state.programacion.length&&actualizarDashboard(false));
     });
     $("buscar").addEventListener("input",()=>{state.paginaDetalle=1;buscarDetalle();});

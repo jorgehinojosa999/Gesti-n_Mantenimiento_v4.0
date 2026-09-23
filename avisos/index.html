@@ -18,7 +18,7 @@
 
     <link
         rel="stylesheet"
-        href="./styles.css?v=20260922_portal1"
+        href="./styles.css"
     >
 
 </head>
@@ -67,15 +67,6 @@
         </div>
 
 
-
-        <nav class="side-nav portal-nav">
-            <a href="../" class="nav-link">⌂ Inicio</a>
-            <a href="./" class="nav-link active">▣ Control Avisos</a>
-            <a href="../ordenes/" class="nav-link">▣ Control Órdenes</a>
-        </nav>
-
-        <div class="side-separator"></div>
-
         <!-- =================================================
              FILTROS
              ================================================= -->
@@ -99,6 +90,23 @@
                     Todas
                 </option>
 
+            </select>
+
+        </div>
+
+
+        <!-- DÍA / FECHA DE AVISO -->
+
+        <div class="filter-group">
+
+            <label for="dayFilter">
+                Día - Fecha de aviso
+            </label>
+
+            <select id="dayFilter">
+                <option value="Todas">
+                    Todos los días
+                </option>
             </select>
 
         </div>
@@ -696,7 +704,7 @@
      JAVASCRIPT
      ========================================================= -->
 
-<script src="./app.js?v=20260922_portal1"></script>
+<script src="./app.js?v=20260922_5"></script>
 
 
 </body>

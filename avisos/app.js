@@ -27,6 +27,9 @@ let ULTIMA_ACTUALIZACION = "";
 const monthFilter =
     document.getElementById("monthFilter");
 
+const dayFilter =
+    document.getElementById("dayFilter");
+
 const classFilter =
     document.getElementById("classFilter");
 
@@ -357,12 +360,51 @@ function configureMonths() {
 
 
 // =========================================================
+// DÍAS / FECHA DE AVISO
+// =========================================================
+
+function configureDays() {
+
+    const currentValue = dayFilter.value;
+    const selectedMonth = monthFilter.value;
+
+    const dates = [...new Set(
+        DATA
+            .filter(item =>
+                selectedMonth === "Todas" ||
+                safeText(item.mes) === selectedMonth
+            )
+            .map(item => safeText(item.fechaAviso).trim())
+            .filter(Boolean)
+    )].sort((a, b) => {
+        const parse = value => {
+            const m = value.match(/^(\d{1,2})[\/.\-](\d{1,2})[\/.\-](\d{4})$/);
+            return m ? new Date(Number(m[3]), Number(m[2]) - 1, Number(m[1])).getTime() : 0;
+        };
+        return parse(a) - parse(b);
+    });
+
+    dayFilter.innerHTML = '<option value="Todas">Todos los días</option>';
+
+    dates.forEach(value => {
+        const option = document.createElement("option");
+        option.value = value;
+        option.textContent = value;
+        dayFilter.appendChild(option);
+    });
+
+    dayFilter.value = dates.includes(currentValue) ? currentValue : "Todas";
+}
+
+
+// =========================================================
 // CONFIGURAR FILTROS
 // =========================================================
 
 function configureFilters() {
 
     configureMonths();
+    configureDays();
 
 
     const estados =
@@ -418,6 +460,9 @@ function getFilteredData() {
     const mes =
         monthFilter.value;
 
+    const dia =
+        dayFilter.value;
+
     const clasificacion =
         classFilter.value;
 
@@ -448,6 +493,11 @@ function getFilteredData() {
                 safeText(
                     item.mes
                 ) === mes;
+
+
+            const cumpleDia =
+                dia === "Todas" ||
+                safeText(item.fechaAviso).trim() === dia;
 
 
             const cumpleClasificacion =
@@ -483,6 +533,7 @@ function getFilteredData() {
 
             return (
                 cumpleMes &&
+                cumpleDia &&
                 cumpleClasificacion &&
                 cumpleEstado &&
                 cumpleTiempo &&
@@ -1850,6 +1901,15 @@ function downloadCSV() {
 // =========================================================
 
 monthFilter.addEventListener(
+    "change",
+    () => {
+        configureDays();
+        renderDashboard();
+    }
+);
+
+
+dayFilter.addEventListener(
     "change",
     renderDashboard
 );

@@ -1,0 +1,2878 @@
+{
+  "data": [
+    {
+      "UbicTecnica": "EC-01-0101",
+      "DescripcionUbicacion": "Estación tratamiento de agua, ETA",
+      "Equipo": "7051713",
+      "DescripcionEquipo": "Sala de Aguas KHS"
+    },
+    {
+      "UbicTecnica": "EC-01-0101",
+      "DescripcionUbicacion": "Estación tratamiento de agua, ETA",
+      "Equipo": "7051714",
+      "DescripcionEquipo": "Sala de Aguas Sipa 20"
+    },
+    {
+      "UbicTecnica": "EC-01-0101",
+      "DescripcionUbicacion": "Estación tratamiento de agua, ETA",
+      "Equipo": "7051715",
+      "DescripcionEquipo": "Osmosis  Invera"
+    },
+    {
+      "UbicTecnica": "EC-01-0101",
+      "DescripcionUbicacion": "Estación tratamiento de agua, ETA",
+      "Equipo": "7051716",
+      "DescripcionEquipo": "Planta de Tratamiento&Abland."
+    },
+    {
+      "UbicTecnica": "EC-01-0101",
+      "DescripcionUbicacion": "Estación tratamiento de agua, ETA",
+      "Equipo": "7051717",
+      "DescripcionEquipo": "Agua Guitig"
+    },
+    {
+      "UbicTecnica": "EC-01-0101",
+      "DescripcionUbicacion": "Estación tratamiento de agua, ETA",
+      "Equipo": "7051718",
+      "DescripcionEquipo": "Fuentes  de agua"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051719",
+      "DescripcionEquipo": "Estación Elevadora Dist. Agua Indust."
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051720",
+      "DescripcionEquipo": "Cribas de Entrada Inicial"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051721",
+      "DescripcionEquipo": "Cisterna de Almacenamiento 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051722",
+      "DescripcionEquipo": "Tanque Acumulador-Homogenización 1200m³"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051723",
+      "DescripcionEquipo": "Módulo Biológico N# 1"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051724",
+      "DescripcionEquipo": "Módulo Biológico N# 2"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051725",
+      "DescripcionEquipo": "Módulo Biológico N# 3"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051726",
+      "DescripcionEquipo": "Módulo Daf  N# 1"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051727",
+      "DescripcionEquipo": "Módulo Daf  N# 2"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051728",
+      "DescripcionEquipo": "Módulo Daf  N# 3"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051729",
+      "DescripcionEquipo": "Tanque Separador de Lodos (55m³)"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051730",
+      "DescripcionEquipo": "Preparador de Poli-Electrolita"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051731",
+      "DescripcionEquipo": "Prensa de Lodos"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051732",
+      "DescripcionEquipo": "Cámara de Microfiltro"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051733",
+      "DescripcionEquipo": "Dosificación Química"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051734",
+      "DescripcionEquipo": "Compresor-Secador  Auxiliar"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051735",
+      "DescripcionEquipo": "Soplador-Compresor M. Biológico (BL 03)"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051736",
+      "DescripcionEquipo": "Soplador-Compresor M. Biológico (BL 04)"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051737",
+      "DescripcionEquipo": "Soplador-Compresor M. Biológico (BL 05)"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051738",
+      "DescripcionEquipo": "Soplador-Compresor M. Biológico (BL 06)"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051739",
+      "DescripcionEquipo": "Soplador-Compresor N# 1 TQ. Acumulador"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051740",
+      "DescripcionEquipo": "Soplador-Compresor N# 2 TQ. Acumulador"
+    },
+    {
+      "UbicTecnica": "EC-01-0111",
+      "DescripcionUbicacion": "Estación tratamiento aguas residuales",
+      "Equipo": "7051741",
+      "DescripcionEquipo": "Cámara Control de la Planta de Tratamto."
+    },
+    {
+      "UbicTecnica": "EC-01-0112",
+      "DescripcionUbicacion": "\"Estación tratamiento aguas residuales,T",
+      "Equipo": "7051742",
+      "DescripcionEquipo": "Planta de tratamiento aguas domésticas"
+    },
+    {
+      "UbicTecnica": "EC-01-0121",
+      "DescripcionUbicacion": "Aire comprimido de baja",
+      "Equipo": "7051743",
+      "DescripcionEquipo": "Compresor Kaeser CSD 100"
+    },
+    {
+      "UbicTecnica": "EC-01-0121",
+      "DescripcionUbicacion": "Aire comprimido de baja",
+      "Equipo": "7051744",
+      "DescripcionEquipo": "Compresor Kaeser BSD 60T"
+    },
+    {
+      "UbicTecnica": "EC-01-0121",
+      "DescripcionUbicacion": "Aire comprimido de baja",
+      "Equipo": "7051745",
+      "DescripcionEquipo": "Compresor Kaeser CSD100(02)"
+    },
+    {
+      "UbicTecnica": "EC-01-0121",
+      "DescripcionUbicacion": "Aire comprimido de baja",
+      "Equipo": "7051746",
+      "DescripcionEquipo": "Compresor  Kaeser CSD 75"
+    },
+    {
+      "UbicTecnica": "EC-01-0131",
+      "DescripcionUbicacion": "Aire comprimido de alta",
+      "Equipo": "7049739",
+      "DescripcionEquipo": "Compresor de Alta AF 08"
+    },
+    {
+      "UbicTecnica": "EC-01-0131",
+      "DescripcionUbicacion": "Aire comprimido de alta",
+      "Equipo": "7049740",
+      "DescripcionEquipo": "Compresor de Alta AF 09"
+    },
+    {
+      "UbicTecnica": "EC-01-0131",
+      "DescripcionUbicacion": "Aire comprimido de alta",
+      "Equipo": "7051747",
+      "DescripcionEquipo": "Compresor de Alta Abc  01"
+    },
+    {
+      "UbicTecnica": "EC-01-0131",
+      "DescripcionUbicacion": "Aire comprimido de alta",
+      "Equipo": "7051748",
+      "DescripcionEquipo": "Compresor de Alta Siad  02"
+    },
+    {
+      "UbicTecnica": "EC-01-0131",
+      "DescripcionUbicacion": "Aire comprimido de alta",
+      "Equipo": "7051749",
+      "DescripcionEquipo": "Compresor de Alta Abc  03"
+    },
+    {
+      "UbicTecnica": "EC-01-0131",
+      "DescripcionUbicacion": "Aire comprimido de alta",
+      "Equipo": "7051750",
+      "DescripcionEquipo": "Compresor de Alta Abc 04"
+    },
+    {
+      "UbicTecnica": "EC-01-0131",
+      "DescripcionUbicacion": "Aire comprimido de alta",
+      "Equipo": "7051751",
+      "DescripcionEquipo": "Compresor de Alta Siad  05"
+    },
+    {
+      "UbicTecnica": "EC-01-0131",
+      "DescripcionUbicacion": "Aire comprimido de alta",
+      "Equipo": "7051752",
+      "DescripcionEquipo": "Compresor de Alta Abc 06"
+    },
+    {
+      "UbicTecnica": "EC-01-0131",
+      "DescripcionUbicacion": "Aire comprimido de alta",
+      "Equipo": "7051753",
+      "DescripcionEquipo": "Compresor de Alta AF 07"
+    },
+    {
+      "UbicTecnica": "EC-01-0132",
+      "DescripcionUbicacion": "Aire Positivo",
+      "Equipo": "7051754",
+      "DescripcionEquipo": "Aire positivo 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0141",
+      "DescripcionUbicacion": "Vapor",
+      "Equipo": "7051755",
+      "DescripcionEquipo": "Caldero Cleaver Brooks"
+    },
+    {
+      "UbicTecnica": "EC-01-0141",
+      "DescripcionUbicacion": "Vapor",
+      "Equipo": "7051756",
+      "DescripcionEquipo": "Caldero Cleaver Brooks"
+    },
+    {
+      "UbicTecnica": "EC-01-0141",
+      "DescripcionUbicacion": "Vapor",
+      "Equipo": "7051757",
+      "DescripcionEquipo": "Caldero eléctrico Fulton"
+    },
+    {
+      "UbicTecnica": "EC-01-0141",
+      "DescripcionUbicacion": "Vapor",
+      "Equipo": "7051758",
+      "DescripcionEquipo": "Alimentación combustible y agua"
+    },
+    {
+      "UbicTecnica": "EC-01-0151",
+      "DescripcionUbicacion": "Frío envasado - NH3",
+      "Equipo": "7051759",
+      "DescripcionEquipo": "Compresor de piston 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0151",
+      "DescripcionUbicacion": "Frío envasado - NH3",
+      "Equipo": "7051760",
+      "DescripcionEquipo": "Compresor de piston 02"
+    },
+    {
+      "UbicTecnica": "EC-01-0151",
+      "DescripcionUbicacion": "Frío envasado - NH3",
+      "Equipo": "7051761",
+      "DescripcionEquipo": "Compresor de tornillo 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0151",
+      "DescripcionUbicacion": "Frío envasado - NH3",
+      "Equipo": "7051762",
+      "DescripcionEquipo": "Compresor de piston 03"
+    },
+    {
+      "UbicTecnica": "EC-01-0151",
+      "DescripcionUbicacion": "Frío envasado - NH3",
+      "Equipo": "7051763",
+      "DescripcionEquipo": "Tanques 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0151",
+      "DescripcionUbicacion": "Frío envasado - NH3",
+      "Equipo": "7051764",
+      "DescripcionEquipo": "Condensador evaporativo 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0151",
+      "DescripcionUbicacion": "Frío envasado - NH3",
+      "Equipo": "7051765",
+      "DescripcionEquipo": "Condensador evaporativo 02"
+    },
+    {
+      "UbicTecnica": "EC-01-0151",
+      "DescripcionUbicacion": "Frío envasado - NH3",
+      "Equipo": "7051766",
+      "DescripcionEquipo": "Condensador evaporativo 03"
+    },
+    {
+      "UbicTecnica": "EC-01-0151",
+      "DescripcionUbicacion": "Frío envasado - NH3",
+      "Equipo": "7051767",
+      "DescripcionEquipo": "Tableros  Eléctricos Evaporativo 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0152",
+      "DescripcionUbicacion": "Frío envasado - Glycol",
+      "Equipo": "7051768",
+      "DescripcionEquipo": "Distribucion de Glicol 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0153",
+      "DescripcionUbicacion": "Frío envasado - N2 (nitrógeno)",
+      "Equipo": "7051769",
+      "DescripcionEquipo": "Enfriamiento por N2 Sipa 16 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0161",
+      "DescripcionUbicacion": "CO2",
+      "Equipo": "7051770",
+      "DescripcionEquipo": "Suministro CO2 EX MAPER"
+    },
+    {
+      "UbicTecnica": "EC-01-0161",
+      "DescripcionUbicacion": "CO2",
+      "Equipo": "7051771",
+      "DescripcionEquipo": "Suministro CO2 SIPA 20"
+    },
+    {
+      "UbicTecnica": "EC-01-0171",
+      "DescripcionUbicacion": "Electricidad",
+      "Equipo": "7051772",
+      "DescripcionEquipo": "EQUIPOS ELÉCTRICOS 01 PLANTA DE CO2"
+    },
+    {
+      "UbicTecnica": "EC-01-0171",
+      "DescripcionUbicacion": "Electricidad",
+      "Equipo": "7051773",
+      "DescripcionEquipo": "EQUIPOS ELÉCTRICOS 02 GARITA 1"
+    },
+    {
+      "UbicTecnica": "EC-01-0171",
+      "DescripcionUbicacion": "Electricidad",
+      "Equipo": "7051774",
+      "DescripcionEquipo": "EQUIPOS ELÉCTRICOS 03 CD MAPER"
+    },
+    {
+      "UbicTecnica": "EC-01-0171",
+      "DescripcionUbicacion": "Electricidad",
+      "Equipo": "7051775",
+      "DescripcionEquipo": "EQUIPOS ELÉCTRICOS 04 LÍNEA SIPA 16"
+    },
+    {
+      "UbicTecnica": "EC-01-0171",
+      "DescripcionUbicacion": "Electricidad",
+      "Equipo": "7051776",
+      "DescripcionEquipo": "EQUIPOS ELÉCTRICOS 05 LÍNEA KOMPASS"
+    },
+    {
+      "UbicTecnica": "EC-01-0171",
+      "DescripcionUbicacion": "Electricidad",
+      "Equipo": "7051777",
+      "DescripcionEquipo": "EQUIPOS ELÉCTRICOS 06 LÍNEA KHS"
+    },
+    {
+      "UbicTecnica": "EC-01-0171",
+      "DescripcionUbicacion": "Electricidad",
+      "Equipo": "7051778",
+      "DescripcionEquipo": "EQUIPOS ELÉCTRICOS 07 LÍNEA CARVALLO"
+    },
+    {
+      "UbicTecnica": "EC-01-0171",
+      "DescripcionUbicacion": "Electricidad",
+      "Equipo": "7051779",
+      "DescripcionEquipo": "EQUIPOS ELÉCTRICOS 08 GALONERA"
+    },
+    {
+      "UbicTecnica": "EC-01-0171",
+      "DescripcionUbicacion": "Electricidad",
+      "Equipo": "7051780",
+      "DescripcionEquipo": "EQUIPOS ELÉCTRICOS 09 LÍNEA SIPA 20"
+    },
+    {
+      "UbicTecnica": "EC-01-0171",
+      "DescripcionUbicacion": "Electricidad",
+      "Equipo": "7051781",
+      "DescripcionEquipo": "EQUIPOS ELÉCTRICOS 10 COMPRESORES ALTA"
+    },
+    {
+      "UbicTecnica": "EC-01-0171",
+      "DescripcionUbicacion": "Electricidad",
+      "Equipo": "7051782",
+      "DescripcionEquipo": "TRANSFORMACIÓN DE ENERGÍA 11"
+    },
+    {
+      "UbicTecnica": "EC-01-0191",
+      "DescripcionUbicacion": "Soda cáustica",
+      "Equipo": "7051783",
+      "DescripcionEquipo": "SUMINISTRO DE SOSA 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0201",
+      "DescripcionUbicacion": "Formulación de jarabe",
+      "Equipo": "7051784",
+      "DescripcionEquipo": "Jarabe Simple"
+    },
+    {
+      "UbicTecnica": "EC-01-0201",
+      "DescripcionUbicacion": "Formulación de jarabe",
+      "Equipo": "7051785",
+      "DescripcionEquipo": "Jarabe Terminado"
+    },
+    {
+      "UbicTecnica": "EC-01-0201",
+      "DescripcionUbicacion": "Formulación de jarabe",
+      "Equipo": "7051786",
+      "DescripcionEquipo": "Condensador Evaporativo"
+    },
+    {
+      "UbicTecnica": "EC-01-0201",
+      "DescripcionUbicacion": "Formulación de jarabe",
+      "Equipo": "7051787",
+      "DescripcionEquipo": "High Shear Mixer"
+    },
+    {
+      "UbicTecnica": "EC-01-0201",
+      "DescripcionUbicacion": "Formulación de jarabe",
+      "Equipo": "7051788",
+      "DescripcionEquipo": "Cip Marmitas"
+    },
+    {
+      "UbicTecnica": "EC-01-0401",
+      "DescripcionUbicacion": "Línea 1 - Sopladora SFR 16",
+      "Equipo": "7051789",
+      "DescripcionEquipo": "Chiller"
+    },
+    {
+      "UbicTecnica": "EC-01-0401",
+      "DescripcionUbicacion": "Línea 1 - Sopladora SFR 16",
+      "Equipo": "7051790",
+      "DescripcionEquipo": "Sopladora - SFR 16"
+    },
+    {
+      "UbicTecnica": "EC-01-0402",
+      "DescripcionUbicacion": "Línea 2 - Sopladora SFR 8",
+      "Equipo": "7051791",
+      "DescripcionEquipo": "Chiller"
+    },
+    {
+      "UbicTecnica": "EC-01-0402",
+      "DescripcionUbicacion": "Línea 2 - Sopladora SFR 8",
+      "Equipo": "7051792",
+      "DescripcionEquipo": "Sopladora"
+    },
+    {
+      "UbicTecnica": "EC-01-0403",
+      "DescripcionUbicacion": "Línea 3 - Sopladora SBO12",
+      "Equipo": "7051795",
+      "DescripcionEquipo": "Sopladora 01 - SBO12"
+    },
+    {
+      "UbicTecnica": "EC-01-0403",
+      "DescripcionUbicacion": "Línea 3 - Sopladora SBO12",
+      "Equipo": "7051796",
+      "DescripcionEquipo": "Chiller 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0404",
+      "DescripcionUbicacion": "Línea 4 - Sopladora SIAPI 20",
+      "Equipo": "7051793",
+      "DescripcionEquipo": "Sopladora 01 - Siapi 20"
+    },
+    {
+      "UbicTecnica": "EC-01-0404",
+      "DescripcionUbicacion": "Línea 4 - Sopladora SIAPI 20",
+      "Equipo": "7051794",
+      "DescripcionEquipo": "Chiller 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0405",
+      "DescripcionUbicacion": "Línea 5 - Sopladora SIPA EVO 20",
+      "Equipo": "7051797",
+      "DescripcionEquipo": "Sopladora 01 - SIPA"
+    },
+    {
+      "UbicTecnica": "EC-01-0405",
+      "DescripcionUbicacion": "Línea 5 - Sopladora SIPA EVO 20",
+      "Equipo": "7051798",
+      "DescripcionEquipo": "Chiller 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0406",
+      "DescripcionUbicacion": "Línea 6 - Sopladora Sipa  XTR 12",
+      "Equipo": "7049711",
+      "DescripcionEquipo": "Sopladora - XTRA 12"
+    },
+    {
+      "UbicTecnica": "EC-01-0406",
+      "DescripcionUbicacion": "Línea 6 - Sopladora Sipa  XTR 12",
+      "Equipo": "7049712",
+      "DescripcionEquipo": "Chiller"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051799",
+      "DescripcionEquipo": "Transporte Entrada Tramo 1"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051800",
+      "DescripcionEquipo": "Transporte Entrada Desencaj."
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051801",
+      "DescripcionEquipo": "Desencajonadora 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051802",
+      "DescripcionEquipo": "Transporte Mesa Ingreso Desencj"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051803",
+      "DescripcionEquipo": "Transporte Salida Jabas Desencj. Tramo 1"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051804",
+      "DescripcionEquipo": "Lavadora de Jabas 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051805",
+      "DescripcionEquipo": "Transporte 05/DESHABILITADO"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051806",
+      "DescripcionEquipo": "Transporte  Salida Desencajonadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051807",
+      "DescripcionEquipo": "Transporte  Antes Curva Ingreso Lavad."
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051808",
+      "DescripcionEquipo": "Transporte  Ingreso a Lavadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051809",
+      "DescripcionEquipo": "Transporte  Final Ingreso a Lavadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051810",
+      "DescripcionEquipo": "Lavadora de Botellas 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051811",
+      "DescripcionEquipo": "Transporte  Salida Lavadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051812",
+      "DescripcionEquipo": "Transporte Despues de la Curva"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051813",
+      "DescripcionEquipo": "Transporte 12 Izq. Antes del Visor"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051814",
+      "DescripcionEquipo": "Visor 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051815",
+      "DescripcionEquipo": "Transporte Después de Visor"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051816",
+      "DescripcionEquipo": "Transporte Después de Transp. 13"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051817",
+      "DescripcionEquipo": "Transporte Antes de la Curva"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051818",
+      "DescripcionEquipo": "Transporte Después de la Curva"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051819",
+      "DescripcionEquipo": "Transporte Antes  Curva Ingreso Llenad."
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051820",
+      "DescripcionEquipo": "Transporte Antes Ingreso Llenad."
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051821",
+      "DescripcionEquipo": "Transporte Llenadora Carvallo"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051822",
+      "DescripcionEquipo": "Llenadora 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051823",
+      "DescripcionEquipo": "Capsulador 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051824",
+      "DescripcionEquipo": "Transporte  Despues de Llenadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051825",
+      "DescripcionEquipo": "Tapadora Arol 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051826",
+      "DescripcionEquipo": "Transporte  Salida de Tapadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051827",
+      "DescripcionEquipo": "Transporte  Tramo Después Tapadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051828",
+      "DescripcionEquipo": "Transporte  Antes de Curva División"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051829",
+      "DescripcionEquipo": "Transporte  Antes División Sala Llenad"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051830",
+      "DescripcionEquipo": "Transporte  Antes de Etiquetadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051831",
+      "DescripcionEquipo": "Etiquetadora 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051832",
+      "DescripcionEquipo": "Codificador 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051833",
+      "DescripcionEquipo": "Transporte  Después de Etiquetadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051834",
+      "DescripcionEquipo": "Estructura Visor 03"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051835",
+      "DescripcionEquipo": "Estructura Visor 04"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051836",
+      "DescripcionEquipo": "Transporte  Después de Visores"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051837",
+      "DescripcionEquipo": "Transporte  Pulmón"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051838",
+      "DescripcionEquipo": "Transporte  Ingreso Encajonadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051839",
+      "DescripcionEquipo": "Encajonadora 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051840",
+      "DescripcionEquipo": "Transporte Ingreso Jabas Tramo 1"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051841",
+      "DescripcionEquipo": "Transporte Ingreso Jabas Encaj. Tramo 2"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051842",
+      "DescripcionEquipo": "Transporte Salida Botellas Encajonadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051843",
+      "DescripcionEquipo": "Transporte Final Salida de Producto"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051844",
+      "DescripcionEquipo": "Procesador de Bebida 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0501",
+      "DescripcionUbicacion": "Línea 1 - GRB (Línea Carballo)",
+      "Equipo": "7051845",
+      "DescripcionEquipo": "Tablero  Eléctrico  01"
+    },
+    {
+      "UbicTecnica": "EC-01-0511",
+      "DescripcionUbicacion": "Línea 1 - LATA  (Línea IPS FERRARI)",
+      "Equipo": "7048065",
+      "DescripcionEquipo": "Despaletizadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0511",
+      "DescripcionUbicacion": "Línea 1 - LATA  (Línea IPS FERRARI)",
+      "Equipo": "7048066",
+      "DescripcionEquipo": "Transportes"
+    },
+    {
+      "UbicTecnica": "EC-01-0511",
+      "DescripcionUbicacion": "Línea 1 - LATA  (Línea IPS FERRARI)",
+      "Equipo": "7048067",
+      "DescripcionEquipo": "Inversor de latas"
+    },
+    {
+      "UbicTecnica": "EC-01-0511",
+      "DescripcionUbicacion": "Línea 1 - LATA  (Línea IPS FERRARI)",
+      "Equipo": "7048068",
+      "DescripcionEquipo": "Rinser"
+    },
+    {
+      "UbicTecnica": "EC-01-0511",
+      "DescripcionUbicacion": "Línea 1 - LATA  (Línea IPS FERRARI)",
+      "Equipo": "7048069",
+      "DescripcionEquipo": "Llenadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0511",
+      "DescripcionUbicacion": "Línea 1 - LATA  (Línea IPS FERRARI)",
+      "Equipo": "7048070",
+      "DescripcionEquipo": "Selladora"
+    },
+    {
+      "UbicTecnica": "EC-01-0511",
+      "DescripcionUbicacion": "Línea 1 - LATA  (Línea IPS FERRARI)",
+      "Equipo": "7048071",
+      "DescripcionEquipo": "Alimentador de Tapas"
+    },
+    {
+      "UbicTecnica": "EC-01-0511",
+      "DescripcionUbicacion": "Línea 1 - LATA  (Línea IPS FERRARI)",
+      "Equipo": "7048072",
+      "DescripcionEquipo": "Inspector de nivel"
+    },
+    {
+      "UbicTecnica": "EC-01-0511",
+      "DescripcionUbicacion": "Línea 1 - LATA  (Línea IPS FERRARI)",
+      "Equipo": "7048073",
+      "DescripcionEquipo": "Tunel Warmer"
+    },
+    {
+      "UbicTecnica": "EC-01-0511",
+      "DescripcionUbicacion": "Línea 1 - LATA  (Línea IPS FERRARI)",
+      "Equipo": "7048074",
+      "DescripcionEquipo": "Secador de latas"
+    },
+    {
+      "UbicTecnica": "EC-01-0511",
+      "DescripcionUbicacion": "Línea 1 - LATA  (Línea IPS FERRARI)",
+      "Equipo": "7048075",
+      "DescripcionEquipo": "Etiquetadora de manga"
+    },
+    {
+      "UbicTecnica": "EC-01-0511",
+      "DescripcionUbicacion": "Línea 1 - LATA  (Línea IPS FERRARI)",
+      "Equipo": "7048076",
+      "DescripcionEquipo": "Empacadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0511",
+      "DescripcionUbicacion": "Línea 1 - LATA  (Línea IPS FERRARI)",
+      "Equipo": "7048077",
+      "DescripcionEquipo": "Chiller"
+    },
+    {
+      "UbicTecnica": "EC-01-0511",
+      "DescripcionUbicacion": "Línea 1 - LATA  (Línea IPS FERRARI)",
+      "Equipo": "7048078",
+      "DescripcionEquipo": "Dosificador de nitrógeno"
+    },
+    {
+      "UbicTecnica": "EC-01-0511",
+      "DescripcionUbicacion": "Línea 1 - LATA  (Línea IPS FERRARI)",
+      "Equipo": "7048079",
+      "DescripcionEquipo": "Mezclador"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7049035",
+      "DescripcionEquipo": "Envolvedor"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7050377",
+      "DescripcionEquipo": "Brazo Paletizador"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051846",
+      "DescripcionEquipo": "Transporte Neumático 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051847",
+      "DescripcionEquipo": "Transporte Ingreso Enjuagador 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051848",
+      "DescripcionEquipo": "Enjuagador de Botellas 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051849",
+      "DescripcionEquipo": "Transporte Salida Enjuagador 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051850",
+      "DescripcionEquipo": "Llenadora 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051851",
+      "DescripcionEquipo": "Procesador de Bebidas 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051852",
+      "DescripcionEquipo": "Transporte Salida Llenadora 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051853",
+      "DescripcionEquipo": "Transporte Pulmon Etiquetadora 1"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051854",
+      "DescripcionEquipo": "Transporte Pulmon Etiquetadora 2"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051855",
+      "DescripcionEquipo": "Transporte Pulmon Etiquetadora 3"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051856",
+      "DescripcionEquipo": "Transporte Lineal 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051857",
+      "DescripcionEquipo": "Transporte Etiquetadora 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051858",
+      "DescripcionEquipo": "Etiquetadora 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051859",
+      "DescripcionEquipo": "Transporte Salida Etiquetadora 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051860",
+      "DescripcionEquipo": "Inspector de Botellas 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051861",
+      "DescripcionEquipo": "Codificador 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051862",
+      "DescripcionEquipo": "Transporte Lineal Termofijadora 1"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051863",
+      "DescripcionEquipo": "Transporte Pulmon Termofijadora 1"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051864",
+      "DescripcionEquipo": "Transporte Pulmon Termofijadora 2"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051865",
+      "DescripcionEquipo": "Termofijadora 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051866",
+      "DescripcionEquipo": "Transporte Salida Termofijadora 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051867",
+      "DescripcionEquipo": "Ozonificador 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0561",
+      "DescripcionUbicacion": "Línea 1 - PET (Línea KHS)",
+      "Equipo": "7051868",
+      "DescripcionEquipo": "Tablero Transporte 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7050290",
+      "DescripcionEquipo": "Etiquetadora 02"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7050291",
+      "DescripcionEquipo": "Túnel de termoencogido 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7050292",
+      "DescripcionEquipo": "Transp. Ing. Etiquetadora 02"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7050293",
+      "DescripcionEquipo": "Transp. Salida Túnel term. 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051869",
+      "DescripcionEquipo": "Llenadora Sipa 16"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051870",
+      "DescripcionEquipo": "Tapadora Sipa 16"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051871",
+      "DescripcionEquipo": "Transporte  01 Salida llenadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051872",
+      "DescripcionEquipo": "Transporte  02 Salida llenadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051873",
+      "DescripcionEquipo": "Procesador de Bebida Padovan  01"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051874",
+      "DescripcionEquipo": "Inspector de nivel   01"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051875",
+      "DescripcionEquipo": "Transporte  03 Antes del pulmón"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051876",
+      "DescripcionEquipo": "Transporte  04 Pulmón"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051877",
+      "DescripcionEquipo": "Transporte  05 Salida Área Llenado"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051878",
+      "DescripcionEquipo": "Transporte  06 Salida Área Llenado"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051879",
+      "DescripcionEquipo": "Transporte  07 Salida Área Llenado"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051880",
+      "DescripcionEquipo": "Transporte  08 Salida Área Llenado"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051881",
+      "DescripcionEquipo": "Transporte  09 Salida Área Llenado"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051882",
+      "DescripcionEquipo": "Transporte  10 Salida Área Llenado"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051883",
+      "DescripcionEquipo": "Transporte  11 Salida Área Llenado"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051884",
+      "DescripcionEquipo": "Secador de Botellas llenas  01"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051885",
+      "DescripcionEquipo": "Transporte  12 Después de Secador Btll"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051886",
+      "DescripcionEquipo": "Transporte  13 Antes Etiquetadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051887",
+      "DescripcionEquipo": "Etiquetadora 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051888",
+      "DescripcionEquipo": "Codificador  01"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051889",
+      "DescripcionEquipo": "Inspector de Etiquetas  01"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051890",
+      "DescripcionEquipo": "Transporte  14 Después Etiquetadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051891",
+      "DescripcionEquipo": "Transporte  15 Después Etiquetadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051892",
+      "DescripcionEquipo": "Transporte  16 Después Etiquetadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051893",
+      "DescripcionEquipo": "Transporte  17 Antes de Termo"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051894",
+      "DescripcionEquipo": "Transporte  18 Antes de Termo"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051895",
+      "DescripcionEquipo": "Termofijadora Dimac"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051896",
+      "DescripcionEquipo": "Codificador Coreptep  01"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051897",
+      "DescripcionEquipo": "Codificador Coreptep  02"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051898",
+      "DescripcionEquipo": "Transporte  19 Salida de Termo"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051899",
+      "DescripcionEquipo": "Transporte  20 Salida de Termo"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051900",
+      "DescripcionEquipo": "Transporte  21 Antes del Desviador"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051901",
+      "DescripcionEquipo": "Transporte  22 Salida Desviador"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051902",
+      "DescripcionEquipo": "Transporte  23 Salida Desviador"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051903",
+      "DescripcionEquipo": "Transporte  24 Entrada Paletizado"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051904",
+      "DescripcionEquipo": "Transporte  25 Entrada Paletizado"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051905",
+      "DescripcionEquipo": "Transporte  26 Entrada Paletizador"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051906",
+      "DescripcionEquipo": "Divisor de Paquetes   01"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051907",
+      "DescripcionEquipo": "Paletizador   01"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051908",
+      "DescripcionEquipo": "Envolvedor   01"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051909",
+      "DescripcionEquipo": "CIP   01"
+    },
+    {
+      "UbicTecnica": "EC-01-0562",
+      "DescripcionUbicacion": "Línea 2 - PET (Línea SIPA 16)",
+      "Equipo": "7051910",
+      "DescripcionEquipo": "Tablero de Control  Transportes  01"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7049083",
+      "DescripcionEquipo": "Llenadora - Tapadora Bevcorp"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7049185",
+      "DescripcionEquipo": "Elevador de Tapas"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7049186",
+      "DescripcionEquipo": "Tapadora Bevcorp"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051911",
+      "DescripcionEquipo": "Transporte Neumático Ant. E. Rinser"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051913",
+      "DescripcionEquipo": "Llenadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051914",
+      "DescripcionEquipo": "Tapadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051915",
+      "DescripcionEquipo": "Transporte  Llenado-Tapado"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051916",
+      "DescripcionEquipo": "Transporte Pulmón Salid. Tapadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051917",
+      "DescripcionEquipo": "Transporte Curva Desp. Pulmón"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051918",
+      "DescripcionEquipo": "Transporte Ingreso Secad. Botll."
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051919",
+      "DescripcionEquipo": "Secador de Botella"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051920",
+      "DescripcionEquipo": "Transporte Ingreso. Etiq. Sacmi"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051921",
+      "DescripcionEquipo": "Etiquetadora 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051922",
+      "DescripcionEquipo": "Inspector de Botellas"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051923",
+      "DescripcionEquipo": "Codificador 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051924",
+      "DescripcionEquipo": "Transporte Etiq. Karville"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051925",
+      "DescripcionEquipo": "Etiquetadora 02"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051926",
+      "DescripcionEquipo": "Tunel de Termoencogido"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051927",
+      "DescripcionEquipo": "Quemador Cuello Botella"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051928",
+      "DescripcionEquipo": "Transporte Rodillos"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051929",
+      "DescripcionEquipo": "Transporte Salida Quemad."
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051930",
+      "DescripcionEquipo": "Codificador  02"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051931",
+      "DescripcionEquipo": "Transporte Ingreso Termofijador"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051932",
+      "DescripcionEquipo": "Termofijadora 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051933",
+      "DescripcionEquipo": "Transporte Salida Termofijadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051934",
+      "DescripcionEquipo": "Mezclador"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7051935",
+      "DescripcionEquipo": "Tablero Transporte"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7103773",
+      "DescripcionEquipo": "EMPACADORA"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7103774",
+      "DescripcionEquipo": "ETIQUETADORA"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7103775",
+      "DescripcionEquipo": "PALETIZADOR"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7103776",
+      "DescripcionEquipo": "ISLA INDEPENDIENTE"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7103777",
+      "DescripcionEquipo": "TRANSPORTADORES"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7103778",
+      "DescripcionEquipo": "ENVOLVEDORA"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7103779",
+      "DescripcionEquipo": "SECADOR"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7103780",
+      "DescripcionEquipo": "TRANSPORTADORES"
+    },
+    {
+      "UbicTecnica": "EC-01-0563",
+      "DescripcionUbicacion": "Línea 3 - PET (Línea Kompas)",
+      "Equipo": "7103781",
+      "DescripcionEquipo": "ENJUAGADORA"
+    },
+    {
+      "UbicTecnica": "EC-01-0564",
+      "DescripcionUbicacion": "Línea 4 - PET (Línea Galonera)",
+      "Equipo": "7051936",
+      "DescripcionEquipo": "Transporte  Salida Sopladora 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0564",
+      "DescripcionUbicacion": "Línea 4 - PET (Línea Galonera)",
+      "Equipo": "7051937",
+      "DescripcionEquipo": "Transporte  Salida Sopladora 02"
+    },
+    {
+      "UbicTecnica": "EC-01-0564",
+      "DescripcionUbicacion": "Línea 4 - PET (Línea Galonera)",
+      "Equipo": "7051938",
+      "DescripcionEquipo": "Transporte  Salida Sopladora 03"
+    },
+    {
+      "UbicTecnica": "EC-01-0564",
+      "DescripcionUbicacion": "Línea 4 - PET (Línea Galonera)",
+      "Equipo": "7051939",
+      "DescripcionEquipo": "Transporte   Triblock 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0564",
+      "DescripcionUbicacion": "Línea 4 - PET (Línea Galonera)",
+      "Equipo": "7051940",
+      "DescripcionEquipo": "Llenadora  Triblock 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0564",
+      "DescripcionUbicacion": "Línea 4 - PET (Línea Galonera)",
+      "Equipo": "7051941",
+      "DescripcionEquipo": "Transporte 05 Antes Etiquetadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0564",
+      "DescripcionUbicacion": "Línea 4 - PET (Línea Galonera)",
+      "Equipo": "7051942",
+      "DescripcionEquipo": "Etiquetadora 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0564",
+      "DescripcionUbicacion": "Línea 4 - PET (Línea Galonera)",
+      "Equipo": "7051943",
+      "DescripcionEquipo": "Transporte 06 Etiquetadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0564",
+      "DescripcionUbicacion": "Línea 4 - PET (Línea Galonera)",
+      "Equipo": "7051944",
+      "DescripcionEquipo": "Codificador 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0564",
+      "DescripcionUbicacion": "Línea 4 - PET (Línea Galonera)",
+      "Equipo": "7051945",
+      "DescripcionEquipo": "Transporte 07 Entrada Termofijador"
+    },
+    {
+      "UbicTecnica": "EC-01-0564",
+      "DescripcionUbicacion": "Línea 4 - PET (Línea Galonera)",
+      "Equipo": "7051946",
+      "DescripcionEquipo": "Termofijadora 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0564",
+      "DescripcionUbicacion": "Línea 4 - PET (Línea Galonera)",
+      "Equipo": "7051947",
+      "DescripcionEquipo": "Transporte 08 Salida Termo"
+    },
+    {
+      "UbicTecnica": "EC-01-0564",
+      "DescripcionUbicacion": "Línea 4 - PET (Línea Galonera)",
+      "Equipo": "7051948",
+      "DescripcionEquipo": "Envolvedor 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0564",
+      "DescripcionUbicacion": "Línea 4 - PET (Línea Galonera)",
+      "Equipo": "7051949",
+      "DescripcionEquipo": "Ozonificador 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051950",
+      "DescripcionEquipo": "Chiller llenadora/Carbonatador"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051951",
+      "DescripcionEquipo": "Llenadora Sipa 20"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051952",
+      "DescripcionEquipo": "Tapadora SIPA 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051953",
+      "DescripcionEquipo": "Inspector de nivel Sipa 20"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051954",
+      "DescripcionEquipo": "Carbonatador Acquamix 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051955",
+      "DescripcionEquipo": "Enfriamiento Rinser Sipa 20"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051956",
+      "DescripcionEquipo": "Transporte  01 SALIDA LLENADORA"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051957",
+      "DescripcionEquipo": "Transporte  02 TRAMO RECTO PULMÓN 1"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051958",
+      "DescripcionEquipo": "Transporte  03 SALIDA ÁREA LLENADO"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051959",
+      "DescripcionEquipo": "Transporte  04 PULMÓN MAYOR"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051960",
+      "DescripcionEquipo": "Transporte  05 SALIDA PULMÓN MAYOR"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051961",
+      "DescripcionEquipo": "Transporte  06 CURVA DESPUES DE T5"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051962",
+      "DescripcionEquipo": "Transporte  07 CURVA DESPUES DE T6"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051963",
+      "DescripcionEquipo": "Transporte  08 RECTA DESPUES DE T7"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051964",
+      "DescripcionEquipo": "Transporte  09 PULMÓN 2"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051965",
+      "DescripcionEquipo": "Transporte  10 TRAMO RECTO DESPUES T9"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051966",
+      "DescripcionEquipo": "Transporte  11 ENTRADA SECADOR BOTLL"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051967",
+      "DescripcionEquipo": "Secador de Botellas llenas Sipa 20"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051968",
+      "DescripcionEquipo": "Transporte  12 SALIDA SECADOR BOTLL"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051969",
+      "DescripcionEquipo": "Transporte  13 ENTRADA ETIQ."
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051970",
+      "DescripcionEquipo": "Etiquetadora Sipa 20"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051971",
+      "DescripcionEquipo": "Transporte  14 SALIDA ETIQ."
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051972",
+      "DescripcionEquipo": "Codificador LASETEC  01"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051973",
+      "DescripcionEquipo": "Transporte  15 PULMÓN DESPUES CODF."
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051974",
+      "DescripcionEquipo": "Transporte  16 M51"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051975",
+      "DescripcionEquipo": "Transporte  17 PULMÓN 4"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051976",
+      "DescripcionEquipo": "Transporte  18 CURVA DESPUES T17"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051977",
+      "DescripcionEquipo": "Transporte  19 CURVA DESPUES T18"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051978",
+      "DescripcionEquipo": "Transporte  20 ENTRADA TERMOF."
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051979",
+      "DescripcionEquipo": "Termofijadora  SMI 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051980",
+      "DescripcionEquipo": "Codificador Coreptep # 1"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051981",
+      "DescripcionEquipo": "Codificador Coreptep # 2"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051982",
+      "DescripcionEquipo": "Transporte  21 CURVA SALIDA TERMOF."
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051983",
+      "DescripcionEquipo": "Transporte  22 CURVA DESPUES T21"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051984",
+      "DescripcionEquipo": "Transporte  23 TRAMO RECTO 1"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051985",
+      "DescripcionEquipo": "Transporte  24 TRAMO RECTO 2"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051986",
+      "DescripcionEquipo": "Transporte  25 TRAMO RECTO 3"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051987",
+      "DescripcionEquipo": "Transporte  26 ENTRADA EXDIVISOR PAQ"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051988",
+      "DescripcionEquipo": "Transporte Exdivisor Pq 27"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051989",
+      "DescripcionEquipo": "Transporte  28 SALIDA EXDIVISOR PQ"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051990",
+      "DescripcionEquipo": "Transporte  29 INGRESO PALETIZADOR"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051991",
+      "DescripcionEquipo": "Paletizador SIPA 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051992",
+      "DescripcionEquipo": "Envolvedor  ROBOPAC 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051993",
+      "DescripcionEquipo": "Cip  SIPA 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0565",
+      "DescripcionUbicacion": "Línea 5 - PET (Línea SIPA 20)",
+      "Equipo": "7051994",
+      "DescripcionEquipo": "Tableros Transportes  01"
+    },
+    {
+      "UbicTecnica": "EC-01-0566",
+      "DescripcionUbicacion": "Línea  Reproceso",
+      "Equipo": "7048932",
+      "DescripcionEquipo": "TERMOFIJADORA"
+    },
+    {
+      "UbicTecnica": "EC-01-0566",
+      "DescripcionUbicacion": "Línea  Reproceso",
+      "Equipo": "7048933",
+      "DescripcionEquipo": "ENVOLVEDOR"
+    },
+    {
+      "UbicTecnica": "EC-01-0566",
+      "DescripcionUbicacion": "Línea  Reproceso",
+      "Equipo": "7048934",
+      "DescripcionEquipo": "BOBINADOR"
+    },
+    {
+      "UbicTecnica": "EC-01-0591",
+      "DescripcionUbicacion": "Línea 1 - Bidón",
+      "Equipo": "7051995",
+      "DescripcionEquipo": "Transporte rinse interno"
+    },
+    {
+      "UbicTecnica": "EC-01-0591",
+      "DescripcionUbicacion": "Línea 1 - Bidón",
+      "Equipo": "7051996",
+      "DescripcionEquipo": "Rinser interno"
+    },
+    {
+      "UbicTecnica": "EC-01-0591",
+      "DescripcionUbicacion": "Línea 1 - Bidón",
+      "Equipo": "7051997",
+      "DescripcionEquipo": "Transporte rinse externo"
+    },
+    {
+      "UbicTecnica": "EC-01-0591",
+      "DescripcionUbicacion": "Línea 1 - Bidón",
+      "Equipo": "7051998",
+      "DescripcionEquipo": "Rinser externo"
+    },
+    {
+      "UbicTecnica": "EC-01-0591",
+      "DescripcionUbicacion": "Línea 1 - Bidón",
+      "Equipo": "7051999",
+      "DescripcionEquipo": "Transportes ingreso lavadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0591",
+      "DescripcionUbicacion": "Línea 1 - Bidón",
+      "Equipo": "7052000",
+      "DescripcionEquipo": "Lavadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0591",
+      "DescripcionUbicacion": "Línea 1 - Bidón",
+      "Equipo": "7052001",
+      "DescripcionEquipo": "Llenadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0591",
+      "DescripcionUbicacion": "Línea 1 - Bidón",
+      "Equipo": "7052002",
+      "DescripcionEquipo": "Transporte salida llenadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0591",
+      "DescripcionUbicacion": "Línea 1 - Bidón",
+      "Equipo": "7052003",
+      "DescripcionEquipo": "Tunel Termocapuchón"
+    },
+    {
+      "UbicTecnica": "EC-01-0591",
+      "DescripcionUbicacion": "Línea 1 - Bidón",
+      "Equipo": "7052004",
+      "DescripcionEquipo": "Codificador"
+    },
+    {
+      "UbicTecnica": "EC-01-0591",
+      "DescripcionUbicacion": "Línea 1 - Bidón",
+      "Equipo": "7052005",
+      "DescripcionEquipo": "Transportes  acumulador"
+    },
+    {
+      "UbicTecnica": "EC-01-0591",
+      "DescripcionUbicacion": "Línea 1 - Bidón",
+      "Equipo": "7052006",
+      "DescripcionEquipo": "Transportes final"
+    },
+    {
+      "UbicTecnica": "EC-01-0591",
+      "DescripcionUbicacion": "Línea 1 - Bidón",
+      "Equipo": "7052007",
+      "DescripcionEquipo": "Ozonificador"
+    },
+    {
+      "UbicTecnica": "EC-01-0711",
+      "DescripcionUbicacion": "Laboratorio de soplado",
+      "Equipo": "10020855",
+      "DescripcionEquipo": "Balanza de precisión"
+    },
+    {
+      "UbicTecnica": "EC-01-0711",
+      "DescripcionUbicacion": "Laboratorio de soplado",
+      "Equipo": "10020856",
+      "DescripcionEquipo": "Medidor de espesores"
+    },
+    {
+      "UbicTecnica": "EC-01-0711",
+      "DescripcionUbicacion": "Laboratorio de soplado",
+      "Equipo": "10020857",
+      "DescripcionEquipo": "Calibrador pie de rey digital"
+    },
+    {
+      "UbicTecnica": "EC-01-0711",
+      "DescripcionUbicacion": "Laboratorio de soplado",
+      "Equipo": "10020858",
+      "DescripcionEquipo": "Medidor de altura"
+    },
+    {
+      "UbicTecnica": "EC-01-0711",
+      "DescripcionUbicacion": "Laboratorio de soplado",
+      "Equipo": "10020859",
+      "DescripcionEquipo": "Equipo carga vertical"
+    },
+    {
+      "UbicTecnica": "EC-01-0711",
+      "DescripcionUbicacion": "Laboratorio de soplado",
+      "Equipo": "10020860",
+      "DescripcionEquipo": "Equipo sst"
+    },
+    {
+      "UbicTecnica": "EC-01-0711",
+      "DescripcionUbicacion": "Laboratorio de soplado",
+      "Equipo": "10020861",
+      "DescripcionEquipo": "Equipo sst"
+    },
+    {
+      "UbicTecnica": "EC-01-0711",
+      "DescripcionUbicacion": "Laboratorio de soplado",
+      "Equipo": "10020862",
+      "DescripcionEquipo": "Equipo presion interna"
+    },
+    {
+      "UbicTecnica": "EC-01-0711",
+      "DescripcionUbicacion": "Laboratorio de soplado",
+      "Equipo": "10020863",
+      "DescripcionEquipo": "Equipo claro de base"
+    },
+    {
+      "UbicTecnica": "EC-01-0711",
+      "DescripcionUbicacion": "Laboratorio de soplado",
+      "Equipo": "10020864",
+      "DescripcionEquipo": "Medidor de espesores"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020865",
+      "DescripcionEquipo": "Balanza de precisión"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020866",
+      "DescripcionEquipo": "Balanza analítica"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020867",
+      "DescripcionEquipo": "Balanza de precisión"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020868",
+      "DescripcionEquipo": "Balanza de precisión"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020869",
+      "DescripcionEquipo": "Balanza plataforma"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020870",
+      "DescripcionEquipo": "Balanza de precisión"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020871",
+      "DescripcionEquipo": "Balanza plataforma"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020872",
+      "DescripcionEquipo": "Balanza de precisión"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020873",
+      "DescripcionEquipo": "Balanza plataforma"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020874",
+      "DescripcionEquipo": "Balanza mecánica"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020875",
+      "DescripcionEquipo": "Balanza mecánica"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020876",
+      "DescripcionEquipo": "Balanza de precisión"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020877",
+      "DescripcionEquipo": "Balanza plataforma"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020878",
+      "DescripcionEquipo": "Medidor de espesores tipo reloj"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020879",
+      "DescripcionEquipo": "Medidor de espesores digital"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020880",
+      "DescripcionEquipo": "Calibrador pie de rey digital"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020881",
+      "DescripcionEquipo": "Refractómetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020882",
+      "DescripcionEquipo": "Densímetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020883",
+      "DescripcionEquipo": "Titulador automático"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020884",
+      "DescripcionEquipo": "Sonda de temperatura"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020885",
+      "DescripcionEquipo": "Titulador automático"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020886",
+      "DescripcionEquipo": "Sonda de temperatura"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020887",
+      "DescripcionEquipo": "Densímetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020888",
+      "DescripcionEquipo": "Carboqc me"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020889",
+      "DescripcionEquipo": "Densímetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020890",
+      "DescripcionEquipo": "Conductímetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020891",
+      "DescripcionEquipo": "Conductímetro - peachímeto"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020892",
+      "DescripcionEquipo": "Conductímetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020893",
+      "DescripcionEquipo": "Conductímetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020894",
+      "DescripcionEquipo": "Medidor  de altura"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020895",
+      "DescripcionEquipo": "Cronómetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020896",
+      "DescripcionEquipo": "Termohigrómetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020897",
+      "DescripcionEquipo": "Termohigrómetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020898",
+      "DescripcionEquipo": "Termohigrómetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020899",
+      "DescripcionEquipo": "Termohigrómetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020900",
+      "DescripcionEquipo": "Termohigrómetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020901",
+      "DescripcionEquipo": "Termohigrómetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020902",
+      "DescripcionEquipo": "Termohigrómetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020903",
+      "DescripcionEquipo": "Termohigrómetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020904",
+      "DescripcionEquipo": "Termohigrómetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020905",
+      "DescripcionEquipo": "Baño  maría"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020906",
+      "DescripcionEquipo": "Baño maría"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020907",
+      "DescripcionEquipo": "Termómetro  digital"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020908",
+      "DescripcionEquipo": "Termómetro digital"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020909",
+      "DescripcionEquipo": "Pesa  patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020910",
+      "DescripcionEquipo": "Pesa  patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020911",
+      "DescripcionEquipo": "Pesa  patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020912",
+      "DescripcionEquipo": "Pesa patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020913",
+      "DescripcionEquipo": "Pesa patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020914",
+      "DescripcionEquipo": "Pesa patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020915",
+      "DescripcionEquipo": "Pesa patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020916",
+      "DescripcionEquipo": "Pesa patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020917",
+      "DescripcionEquipo": "Pesa patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020918",
+      "DescripcionEquipo": "Pesa patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020919",
+      "DescripcionEquipo": "Pesa patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020920",
+      "DescripcionEquipo": "Pesa patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020921",
+      "DescripcionEquipo": "Pesa patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020922",
+      "DescripcionEquipo": "Pesa patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020923",
+      "DescripcionEquipo": "Pesa patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020924",
+      "DescripcionEquipo": "Pesa patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020925",
+      "DescripcionEquipo": "Pesa patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020926",
+      "DescripcionEquipo": "Pesa patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020927",
+      "DescripcionEquipo": "Pesa patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020928",
+      "DescripcionEquipo": "Pesa patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020929",
+      "DescripcionEquipo": "Pesa patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020930",
+      "DescripcionEquipo": "Pesa patrón torquímetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020931",
+      "DescripcionEquipo": "Pesa patrón torquímetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020932",
+      "DescripcionEquipo": "Pesa patrón torquímetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020933",
+      "DescripcionEquipo": "Termómetro patrón"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020934",
+      "DescripcionEquipo": "Calibrador presión digital"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020935",
+      "DescripcionEquipo": "Manómetro digital"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020936",
+      "DescripcionEquipo": "Calibrador de pesos muertos"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020937",
+      "DescripcionEquipo": "Turbidímetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020938",
+      "DescripcionEquipo": "Turbidímetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020939",
+      "DescripcionEquipo": "Estufa"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020940",
+      "DescripcionEquipo": "Espectrofotómetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020941",
+      "DescripcionEquipo": "Espectrofotómetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020942",
+      "DescripcionEquipo": "Potenciómetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020943",
+      "DescripcionEquipo": "Sensor de temperatura"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020944",
+      "DescripcionEquipo": "Manómetro zamh&nagel"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020945",
+      "DescripcionEquipo": "Manómetro zamh&nagel"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020946",
+      "DescripcionEquipo": "Manómetro zamh&nagel"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020947",
+      "DescripcionEquipo": "Manómetro zamh&nagel"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020948",
+      "DescripcionEquipo": "termómetro bimetálico"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020949",
+      "DescripcionEquipo": "Termómetro bimetálico"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020950",
+      "DescripcionEquipo": "Termómetro bimetálico"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020951",
+      "DescripcionEquipo": "Termómetro bimetálico"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020952",
+      "DescripcionEquipo": "Torquímetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0721",
+      "DescripcionUbicacion": "Laboratorio de calidad - Físico químico",
+      "Equipo": "10020953",
+      "DescripcionEquipo": "Torquímetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "7050204",
+      "DescripcionEquipo": "Bomba de vacío"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "7050378",
+      "DescripcionEquipo": "Detector de gases multiples"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "7050379",
+      "DescripcionEquipo": "Tensiómetro digital"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "7050380",
+      "DescripcionEquipo": "Tensiómetro Manual"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "7050381",
+      "DescripcionEquipo": "Tallímetro Balanza"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "10020954",
+      "DescripcionEquipo": "Balanza de precisión"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "10020955",
+      "DescripcionEquipo": "Baño maría"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "10020956",
+      "DescripcionEquipo": "Incubadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "10020957",
+      "DescripcionEquipo": "Incubadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "10020958",
+      "DescripcionEquipo": "Incubadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "10020959",
+      "DescripcionEquipo": "Incubadora"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "10020960",
+      "DescripcionEquipo": "Autoclave"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "10020961",
+      "DescripcionEquipo": "Autoclave"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "10020962",
+      "DescripcionEquipo": "Autoclave vertical"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "10020963",
+      "DescripcionEquipo": "Autoclave vertical"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "10020964",
+      "DescripcionEquipo": "Cabina de flujo laminar vertical"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "10020965",
+      "DescripcionEquipo": "Cabina de flujo laminar vertical"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "10020966",
+      "DescripcionEquipo": "Equipo de quimioluminiscencia"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "10020967",
+      "DescripcionEquipo": "Equipo de quimioluminiscencia"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "10020968",
+      "DescripcionEquipo": "Potenciómetro"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "10020969",
+      "DescripcionEquipo": "Sensor de temperatura"
+    },
+    {
+      "UbicTecnica": "EC-01-0722",
+      "DescripcionUbicacion": "Laboratorio de calidad - Microbiología",
+      "Equipo": "10020970",
+      "DescripcionEquipo": "Sistema de monitoreo de aire"
+    },
+    {
+      "UbicTecnica": "EC-01-0741",
+      "DescripcionUbicacion": "Taller de mantenimiento",
+      "Equipo": "7052008",
+      "DescripcionEquipo": "Torno 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0741",
+      "DescripcionUbicacion": "Taller de mantenimiento",
+      "Equipo": "7052009",
+      "DescripcionEquipo": "Torno 02"
+    },
+    {
+      "UbicTecnica": "EC-01-0741",
+      "DescripcionUbicacion": "Taller de mantenimiento",
+      "Equipo": "7052010",
+      "DescripcionEquipo": "Sierra Vaivén 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0741",
+      "DescripcionUbicacion": "Taller de mantenimiento",
+      "Equipo": "7052011",
+      "DescripcionEquipo": "Soldadora eléctrica 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0741",
+      "DescripcionUbicacion": "Taller de mantenimiento",
+      "Equipo": "7052012",
+      "DescripcionEquipo": "Soldadora TIG 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0741",
+      "DescripcionUbicacion": "Taller de mantenimiento",
+      "Equipo": "7052013",
+      "DescripcionEquipo": "Taladro Fresador 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0741",
+      "DescripcionUbicacion": "Taller de mantenimiento",
+      "Equipo": "7052014",
+      "DescripcionEquipo": "Esmeril de banco 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0741",
+      "DescripcionUbicacion": "Taller de mantenimiento",
+      "Equipo": "7052015",
+      "DescripcionEquipo": "Esmeril de banco 02"
+    },
+    {
+      "UbicTecnica": "EC-01-0741",
+      "DescripcionUbicacion": "Taller de mantenimiento",
+      "Equipo": "7052016",
+      "DescripcionEquipo": "Esmeril de banco 03"
+    },
+    {
+      "UbicTecnica": "EC-01-0741",
+      "DescripcionUbicacion": "Taller de mantenimiento",
+      "Equipo": "7052017",
+      "DescripcionEquipo": "Prensa hidráulica 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0741",
+      "DescripcionUbicacion": "Taller de mantenimiento",
+      "Equipo": "7052018",
+      "DescripcionEquipo": "Soldadora oxiacetilénica 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0741",
+      "DescripcionUbicacion": "Taller de mantenimiento",
+      "Equipo": "7052019",
+      "DescripcionEquipo": "Cortador de plasma 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0791",
+      "DescripcionUbicacion": "Planta Machachi (Infraestructura)",
+      "Equipo": "7052020",
+      "DescripcionEquipo": "Infraestructura  Planta MCHI 01"
+    },
+    {
+      "UbicTecnica": "EC-01-0792",
+      "DescripcionUbicacion": "Mantenimiento Edificios",
+      "Equipo": "7048947",
+      "DescripcionEquipo": "GALPÓN SIPA 20"
+    },
+    {
+      "UbicTecnica": "EC-01-0792",
+      "DescripcionUbicacion": "Mantenimiento Edificios",
+      "Equipo": "7048948",
+      "DescripcionEquipo": "GALPÓN EX MAPER"
+    },
+    {
+      "UbicTecnica": "EC-01-0792",
+      "DescripcionUbicacion": "Mantenimiento Edificios",
+      "Equipo": "7048949",
+      "DescripcionEquipo": "GALPÓN MTTO"
+    },
+    {
+      "UbicTecnica": "EC-01-0792",
+      "DescripcionUbicacion": "Mantenimiento Edificios",
+      "Equipo": "7048950",
+      "DescripcionEquipo": "GALPÓN MP"
+    },
+    {
+      "UbicTecnica": "EC-01-0792",
+      "DescripcionUbicacion": "Mantenimiento Edificios",
+      "Equipo": "7048951",
+      "DescripcionEquipo": "SALA DE MÁQUINAS"
+    },
+    {
+      "UbicTecnica": "EC-01-0792",
+      "DescripcionUbicacion": "Mantenimiento Edificios",
+      "Equipo": "7048952",
+      "DescripcionEquipo": "GALPON COMPRESORES ALTA"
+    },
+    {
+      "UbicTecnica": "EC-01-0792",
+      "DescripcionUbicacion": "Mantenimiento Edificios",
+      "Equipo": "7048953",
+      "DescripcionEquipo": "PLANTA TRATAM.Y ABLANDADOS"
+    },
+    {
+      "UbicTecnica": "EC-01-0792",
+      "DescripcionUbicacion": "Mantenimiento Edificios",
+      "Equipo": "7048954",
+      "DescripcionEquipo": "ETEI"
+    },
+    {
+      "UbicTecnica": "EC-01-0792",
+      "DescripcionUbicacion": "Mantenimiento Edificios",
+      "Equipo": "7048955",
+      "DescripcionEquipo": "PATIOS"
+    },
+    {
+      "UbicTecnica": "EC-01-0792",
+      "DescripcionUbicacion": "Mantenimiento Edificios",
+      "Equipo": "7048956",
+      "DescripcionEquipo": "PERIMETRO"
+    },
+    {
+      "UbicTecnica": "EC-01-0792",
+      "DescripcionUbicacion": "Mantenimiento Edificios",
+      "Equipo": "7048957",
+      "DescripcionEquipo": "GALPÓN CD KHS"
+    }
+  ]
+}

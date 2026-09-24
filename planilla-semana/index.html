@@ -55,9 +55,16 @@
     <span class="manual-tag">MANUAL</span>
   </div>
   <div class="form">
-    <label>N.º / Referencia (opcional)<input id="manualNro" placeholder="Ej.: MANT-001"></label>
-    <label>Línea / Ubicación<select id="manualUbicacion"><option value="">Seleccione línea / ubicación</option></select></label>
-    <label>Equipo<select id="manualEquipo" disabled><option value="">Seleccione primero una línea</option></select></label>
+    <label>Línea / Ubicación
+      <select id="manualUbicacion">
+        <option value="">Seleccione línea / ubicación</option>
+      </select>
+    </label>
+    <label>Equipo
+      <select id="manualEquipo" disabled>
+        <option value="">Seleccione equipo</option>
+      </select>
+    </label>
     <label class="grow">Descripción manual<textarea id="manualDesc" placeholder="Ingrese el trabajo a realizar"></textarea></label>
     <label>Fecha ejecución<input id="manualFecha" type="date"></label>
     <button id="manualAgregar" class="blue">＋ Agregar manual</button>

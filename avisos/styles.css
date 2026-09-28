@@ -3,19 +3,19 @@
 }
 
 :root {
-    --bg: #f4f7fb;
+    --bg: #f4f8fc;
     --surface: #ffffff;
     --border: #e3e8ef;
     --text: #1f2937;
     --muted: #667085;
 
-    --blue: #1496ef;
+    --blue: #1680ea;
     --green: #20a464;
     --red: #e5484d;
     --orange: #f58220;
-    --purple: #7655c7;
+    --purple: #1680ea;
 
-    --sidebar: #17223a;
+    --sidebar: #064d7d;
 }
 
 html,
@@ -56,8 +56,8 @@ body {
     background:
         linear-gradient(
             180deg,
-            #17223a,
-            #11192b
+            #064d7d,
+            #06365c
         );
 
     color: white;

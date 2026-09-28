@@ -1,7 +1,7 @@
 {
   "ok": true,
-  "lastUpdate": "28/09/2026 09:43:34",
-  "version": "-5657158637173953210",
+  "lastUpdate": "28/09/2026 10:30:55",
+  "version": "-982032336266634918",
   "fromCache": false,
   "cantidadAvisos": 3005,
   "data": [
@@ -485,7 +485,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "extraccion de pernos rotos.",
-      "costoReal": 6.88,
+      "costoReal": 8.41,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -569,7 +569,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de soporte base fondo de molde,",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -695,7 +695,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
       "textoNotificacion": "REVICION DE VALVULS",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -716,7 +716,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
       "textoNotificacion": "CAMBIO DE COQUILLA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -737,7 +737,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "REVICION DE MOLDE",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -968,7 +968,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Falla cable de potencia paro equipo",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -1031,7 +1031,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "desmontaje y cambio rodamiento.",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -1136,7 +1136,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia resistenci kuka",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -1157,7 +1157,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "MTTO. BANBA ARRASTRE TERMO KHS",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -1304,7 +1304,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Daño piston valvula llenado",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -1388,7 +1388,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se coje punto 0",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -1640,7 +1640,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambi esglabones",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -1661,7 +1661,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza revision de sensor",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -1682,7 +1682,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se resertea alarma en el tablero princip",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -1766,7 +1766,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza arreglo de electrovalvula",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -1997,7 +1997,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Rotura de pernos postes taponadora",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -2018,7 +2018,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Configurar hora",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -2039,7 +2039,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa motor, queda ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -2291,7 +2291,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se reinicia mixer, queda ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -2879,7 +2879,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia sensor, falta delay en el mism",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -2900,7 +2900,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "eje de rodillo envolvedor",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -2918,11 +2918,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "CTEC NOTP IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN CERRADA",
+      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia bases | Se arregla y queda ok",
-      "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": 6.88,
+      "estadoFinal": "Aviso cerrado"
     },
     {
       "mes": "junio",
@@ -3068,7 +3068,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia rota sistema stresh",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -3089,7 +3089,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia resistencia",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -3173,7 +3173,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se ajusta la receta y parametros",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -3194,7 +3194,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza cambio de sensor",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -3446,7 +3446,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "perno aislado tornillo sin fin",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -3488,7 +3488,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "ROTURA DE RESORTE VALVULA 1",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -3509,7 +3509,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa llenadora, problema por alarma",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -3551,7 +3551,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia porta tubo",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -3614,7 +3614,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "/SE RESETEA VELOCIDADES EN EL VDF. | se soluciona",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -3635,7 +3635,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Esta en correcto funcionamiento",
-      "costoReal": 6.88,
+      "costoReal": 8.41,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -3656,7 +3656,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se resetea guarda, queda ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -3698,7 +3698,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza revision de motor",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -3782,7 +3782,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Rotura de resorte cabezal taponadora",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -4013,7 +4013,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa y queda ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -4055,7 +4055,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se revisa la alarma y vuelve a funcionam",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -4076,7 +4076,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se alinea la base y queda funcional",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -4202,7 +4202,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "REVISION FUENTE DE SEGURIDA S/N",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -4853,7 +4853,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se automatiza gripper",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -5063,7 +5063,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "DAÑO CADENA DISPENSADOR PALLETS",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -5144,11 +5144,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": null,
-      "estadoSAPOrden": null,
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
       "textoNotificacion": "",
-      "costoReal": null,
-      "estadoFinal": "REVISAR"
+      "costoReal": 0.0,
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "marzo",
@@ -5210,7 +5210,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se suelda uña",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -5315,7 +5315,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "ROTURA BANDA MESA DE RODILLOS",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -5462,7 +5462,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "proveedor ayuda a restabelcer comunicaci",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -5525,7 +5525,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza revision de plc",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -5543,11 +5543,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "CTEC NOTP IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN CERRADA",
+      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se calibra ok | Se carga y queda ok",
-      "costoReal": 1.03,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": 4.7,
+      "estadoFinal": "Aviso cerrado"
     },
     {
       "mes": "agosto",
@@ -5567,7 +5567,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
       "textoNotificacion": "rotura perno en base greeper",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -5588,7 +5588,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se lubrica valvula",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -5609,7 +5609,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza revision de transporte",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -5840,7 +5840,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se repara calbe queda ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -5987,7 +5987,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "/SE AJUSTA GRIPPER QUEDA BIEN.",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -6218,7 +6218,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "ROTURA UÑAS DISPENSADOR DE PALLETS",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -6239,7 +6239,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "ROTURA PERNOS DE PALA CAMA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -6260,7 +6260,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa variador, se restea ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -6449,7 +6449,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -6533,7 +6533,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "",
-      "costoReal": 5.16,
+      "costoReal": 6.31,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -6743,7 +6743,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se revisa bomba d agua",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -6848,7 +6848,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa y queda funcional",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -7079,7 +7079,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa bomba y diafragma",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -7583,7 +7583,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se verifica y se da reset",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -8129,7 +8129,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se regula control",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -8150,7 +8150,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se  realiza acoples para bomba de agua",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -8232,9 +8232,9 @@
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
       "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. IMPR DMNV KKMP NLIQ PREC",
+      "estadoSAPOrden": "LIB. IMPR DMNV KKMP MOVM NLIQ PREC",
       "textoNotificacion": "",
-      "costoReal": 0.0,
+      "costoReal": 108.01,
       "estadoFinal": "Aviso abierto"
     },
     {
@@ -8360,7 +8360,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se acomoda y entaipa, queda ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -8633,7 +8633,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "reajuste de brida tanque # 3",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -8759,7 +8759,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Arreglo de agitador tq#3",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -8948,7 +8948,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de pernos",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -8969,7 +8969,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio fusibles",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -9032,7 +9032,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia luminaria",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -9137,7 +9137,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "extraccion pernos rotos",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -9158,7 +9158,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "inspeccion visual equipo maquina en prod",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -9494,7 +9494,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "revision fuga de aceite",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -9536,7 +9536,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de canula",
-      "costoReal": 0.52,
+      "costoReal": 0.63,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -9557,7 +9557,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio base fondo de molde",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -9683,7 +9683,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de pernos execntrico",
-      "costoReal": 0.69,
+      "costoReal": 0.84,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -9746,7 +9746,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de canula",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -9767,7 +9767,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa sensor",
-      "costoReal": 1.03,
+      "costoReal": 1.26,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -9872,7 +9872,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de pinza",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -9977,7 +9977,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "SE COMPLETA PERNOS EJE MORDAZA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -10229,7 +10229,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia canula de estacion 1",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -10250,7 +10250,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "ROTURA DE PERNO EXENTRICO",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -10313,7 +10313,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "/CAMBIO DE FUSIBLES Y LAMPARAS EN EL HOR",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -10376,7 +10376,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de tope roto",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -10628,7 +10628,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Fisura en manguera de enfriamiento",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -10649,7 +10649,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza calibracion",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -10712,7 +10712,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se extrae perno roto",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -10754,7 +10754,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza calibracion",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -10817,7 +10817,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se completa aceite caja reductora",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -10943,7 +10943,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP MOVM NLIQ PREC",
       "textoNotificacion": "Fuga aceite caja principal",
-      "costoReal": 42.7,
+      "costoReal": 51.12,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -11153,7 +11153,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se reajusta banda y trabajos de bidon",
-      "costoReal": 1.72,
+      "costoReal": 2.1,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -11363,7 +11363,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de varilla de estiro",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -11531,7 +11531,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "regulacion aire de piston principal, ape",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -11552,7 +11552,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "revicion tranque chiller",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -11573,7 +11573,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Cambio de fusible y ventilador dañado de",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -11846,7 +11846,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de pernos",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -11867,7 +11867,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de esparagos n",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -11909,7 +11909,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "correcion de fuga de agua",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -11972,7 +11972,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza desmontaje y reparacion de co",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -11993,7 +11993,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "SE REALIZA RECTIFICACION DE ROSCA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -12140,7 +12140,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio y caliracion coquilla.",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -12245,7 +12245,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza reparacion de rosca machuelo",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -12266,7 +12266,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "CAMBIO RACOR  SISTEMA REFRIGERACION.",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -12434,7 +12434,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Extraccion pin roto fondo de molde.",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -12455,7 +12455,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio pin fondo de molde por daño de ro",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -12497,7 +12497,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "ROTURA DE MEDIA LUNA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -12539,7 +12539,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "DSMONTAJE Y CAMBIO DE SELLO CAMPANA TOBE",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -12581,7 +12581,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de rodamiento",
-      "costoReal": 8.6,
+      "costoReal": 10.52,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -12602,7 +12602,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "DESGASTE BRAZO N| 7 ENVASE",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -12749,7 +12749,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Falla en ingreso de preforma al  horno",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -12812,7 +12812,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se revisa variadores y se resetean",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -12854,7 +12854,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "FUGA DE AIRE",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -12959,7 +12959,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "extraccion de pin roto fondo de molde.",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -13064,7 +13064,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "CAMBIO PIN Y CALIBRACION.",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -13127,7 +13127,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de esparagos coquilla",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -13232,7 +13232,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "extracion de pernos rotos coquilla siste",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -13568,7 +13568,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambian lamparas de sopladora",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -13610,7 +13610,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de rampa de enfriamiento",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -13631,7 +13631,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "revicion de servomotor",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -13778,7 +13778,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio cable de potencia y servomotor",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -13841,7 +13841,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
       "textoNotificacion": "correccion fuga sw agua n",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -13883,7 +13883,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se quita alarma",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -13904,7 +13904,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se reviza motor",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -13925,7 +13925,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "-ALARMA DE CICRO DE SEGURIDAD, SE SETEA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -13988,7 +13988,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de pinza",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -14093,7 +14093,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "BASE ROTA # 3 ..",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -14114,7 +14114,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de cable de potencia",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -14156,7 +14156,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "CHOQUE DE SOPLADORA, ROTURA DE PINZA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -14324,7 +14324,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de base",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -14387,7 +14387,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "extraccion pernos de portamolde ..",
-      "costoReal": 6.88,
+      "costoReal": 8.41,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -14723,7 +14723,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de brazo y ´pinza transferencia.",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -14807,7 +14807,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "CAMBIO DE BASE",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -14849,7 +14849,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa alarma, se da reset y vuelve a | Se da reset y queda funcional",
-      "costoReal": 6.88,
+      "costoReal": 8.41,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -15143,7 +15143,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Cadena rota",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -15395,7 +15395,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "DAÑOVTRASN INGRESO DESEN.",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -15563,7 +15563,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "CAMBIO DE MANGUERA NEUMATICA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -15668,7 +15668,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "ANOMALIA MOTOR INGRESO DESENCAJONADORA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -15983,7 +15983,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "instalar malla  de proteccion",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -16025,7 +16025,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "COLOCACION DE RECUBRIMIENTO",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -16400,11 +16400,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": null,
-      "estadoSAPOrden": null,
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
       "textoNotificacion": "",
-      "costoReal": null,
-      "estadoFinal": "REVISAR"
+      "costoReal": 0.0,
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "enero",
@@ -16571,7 +16571,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "construccion de lamina",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -16634,7 +16634,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Cambio de guardamotor",
-      "costoReal": 4.47,
+      "costoReal": 5.47,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -16928,7 +16928,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "soldadura poste banderola",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -17180,7 +17180,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se resetea guarda ok.",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -17264,7 +17264,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se calibra banderola",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -17327,7 +17327,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Enderezado de guia uñas y cambio esparr",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -17369,7 +17369,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "banderolla de carga lavadora carballo",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -17432,7 +17432,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Breaker principal tripeado, se resetea y",
-      "costoReal": 4.47,
+      "costoReal": 5.47,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -17705,7 +17705,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Breake salta por esfuerzo mecanico",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -17726,7 +17726,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se resetea alarma queda ok",
-      "costoReal": 6.88,
+      "costoReal": 8.41,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -18167,7 +18167,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa valvula queda ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -18545,7 +18545,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Por sobrecarga del cepillo, se resetea g",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -18629,7 +18629,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa la comunicacion plc y hmi y se",
-      "costoReal": 6.88,
+      "costoReal": 8.41,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -18755,7 +18755,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "PERNOS Y TUERCAS AISLADAS",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -18923,7 +18923,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "VDF no esta en automatico",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -18986,7 +18986,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se quita alarma del variador",
-      "costoReal": 1.89,
+      "costoReal": 2.31,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -19091,7 +19091,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se deja en automatico",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -19298,11 +19298,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN CERRADA",
+      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "soldadura de rejilla",
       "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "estadoFinal": "Aviso cerrado"
     },
     {
       "mes": "septiembre",
@@ -19340,11 +19340,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "CTEC NOTP IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN CERRADA",
+      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se modula el transporte | Se modula y queda ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": 7.65,
+      "estadoFinal": "Aviso cerrado"
     },
     {
       "mes": "junio",
@@ -19469,7 +19469,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Transporte en modo manual por lo cual se",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -19490,7 +19490,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se recorta la cadena metalica y se revis",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -19508,11 +19508,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "CTEC NOTP IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN CERRADA",
+      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se activa motor 22 | Se resetea y queda ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": 7.65,
+      "estadoFinal": "Aviso cerrado"
     },
     {
       "mes": "marzo",
@@ -19595,7 +19595,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se reliza revision de transporte",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -19658,7 +19658,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se tiene problemas en transporte por fal",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -19847,7 +19847,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Cambio y arrelgo de fin de carrera",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -19952,7 +19952,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia válvula",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -20099,7 +20099,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia defectores",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -20162,7 +20162,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se coloca pernos para mejor fijacion",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -20225,7 +20225,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se revisan centradores se elaboran 4",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -20327,11 +20327,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN CERRADA",
+      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "toma de tiempos en estrella",
       "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "estadoFinal": "Aviso cerrado"
     },
     {
       "mes": "julio",
@@ -20351,7 +20351,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "/SE REVISAN LOS MOTORES DE TRANSPORTES Q",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -20561,7 +20561,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "CAMBIO PERNOS",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -20582,7 +20582,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "ROTURA MESA CENTRAL LLENADORA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -20813,7 +20813,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia jog de llenadora Se prueba ok.",
-      "costoReal": 6.88,
+      "costoReal": 8.41,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -20999,11 +20999,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": null,
-      "estadoSAPOrden": null,
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
       "textoNotificacion": "",
-      "costoReal": null,
-      "estadoFinal": "REVISAR"
+      "costoReal": 0.0,
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "mayo",
@@ -21170,7 +21170,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se regula la velocidad",
-      "costoReal": 4.47,
+      "costoReal": 5.47,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -21191,7 +21191,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se aumenta la velocidad de los transport",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -21212,7 +21212,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia retenedor de caja",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -21233,7 +21233,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se modifica la velocidad",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -21338,7 +21338,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "TRABAMIENTO CARRUCEL",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -21380,7 +21380,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se realiza puenteo",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -21485,7 +21485,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se verifica funcionamiento queda ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -21587,11 +21587,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": null,
-      "estadoSAPOrden": null,
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
       "textoNotificacion": "",
-      "costoReal": null,
-      "estadoFinal": "REVISAR"
+      "costoReal": 0.0,
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "julio",
@@ -21611,7 +21611,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza revision de inspector de bote",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -21779,7 +21779,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia paro emergencia",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -21842,7 +21842,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se resetea guarda, se revisa y ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -21926,7 +21926,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia esparragos",
-      "costoReal": 3.1,
+      "costoReal": 3.79,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -21947,7 +21947,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Soldadura de uña formato 300",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -21968,7 +21968,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "CAMBIO UÑA GUIA FORMATO 1000",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -22241,7 +22241,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se coloca canaleta, queda ok.",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -22472,7 +22472,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se quita la alarma y queda funcional",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -22997,7 +22997,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa fin de carrera que no permite",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -23039,7 +23039,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se resetea la alarma",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -23057,11 +23057,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN CERRADA",
+      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de pernos",
       "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "estadoFinal": "Aviso cerrado"
     },
     {
       "mes": "mayo",
@@ -23228,7 +23228,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "revucion de torque",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -23333,7 +23333,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "no tenemos repuesto en almacen",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -23396,7 +23396,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de pernos",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -23480,7 +23480,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se descongela la boquilla del dosificado",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -23564,7 +23564,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "/SE RESETE ALARMA EN EL VDF SE OBSERVA F",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -23627,7 +23627,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de mariposa valvula # 55",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -23669,7 +23669,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "/SE CHEQUEO CUIRCUITO DE ARRANQUE DE LOS",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -23816,7 +23816,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "-SE CAMBIO DE SENSOR, INGRSO DE BOTELLAS",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -23900,7 +23900,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa eletorvalvula, queda ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -23921,7 +23921,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia empaque valvula # 21",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -24257,7 +24257,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Cambio sello campana",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -24425,7 +24425,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambian 7 sellos de campana en llenad",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -24572,7 +24572,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se realiza cambio de boton de emergencia",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -24887,7 +24887,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia motor",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -24929,7 +24929,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se desconecta motor etiquetadora",
-      "costoReal": 1.03,
+      "costoReal": 1.26,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -25223,7 +25223,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "/FALLA DE SERVO MOTOR SE CHEQUEO SE RESE",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -25244,7 +25244,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia piñon de platovelos",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -25265,7 +25265,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se desabilita, no hay repuesto en almace",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -25286,7 +25286,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de piñon en etiquetadora",
-      "costoReal": 0.06,
+      "costoReal": 0.07,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -25496,7 +25496,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia rodamientos en tulipas",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -25559,7 +25559,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza arreglo de tomacorriente",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -25580,7 +25580,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza cambio de lampara",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -25832,7 +25832,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se da reset y queda operativo",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -25853,7 +25853,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "DAÑO DE PIÑON DE PLATOVELO",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -25895,7 +25895,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia bomba de goma kompas",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -25916,7 +25916,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se engrasa los rodamientos",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -25937,7 +25937,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "EXCESO DE GOMA EN RASCADOR",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -26042,7 +26042,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza cambio de giro",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -26168,7 +26168,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se realiza inspeccion y se da soporte al",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -26189,7 +26189,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se arregla codificador",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -27134,7 +27134,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "BANDA DE ARRASTRE EN MAL ESTADO",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -27218,7 +27218,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "SE CAMBIA CORREA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -27323,7 +27323,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se da reset alarma",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -27680,7 +27680,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia correa dentada",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -27869,7 +27869,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia banda",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -28181,11 +28181,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": null,
-      "estadoSAPOrden": null,
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
       "textoNotificacion": "",
-      "costoReal": null,
-      "estadoFinal": "REVISAR"
+      "costoReal": 0.0,
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "junio",
@@ -28247,7 +28247,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "CAMBIO BANDA ARRASTRE INGRESO",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -28478,7 +28478,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza arreglo de puerta",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -28499,7 +28499,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "DAÑO BANDA ARRASTRE",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -28541,7 +28541,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza calibracion de senbsor",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -28835,7 +28835,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se recorta la guia del latidor",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -28856,7 +28856,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Cambio cadena rota",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -29171,7 +29171,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Mtto banda de arrastre formato 1000",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -29192,7 +29192,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "DAÑO DANDA DE ARRASTRE",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -29444,7 +29444,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Cambio de cajetin",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -29654,7 +29654,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Reset y queda operativo",
-      "costoReal": 1.03,
+      "costoReal": 1.26,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -29696,7 +29696,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia empaque",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -29717,7 +29717,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Cambio guia celeron rota",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -29738,7 +29738,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se ajusta la tuerca",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -29777,11 +29777,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "CTEC NOTP IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN CERRADA",
+      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "CAMBIO TUBO DE VENTEO | Se cambió tubo de venteo.",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": 4.21,
+      "estadoFinal": "Aviso cerrado"
     },
     {
       "mes": "enero",
@@ -29885,7 +29885,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "REVICION BOMBA ENVIO AGUA LLENADORA S16",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -29927,7 +29927,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se modifica y cambia guia de celeron",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -29948,7 +29948,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -29990,7 +29990,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza descongelamiento de dosificad",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -30200,7 +30200,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia casquillo de la valvula",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -30767,7 +30767,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "sE CORRIGE PRESION",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -31145,7 +31145,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza revison de activacion automat",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -31166,7 +31166,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza cambio de sensor",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -31481,7 +31481,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "ROTURA RESORTE INTERNO CHUCK N|7",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -31565,7 +31565,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se deja en modo manual",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -31733,7 +31733,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "CAMBIO VALVULA CHECK 2 PULG",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -31838,7 +31838,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Cambio de vávula por mal estado",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -31880,7 +31880,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia contactos auxiliares",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -31943,7 +31943,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se activa motor",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -31964,7 +31964,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se reviza travamiento que no existe",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -31985,7 +31985,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de valvula check trabada",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -32027,7 +32027,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se da mtto a la valvula",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -32048,7 +32048,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa receta y se calibra",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -32111,7 +32111,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se ajusta receta del inspector Se prueba",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -32258,7 +32258,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se calibra rango para rechazar",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -32321,7 +32321,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa altura de nivel en inspector q",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -32405,7 +32405,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza calibracion del inspector",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -32468,7 +32468,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa los transportes, se reasetea y",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -32552,7 +32552,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia arrancador Se prueba y ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -32762,7 +32762,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se resetea drive, queda ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -33098,7 +33098,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia el sensor de la etiqueta",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -33728,7 +33728,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de teflon virgen",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -33938,7 +33938,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se conecta cable flojo en el variador de",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -34442,7 +34442,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "ROTURA DE BANDA DE REDUCTOR",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -34568,7 +34568,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia bolas",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -34778,7 +34778,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "CAMBIO BANDA ROTA TIJIERAS",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -34841,7 +34841,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa motor",
-      "costoReal": 6.88,
+      "costoReal": 8.41,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -35114,7 +35114,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Cambio de banda en paletizador por rotur",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -35849,7 +35849,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se lubrican pistones para mejor elevacio",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -35891,7 +35891,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia camisa",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -36122,7 +36122,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia zapatillas de embolo 13-37",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -36269,7 +36269,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de resortes cabezal 5-8",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -36311,7 +36311,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Cambio de cabezales 5 -6 -9",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -36332,7 +36332,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de resorte cabezal",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -36353,7 +36353,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se verifica queda ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -36521,7 +36521,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "revision de bomba se succoion cambio rod",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -36563,7 +36563,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "ROTURA PERNO SUJETAR DE CORREA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -36605,7 +36605,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "CAMBIO CHAVETA TORNILO SIN FIN",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -36626,7 +36626,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se traba por desbalanceo, se cambia yok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -36647,7 +36647,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "No se realiza por soporte a proyectos | Revision de inspector ok",
-      "costoReal": 13.76,
+      "costoReal": 16.83,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -36752,7 +36752,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza calibracion  de sinspector",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -36878,7 +36878,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Revision micros",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -37130,7 +37130,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se saca filo la cuchilla",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -37193,7 +37193,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "motor sobrecaletado se pone soplo",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -37592,7 +37592,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "CAMBIO DE EMPAQUE MICROBLEND",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -37634,7 +37634,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "-SE ALRMA GUARDA.",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -37760,7 +37760,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza revision",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -37844,7 +37844,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "FALLO ENVIO AGUA BOMBA MICRROBLEN",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -38138,7 +38138,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de retenedor",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -38159,7 +38159,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza revision de guardamotor",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -38219,11 +38219,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "CTEC NOTP IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN CERRADA",
+      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "TOMA DE TIEMPO RINSE | Se realizó la corrección requerida y se",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": 4.21,
+      "estadoFinal": "Aviso cerrado"
     },
     {
       "mes": "enero",
@@ -38324,11 +38324,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "CTEC NOTP IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN CERRADA",
+      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "FUGA AGUA RINSE | Se corrigió la fuga de agua rinse.",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": 4.21,
+      "estadoFinal": "Aviso cerrado"
     },
     {
       "mes": "julio",
@@ -38348,7 +38348,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se da reset alarma",
-      "costoReal": 1.2,
+      "costoReal": 1.47,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -38768,7 +38768,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "REPARACION DE CAJA REDUCTORA",
-      "costoReal": 6.88,
+      "costoReal": 8.41,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -39062,7 +39062,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia resistencia",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -39146,7 +39146,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Rotura de resistencia falla de fabrica",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -39398,7 +39398,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza cambio de resistencia",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -39503,7 +39503,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
       "textoNotificacion": "colocacion de piñon",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -39755,7 +39755,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza revision de ozonificador",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -39818,7 +39818,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza cambio de fusible",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -39965,7 +39965,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se reemplaza instrumento, queda ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -40091,7 +40091,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza cambio de motor principal",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -40385,7 +40385,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Rotura de  guia de celeron llenadora",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -40406,7 +40406,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Cambio de piston en válvula 92",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -40427,7 +40427,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Cambio de tubo de venteo",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -40511,7 +40511,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Cambio en válvula 92",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -40637,7 +40637,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Pinzas de transferencia con desgaste",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -40742,7 +40742,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "modificasion y cambio llenadora sipa 20",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -41078,7 +41078,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia sensor sonico",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -41351,7 +41351,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se realiza cambio de motor",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -41603,7 +41603,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia espejo reflector",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -41729,7 +41729,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "PVICION PERNO REGULADOR DE GOMA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -41813,7 +41813,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza cambio de baliza",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -42086,7 +42086,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se da reset y queda funcionando",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -42233,7 +42233,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza mmto motor",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -42296,7 +42296,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa no hay problema ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -42569,7 +42569,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se resetea y queda operatio",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -42590,7 +42590,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "-CAMBIO DE  PARAMETROS DE FUNCIONAMIENTO",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -42653,7 +42653,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "ALARMA BLOQUEO D DRUVE",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -42695,7 +42695,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se esetea, modulo en falla",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -42716,7 +42716,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se reseteo y quedo ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -42884,7 +42884,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se resetea fallo drive ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -42926,7 +42926,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza cambio de sensor",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -42968,7 +42968,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se ca,mbia servo por falta drive Urg cam",
-      "costoReal": 10.32,
+      "costoReal": 12.62,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -42989,7 +42989,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia servo, drive en estado critico",
-      "costoReal": 10.32,
+      "costoReal": 12.62,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -43031,7 +43031,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se resetea y queda operativa",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -43052,7 +43052,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se coloca nuevos fusibles",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -43220,7 +43220,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza revision de transporte",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -43367,7 +43367,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "FIJACION BASE REDUCTRO ENT. SIPA 20",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -43850,7 +43850,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se reseta y revisa drive paletizador, so",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -43892,7 +43892,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se ajusta el matrimonio, queda ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -43955,7 +43955,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se arregla encoder",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -43976,7 +43976,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "reparacion de pisto",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -43997,7 +43997,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se realiza ajuste de junta en el encoder",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -44018,7 +44018,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "CAIDA DE RODILLO EN PALETIZADOR S20",
-      "costoReal": 6.88,
+      "costoReal": 8.41,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -44039,7 +44039,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se ajusta matrimonio",
-      "costoReal": 1.17,
+      "costoReal": 1.43,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -44144,7 +44144,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "SE COLOCA EJE NUEVO",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -44165,7 +44165,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia matrimonio encoder",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -44183,11 +44183,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "CTEC NOTP IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN CERRADA",
+      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se rectifica eje motor | Se arregla y queda ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": 7.65,
+      "estadoFinal": "Aviso cerrado"
     },
     {
       "mes": "marzo",
@@ -44228,7 +44228,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza casmbio de junta",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -44291,7 +44291,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "fijacion de proteccion cadena palet. s 2",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -44333,7 +44333,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se ajusta velocidad queda ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -44354,7 +44354,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "bloqueado por palo de pallet queda ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -44690,7 +44690,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia de panel led",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -44711,7 +44711,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "DAÑO DE CADENA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -44732,7 +44732,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "No se activa por sensor, queda ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -44774,7 +44774,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "SE CAMBIO DE LAMPARA, QUEDO OPERATIVA LA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -44816,7 +44816,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia panel led Se prueba y queda ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -44939,11 +44939,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "CTEC NOTP IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN CERRADA",
+      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se destraba envase | Se destraba y queda ok",
-      "costoReal": 0.69,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": 4.28,
+      "estadoFinal": "Aviso cerrado"
     },
     {
       "mes": "julio",
@@ -45047,7 +45047,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "construccion tapon",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -45236,7 +45236,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se repara pulsador rinser externo Se pru",
-      "costoReal": 13.76,
+      "costoReal": 16.83,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -45257,7 +45257,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia chaveta8mm",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -45299,7 +45299,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "-SE CHEQUEA LA CAUSA POR APAGARSE.",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -45362,7 +45362,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "ATASCAMIENTO DE CADENA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -45509,7 +45509,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se resetea guarda",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -45635,7 +45635,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia termocupla y manometro",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -45695,11 +45695,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "CTEC NOTP IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN CERRADA",
+      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se regula velocidad | Se modula y queda ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": 7.65,
+      "estadoFinal": "Aviso cerrado"
     },
     {
       "mes": "abril",
@@ -45866,7 +45866,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se colocan censores en el transporte",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -45887,7 +45887,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambia mangueras y racors um",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -45908,7 +45908,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio union mag. detergente",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -46055,7 +46055,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "SOLDADURA DE TANQUE Y CAMBIO DE UNIVER",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -46076,7 +46076,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se suelda el tanque",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -46202,7 +46202,7 @@
       "estadoOT": "ORDEN ABIERTA",
       "estadoSAPOrden": "CTEC NOTP IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Cambio de micro de seguridad",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso abierto"
     },
     {
@@ -46265,7 +46265,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa ozonificador",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -46307,7 +46307,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se resetea guarda quedo ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -46370,7 +46370,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Rotura de base del centrador de llenado",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -46412,7 +46412,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se da reset alarma",
-      "costoReal": 0.07,
+      "costoReal": 0.08,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -46517,7 +46517,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia termocupla por rotura de cable",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -46559,7 +46559,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revoza transporte, se ajusta parametr",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -46622,7 +46622,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se entrega tinta al operador",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -46748,7 +46748,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "MANGUERA BRAZO PALETIZADOR",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -46769,7 +46769,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa la bomba y queda operativa",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -46787,11 +46787,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "CTEC NOTP IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN CERRADA",
+      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se activa ozonificador | Se arregla y queda ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": 7.65,
+      "estadoFinal": "Aviso cerrado"
     },
     {
       "mes": "septiembre",
@@ -47357,7 +47357,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se revisa sistema hidrahulico problema c",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -47396,11 +47396,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "CTEC NOTP IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN CERRADA",
+      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se enciende motor 1 | Se revisa y queda ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": 7.65,
+      "estadoFinal": "Aviso cerrado"
     },
     {
       "mes": "marzo",
@@ -48218,7 +48218,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza revision de varillas de estir",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -48260,7 +48260,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Falla de comunicación",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -48533,7 +48533,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "CANBIO DE PERNOS EN LAVADORA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -48572,11 +48572,11 @@
       "estadoTiempo": "POR NOTIFICAR",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": null,
-      "estadoSAPOrden": null,
+      "estadoOT": "ORDEN ABIERTA",
+      "estadoSAPOrden": "LIB. IMPR KKMP NLIQ PREC",
       "textoNotificacion": "",
-      "costoReal": null,
-      "estadoFinal": "REVISAR"
+      "costoReal": 0.0,
+      "estadoFinal": "Aviso abierto"
     },
     {
       "mes": "febrero",
@@ -48701,7 +48701,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "cambio de sepillo",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -48722,7 +48722,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se maquina y se instala rodillo  extract",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -48827,7 +48827,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza cambio de electrovalvula",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -48848,7 +48848,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "REVICION VALVULA DE AGUA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -49037,7 +49037,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia electroválvula",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -49058,7 +49058,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa electrovalvula",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -49079,7 +49079,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se reviza electrovalvulas estaban mal Se",
-      "costoReal": 6.88,
+      "costoReal": 8.41,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -49163,7 +49163,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Cambio de electroválvula",
-      "costoReal": 6.88,
+      "costoReal": 8.41,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -49205,7 +49205,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "-REVISION Y RESETEO DE ALARMAS.",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -49331,7 +49331,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "-SE RESETEA GUARDA, POR TRABAMIENTO DEL",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -49919,7 +49919,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Cambio piñon duralon cabezal 12",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -50276,7 +50276,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Falla de bobina y se agarra de nuevi el",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -51071,11 +51071,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "CTEC NOTP IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN CERRADA",
+      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se resetea alarma del ventilador | Se resetea y queda ok",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": 7.65,
+      "estadoFinal": "Aviso cerrado"
     },
     {
       "mes": "abril",
@@ -51158,7 +51158,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "-CALIBRACION Y ALINEAMIENTO DE LOS SENSO",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -51494,7 +51494,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "REVISION CABEZAL DE TAPONADORA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -51704,7 +51704,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "HABILITACION ENTRADA AGUA AL RINSER",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -52565,7 +52565,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "canbui union manguera",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -52985,7 +52985,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa resistencias sin novedad",
-      "costoReal": 6.88,
+      "costoReal": 8.41,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -53027,7 +53027,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "-CAMBIO Y ARREGLO DE RESISTENCIA.",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -53111,7 +53111,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se revisa ventiladores sipa 20",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -53258,7 +53258,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Daño cabezal elevador",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -53489,7 +53489,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se arregla mesa de carga",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -55589,7 +55589,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia lampara queda ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -55862,7 +55862,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "No se realiza por dar apoyo en paletizad",
-      "costoReal": 37.85,
+      "costoReal": 46.27,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -55883,7 +55883,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se verifica estado",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -57458,7 +57458,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza cambio de manometro",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -57605,7 +57605,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se cambi eje",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -58760,7 +58760,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "daño fondp de molde",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -58823,7 +58823,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "CAMBIO DE PRNOS ROTOS PLACA",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -59096,7 +59096,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "alarma varillas",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -59117,7 +59117,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza revision de servomtor #19",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -59138,7 +59138,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Alarma pilz falla comunicacion",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -59306,7 +59306,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Electrovalvula funcional",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -59639,11 +59639,11 @@
       "estadoTiempo": "FUERA DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "METR ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN CERRADA",
+      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "no se cumplio por daños en lineas de pro",
       "costoReal": 0.0,
-      "estadoFinal": "Aviso abierto"
+      "estadoFinal": "Aviso cerrado"
     },
     {
       "mes": "abril",
@@ -59936,7 +59936,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "-REVISION DEL MOTOR DE LA BOMBA.",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -60584,11 +60584,11 @@
       "estadoTiempo": "DENTRO DE TIEMPO",
       "estadoAviso": "Aviso cerrado",
       "statusAvisoIW28": "MECE ORAS",
-      "estadoOT": "ORDEN ABIERTA",
-      "estadoSAPOrden": "CTEC NOTP IMPR JBFI KKMP NLIQ PREC",
+      "estadoOT": "ORDEN CERRADA",
+      "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se regula velocidad | Se realizó la corrección requerida y se",
-      "costoReal": 3.44,
-      "estadoFinal": "Aviso abierto"
+      "costoReal": 4.21,
+      "estadoFinal": "Aviso cerrado"
     },
     {
       "mes": "agosto",
@@ -60671,7 +60671,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "se realiza calibracion de sebsor",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -60692,7 +60692,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se pone en auto variadores",
-      "costoReal": 1.72,
+      "costoReal": 2.1,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -60776,7 +60776,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "Se cambia sensor queda ok",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {
@@ -60860,7 +60860,7 @@
       "estadoOT": "ORDEN CERRADA",
       "estadoSAPOrden": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "textoNotificacion": "ROTURA DE CARCASA FILTRO RINSE",
-      "costoReal": 3.44,
+      "costoReal": 4.21,
       "estadoFinal": "Aviso cerrado"
     },
     {

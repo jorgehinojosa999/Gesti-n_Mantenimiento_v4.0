@@ -4,223 +4,588 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Plan de Mantenimiento | Portal SAP</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="css/plan_mantenimiento.css">
 </head>
+
 <body>
 
 <div class="app-shell">
 
-<aside class="sidebar">
-  <div class="brand">
-    <div class="brand-title">PORTAL<br>MANTENIMIENTO</div>
-    <div class="brand-sub">SAP · Ingeniería</div>
-  </div>
+  <!-- ======================================================
+       MENÚ LATERAL
+       Esta página está dentro de /plan_mantenimiento_web/
+       ====================================================== -->
+  <aside class="sidebar">
 
-  <nav class="side-nav">
-    <a href="../index.html" class="nav-link">⌂ <span>Inicio</span></a>
-    <a href="../avisos/" class="nav-link">▣ <span>Control Avisos</span></a>
-    <a href="../ordenes/" class="nav-link">▣ <span>Control Órdenes</span></a>
-    <a href="../planilla-semana/" class="nav-link">▣ <span>Planilla Semana</span></a>
-
-    <div class="nav-section">PLANIFICACIÓN</div>
-
-    <a href="./plan_mantenimiento.html" class="nav-link active">▦ <span>Plan de Mantenimiento</span></a>
-    <a href="#" class="nav-link">◫ <span>Repuestos</span></a>
-    <a href="#" class="nav-link">$ <span>Presupuesto</span></a>
-  </nav>
-</aside>
-
-<main class="main">
-
-<header class="page-header">
-  <div>
-    <div class="eyebrow">GESTIÓN DE MANTENIMIENTO</div>
-    <h1>Demanda Plan de Mantenimiento</h1>
-    <p>Demanda valorizada, recurrencias mensuales, criticidad y disponibilidad de repuestos.</p>
-  </div>
-  <div class="header-actions">
-    <button id="btnClear" class="btn btn-secondary">Limpiar filtros</button>
-    <button id="btnExport" class="btn btn-success">Exportar CSV</button>
-  </div>
-</header>
-
-<section class="dashboard-layout">
-
-<aside class="filters-card">
-  <div class="filters-title">⚲ FILTROS</div>
-
-  <div class="filter-block">
-    <div class="filter-label">MES</div>
-    <div id="filterMonth" class="check-list months"></div>
-    <div class="filter-note">El mes se busca en MES_DE_INICIO e INTERVENCIÓN 2, 3 y 4.</div>
-  </div>
-
-  <div class="filter-block">
-    <div class="filter-label">LÍNEA</div>
-    <input id="searchLine" class="filter-search" placeholder="Buscar línea...">
-    <div id="filterLine" class="check-list scroll"></div>
-  </div>
-
-  <div class="filter-block">
-    <div class="filter-label">EQUIPO</div>
-    <input id="searchEquipment" class="filter-search" placeholder="Buscar equipo...">
-    <div id="filterEquipment" class="check-list scroll small"></div>
-  </div>
-
-  <div class="filter-grid-2">
-    <div class="filter-block">
-      <div class="filter-label">JUSTIFICACIÓN</div>
-      <div id="filterJustification" class="check-list"></div>
-    </div>
-    <div class="filter-block">
-      <div class="filter-label">CRITICIDAD</div>
-      <div id="filterCriticality" class="check-list"></div>
-    </div>
-  </div>
-
-  <div class="filter-block">
-    <div class="filter-label">FRECUENCIA</div>
-    <div id="filterFrequency" class="check-list"></div>
-  </div>
-</aside>
-
-<div class="content">
-
-<section class="kpi-grid">
-
-  <article class="kpi kpi-primary">
-    <div class="kpi-icon">▤</div>
-    <div>
-      <span class="kpi-label">VALOR DEMANDA FILTRADA</span>
-      <strong id="kpiFilteredValue">$0</strong>
-      <small id="kpiSelectedMonths">Todos los meses</small>
-    </div>
-  </article>
-
-  <article class="kpi">
-    <div class="kpi-icon blue">▧</div>
-    <div>
-      <span class="kpi-label">VALOR ANUAL DEL PLAN</span>
-      <strong id="kpiAnnualValue">$0</strong>
-      <small id="kpiRecords">0 registros</small>
-    </div>
-  </article>
-
-  <article class="kpi">
-    <div class="kpi-icon blue">◈</div>
-    <div>
-      <span class="kpi-label">MATERIALES</span>
-      <strong id="kpiMaterials">0</strong>
-      <small id="kpiPlans">0 planes</small>
-    </div>
-  </article>
-
-  <article class="kpi kpi-warning">
-    <div class="kpi-icon warning">⌂</div>
-    <div>
-      <span class="kpi-label">COBERTURA DE STOCK</span>
-      <strong id="kpiStockCoverage">0%</strong>
-      <small id="kpiStockCovered">0 materiales cubiertos</small>
-    </div>
-  </article>
-
-  <article class="kpi kpi-danger">
-    <div class="kpi-icon danger">!</div>
-    <div>
-      <span class="kpi-label">FALTANTE ESTIMADO</span>
-      <strong id="kpiShortage">$0</strong>
-      <small>Consolidado por Código SAP</small>
-    </div>
-  </article>
-
-</section>
-
-<section class="panel table-panel">
-  <div class="panel-header">
-    <div>
-      <h2>Detalle de demanda</h2>
-      <p id="resultSummary">Cargando información...</p>
-    </div>
-
-    <div class="panel-actions">
-      <button id="btnOnlyMissing" class="btn btn-outline-danger">Ver faltantes</button>
-      <select id="pageSize" class="page-size">
-        <option value="20">20 filas</option>
-        <option value="50">50 filas</option>
-        <option value="100">100 filas</option>
-      </select>
-    </div>
-  </div>
-
-  <div class="table-wrap">
-    <table id="demandTable">
-      <thead>
-        <tr>
-          <th>CÓDIGO SAP</th>
-          <th>DENOMINACIÓN</th>
-          <th class="num">CANT. DEMANDA</th>
-          <th class="num">VALOR UNIT.</th>
-          <th class="num">VALOR DEMANDA</th>
-          <th>LÍNEA</th>
-          <th>EQUIPO</th>
-          <th>FRECUENCIA</th>
-          <th>MESES PROGRAMADOS</th>
-          <th>CRITICIDAD</th>
-          <th>JUSTIFICACIÓN</th>
-          <th class="num">STOCK</th>
-          <th>ESTADO</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </div>
-
-  <div class="pagination">
-    <button id="prevPage" class="page-btn">‹</button>
-    <span id="pageInfo">Página 1</span>
-    <button id="nextPage" class="page-btn">›</button>
-  </div>
-</section>
-
-<section class="charts-grid">
-
-  <article class="panel chart-panel">
-    <div class="panel-header compact">
-      <div>
-        <h2>Demanda por mes</h2>
-        <p>Valor del plan según cada ocurrencia programada.</p>
+    <div class="brand">
+      <div class="brand-title">
+        PORTAL<br>
+        MANTENIMIENTO
       </div>
+      <div class="brand-sub">SAP · Ingeniería</div>
     </div>
-    <div class="chart-container">
-      <canvas id="monthlyChart"></canvas>
-    </div>
-  </article>
 
-  <article class="panel chart-panel">
-    <div class="panel-header compact">
-      <div>
-        <h2>Valor por justificación</h2>
-        <p>Distribución de la demanda filtrada.</p>
+    <nav class="side-nav">
+
+      <a href="../" class="nav-link">
+        ⌂ <span>Inicio</span>
+      </a>
+
+      <a href="../avisos/" class="nav-link">
+        ▣ <span>Control Avisos</span>
+      </a>
+
+      <a href="../ordenes/" class="nav-link">
+        ▣ <span>Control Órdenes</span>
+      </a>
+
+      <a href="../planilla-semana/" class="nav-link">
+        ▣ <span>Planilla Semana</span>
+      </a>
+
+      <div class="nav-section">
+        PLANIFICACIÓN
       </div>
-    </div>
-    <div class="chart-container donut">
-      <canvas id="justificationChart"></canvas>
-    </div>
-  </article>
 
-</section>
+      <a href="./" class="nav-link active">
+        ▦ <span>Plan de Mantenimiento</span>
+      </a>
+
+      <a href="#" class="nav-link">
+        ◫ <span>Repuestos</span>
+      </a>
+
+      <a href="#" class="nav-link">
+        $ <span>Presupuesto</span>
+      </a>
+
+    </nav>
+
+  </aside>
+
+
+  <!-- ======================================================
+       CONTENIDO PRINCIPAL
+       ====================================================== -->
+  <main class="main">
+
+    <header class="page-header">
+
+      <div>
+        <div class="eyebrow">
+          GESTIÓN DE MANTENIMIENTO
+        </div>
+
+        <h1>
+          Demanda Plan de Mantenimiento
+        </h1>
+
+        <p>
+          Demanda valorizada, recurrencias mensuales,
+          criticidad y disponibilidad de repuestos.
+        </p>
+      </div>
+
+      <div class="header-actions">
+
+        <button
+          id="btnClear"
+          class="btn btn-secondary">
+          Limpiar filtros
+        </button>
+
+        <button
+          id="btnExport"
+          class="btn btn-success">
+          Exportar CSV
+        </button>
+
+      </div>
+
+    </header>
+
+
+    <section class="dashboard-layout">
+
+
+      <!-- ==================================================
+           FILTROS
+           ================================================== -->
+      <aside class="filters-card">
+
+        <div class="filters-title">
+          ⚲ FILTROS
+        </div>
+
+
+        <!-- MES -->
+        <div class="filter-block">
+
+          <div class="filter-label">
+            MES
+          </div>
+
+          <div
+            id="filterMonth"
+            class="check-list months">
+          </div>
+
+          <div class="filter-note">
+            El mes se busca en MES_DE_INICIO,
+            MES_DE_INTERVENCION_2,
+            MES_DE_INTERVENCION_3
+            y MES_DE_INTERVENCION_4.
+          </div>
+
+        </div>
+
+
+        <!-- LÍNEA -->
+        <div class="filter-block">
+
+          <div class="filter-label">
+            LÍNEA
+          </div>
+
+          <input
+            id="searchLine"
+            class="filter-search"
+            type="text"
+            placeholder="Buscar línea..."
+          >
+
+          <div
+            id="filterLine"
+            class="check-list scroll">
+          </div>
+
+        </div>
+
+
+        <!-- EQUIPO -->
+        <div class="filter-block">
+
+          <div class="filter-label">
+            EQUIPO
+          </div>
+
+          <input
+            id="searchEquipment"
+            class="filter-search"
+            type="text"
+            placeholder="Buscar equipo..."
+          >
+
+          <div
+            id="filterEquipment"
+            class="check-list scroll small">
+          </div>
+
+        </div>
+
+
+        <!-- JUSTIFICACIÓN + CRITICIDAD -->
+        <div class="filter-grid-2">
+
+          <div class="filter-block">
+
+            <div class="filter-label">
+              JUSTIFICACIÓN
+            </div>
+
+            <div
+              id="filterJustification"
+              class="check-list">
+            </div>
+
+          </div>
+
+
+          <div class="filter-block">
+
+            <div class="filter-label">
+              CRITICIDAD
+            </div>
+
+            <div
+              id="filterCriticality"
+              class="check-list">
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- FRECUENCIA -->
+        <div class="filter-block">
+
+          <div class="filter-label">
+            FRECUENCIA
+          </div>
+
+          <div
+            id="filterFrequency"
+            class="check-list">
+          </div>
+
+        </div>
+
+      </aside>
+
+
+      <!-- ==================================================
+           DASHBOARD
+           ================================================== -->
+      <div class="content">
+
+
+        <!-- KPI -->
+        <section class="kpi-grid">
+
+
+          <article class="kpi kpi-primary">
+
+            <div class="kpi-icon">
+              ▤
+            </div>
+
+            <div>
+
+              <span class="kpi-label">
+                VALOR DEMANDA FILTRADA
+              </span>
+
+              <strong id="kpiFilteredValue">
+                $0
+              </strong>
+
+              <small id="kpiSelectedMonths">
+                Todos los meses
+              </small>
+
+            </div>
+
+          </article>
+
+
+          <article class="kpi">
+
+            <div class="kpi-icon blue">
+              ▧
+            </div>
+
+            <div>
+
+              <span class="kpi-label">
+                VALOR ANUAL DEL PLAN
+              </span>
+
+              <strong id="kpiAnnualValue">
+                $0
+              </strong>
+
+              <small id="kpiRecords">
+                0 registros
+              </small>
+
+            </div>
+
+          </article>
+
+
+          <article class="kpi">
+
+            <div class="kpi-icon blue">
+              ◈
+            </div>
+
+            <div>
+
+              <span class="kpi-label">
+                MATERIALES
+              </span>
+
+              <strong id="kpiMaterials">
+                0
+              </strong>
+
+              <small id="kpiPlans">
+                0 planes
+              </small>
+
+            </div>
+
+          </article>
+
+
+          <article class="kpi kpi-warning">
+
+            <div class="kpi-icon warning">
+              ⌂
+            </div>
+
+            <div>
+
+              <span class="kpi-label">
+                COBERTURA DE STOCK
+              </span>
+
+              <strong id="kpiStockCoverage">
+                0%
+              </strong>
+
+              <small id="kpiStockCovered">
+                0 materiales cubiertos
+              </small>
+
+            </div>
+
+          </article>
+
+
+          <article class="kpi kpi-danger">
+
+            <div class="kpi-icon danger">
+              !
+            </div>
+
+            <div>
+
+              <span class="kpi-label">
+                FALTANTE ESTIMADO
+              </span>
+
+              <strong id="kpiShortage">
+                $0
+              </strong>
+
+              <small>
+                Consolidado por Código SAP
+              </small>
+
+            </div>
+
+          </article>
+
+        </section>
+
+
+        <!-- TABLA -->
+        <section class="panel table-panel">
+
+
+          <div class="panel-header">
+
+            <div>
+
+              <h2>
+                Detalle de demanda
+              </h2>
+
+              <p id="resultSummary">
+                Cargando información...
+              </p>
+
+            </div>
+
+
+            <div class="panel-actions">
+
+              <button
+                id="btnOnlyMissing"
+                class="btn btn-outline-danger">
+                Ver faltantes
+              </button>
+
+
+              <select
+                id="pageSize"
+                class="page-size">
+
+                <option value="20">
+                  20 filas
+                </option>
+
+                <option value="50">
+                  50 filas
+                </option>
+
+                <option value="100">
+                  100 filas
+                </option>
+
+              </select>
+
+            </div>
+
+          </div>
+
+
+          <div class="table-wrap">
+
+            <table id="demandTable">
+
+              <thead>
+
+                <tr>
+
+                  <th>CÓDIGO SAP</th>
+                  <th>DENOMINACIÓN</th>
+
+                  <th class="num">
+                    CANT. DEMANDA
+                  </th>
+
+                  <th class="num">
+                    VALOR UNIT.
+                  </th>
+
+                  <th class="num">
+                    VALOR DEMANDA
+                  </th>
+
+                  <th>LÍNEA</th>
+                  <th>EQUIPO</th>
+                  <th>FRECUENCIA</th>
+                  <th>MESES PROGRAMADOS</th>
+                  <th>CRITICIDAD</th>
+                  <th>JUSTIFICACIÓN</th>
+
+                  <th class="num">
+                    STOCK
+                  </th>
+
+                  <th>
+                    ESTADO
+                  </th>
+
+                </tr>
+
+              </thead>
+
+              <tbody>
+              </tbody>
+
+            </table>
+
+          </div>
+
+
+          <!-- PAGINACIÓN -->
+          <div class="pagination">
+
+            <button
+              id="prevPage"
+              class="page-btn">
+              ‹
+            </button>
+
+            <span id="pageInfo">
+              Página 1
+            </span>
+
+            <button
+              id="nextPage"
+              class="page-btn">
+              ›
+            </button>
+
+          </div>
+
+        </section>
+
+
+        <!-- GRÁFICOS -->
+        <section class="charts-grid">
+
+
+          <!-- DEMANDA POR MES -->
+          <article class="panel chart-panel">
+
+            <div class="panel-header compact">
+
+              <div>
+
+                <h2>
+                  Demanda por mes
+                </h2>
+
+                <p>
+                  Valor del plan según cada ocurrencia programada.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="chart-container">
+
+              <canvas id="monthlyChart">
+              </canvas>
+
+            </div>
+
+          </article>
+
+
+          <!-- VALOR POR JUSTIFICACIÓN -->
+          <article class="panel chart-panel">
+
+            <div class="panel-header compact">
+
+              <div>
+
+                <h2>
+                  Valor por justificación
+                </h2>
+
+                <p>
+                  Distribución de la demanda filtrada.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="chart-container donut">
+
+              <canvas id="justificationChart">
+              </canvas>
+
+            </div>
+
+          </article>
+
+
+        </section>
+
+      </div>
+
+    </section>
+
+  </main>
 
 </div>
-</section>
 
-</main>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
-<script src="js/plan_mantenimiento.js"></script>
+<!-- CHART.JS -->
+<script
+  src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js">
+</script>
+
+
+<!-- JS DEL PLAN
+     ?v=5 fuerza a Chrome/GitHub Pages a cargar la versión nueva -->
+<script src="js/plan_mantenimiento.js?v=5"></script>
+
 
 </body>
 </html>

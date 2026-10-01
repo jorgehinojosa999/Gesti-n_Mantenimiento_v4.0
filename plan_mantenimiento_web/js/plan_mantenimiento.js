@@ -21,6 +21,323 @@ let justificationChart = null;
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 
+/* ======================================================
+   BASE LOCAL PERSISTENTE (INDEXEDDB)
+   ====================================================== */
+
+const DB_NAME = "PlanMantenimientoDB";
+const DB_VERSION = 1;
+const STORE_NAME = "datasets";
+const DATASET_KEY = "current";
+
+function openDataDb(){
+  return new Promise((resolve,reject)=>{
+    const req = indexedDB.open(DB_NAME,DB_VERSION);
+
+    req.onupgradeneeded = event => {
+      const db = event.target.result;
+      if(!db.objectStoreNames.contains(STORE_NAME)){
+        db.createObjectStore(STORE_NAME,{keyPath:"id"});
+      }
+    };
+
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+}
+
+async function saveLocalDataset(rows,fileName){
+  const db = await openDataDb();
+
+  return new Promise((resolve,reject)=>{
+    const tx = db.transaction(STORE_NAME,"readwrite");
+    tx.objectStore(STORE_NAME).put({
+      id:DATASET_KEY,
+      rows,
+      fileName:fileName || "Excel cargado",
+      updatedAt:new Date().toISOString()
+    });
+
+    tx.oncomplete = () => {
+      db.close();
+      resolve();
+    };
+
+    tx.onerror = () => {
+      db.close();
+      reject(tx.error);
+    };
+  });
+}
+
+async function loadLocalDataset(){
+  const db = await openDataDb();
+
+  return new Promise((resolve,reject)=>{
+    const tx = db.transaction(STORE_NAME,"readonly");
+    const req = tx.objectStore(STORE_NAME).get(DATASET_KEY);
+
+    req.onsuccess = () => {
+      const value = req.result || null;
+      db.close();
+      resolve(value);
+    };
+
+    req.onerror = () => {
+      db.close();
+      reject(req.error);
+    };
+  });
+}
+
+function updateDataSourceStatus(source){
+  const el = document.getElementById("dataSourceStatus");
+  if(!el) return;
+
+  if(!source){
+    el.textContent = "Base inicial del portal";
+    return;
+  }
+
+  const date = source.updatedAt
+    ? new Date(source.updatedAt).toLocaleString("es-EC")
+    : "";
+
+  el.textContent =
+    `${source.fileName || "Excel cargado"}${date ? " · última carga: " + date : ""}`;
+}
+
+function normalizeExcelHeader(value){
+  const base = String(value ?? "")
+    .replace(/\n/g," ")
+    .replace(/\s+/g," ")
+    .trim()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g,"")
+    .toUpperCase();
+
+  const aliases = {
+    "CODIGO SAP":"CODIGO_SAP",
+    "CODIGO_SAP":"CODIGO_SAP",
+    "DENOMINACION":"DENOMINACION",
+    "CANTIDAD":"CANTIDAD",
+    "UNIDAD":"UNIDAD",
+    "SISTEMA":"SISTEMA",
+    "EQUIPO":"EQUIPO",
+    "LINEA":"LINEA",
+    "PLAN S4":"PLAN_S4",
+    "PLAN_S4":"PLAN_S4",
+    "PLAN DE MANTEMIENTO":"PLAN_DE_MANTEMIENTO",
+    "PLAN_DE_MANTEMIENTO":"PLAN_DE_MANTEMIENTO",
+    "PLAN DE MANTENIMIENTO":"PLAN_DE_MANTENIMIENTO",
+    "PLAN_DE_MANTENIMIENTO":"PLAN_DE_MANTENIMIENTO",
+    "HOJA DE RUTA":"HOJA_DE_RUTA",
+    "HOJA_DE_RUTA":"HOJA_DE_RUTA",
+    "FRECUENCIA":"FRECUENCIA",
+    "MES DE INICIO":"MES_DE_INICIO",
+    "MES_DE_INICIO":"MES_DE_INICIO",
+    "MES DE INTERVENCION 2":"MES_DE_INTERVENCION_2",
+    "MES_DE_INTERVENCION_2":"MES_DE_INTERVENCION_2",
+    "MES DE INTERVENCION 3":"MES_DE_INTERVENCION_3",
+    "MES_DE_INTERVENCION_3":"MES_DE_INTERVENCION_3",
+    "MES DE INTERVENCION 4":"MES_DE_INTERVENCION_4",
+    "MES_DE_INTERVENCION_4":"MES_DE_INTERVENCION_4",
+    "VALOR UNITARIO":"VALOR_UNITARIO",
+    "VALOR_UNITARIO":"VALOR_UNITARIO",
+    "VALOR TOTAL":"VALOR_TOTAL",
+    "VALOR_TOTAL":"VALOR_TOTAL",
+    "CRITICIDAD":"CRITICIDAD",
+    "JUSTIFICACION":"JUSTIFICACION",
+    "DISPONIBLE EN ALMACEN":"DISPONIBLE_EN_ALMACEN",
+    "DISPONIBLE_EN ALMACEN":"DISPONIBLE_EN_ALMACEN",
+    "DISPONIBLE_EN_ALMACEN":"DISPONIBLE_EN_ALMACEN",
+    "VALOR $ DEL PLAN":"VALOR_USD_DEL_PLAN",
+    "VALOR_$_DEL_PLAN":"VALOR_USD_DEL_PLAN",
+    "ESTATUS":"ESTATUS",
+    "OBSERVACIONES":"OBSERVACIONES"
+  };
+
+  if(aliases[base]){
+    return aliases[base];
+  }
+
+  return base
+    .replace(/\$/g,"USD")
+    .replace(/[^A-Z0-9]+/g,"_")
+    .replace(/^_+|_+$/g,"");
+}
+
+function parseExcelWorkbook(arrayBuffer){
+  if(typeof XLSX === "undefined"){
+    throw new Error("No se pudo cargar el lector de Excel.");
+  }
+
+  const workbook = XLSX.read(arrayBuffer,{
+    type:"array",
+    cellDates:false,
+    raw:true
+  });
+
+  if(!workbook.SheetNames.length){
+    throw new Error("El archivo Excel no contiene hojas.");
+  }
+
+  const sheet = workbook.Sheets[workbook.SheetNames[0]];
+
+  const matrix = XLSX.utils.sheet_to_json(sheet,{
+    header:1,
+    defval:null,
+    raw:true
+  });
+
+  if(matrix.length < 2){
+    throw new Error("La hoja no contiene información suficiente.");
+  }
+
+  const headers = [];
+  const counts = {};
+
+  matrix[0].forEach((h,index)=>{
+    let key = normalizeExcelHeader(h);
+
+    if(!key){
+      key = `COLUMNA_${index+1}`;
+    }
+
+    counts[key] = (counts[key] || 0) + 1;
+
+    if(counts[key] > 1){
+      key = `${key}_${counts[key]}`;
+    }
+
+    headers.push(key);
+  });
+
+  const rows = matrix
+    .slice(1)
+    .filter(row =>
+      row.some(v =>
+        v !== null &&
+        v !== undefined &&
+        v !== "" &&
+        v !== 0
+      )
+    )
+    .map(row => {
+      const obj = {};
+      headers.forEach((h,i)=>{
+        obj[h] = row[i] ?? null;
+      });
+      return obj;
+    });
+
+  const required = [
+    "CODIGO_SAP",
+    "DENOMINACION",
+    "SISTEMA",
+    "EQUIPO",
+    "LINEA",
+    "FRECUENCIA",
+    "MES_DE_INICIO",
+    "VALOR_TOTAL"
+  ];
+
+  const missing = required.filter(
+    col => !headers.includes(col)
+  );
+
+  if(missing.length){
+    throw new Error(
+      "Faltan columnas requeridas: " + missing.join(", ")
+    );
+  }
+
+  return rows;
+}
+
+function clearFilterContainers(){
+  [
+    "filterMonth",
+    "filterLine",
+    "filterEquipment",
+    "filterSystem",
+    "filterJustification",
+    "filterCriticality",
+    "filterFrequency"
+  ].forEach(id=>{
+    const el = document.getElementById(id);
+    if(el) el.innerHTML = "";
+  });
+
+  if($("#searchLine")) $("#searchLine").value = "";
+  if($("#searchEquipment")) $("#searchEquipment").value = "";
+  if($("#searchSystem")) $("#searchSystem").value = "";
+}
+
+async function handleExcelUpload(file){
+  if(!file) return;
+
+  try{
+    const btn = $("#btnUploadExcel");
+
+    if(btn){
+      btn.disabled = true;
+      btn.textContent = "Procesando...";
+    }
+
+    const rows = parseExcelWorkbook(
+      await file.arrayBuffer()
+    );
+
+    await saveLocalDataset(
+      rows,
+      file.name
+    );
+
+    rawData = rows;
+    page = 1;
+    onlyMissing = false;
+
+    clearFilterContainers();
+    initializeFilters();
+    renderDashboard();
+
+    updateDataSourceStatus({
+      fileName:file.name,
+      updatedAt:new Date().toISOString()
+    });
+
+    alert(
+      `Archivo cargado correctamente.\n\nRegistros: ${rows.length.toLocaleString("es-EC")}\n\nLa información permanecerá guardada en este navegador hasta que cargues otro Excel.`
+    );
+
+  }catch(error){
+
+    console.error(error);
+
+    alert(
+      "No se pudo cargar el Excel.\n\n" +
+      (error.message || error)
+    );
+
+  }finally{
+
+    const btn = $("#btnUploadExcel");
+
+    if(btn){
+      btn.disabled = false;
+      btn.textContent = "Cargar Excel";
+    }
+
+    const input = $("#excelFile");
+
+    if(input){
+      input.value = "";
+    }
+  }
+}
+
+
 function txt(v){
   if(v === null || v === undefined) return "";
   const s = String(v).trim();
@@ -253,7 +570,9 @@ function stockOf(r){
 
       "DISPONIBLE_EN_ALMACÉN",
 
-      "DISPONIBLE_EN_ _ALMACÉN"
+      "DISPONIBLE_EN_ _ALMACÉN",
+
+      "DISPONIBLE_EN_ALMACEN"
     )
   );
 
@@ -1790,34 +2109,76 @@ async function init(){
 
   try{
 
-    const response =
-      await fetch(
-
-        DATA_URL,
-
-        {
-          cache:"no-store"
-        }
-
-      );
-
+    const savedDataset =
+      await loadLocalDataset()
+        .catch(() => null);
 
     if(
-      !response.ok
+      savedDataset &&
+      Array.isArray(savedDataset.rows) &&
+      savedDataset.rows.length
     ){
 
-      throw new Error(
-        `HTTP ${response.status}`
+      rawData =
+        savedDataset.rows;
+
+      updateDataSourceStatus(
+        savedDataset
+      );
+
+    }else{
+
+      const response =
+        await fetch(
+          DATA_URL + "?t=" + Date.now(),
+          {
+            cache:"no-store"
+          }
+        );
+
+      if(
+        !response.ok
+      ){
+        throw new Error(
+          `HTTP ${response.status}`
+        );
+      }
+
+      rawData =
+        await response.json();
+
+      updateDataSourceStatus(
+        null
       );
 
     }
 
 
-    rawData =
-      await response.json();
-
-
     initializeFilters();
+
+
+    $("#btnUploadExcel")
+      .addEventListener(
+        "click",
+        () => {
+          $("#excelFile").click();
+        }
+      );
+
+
+    $("#excelFile")
+      .addEventListener(
+        "change",
+        event => {
+          const file =
+            event.target.files &&
+            event.target.files[0];
+
+          if(file){
+            handleExcelUpload(file);
+          }
+        }
+      );
 
 
     $("#searchLine")

@@ -88,6 +88,17 @@
 
   <div class="header-actions">
 
+    <input
+      id="excelFile"
+      type="file"
+      accept=".xlsx,.xls"
+      style="display:none"
+    >
+
+    <button id="btnUploadExcel" class="btn btn-success">
+      Cargar Excel
+    </button>
+
     <button id="btnClear" class="btn btn-secondary">
       Limpiar filtros
     </button>
@@ -100,6 +111,16 @@
 
 </header>
 
+<div style="
+  background:#fff;
+  border-bottom:1px solid #dce5ef;
+  padding:8px 28px;
+  font-size:11px;
+  color:#66758a;
+">
+  <strong>Fuente de datos:</strong>
+  <span id="dataSourceStatus">Cargando...</span>
+</div>
 
 <section class="dashboard-layout">
 
@@ -423,9 +444,10 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 
 <!-- v=7 fuerza cargar JS nuevo -->
-<script src="js/plan_mantenimiento.js?v=7"></script>
+<script src="js/plan_mantenimiento.js?v=8"></script>
 
 </body>
 </html>

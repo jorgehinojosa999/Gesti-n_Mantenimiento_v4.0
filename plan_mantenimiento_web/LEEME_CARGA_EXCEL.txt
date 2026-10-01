@@ -1,0 +1,21 @@
+PLAN DE MANTENIMIENTO - CARGA EXCEL PERSISTENTE
+
+Reemplazar:
+- plan_mantenimiento_web/index.html
+- plan_mantenimiento_web/js/plan_mantenimiento.js
+
+No reemplazar:
+- css/
+- data/
+
+COMPORTAMIENTO:
+1. Si nunca cargaste un Excel, usa data/plan_mantenimiento.json.
+2. Presiona "Cargar Excel" y selecciona .xlsx o .xls.
+3. Lee la primera hoja.
+4. Guarda la información en IndexedDB del navegador.
+5. Aunque cierres y abras la web, mantiene la última carga.
+6. Solo cambia cuando cargas otro Excel.
+
+IMPORTANTE:
+La persistencia es local por navegador/equipo.
+Una carga hecha en un computador no se comparte automáticamente con otros usuarios.

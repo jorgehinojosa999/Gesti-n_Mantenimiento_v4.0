@@ -1,0 +1,18 @@
+COPIAR ESTOS DOS ARCHIVOS DENTRO DE:
+Gesti-n_Mantenimiento_v4.0\plan_mantenimiento_web\
+
+1) index.html
+2) plan_mantenimiento.html
+
+No borres las carpetas css, js ni data.
+
+Después ejecuta:
+git add .
+git commit -m "Corregir acceso Plan de Mantenimiento"
+git push
+
+Finalmente abre:
+https://jorgehinojosa999.github.io/Gesti-n_Mantenimiento_v4.0/plan_mantenimiento_web/
+
+El botón Inicio apunta a:
+../index.html

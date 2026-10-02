@@ -8,7 +8,7 @@
 </head>
 <body>
 <aside>
-  <h2>TESALIA · CBC</h2>
+  <div class="brand"><h2>tesalia <span>✦</span> cbc</h2><small>SAP · Ingeniería</small></div>
   <nav>
     <a href="../">⌂ Inicio</a>
     <a href="../avisos/">Control Avisos</a>
@@ -18,19 +18,27 @@
 </aside>
 
 <main>
-<header>
-  <div><small>PLANIFICACIÓN DE MANTENIMIENTO</small><h1>Planilla Semana de Ingeniería</h1></div>
+<header class="hero">
+  <div><small>PLANIFICACIÓN DE MANTENIMIENTO</small><h1>Planilla Semana de Ingeniería</h1><p>Registro y seguimiento de trabajos manuales, avisos y órdenes programadas.</p></div>
   <div class="week"><button id="prev">‹</button><b id="week"></b><button id="next">›</button></div>
 </header>
 
+<section class="kpis">
+  <div>Total programados<b id="kt">0</b></div>
+  <div>Avisos programados<b id="ka">0</b></div>
+  <div>Órdenes programadas<b id="ko">0</b></div>
+  <div>Manuales<b id="km">0</b></div>
+  <div>Abiertos SAP<b id="kab">0</b></div>
+</section>
+
 <section class="cols">
-  <div class="card">
-    <h3>1. Buscar Aviso u Orden</h3>
+  <div class="card search-card">
+    <h3>⌕ &nbsp;1. Buscar Aviso u Orden</h3>
     <div class="row"><input id="numero" placeholder="N.º aviso u orden"><button id="buscar">Buscar</button></div>
     <p id="msg"></p>
   </div>
-  <div class="card">
-    <h3>Información del SAP <span id="badge">SIN SELECCIÓN</span></h3>
+  <div class="card sap-card">
+    <h3><span class="sap-logo">SAP</span> Información del SAP <span id="badge">SIN SELECCIÓN</span></h3>
     <p><b>N.º:</b> <span id="sapN">—</span></p>
     <p><b>Fecha aviso:</b> <span id="sapF">—</span></p>
     <p><b>Descripción:</b> <span id="sapD">—</span></p>
@@ -38,8 +46,8 @@
   </div>
 </section>
 
-<section class="card">
-  <h3>2. Agregar a planilla</h3>
+<section class="card form-card">
+  <h3>▤ &nbsp;2. Agregar a planilla</h3>
   <div class="form">
     <label>Tipo<input id="tipo" readonly></label>
     <label>N.º Aviso/Orden<input id="nro" readonly></label>
@@ -51,7 +59,7 @@
 
 <section class="card manual">
   <div class="manual-head">
-    <div><h3>3. Ingreso manual</h3><small>Para trabajos que no tienen Aviso ni Orden SAP.</small></div>
+    <div><h3>⚒ &nbsp;3. Ingreso manual</h3><small>Para trabajos que no tienen Aviso ni Orden SAP.</small></div>
     <span class="manual-tag">MANUAL</span>
   </div>
   <div class="form">
@@ -71,16 +79,10 @@
   </div>
 </section>
 
-<section class="kpis">
-  <div>Total programados<b id="kt">0</b></div>
-  <div>Avisos programados<b id="ka">0</b></div>
-  <div>Órdenes programadas<b id="ko">0</b></div>
-  <div>Manuales<b id="km">0</b></div>
-  <div>Abiertos SAP<b id="kab">0</b></div>
-</section>
 
-<section class="card">
-  <div class="title"><h3>Planilla Semana: <span id="week2"></span></h3><input id="q" placeholder="Buscar en planilla..."></div>
+
+<section class="card table-card">
+  <div class="title"><h3>▣ &nbsp;Planilla Semana: <span id="week2"></span></h3><input id="q" placeholder="Buscar en planilla..."></div>
   <div class="scroll">
   <table>
     <thead><tr><th>Tipo</th><th>N.º Aviso/Orden</th><th>Fecha aviso</th><th>Descripción</th><th>Fecha ejecución</th><th>Estado SAP</th><th>Acción</th></tr></thead>

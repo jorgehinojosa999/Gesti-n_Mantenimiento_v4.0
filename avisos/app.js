@@ -1440,7 +1440,9 @@ function renderTable(
 
                 item.textoNotificacion,
 
-                item.costoReal
+                item.costoReal,
+
+                (String(item.orden ?? "").trim() ? "OT EXISTENTE" : "CREAR OT")
 
             ];
 
@@ -1467,6 +1469,25 @@ function renderTable(
                 }
             );
 
+            // Acción OT: solo permite crear cuando el aviso no tiene orden.
+            const actionTd = document.createElement("td");
+            const ordenActual = String(item.orden ?? "").trim();
+
+            if (ordenActual && ordenActual !== "0" && ordenActual !== "-") {
+                const existing = document.createElement("span");
+                existing.className = "ot-existing";
+                existing.textContent = "✓ OT " + ordenActual;
+                actionTd.appendChild(existing);
+            } else {
+                const btn = document.createElement("button");
+                btn.type = "button";
+                btn.className = "btn-create-ot";
+                btn.textContent = "+ Crear OT";
+                btn.addEventListener("click", () => openOtModal(item));
+                actionTd.appendChild(btn);
+            }
+
+            tr.appendChild(actionTd);
 
             fragment.appendChild(
                 tr
@@ -1481,6 +1502,120 @@ function renderTable(
     );
 
 }
+
+
+
+// =========================================================
+// CREAR OT DESDE AVISO - FASE 1
+// =========================================================
+
+const otModal = document.getElementById("otModal");
+const otClose = document.getElementById("otClose");
+const otCancel = document.getElementById("otCancel");
+const otPrepare = document.getElementById("otPrepare");
+const otAviso = document.getElementById("otAviso");
+const otTipo = document.getElementById("otTipo");
+const otDescripcion = document.getElementById("otDescripcion");
+const otFechaInicio = document.getElementById("otFechaInicio");
+const otFechaFin = document.getElementById("otFechaFin");
+const otPtoTrabajo = document.getElementById("otPtoTrabajo");
+const otMessage = document.getElementById("otMessage");
+
+let otSelectedItem = null;
+
+function openOtModal(item) {
+    otSelectedItem = item;
+
+    const aviso = String(item.notificacion ?? "").trim();
+    const descripcion =
+        String(item.descripcion2 ?? "").trim() ||
+        String(item.descripcion1 ?? "").trim() ||
+        String(item.descripcion ?? "").trim();
+
+    // En esta fase la fecha extrema parte de la fecha del aviso.
+    // Fin extremo siempre es igual a inicio extremo.
+    const fecha = String(item.fechaAviso ?? "").trim();
+
+    otAviso.value = aviso;
+    otTipo.value = "ZM02";
+    otDescripcion.value = descripcion;
+    otFechaInicio.value = fecha;
+    otFechaFin.value = fecha;
+    otPtoTrabajo.value = "";
+    otMessage.textContent = "";
+
+    otModal.classList.remove("ot-hidden");
+    otModal.setAttribute("aria-hidden", "false");
+    setTimeout(() => otPtoTrabajo.focus(), 50);
+}
+
+function closeOtModal() {
+    otModal.classList.add("ot-hidden");
+    otModal.setAttribute("aria-hidden", "true");
+    otSelectedItem = null;
+}
+
+function prepareOtRequest() {
+    if (!otSelectedItem) return;
+
+    const ptoTrabajo = otPtoTrabajo.value.trim().toUpperCase();
+
+    if (!ptoTrabajo) {
+        otMessage.textContent = "Ingrese el Pto. trabajo responsable antes de continuar.";
+        otPtoTrabajo.focus();
+        return;
+    }
+
+    const payload = {
+        aviso: otAviso.value.trim(),
+        tipoOT: "ZM02",
+        ptoTrabajoResponsable: ptoTrabajo,
+        fechaInicioExtremo: otFechaInicio.value.trim(),
+        fechaFinExtremo: otFechaInicio.value.trim(),
+        descripcion: otDescripcion.value.trim(),
+        reglas: {
+            fechaFinExtremoIgualInicio: true,
+            fechaOperacionIgualInicioExtremo: true,
+            horaInicioOperacion: "INICIO_AVERIA_SAP",
+            horaFinOperacion: "INICIO_AVERIA_SAP_MAS_1_HORA"
+        }
+    };
+
+    // GitHub Pages no puede ejecutar directamente un VBS local.
+    // Se descarga una solicitud JSON lista para que Power Automate/PAD/VBS la consuma.
+    const blob = new Blob(
+        [JSON.stringify(payload, null, 2)],
+        { type: "application/json;charset=utf-8" }
+    );
+
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `OT_${payload.aviso}.json`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+
+    otMessage.style.color = "#177245";
+    otMessage.textContent = "Solicitud preparada. El siguiente paso es conectarla con Power Automate/PAD para ejecutar SAP.";
+}
+
+if (otClose) otClose.addEventListener("click", closeOtModal);
+if (otCancel) otCancel.addEventListener("click", closeOtModal);
+if (otPrepare) otPrepare.addEventListener("click", prepareOtRequest);
+
+if (otModal) {
+    otModal.addEventListener("click", event => {
+        if (event.target === otModal) closeOtModal();
+    });
+}
+
+document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && otModal && !otModal.classList.contains("ot-hidden")) {
+        closeOtModal();
+    }
+});
 
 
 // =========================================================
@@ -1759,7 +1894,9 @@ function downloadCSV() {
 
         "Texto de notificación",
 
-        "Costo real"
+        "Costo real",
+
+        "Acción OT"
 
     ];
 

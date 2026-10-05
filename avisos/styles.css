@@ -575,3 +575,38 @@ tbody tr:hover {
 .nav-link:hover{background:rgba(255,255,255,.08)}
 .nav-link.active{background:var(--blue);color:#fff}
 .side-separator{height:1px;margin:0 0 14px;background:rgba(255,255,255,.10)}
+
+
+/* =========================================================
+   CREAR OT DESDE AVISO
+   ========================================================= */
+.btn-create-ot{
+    border:0;border-radius:7px;padding:6px 9px;white-space:nowrap;
+    background:#1680ea;color:#fff;font-size:9px;font-weight:800;cursor:pointer
+}
+.btn-create-ot:hover{background:#0874d8}
+.ot-existing{
+    display:inline-block;padding:5px 8px;border-radius:999px;
+    background:#e5f6ec;color:#177245;font-size:9px;font-weight:800;white-space:nowrap
+}
+.ot-modal{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:20px;background:rgba(3,28,51,.58)}
+.ot-hidden{display:none}
+.ot-dialog{width:min(720px,96vw);background:#fff;border-radius:16px;box-shadow:0 24px 70px rgba(0,30,55,.32);overflow:hidden}
+.ot-dialog-header{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid #e3e8ef;background:#f8fbfe}
+.ot-dialog-header h2{margin:3px 0 0;color:#12385e;font-size:20px}
+.ot-close{border:0;background:transparent;color:#667085;font-size:28px;cursor:pointer}
+.ot-info-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;padding:18px 20px 8px}
+.ot-info-grid label{display:grid;gap:6px;color:#344054;font-size:11px;font-weight:800}
+.ot-info-grid input,.ot-info-grid textarea{width:100%;border:1px solid #d0d9e4;border-radius:8px;background:#fff;color:#1f2937;padding:9px 10px;font:12px "Segoe UI",Arial,sans-serif}
+.ot-info-grid input[readonly],.ot-info-grid textarea[readonly]{background:#f7f9fc;color:#475467}
+.ot-info-grid textarea{min-height:68px;resize:vertical}
+.ot-wide{grid-column:1/-1}
+.ot-required input{border-color:#1680ea;box-shadow:0 0 0 3px rgba(22,128,234,.08)}
+.ot-rule-box{margin:10px 20px 0;padding:12px 14px;border-left:4px solid #1680ea;border-radius:8px;background:#eef7ff;display:grid;gap:4px;color:#36566f;font-size:11px}
+.ot-rule-box strong{color:#12385e;margin-bottom:2px}
+.ot-message{min-height:18px;padding:10px 20px 0;color:#d14343;font-size:11px;font-weight:700}
+.ot-actions{display:flex;justify-content:flex-end;gap:9px;padding:15px 20px 20px}
+.ot-btn{border:0;border-radius:8px;padding:10px 14px;font-size:11px;font-weight:800;cursor:pointer}
+.ot-btn-primary{background:#1680ea;color:#fff}.ot-btn-primary:hover{background:#0874d8}
+.ot-btn-secondary{background:#eef2f6;color:#344054}
+@media(max-width:700px){.ot-info-grid{grid-template-columns:1fr}.ot-wide{grid-column:auto}}

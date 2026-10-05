@@ -704,6 +704,58 @@
      JAVASCRIPT
      ========================================================= -->
 
+
+<!-- =========================================================
+     MODAL CREAR OT DESDE AVISO
+     ========================================================= -->
+<div id="otModal" class="ot-modal ot-hidden" aria-hidden="true">
+    <div class="ot-dialog">
+        <div class="ot-dialog-header">
+            <div>
+                <span class="panel-kicker">SAP · IW22 → ORDEN</span>
+                <h2>Crear OT desde aviso</h2>
+            </div>
+            <button id="otClose" class="ot-close" type="button">×</button>
+        </div>
+
+        <div class="ot-info-grid">
+            <label>Aviso
+                <input id="otAviso" type="text" readonly>
+            </label>
+            <label>Tipo OT
+                <input id="otTipo" type="text" value="ZM02" readonly>
+            </label>
+            <label class="ot-wide">Descripción
+                <textarea id="otDescripcion" readonly></textarea>
+            </label>
+            <label>Fecha inicio extremo
+                <input id="otFechaInicio" type="text" readonly>
+            </label>
+            <label>Fecha fin extremo
+                <input id="otFechaFin" type="text" readonly>
+            </label>
+            <label class="ot-required">Pto. trabajo responsable
+                <input id="otPtoTrabajo" type="text" placeholder="Ej. E_ELE 01" autocomplete="off">
+            </label>
+        </div>
+
+        <div class="ot-rule-box">
+            <strong>Reglas automáticas</strong>
+            <span>Fin extremo = Inicio extremo.</span>
+            <span>Fecha operación = Inicio extremo.</span>
+            <span>Hora inicio operación = Inicio de avería en SAP.</span>
+            <span>Hora fin operación = Inicio de avería + 1 hora.</span>
+        </div>
+
+        <div id="otMessage" class="ot-message"></div>
+
+        <div class="ot-actions">
+            <button id="otCancel" class="ot-btn ot-btn-secondary" type="button">Cancelar</button>
+            <button id="otPrepare" class="ot-btn ot-btn-primary" type="button">Preparar solicitud OT</button>
+        </div>
+    </div>
+</div>
+
 <script src="./app.js"></script>
 
 

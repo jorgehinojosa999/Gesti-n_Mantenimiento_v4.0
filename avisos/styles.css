@@ -590,7 +590,7 @@ tbody tr:hover {
     background:#e5f6ec;color:#177245;font-size:9px;font-weight:800;white-space:nowrap
 }
 .ot-modal{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:20px;background:rgba(3,28,51,.58)}
-.ot-hidden{display:none}
+.ot-hidden{display:none !important}
 .ot-dialog{width:min(720px,96vw);background:#fff;border-radius:16px;box-shadow:0 24px 70px rgba(0,30,55,.32);overflow:hidden}
 .ot-dialog-header{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid #e3e8ef;background:#f8fbfe}
 .ot-dialog-header h2{margin:3px 0 0;color:#12385e;font-size:20px}

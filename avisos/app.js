@@ -1542,6 +1542,7 @@ function openOtModal(item) {
     otFechaInicio.value = fecha;
     otFechaFin.value = fecha;
     otPtoTrabajo.value = "";
+    otMessage.style.color = "#d14343";
     otMessage.textContent = "";
 
     otModal.classList.remove("ot-hidden");
@@ -1556,9 +1557,15 @@ function closeOtModal() {
 }
 
 function prepareOtRequest() {
-    if (!otSelectedItem) return;
-
+    const avisoManual = otAviso.value.trim();
     const ptoTrabajo = otPtoTrabajo.value.trim().toUpperCase();
+
+    if (!avisoManual) {
+        otMessage.style.color = "#d14343";
+        otMessage.textContent = "Ingrese el número de aviso antes de continuar.";
+        otAviso.focus();
+        return;
+    }
 
     if (!ptoTrabajo) {
         otMessage.textContent = "Ingrese el Pto. trabajo responsable antes de continuar.";
@@ -1604,6 +1611,12 @@ function prepareOtRequest() {
 if (otClose) otClose.addEventListener("click", closeOtModal);
 if (otCancel) otCancel.addEventListener("click", closeOtModal);
 if (otPrepare) otPrepare.addEventListener("click", prepareOtRequest);
+
+if (otFechaInicio) {
+    otFechaInicio.addEventListener("input", () => {
+        otFechaFin.value = otFechaInicio.value;
+    });
+}
 
 if (otModal) {
     otModal.addEventListener("click", event => {

@@ -1506,7 +1506,7 @@ function renderTable(
 
 
 // =========================================================
-// CREAR OT DESDE AVISO - FASE 1
+// CREAR OT DESDE AVISO - POWER AUTOMATE / SAP
 // =========================================================
 
 const otModal = document.getElementById("otModal");
@@ -1521,7 +1521,15 @@ const otFechaFin = document.getElementById("otFechaFin");
 const otPtoTrabajo = document.getElementById("otPtoTrabajo");
 const otMessage = document.getElementById("otMessage");
 
+// IMPORTANTE: pega aquí la URL ACTUAL del disparador HTTP de Power Automate.
+// No publiques este archivo con la URL firmada en un repositorio público.
+const POWER_AUTOMATE_OT_URL = "https://defaulte9193073ba8b4e388647ba66872708.21.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/29/workflows/f530429f74e74a41aaee5520872e0076/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=jRyMSocJgrbdj3deoxKMOu9pnk9WD-R6J_Nn-GEcBpg";
+
 let otSelectedItem = null;
+
+function fechaParaSap(fecha) {
+    return String(fecha ?? "").trim().replaceAll("/", ".");
+}
 
 function openOtModal(item) {
     otSelectedItem = item;
@@ -1531,23 +1539,20 @@ function openOtModal(item) {
         String(item.descripcion2 ?? "").trim() ||
         String(item.descripcion1 ?? "").trim() ||
         String(item.descripcion ?? "").trim();
-
-    // En esta fase la fecha extrema parte de la fecha del aviso.
-    // Fin extremo siempre es igual a inicio extremo.
     const fecha = String(item.fechaAviso ?? "").trim();
+    const ptoTrabajo = String(item.ptoTrabajo ?? "").trim().toUpperCase();
 
     otAviso.value = aviso;
     otTipo.value = "ZM02";
     otDescripcion.value = descripcion;
     otFechaInicio.value = fecha;
     otFechaFin.value = fecha;
-    otPtoTrabajo.value = "";
+    otPtoTrabajo.value = ptoTrabajo;
     otMessage.style.color = "#d14343";
     otMessage.textContent = "";
 
     otModal.classList.remove("ot-hidden");
     otModal.setAttribute("aria-hidden", "false");
-    setTimeout(() => otPtoTrabajo.focus(), 50);
 }
 
 function closeOtModal() {
@@ -1556,56 +1561,97 @@ function closeOtModal() {
     otSelectedItem = null;
 }
 
-function prepareOtRequest() {
-    const avisoManual = otAviso.value.trim();
-    const ptoTrabajo = otPtoTrabajo.value.trim().toUpperCase();
-
-    if (!avisoManual) {
+async function prepareOtRequest() {
+    if (!otSelectedItem) {
         otMessage.style.color = "#d14343";
-        otMessage.textContent = "Ingrese el número de aviso antes de continuar.";
-        otAviso.focus();
+        otMessage.textContent = "No se encontró el aviso seleccionado.";
+        return;
+    }
+
+    const aviso = otAviso.value.trim();
+    const ptoTrabajo = otPtoTrabajo.value.trim().toUpperCase();
+    const fechaInicio = fechaParaSap(otFechaInicio.value);
+    const horaInicio = String(otSelectedItem.horaAviso ?? "").trim();
+
+    if (!aviso) {
+        otMessage.style.color = "#d14343";
+        otMessage.textContent = "El aviso no tiene número de notificación.";
         return;
     }
 
     if (!ptoTrabajo) {
-        otMessage.textContent = "Ingrese el Pto. trabajo responsable antes de continuar.";
-        otPtoTrabajo.focus();
+        otMessage.style.color = "#d14343";
+        otMessage.textContent = "El aviso no tiene Pto. trabajo responsable.";
+        return;
+    }
+
+    if (!fechaInicio) {
+        otMessage.style.color = "#d14343";
+        otMessage.textContent = "El aviso no tiene fecha de inicio.";
+        return;
+    }
+
+    if (!horaInicio) {
+        otMessage.style.color = "#d14343";
+        otMessage.textContent = "El aviso no tiene hora de creación en IW28.";
+        return;
+    }
+
+    if (POWER_AUTOMATE_OT_URL.includes("PEGA_AQUI")) {
+        otMessage.style.color = "#d14343";
+        otMessage.textContent = "Falta configurar la URL de Power Automate en app.js.";
         return;
     }
 
     const payload = {
-        aviso: otAviso.value.trim(),
-        tipoOT: "ZM02",
-        ptoTrabajoResponsable: ptoTrabajo,
-        fechaInicioExtremo: otFechaInicio.value.trim(),
-        fechaFinExtremo: otFechaInicio.value.trim(),
-        descripcion: otDescripcion.value.trim(),
-        reglas: {
-            fechaFinExtremoIgualInicio: true,
-            fechaOperacionIgualInicioExtremo: true,
-            horaInicioOperacion: "INICIO_AVERIA_SAP",
-            horaFinOperacion: "INICIO_AVERIA_SAP_MAS_1_HORA"
-        }
+        aviso: aviso,
+        ptoTrabajo: ptoTrabajo,
+        fechaInicio: fechaInicio,
+        horaInicio: horaInicio
     };
 
-    // GitHub Pages no puede ejecutar directamente un VBS local.
-    // Se descarga una solicitud JSON lista para que Power Automate/PAD/VBS la consuma.
-    const blob = new Blob(
-        [JSON.stringify(payload, null, 2)],
-        { type: "application/json;charset=utf-8" }
-    );
+    const textoBotonOriginal = otPrepare.textContent;
+    otPrepare.disabled = true;
+    otPrepare.textContent = "Creando OT...";
+    otMessage.style.color = "#1f5f99";
+    otMessage.textContent = "Enviando solicitud a Power Automate y SAP...";
 
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `OT_${payload.aviso}.json`;
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    URL.revokeObjectURL(url);
+    try {
+        const response = await fetch(POWER_AUTOMATE_OT_URL, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(payload)
+        });
 
-    otMessage.style.color = "#177245";
-    otMessage.textContent = "Solicitud preparada. El siguiente paso es conectarla con Power Automate/PAD para ejecutar SAP.";
+        if (!response.ok) {
+            const detalle = await response.text().catch(() => "");
+            throw new Error(`HTTP ${response.status}${detalle ? " - " + detalle : ""}`);
+        }
+
+        let respuesta = null;
+        try {
+            respuesta = await response.json();
+        } catch (_) {
+            // El flujo puede responder 200 sin cuerpo JSON.
+        }
+
+        otMessage.style.color = "#177245";
+        otMessage.textContent =
+            respuesta?.mensaje ||
+            `Solicitud enviada correctamente para el aviso ${aviso}.`;
+
+    } catch (error) {
+        console.error("ERROR CREANDO OT EN SAP:", error);
+        otMessage.style.color = "#d14343";
+        otMessage.textContent =
+            "No se pudo ejecutar Power Automate. " +
+            (error?.message || "Error desconocido.");
+    } finally {
+        otPrepare.disabled = false;
+        otPrepare.textContent = textoBotonOriginal;
+    }
 }
 
 if (otClose) otClose.addEventListener("click", closeOtModal);

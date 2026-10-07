@@ -1525,6 +1525,60 @@ const otMessage = document.getElementById("otMessage");
 // No publiques este archivo con la URL firmada en un repositorio público.
 const POWER_AUTOMATE_OT_URL = "https://defaulte9193073ba8b4e388647ba66872708.21.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/29/workflows/f530429f74e74a41aaee5520872e0076/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=jRyMSocJgrbdj3deoxKMOu9pnk9WD-R6J_Nn-GEcBpg";
 
+// Persistencia por navegador y origen (GitHub Pages).
+// No sincroniza entre computadoras; para eso se necesita almacenamiento central.
+const OT_STORAGE_KEY = "control_avisos_sap_ot_v1";
+let otGuardadas = cargarOtGuardadas();
+const otEnProceso = new Set();
+
+function cargarOtGuardadas() {
+    try {
+        const data = JSON.parse(localStorage.getItem(OT_STORAGE_KEY) || "{}");
+        return data && typeof data === "object" && !Array.isArray(data) ? data : {};
+    } catch (error) {
+        console.warn("No se pudo leer el historial local de OT", error);
+        return {};
+    }
+}
+
+function numeroOtValido(value) {
+    const valueText = String(value ?? "").trim();
+    return /^\d{6,15}$/.test(valueText) ? valueText : "";
+}
+
+function aplicarOtGuardadas() {
+    DATA.forEach(item => {
+        const aviso = String(item.notificacion ?? "").trim();
+        const ordenSAP = numeroOtValido(item.orden);
+        const ordenLocal = numeroOtValido(otGuardadas[aviso]?.orden);
+        // El JSON de SAP prevalece sobre el registro local si ya contiene una OT.
+        if (ordenSAP) {
+            if (aviso && ordenLocal !== ordenSAP) {
+                otGuardadas[aviso] = {orden: ordenSAP, origen: "SAP"};
+            }
+        } else if (aviso && ordenLocal) {
+            item.orden = ordenLocal;
+        }
+    });
+    try { localStorage.setItem(OT_STORAGE_KEY, JSON.stringify(otGuardadas)); }
+    catch (error) { console.warn("No se pudo sincronizar el historial local", error); }
+}
+
+function guardarOtLocal(aviso, numeroOT) {
+    otGuardadas[aviso] = {
+        orden: numeroOT,
+        origen: "Power Automate",
+        fechaRegistro: new Date().toISOString()
+    };
+    try {
+        localStorage.setItem(OT_STORAGE_KEY, JSON.stringify(otGuardadas));
+        return true;
+    } catch (error) {
+        console.error("No se pudo guardar la OT en este navegador", error);
+        return false;
+    }
+}
+
 let otSelectedItem = null;
 
 function fechaParaSap(fecha) {
@@ -1532,6 +1586,11 @@ function fechaParaSap(fecha) {
 }
 
 function openOtModal(item) {
+    const avisoActual = String(item.notificacion ?? "").trim();
+    if (numeroOtValido(item.orden) || numeroOtValido(otGuardadas[avisoActual]?.orden)) {
+        alert("Este aviso ya tiene una OT registrada: " + (numeroOtValido(item.orden) || otGuardadas[avisoActual].orden));
+        return;
+    }
     otSelectedItem = item;
 
     const aviso = String(item.notificacion ?? "").trim();
@@ -1569,6 +1628,11 @@ async function prepareOtRequest() {
     }
 
     const aviso = otAviso.value.trim();
+    if (numeroOtValido(otSelectedItem.orden) || numeroOtValido(otGuardadas[aviso]?.orden) || otEnProceso.has(aviso)) {
+        otMessage.style.color = "#d14343";
+        otMessage.textContent = "Este aviso ya tiene una OT o una solicitud en proceso.";
+        return;
+    }
     const ptoTrabajo = otPtoTrabajo.value.trim().toUpperCase();
     const fechaInicio = fechaParaSap(otFechaInicio.value);
     const horaInicio = String(otSelectedItem.horaAviso ?? "").trim();
@@ -1610,6 +1674,7 @@ async function prepareOtRequest() {
         horaInicio: horaInicio
     };
 
+    otEnProceso.add(aviso);
     const textoBotonOriginal = otPrepare.textContent;
     otPrepare.disabled = true;
     otPrepare.textContent = "Creando OT...";
@@ -1643,11 +1708,14 @@ async function prepareOtRequest() {
             throw new Error("Power Automate respondió correctamente, pero no devolvió el número de OT.");
         }
 
-        // Actualiza el registro en memoria para reflejar inmediatamente la OT creada.
+        // Guarda antes de redibujar. Permanece tras recargar o actualizar el JSON.
+        const guardado = guardarOtLocal(aviso, numeroOT);
         otSelectedItem.orden = numeroOT;
 
         otMessage.style.color = "#177245";
-        otMessage.textContent = `✓ OT ${numeroOT} creada correctamente en SAP`;
+        otMessage.textContent = guardado
+            ? `✓ OT ${numeroOT} creada correctamente en SAP y guardada en este navegador`
+            : `✓ OT ${numeroOT} creada en SAP, pero no se pudo guardar localmente`;
 
         // Redibuja la tabla: el botón + Crear OT cambia a ✓ OT 8005...
         renderDashboard();
@@ -1659,6 +1727,7 @@ async function prepareOtRequest() {
             "No se pudo ejecutar Power Automate. " +
             (error?.message || "Error desconocido.");
     } finally {
+        otEnProceso.delete(aviso);
         otPrepare.disabled = false;
         otPrepare.textContent = textoBotonOriginal;
     }
@@ -1769,6 +1838,8 @@ async function loadData(
             )
                 ? json.data
                 : [];
+
+        aplicarOtGuardadas();
 
 
         VERSION_ACTUAL =

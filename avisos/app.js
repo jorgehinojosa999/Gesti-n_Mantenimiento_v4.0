@@ -1637,10 +1637,20 @@ async function prepareOtRequest() {
             // El flujo puede responder 200 sin cuerpo JSON.
         }
 
+        const numeroOT = String(respuesta?.numeroOT ?? "").trim();
+
+        if (!numeroOT) {
+            throw new Error("Power Automate respondió correctamente, pero no devolvió el número de OT.");
+        }
+
+        // Actualiza el registro en memoria para reflejar inmediatamente la OT creada.
+        otSelectedItem.orden = numeroOT;
+
         otMessage.style.color = "#177245";
-        otMessage.textContent =
-            respuesta?.mensaje ||
-            `Solicitud enviada correctamente para el aviso ${aviso}.`;
+        otMessage.textContent = `✓ OT ${numeroOT} creada correctamente en SAP`;
+
+        // Redibuja la tabla: el botón + Crear OT cambia a ✓ OT 8005...
+        renderDashboard();
 
     } catch (error) {
         console.error("ERROR CREANDO OT EN SAP:", error);

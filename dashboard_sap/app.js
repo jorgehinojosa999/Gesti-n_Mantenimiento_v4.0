@@ -1,37 +1,39 @@
 "use strict";
-// Fuente existente del portal. No modifica el JSON ni los scripts SAP.
-const FUENTE = "../data/ordenes_sap.json";
-const $ = id => document.getElementById(id);
-let registros = [], version = "";
-const fmt = n => new Intl.NumberFormat("es-EC").format(n);
-const money = n => new Intl.NumberFormat("es-EC",{style:"currency",currency:"USD"}).format(n);
-const num = v => {const n=Number(v);return Number.isFinite(n)?n:0};
-const text = v => String(v ?? "");
-const cell = (tr,value) => {const td=document.createElement("td");td.textContent=text(value);tr.appendChild(td)};
-function render(){
- const estado=$("estado").value, buscar=$("buscar").value.trim().toLowerCase();
- const datos=registros.filter(x=>(!estado||x.estado_orden===estado)&&(!buscar||text(x.orden).toLowerCase().includes(buscar)));
- const cerradas=datos.filter(x=>text(x.estado_orden).toUpperCase().includes("CERRADA")).length;
- const abiertas=datos.filter(x=>text(x.estado_orden).toUpperCase().includes("ABIERTA")).length;
- $("total").textContent=fmt(datos.length);$("cerradas").textContent=fmt(cerradas);$("abiertas").textContent=fmt(abiertas);
- $("cierre").textContent=datos.length?(100*cerradas/datos.length).toFixed(1)+"%":"—";
- $("plan").textContent=money(datos.reduce((s,x)=>s+num(x.total_costes_plan),0));
- $("real").textContent=money(datos.reduce((s,x)=>s+num(x.costes_totales_reales),0));
- const counts=new Map();datos.forEach(x=>counts.set(x.estado_orden||"Sin estado",(counts.get(x.estado_orden||"Sin estado")||0)+1));
- const barras=$("barras");barras.replaceChildren();[...counts].sort((a,b)=>b[1]-a[1]).forEach(([name,n])=>{
- const row=document.createElement("div");row.className="bar";const label=document.createElement("label");label.textContent=name;
- const track=document.createElement("div");track.className="track";const fill=document.createElement("div");fill.className="fill";fill.style.width=(datos.length?100*n/datos.length:0)+"%";track.append(fill);
- const count=document.createElement("b");count.textContent=fmt(n);row.append(label,track,count);barras.append(row)});
- const body=$("filas");body.replaceChildren();const fragment=document.createDocumentFragment();datos.slice(0,250).forEach(x=>{
- const tr=document.createElement("tr");[x.orden,x.estado_orden,x.estatus_sap,money(num(x.total_costes_plan)),money(num(x.costes_totales_reales)),x.fecha_iw47,x.texto_notificacion].forEach(v=>cell(tr,v));fragment.append(tr)});body.append(fragment);
- $("cantidad").textContent=fmt(datos.length)+" órdenes";
+// Dashboard independiente: solo lee JSON existentes, no modifica scripts SAP.
+const URLS={ordenes:"../data/ordenes_sap.json",avisos:"../data/avisos.json",programacion:"../data/programacion.json"};
+const $=id=>document.getElementById(id);
+const fmt=n=>new Intl.NumberFormat("es-EC").format(n);
+const money=n=>new Intl.NumberFormat("es-EC",{style:"currency",currency:"USD"}).format(n);
+const number=v=>{if(v===null||v===undefined||v==="")return 0;const n=Number(v);return Number.isFinite(n)?n:0};
+const str=v=>String(v??"").trim();
+const key=v=>str(v).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
+const field=(obj,names)=>{if(!obj||typeof obj!=="object")return "";const keys=Object.keys(obj);for(const name of names){const match=keys.find(k=>key(k)===key(name));if(match&&obj[match]!==null&&obj[match]!==undefined&&str(obj[match])!=="")return obj[match]}return ""};
+const normalizeOrder=v=>str(v).replace(/\.0$/,"").replace(/^0+(?=\d)/,"");
+const date=v=>{if(v===null||v===undefined||v==="")return null;if(typeof v==="number"&&v>20000&&v<80000){const d=new Date(Date.UTC(1899,11,30)+v*86400000);return Number.isNaN(d.getTime())?null:d}const s=str(v);let m=s.match(/^(\d{1,2})[./-](\d{1,2})[./-](\d{4})/);if(m){const d=new Date(Date.UTC(+m[3],+m[2]-1,+m[1]));return d.getUTCFullYear()===+m[3]&&d.getUTCMonth()===+m[2]-1&&d.getUTCDate()===+m[1]?d:null}m=s.match(/^(\d{4})-(\d{2})-(\d{2})/);if(m){const d=new Date(Date.UTC(+m[1],+m[2]-1,+m[3]));return d.getUTCFullYear()===+m[1]&&d.getUTCMonth()===+m[2]-1&&d.getUTCDate()===+m[3]?d:null}return null};
+const displayDate=d=>d?`${String(d.getUTCDate()).padStart(2,"0")}/${String(d.getUTCMonth()+1).padStart(2,"0")}/${d.getUTCFullYear()}`:"—";
+const months=["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
+const state=v=>{const s=str(v).toUpperCase();if(s.includes("CERRAD"))return "cerrada";if(s.includes("ABIERT"))return "abierta";return "revisar"};
+let rows=[],sourceStatus="",signature="";
+const avisosOrder=["orden","orden de trabajo","n orden","nro orden","numero orden","numero de orden","orden mantenimiento","orden asociada","orden sap","orden_1"];
+const avisosDesc=["descripcion_1","descripcion 1","descripcion","texto breve","texto breve aviso","descripcion aviso","texto aviso"];
+const avisosDate=["fecha aviso","fecha de aviso","fecha creacion","fecha de creacion","fecha","fecha aviso creado","fecha de entrada","fecha entrada"];
+const progDate=["fecha","fecha programada","fecha de programacion"];
+const classFields=["cl actividad pm","cl.actividad pm","clase actividad pm","clase de actividad pm","actividad pm","tipo mantenimiento","clasificacion mantenimiento"];
+function build(orders,avisos,programacion){
+ const avisosMap=new Map();for(const a of avisos){const order=normalizeOrder(field(a,avisosOrder));if(!order)continue;const d=date(field(a,avisosDate));const desc=str(field(a,avisosDesc));const cls=str(field(a,classFields));const old=avisosMap.get(order);if(!old||(!old.desc&&desc)||(!old.d&&d))avisosMap.set(order,{desc:desc||old?.desc||"",d:d||old?.d||null,cls:cls||old?.cls||""})}
+ const progMap=new Map();for(const p of programacion){const order=normalizeOrder(field(p,["orden","orden #","numero orden"]));const d=date(field(p,progDate));if(!order||!d)continue;const old=progMap.get(order);if(!old||d<old)progMap.set(order,d)}
+ return orders.map(o=>{const order=normalizeOrder(field(o,["orden"]));const aviso=avisosMap.get(order);const prog=progMap.get(order);const d=prog||aviso?.d||null;return {...o,_orden:order,_estado:state(o.estado_orden),_descripcion:aviso?.desc||"",_fecha:d,_fechaOrigen:prog?"Programación":aviso?.d?"Aviso":"",_clase:str(field(o,classFields))||aviso?.cls||""}})
 }
-async function cargar(force=false){try{
- const r=await fetch(FUENTE+"?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw Error("HTTP "+r.status);
- const d=await r.json();if(!Array.isArray(d.data))throw Error("Formato JSON inesperado");
- const next=JSON.stringify([d.ultima_actualizacion,d.cantidad_ordenes,d.data.length,d.data[0]?.orden,d.data[d.data.length-1]?.orden]);
- if(force||next!==version){version=next;registros=d.data;const old=$("estado").value;const options=[...new Set(registros.map(x=>x.estado_orden).filter(Boolean))].sort();$("estado").replaceChildren(new Option("Todos",""),...options.map(x=>new Option(x,x)));$("estado").value=options.includes(old)?old:"";render()}
- $("status").textContent="Datos conectados · Actualización de origen: "+(d.ultima_actualizacion||"no informada")+" · Verificado: "+new Date().toLocaleTimeString("es-EC");
- }catch(e){$("status").textContent="No se pudo leer "+FUENTE+": "+e.message+". Verifica el nombre y que el portal esté publicado en un servidor web.";console.error(e)}}
-$("estado").addEventListener("change",render);$("buscar").addEventListener("input",render);$("actualizar").addEventListener("click",()=>cargar(true));
-cargar(true);setInterval(()=>cargar(),15000);
+function populate(id,values,all="Todos"){const select=$(id),prev=select.value;select.replaceChildren(new Option(all,""),...values.map(v=>new Option(v.label??v.value,v.value)));select.value=values.some(v=>v.value===prev)?prev:""}
+function filters(){const years=[...new Set(rows.filter(x=>x._fecha).map(x=>x._fecha.getUTCFullYear()))].sort((a,b)=>b-a).map(v=>({value:String(v),label:String(v)}));populate("anio",years);populate("mes",months.map((m,i)=>({value:String(i+1),label:m})));populate("estado",[...new Set(rows.map(x=>str(x.estado_orden)).filter(Boolean))].sort().map(v=>({value:v,label:v}))) }
+function empty(id,message){$(id).replaceChildren();const div=document.createElement("p");div.className="empty";div.textContent=message;$(id).append(div)}
+function barChart(id,entries,total){const root=$(id);root.replaceChildren();if(!entries.length){empty(id,"No hay registros para los filtros seleccionados.");return}for(const [label,n] of entries){const r=document.createElement("div");r.className="bar";const l=document.createElement("label");l.textContent=label;l.title=label;const track=document.createElement("div");track.className="track";const fill=document.createElement("div");fill.className="fill";fill.style.width=`${total?100*n/total:0}%`;track.append(fill);const count=document.createElement("b");count.textContent=fmt(n);r.append(l,track,count);root.append(r)}}
+function stackedChart(id,entries){const root=$(id);root.replaceChildren();if(!entries.length){empty(id,"No hay datos relacionados disponibles.");return}const legend=document.createElement("div");legend.className="legend";for(const [label,css] of [["Cerradas","closed"],["Abiertas","open"],["Revisar","review"]]){const el=document.createElement("span");const dot=document.createElement("i");dot.className="dot "+css;el.append(dot,document.createTextNode(label));legend.append(el)}root.append(legend);const max=Math.max(...entries.map(x=>x.cerrada+x.abierta+x.revisar),1);for(const x of entries){const total=x.cerrada+x.abierta+x.revisar;const r=document.createElement("div");r.className="bar";const l=document.createElement("label");l.textContent=x.label;l.title=x.label;const track=document.createElement("div");track.className="track";const stack=document.createElement("div");stack.className="stacked";stack.style.width=`${100*total/max}%`;for(const type of ["cerrada","abierta","revisar"]){if(x[type]){const part=document.createElement("div");part.className=type==="cerrada"?"closed":type==="abierta"?"open":"review";part.style.width=`${100*x[type]/total}%`;part.title=`${type}: ${fmt(x[type])}`;stack.append(part)}}track.append(stack);const count=document.createElement("b");count.textContent=fmt(total);r.append(l,track,count);root.append(r)}}
+function aggregate(data,getLabel,limit=0){const map=new Map();for(const x of data){const label=getLabel(x);if(!label)continue;if(!map.has(label))map.set(label,{label,cerrada:0,abierta:0,revisar:0});map.get(label)[x._estado]++}let entries=[...map.values()];entries.sort((a,b)=>(b.cerrada+b.abierta+b.revisar)-(a.cerrada+a.abierta+a.revisar));return limit?entries.slice(0,limit):entries}
+function render(){const st=$("estado").value,year=$("anio").value,month=$("mes").value,query=$("buscar").value.trim();const data=rows.filter(x=>(!st||x.estado_orden===st)&&(!query||x._orden.includes(query))&&(!year||(x._fecha&&String(x._fecha.getUTCFullYear())===year))&&(!month||(x._fecha&&String(x._fecha.getUTCMonth()+1)===month)));const closed=data.filter(x=>x._estado==="cerrada").length,open=data.filter(x=>x._estado==="abierta").length;$("total").textContent=fmt(data.length);$("cerradas").textContent=fmt(closed);$("abiertas").textContent=fmt(open);$("cierre").textContent=data.length?(100*closed/data.length).toFixed(1)+"%":"—";$("plan").textContent=money(data.reduce((s,x)=>s+number(x.total_costes_plan),0));$("real").textContent=money(data.reduce((s,x)=>s+number(x.costes_totales_reales),0));const counts=new Map();data.forEach(x=>counts.set(x.estado_orden||"Sin estado",(counts.get(x.estado_orden||"Sin estado")||0)+1));barChart("barras",[...counts].sort((a,b)=>b[1]-a[1]),data.length);
+ const byMonth=aggregate(data,x=>x._fecha?`${x._fecha.getUTCFullYear()}-${String(x._fecha.getUTCMonth()+1).padStart(2,"0")}`:"");byMonth.sort((a,b)=>a.label.localeCompare(b.label));byMonth.forEach(x=>{const [y,m]=x.label.split("-");x.label=months[Number(m)-1]+" "+y});stackedChart("mesesChart",byMonth);
+ stackedChart("descripcionChart",aggregate(data,x=>x._descripcion,12));barChart("actividadChart",[...aggregate(data,x=>x._clase).map(x=>[x.label,x.cerrada+x.abierta+x.revisar])],data.length);
+ const body=$("filas");body.replaceChildren();const frag=document.createDocumentFragment();for(const x of data.slice(0,250)){const tr=document.createElement("tr");for(const v of [x._orden,x.estado_orden,x._descripcion||"—",displayDate(x._fecha),x._fechaOrigen||"—",x._clase||"—",money(number(x.total_costes_plan)),money(number(x.costes_totales_reales)),x.fecha_iw47||"—",x.texto_notificacion||"—"]){const td=document.createElement("td");td.textContent=str(v);td.title=str(v);tr.append(td)}frag.append(tr)}body.append(frag);$("cantidad").textContent=`${fmt(data.length)} órdenes · ${fmt(data.filter(x=>x._fecha).length)} con fecha vinculada`}
+async function read(url){const res=await fetch(url+"?t="+Date.now(),{cache:"no-store"});if(!res.ok)throw Error("HTTP "+res.status);const json=await res.json();return {data:Array.isArray(json)?json:Array.isArray(json.data)?json.data:[],update:json.ultima_actualizacion||""}}
+async function load(force=false){try{const results=await Promise.allSettled([read(URLS.ordenes),read(URLS.avisos),read(URLS.programacion)]);if(results[0].status!=="fulfilled")throw Error("No se pudo leer ordenes_sap.json: "+results[0].reason);const orders=results[0].value;const avisos=results[1].status==="fulfilled"?results[1].value.data:[];const programacion=results[2].status==="fulfilled"?results[2].value.data:[];const sig=JSON.stringify([orders.update,orders.data.length,results[1].status==="fulfilled"?results[1].value.update:"error",avisos.length,results[2].status==="fulfilled"?results[2].value.update:"error",programacion.length]);if(force||sig!==signature){signature=sig;rows=build(orders.data,avisos,programacion);filters();render()}const errors=[];if(results[1].status!=="fulfilled")errors.push("avisos.json no disponible");if(results[2].status!=="fulfilled")errors.push("programacion.json no disponible");$("status").textContent=`Órdenes: ${fmt(rows.length)} · Avisos cargados: ${fmt(avisos.length)} · Programación: ${fmt(programacion.length)} · Origen: ${orders.update||"sin fecha"} · Verificado: ${new Date().toLocaleTimeString("es-EC")}`+(errors.length?" · ADVERTENCIA: "+errors.join(", "):"") }catch(e){$("status").textContent="Error de lectura: "+e.message;console.error(e)}}
+for(const id of ["estado","anio","mes"])$(id).addEventListener("change",render);$("buscar").addEventListener("input",render);$("actualizar").addEventListener("click",()=>load(true));$("limpiar").addEventListener("click",()=>{for(const id of ["estado","anio","mes","buscar"])$(id).value="";render()});load(true);setInterval(()=>load(),60000);

@@ -1,7 +1,7 @@
 {
   "ok": true,
-  "ultima_actualizacion": "06/10/2026 09:01:33",
-  "cantidad_ordenes": 26135,
+  "ultima_actualizacion": "08/10/2026 09:26:25",
+  "cantidad_ordenes": 26475,
   "data": [
     {
       "orden": "800114951",
@@ -159342,8 +159342,8 @@
     {
       "orden": "800397368",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "ABIE DMNV EDET PREC",
-      "total_costes_plan": 1747.72,
+      "estatus_sap": "LIB. IMPR DMNV NLIQ PREC",
+      "total_costes_plan": 1744.19,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
@@ -160449,11 +160449,11 @@
     {
       "orden": "800397491",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "ABIE DMNV EDET PREC",
-      "total_costes_plan": 1916.64,
-      "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "estatus_sap": "LIB. NOTI IMPR DMNV JBFI MOVM NLIQ PREC",
+      "total_costes_plan": 1495.56,
+      "costes_totales_reales": 39.28,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Desmontaje de distribuidor inferior"
     },
     {
       "orden": "800397492",
@@ -194756,8 +194756,8 @@
     },
     {
       "orden": "800437574",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 1.09,
       "fecha_iw47": "22/09/2026",
@@ -201082,6 +201082,15 @@
       "texto_notificacion": "OK REALIZADO"
     },
     {
+      "orden": "800461667",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR DMNV MOVM NLIQ PREC",
+      "total_costes_plan": 383.06,
+      "costes_totales_reales": 5.89,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
       "orden": "800461673",
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "ABIE DMNV EDET LIBR PREC",
@@ -201581,6 +201590,15 @@
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "ABIE DMNV EDET PREC",
       "total_costes_plan": 751.58,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800461741",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR DMNV KKMP NLIQ PREC",
+      "total_costes_plan": 26.24,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
@@ -203541,7 +203559,7 @@
     {
       "orden": "800462016",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "ABIE DMNV EDET PREC",
+      "estatus_sap": "LIB. IMPR DMNV NLIQ PREC",
       "total_costes_plan": 25.0,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
@@ -205627,10 +205645,28 @@
       "texto_notificacion": ""
     },
     {
+      "orden": "800462270",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR DMNV JBFI MOVM NLIQ PREC",
+      "total_costes_plan": 29.4,
+      "costes_totales_reales": 177.46,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Se desmonta el sistema de arrastre de pa"
+    },
+    {
       "orden": "800462271",
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "ABIE DMNV EDET PREC",
       "total_costes_plan": 25.8,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800462272",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR DMNV NLIQ PREC",
+      "total_costes_plan": 49.5,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
@@ -207752,10 +207788,10 @@
     },
     {
       "orden": "800462519",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "CTEC NOTP IMPR JBFI KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 6.88,
-      "costes_totales_reales": 3.28,
+      "costes_totales_reales": 6.56,
       "fecha_iw47": "04/09/2026",
       "texto_notificacion": "No se hace por soporte a lineas"
     },
@@ -208382,12 +208418,12 @@
     },
     {
       "orden": "800462597",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "CTEC NOTP IMPR JBFI KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 6.88,
-      "costes_totales_reales": 4.37,
+      "costes_totales_reales": 7.65,
       "fecha_iw47": "04/09/2026",
-      "texto_notificacion": "No se realiza por sopote a lineas"
+      "texto_notificacion": "No se realiza por sopote a lineas / Se revisa paneles quedan bien"
     },
     {
       "orden": "800462598",
@@ -208437,7 +208473,7 @@
     {
       "orden": "800462605",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "ABIE DMNV EDET PREC",
+      "estatus_sap": "LIB. IMPR DMNV NLIQ PREC",
       "total_costes_plan": 23.65,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
@@ -209129,12 +209165,12 @@
     },
     {
       "orden": "800462694",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR DMNV NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR DMNV JBFI NLIQ PREC",
       "total_costes_plan": 28.94,
-      "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "costes_totales_reales": 9.84,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "no se realiza porque la linea en producc"
     },
     {
       "orden": "800462698",
@@ -209528,6 +209564,15 @@
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "ABIE DMNV EDET PREC",
       "total_costes_plan": 40584.6,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800462747",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR DMNV EDET NLIQ PREC",
+      "total_costes_plan": 3438.64,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
@@ -211938,7 +211983,7 @@
     {
       "orden": "800463041",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "ABIE DMNV EDET PREC",
+      "estatus_sap": "LIB. IMPR DMNV EDET NLIQ PREC",
       "total_costes_plan": 13.0,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
@@ -213215,12 +213260,12 @@
     },
     {
       "orden": "800463198",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 19.68,
-      "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "costes_totales_reales": 16.4,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "no se realiza linea en produccion"
     },
     {
       "orden": "800463200",
@@ -223007,8 +223052,8 @@
     },
     {
       "orden": "800464351",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "CTEC NOTP IMPR JBFI KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 3.44,
       "costes_totales_reales": 1.09,
       "fecha_iw47": "27/09/2026",
@@ -223724,6 +223769,15 @@
       "costes_totales_reales": 66.73,
       "fecha_iw47": "21/09/2026",
       "texto_notificacion": "inspeccion estado de valvulas"
+    },
+    {
+      "orden": "800464432",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR DMNV NLIQ PREC",
+      "total_costes_plan": 10147.78,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
     },
     {
       "orden": "800464433",
@@ -227048,8 +227102,8 @@
     },
     {
       "orden": "800473075",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 2.19,
       "fecha_iw47": "29/09/2026",
@@ -229091,8 +229145,8 @@
     },
     {
       "orden": "800478346",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "12/09/2026",
@@ -233141,8 +233195,8 @@
     },
     {
       "orden": "800518899",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "05/10/2026",
@@ -233331,14 +233385,23 @@
     {
       "orden": "800520083",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR DMNV NLIQ PREC",
+      "estatus_sap": "LIB. NOTI IMPR DMNV JBFI NLIQ PREC",
       "total_costes_plan": 86.87,
       "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
+      "fecha_iw47": "07/10/2026",
       "texto_notificacion": ""
     },
     {
       "orden": "800520084",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800520085",
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
@@ -233376,8 +233439,17 @@
     {
       "orden": "800520535",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "estatus_sap": "LIB. IMPR DMNV KKMP NLIQ PREC",
       "total_costes_plan": 16.4,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800520539",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR DMNV NLIQ PREC",
+      "total_costes_plan": 237.8,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
@@ -233387,6 +233459,24 @@
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "ABIE DMNV EDET KKMP LIBR PREC",
       "total_costes_plan": 6.56,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800520798",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "ABIE DMNV EDET KKMP LIBR PREC",
+      "total_costes_plan": 6.56,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800520799",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 6.03,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
@@ -233426,6 +233516,78 @@
       "costes_totales_reales": 0.0,
       "fecha_iw47": "02/10/2026",
       "texto_notificacion": "Se da soporte a produccion"
+    },
+    {
+      "orden": "800521885",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800521889",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800521893",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800521897",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800521905",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 18.59,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800521910",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 51.4,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800521917",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 56.31,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800521927",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR DMNV NLIQ PREC",
+      "total_costes_plan": 96.89,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
     },
     {
       "orden": "800521932",
@@ -233473,13 +233635,22 @@
       "texto_notificacion": ""
     },
     {
-      "orden": "800521940",
+      "orden": "800521938",
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
+    },
+    {
+      "orden": "800521940",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "foga de aceite transp sipa16"
     },
     {
       "orden": "800521945",
@@ -233491,10 +233662,109 @@
       "texto_notificacion": "Se realiza ruta de inspeccion"
     },
     {
+      "orden": "800521949",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800521955",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800521959",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "no se a recibido la capacitacion para la"
+    },
+    {
       "orden": "800521973",
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
       "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800521984",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 6.62,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800521991",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800521995",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR DMNV NLIQ PREC",
+      "total_costes_plan": 45.82,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800521999",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522002",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522003",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 9.84,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522007",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 17.72,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522015",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 9.84,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
@@ -233527,13 +233797,49 @@
       "texto_notificacion": "no se realiza en linea en produccion"
     },
     {
-      "orden": "800522065",
+      "orden": "800522041",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR EDET KKMP NLIQ PREC",
-      "total_costes_plan": 0.0,
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 9.84,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
+    },
+    {
+      "orden": "800522046",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 9.84,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522052",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 19.68,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522059",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 19.68,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522065",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR EDET JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se revisa sin novedad"
     },
     {
       "orden": "800522066",
@@ -233543,6 +233849,195 @@
       "costes_totales_reales": 32.13,
       "fecha_iw47": "05/10/2026",
       "texto_notificacion": "revision de caja reductora en funcionami"
+    },
+    {
+      "orden": "800522067",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 14.76,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522075",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 28.43,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522083",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 16.46,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522091",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 6.56,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522096",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.06,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522104",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 1.36,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522110",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 1.09,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522114",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.54,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522118",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 6.56,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522120",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.12,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522127",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 1.64,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522132",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "ABIE DMNV KKMP LIBR PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522138",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 1.64,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522144",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.54,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522148",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 7.88,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522153",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 47.56,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522158",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 1.64,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522160",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.12,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522164",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522170",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.12,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522174",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP LINA NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
     },
     {
       "orden": "800522177",
@@ -233572,19 +234067,136 @@
       "texto_notificacion": ""
     },
     {
-      "orden": "800522236",
+      "orden": "800522183",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR EDET KKMP NLIQ PREC",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 29.58,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522187",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522191",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
     },
     {
-      "orden": "800522237",
+      "orden": "800522192",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR EDET KKMP NLIQ PREC",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 13.12,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522199",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522204",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 1.64,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522210",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522215",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522236",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR EDET JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se revisa sin novedad"
+    },
+    {
+      "orden": "800522237",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR EDET JBFI KKMP NLIQ PREC",
       "total_costes_plan": 6.56,
+      "costes_totales_reales": 6.56,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "todo ok"
+    },
+    {
+      "orden": "800522242",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 9.84,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522243",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522245",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522254",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522255",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
@@ -233608,6 +234220,69 @@
       "texto_notificacion": "se realiza acompañamiento a lineas de pr"
     },
     {
+      "orden": "800522265",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 9.21,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522270",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 2.96,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522274",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 2.94,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522278",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.66,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522280",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 1.64,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522285",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522289",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
       "orden": "800522293",
       "estado_orden": "ORDEN CERRADA",
       "estatus_sap": "CTEC NOTI IMPR JBFI KKMP MOVM NLIQ PREC",
@@ -233615,6 +234290,60 @@
       "costes_totales_reales": 27.38,
       "fecha_iw47": "02/10/2026",
       "texto_notificacion": "Se verifica y ok"
+    },
+    {
+      "orden": "800522301",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522307",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 19.68,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522311",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522315",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 9.84,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522319",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 19.68,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522321",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 39.36,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
     },
     {
       "orden": "800522326",
@@ -233626,6 +234355,24 @@
       "texto_notificacion": "linea en funcionamiento revision operati"
     },
     {
+      "orden": "800522328",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 16.4,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se limpia sensores ok"
+    },
+    {
+      "orden": "800522330",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP LINA NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
       "orden": "800522334",
       "estado_orden": "ORDEN CERRADA",
       "estatus_sap": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
@@ -233633,6 +234380,15 @@
       "costes_totales_reales": 13.12,
       "fecha_iw47": "05/10/2026",
       "texto_notificacion": "revision sistema neumatico"
+    },
+    {
+      "orden": "800522335",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 36.08,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
     },
     {
       "orden": "800522339",
@@ -233644,27 +234400,270 @@
       "texto_notificacion": "se revisa que no tengan fuga las valvula"
     },
     {
-      "orden": "800522402",
+      "orden": "800522343",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
     },
     {
-      "orden": "800522406",
-      "estado_orden": "REVISAR",
-      "estatus_sap": "LIB. IMPR DMNV EDET KKMP MOVM NLIQ PREC",
+      "orden": "800522351",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
-      "costes_totales_reales": 149.98,
+      "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
     },
     {
-      "orden": "800522407",
+      "orden": "800522358",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR DMNV EDET KKMP NLIQ PREC",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522362",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522367",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.82,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522372",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522376",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522380",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522386",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 6.56,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522391",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522396",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522402",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "Revisión de parámetros de funcionamiento / Se abastece de tinta y aditivos a cada c"
+    },
+    {
+      "orden": "800522406",
+      "estado_orden": "REVISAR",
+      "estatus_sap": "CTEC NOTI IMPR DMNV EDET JBFI KKMP MOVM*",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 149.98,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "sin novedad"
+    },
+    {
+      "orden": "800522407",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR DMNV EDET JBFI KKMP NLIQ*",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522408",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 6.56,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522412",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522423",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 2.3,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522428",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 6.56,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522432",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522437",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522440",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 1.64,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522447",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522451",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 1.64,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522462",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 6.56,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522466",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 19.68,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522470",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522474",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522479",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522480",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 19.74,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522485",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
@@ -233682,17 +234681,35 @@
     {
       "orden": "800522487",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR DMNV KKMP MOVM NLIQ PREC",
+      "estatus_sap": "LIB. NOTI IMPR DMNV JBFI KKMP MOVM NLIQ*",
       "total_costes_plan": 6.56,
-      "costes_totales_reales": 423.9,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "costes_totales_reales": 437.02,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "fuga aceite motor rodillos. / moldes con desgaste"
     },
     {
       "orden": "800522489",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR DMNV KKMP NLIQ PREC",
+      "estatus_sap": "LIB. NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
       "total_costes_plan": 13.12,
+      "costes_totales_reales": 16.4,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "mangueras sin novedad / manguera estacion #17 rota / fuga aceite motor rodillos. / falta lubricacion."
+    },
+    {
+      "orden": "800522490",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 13.12,
+      "costes_totales_reales": 29.52,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Mtto mangueras de aire y filtros"
+    },
+    {
+      "orden": "800522494",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 9.84,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
@@ -233716,6 +234733,42 @@
       "texto_notificacion": "Se revisa PLC"
     },
     {
+      "orden": "800522498",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522502",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 1.64,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522513",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 1.64,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522523",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
       "orden": "800522529",
       "estado_orden": "ORDEN CERRADA",
       "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
@@ -233730,6 +234783,15 @@
       "estatus_sap": "LIB. IMPR KKMP MOVM NLIQ PREC",
       "total_costes_plan": 9.84,
       "costes_totales_reales": 44.29,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522531",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
     },
@@ -233770,10 +234832,82 @@
       "texto_notificacion": "guardas en buen estado"
     },
     {
-      "orden": "800522542",
+      "orden": "800522539",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR DMNV EDET KKMP NLIQ PREC",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522542",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR DMNV EDET JBFI KKMP NLIQ*",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se revisa sin novedad"
+    },
+    {
+      "orden": "800522543",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.55,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522550",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522554",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522563",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 1.64,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522570",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 1.64,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522573",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522581",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
@@ -233786,6 +234920,33 @@
       "costes_totales_reales": 3.28,
       "fecha_iw47": "06/10/2026",
       "texto_notificacion": "se rev9iza bomba"
+    },
+    {
+      "orden": "800522586",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.64,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522591",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.18,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522596",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.52,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
     },
     {
       "orden": "800522603",
@@ -233806,6 +234967,15 @@
       "texto_notificacion": ""
     },
     {
+      "orden": "800522606",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
       "orden": "800522609",
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
@@ -233813,6 +234983,33 @@
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
+    },
+    {
+      "orden": "800522613",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522619",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522621",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Revisión de fugas NH3"
     },
     {
       "orden": "800522625",
@@ -233842,6 +235039,42 @@
       "texto_notificacion": "REV. FUGAS AGUA EN LINEA KHS"
     },
     {
+      "orden": "800522628",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 1.09,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522629",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP MOVM NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 37.56,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "coreccion de fugas en linea carballo"
+    },
+    {
+      "orden": "800522634",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 1.64,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522635",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
       "orden": "800522640",
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "CTEC NOTP IMPR DMNV EDET JBFI KKMP NLIQ*",
@@ -233849,6 +235082,24 @@
       "costes_totales_reales": 0.0,
       "fecha_iw47": "02/10/2026",
       "texto_notificacion": "Se revisa sensores"
+    },
+    {
+      "orden": "800522641",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522645",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 29.64,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
     },
     {
       "orden": "800522650",
@@ -233864,6 +235115,51 @@
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
       "total_costes_plan": 9.84,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522657",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522661",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522665",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522669",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.83,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522673",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 23.44,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
@@ -233896,6 +235192,24 @@
       "texto_notificacion": "revicion de sisteas sin novedad"
     },
     {
+      "orden": "800522687",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522692",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "revision de fugas en intercambiador"
+    },
+    {
       "orden": "800522694",
       "estado_orden": "ORDEN CERRADA",
       "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
@@ -233914,13 +235228,94 @@
       "texto_notificacion": "revision visual"
     },
     {
+      "orden": "800522702",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522707",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 6.56,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522712",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522716",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 1.64,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522721",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522726",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
       "orden": "800522729",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "estatus_sap": "LIB. NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "03/10/2026",
       "texto_notificacion": "INSP. GUARDAS TALLER MTTO."
+    },
+    {
+      "orden": "800522734",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522739",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522741",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 19.8,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
     },
     {
       "orden": "800522746",
@@ -233942,9 +235337,27 @@
     },
     {
       "orden": "800522749",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR EDET KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR EDET JBFI KKMP NLIQ PREC",
       "total_costes_plan": 3.28,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se revisa"
+    },
+    {
+      "orden": "800522750",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.3,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522755",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.48,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
@@ -233959,10 +235372,37 @@
       "texto_notificacion": "se realiza MTTO sistema de lubricadsion"
     },
     {
-      "orden": "800522762",
+      "orden": "800522761",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 6.56,
+      "costes_totales_reales": 22.96,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Mtto sistema de lubricacion"
+    },
+    {
+      "orden": "800522762",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 3.28,
+      "costes_totales_reales": 9.84,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "limpieza tablero"
+    },
+    {
+      "orden": "800522764",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522770",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
@@ -233986,6 +235426,51 @@
       "texto_notificacion": "se revisa sistema chiller"
     },
     {
+      "orden": "800522780",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522787",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 9.84,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522791",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522800",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522806",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP LINA NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
       "orden": "800522815",
       "estado_orden": "ORDEN CERRADA",
       "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
@@ -234004,7 +235489,97 @@
       "texto_notificacion": "Se realiza revion"
     },
     {
+      "orden": "800522818",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.4,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522820",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP LINA NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522824",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.42,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
       "orden": "800522829",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 9.84,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "daño perno  de regulador de cierre"
+    },
+    {
+      "orden": "800522830",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP LINA NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522834",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 7.22,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522839",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "ABIE DMNV EDET KKMP PREC",
+      "total_costes_plan": 0.06,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522840",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.06,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522846",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 10.26,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522853",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.06,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522857",
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
       "total_costes_plan": 3.28,
@@ -234013,28 +235588,118 @@
       "texto_notificacion": ""
     },
     {
-      "orden": "800522903",
+      "orden": "800522861",
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
-      "total_costes_plan": 6.56,
+      "total_costes_plan": 0.18,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
+    },
+    {
+      "orden": "800522866",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 3.7,
+      "costes_totales_reales": 3.66,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Limpieza de tuberías"
+    },
+    {
+      "orden": "800522871",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 6.74,
+      "costes_totales_reales": 6.74,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Limp. Ext. quemador y motor ventiladorS"
+    },
+    {
+      "orden": "800522875",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "ABIE DMNV EDET KKMP PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522879",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "ABIE DMNV EDET KKMP PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522884",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.24,
+      "costes_totales_reales": 0.2,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Limpieza Tubería"
+    },
+    {
+      "orden": "800522888",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 6.92,
+      "costes_totales_reales": 10.14,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Limpieza y Reapriete Filtro de aire"
+    },
+    {
+      "orden": "800522894",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 16.4,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522902",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.06,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522903",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 6.56,
+      "costes_totales_reales": 6.56,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "linea en produccion se revisan fugas"
     },
     {
       "orden": "800522904",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR EDET KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR EDET JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se revisa"
     },
     {
       "orden": "800522906",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR EDET KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR EDET JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se revisa"
+    },
+    {
+      "orden": "800522910",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.36,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
@@ -234049,6 +235714,15 @@
       "texto_notificacion": "REVICION SISTEMA CUCHILLAS"
     },
     {
+      "orden": "800522916",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 7.16,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
       "orden": "800522917",
       "estado_orden": "ORDEN CERRADA",
       "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
@@ -234056,6 +235730,24 @@
       "costes_totales_reales": 6.56,
       "fecha_iw47": "06/10/2026",
       "texto_notificacion": "REVICION TERMOFIJADORA"
+    },
+    {
+      "orden": "800522923",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 29.7,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522928",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.18,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
     },
     {
       "orden": "800522934",
@@ -234103,6 +235795,15 @@
       "texto_notificacion": "CALIBRACION TORQUE TAP. AROL"
     },
     {
+      "orden": "800522954",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 6.01,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
       "orden": "800522963",
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
@@ -234113,12 +235814,66 @@
     },
     {
       "orden": "800522965",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
       "total_costes_plan": 3.28,
       "costes_totales_reales": 3.28,
       "fecha_iw47": "05/10/2026",
       "texto_notificacion": "linea en funcionamiento revision operati"
+    },
+    {
+      "orden": "800522968",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522971",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.42,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522977",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.54,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800522984",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 6.56,
+      "costes_totales_reales": 6.56,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Limp. Reapr  Cabezotes de los Pistones"
+    },
+    {
+      "orden": "800522989",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 6.56,
+      "costes_totales_reales": 6.56,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Limpieza de Cabezotes de los Pistones"
+    },
+    {
+      "orden": "800522994",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 6.56,
+      "costes_totales_reales": 6.56,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Limpieza de Cabezotes de los Pistones"
     },
     {
       "orden": "800523000",
@@ -234130,10 +235885,55 @@
       "texto_notificacion": ""
     },
     {
-      "orden": "800523022",
+      "orden": "800523002",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR EDET KKMP NLIQ PREC",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.24,
+      "costes_totales_reales": 2.37,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Limpieza Tubería"
+    },
+    {
+      "orden": "800523006",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 6.92,
+      "costes_totales_reales": 6.88,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Limpieza y Reapriete Filtro de aire"
+    },
+    {
+      "orden": "800523012",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.54,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523019",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.24,
+      "costes_totales_reales": 0.2,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Limpieza Tubería"
+    },
+    {
+      "orden": "800523022",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR EDET JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se realiza y todo ok"
+    },
+    {
+      "orden": "800523026",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.9,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
@@ -234148,6 +235948,15 @@
       "texto_notificacion": "revision quincenal de termofijadora"
     },
     {
+      "orden": "800523035",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.4,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
       "orden": "800523044",
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "CTEC NOTP IMPR JBFI KKMP NLIQ PREC",
@@ -234155,6 +235964,15 @@
       "costes_totales_reales": 22.96,
       "fecha_iw47": "02/10/2026",
       "texto_notificacion": "Se revisa el sistema"
+    },
+    {
+      "orden": "800523045",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP LINA NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
     },
     {
       "orden": "800523049",
@@ -234170,6 +235988,24 @@
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
       "total_costes_plan": 0.55,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523060",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523064",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.06,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
@@ -234194,9 +236030,45 @@
     },
     {
       "orden": "800523077",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR EDET KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR EDET JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se realiza y todo ok"
+    },
+    {
+      "orden": "800523078",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523083",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 6.92,
+      "costes_totales_reales": 10.14,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Limpieza y Reapriete Filtro de aire"
+    },
+    {
+      "orden": "800523090",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 10.38,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523093",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.24,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
@@ -234209,6 +236081,15 @@
       "costes_totales_reales": 6.56,
       "fecha_iw47": "04/10/2026",
       "texto_notificacion": "REV. QUINCENAL TERMOFIJADORA KHS"
+    },
+    {
+      "orden": "800523102",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.18,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
     },
     {
       "orden": "800523107",
@@ -234229,13 +236110,22 @@
       "texto_notificacion": "REVICION MOTORECDUTORES ENVOL ROB. S20"
     },
     {
-      "orden": "800523127",
+      "orden": "800523122",
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
-      "total_costes_plan": 3.28,
+      "total_costes_plan": 17.12,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
+    },
+    {
+      "orden": "800523127",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP MOVM NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 13.14,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "revision de sistema de empacado de latar"
     },
     {
       "orden": "800523129",
@@ -234274,10 +236164,91 @@
       "texto_notificacion": ""
     },
     {
-      "orden": "800523182",
+      "orden": "800523141",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR EDET KKMP NLIQ PREC",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 6.92,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523148",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.58,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523153",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 9.84,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523158",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 7.16,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523160",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 6.56,
+      "costes_totales_reales": 9.84,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Verificación de parámetros (check list)"
+    },
+    {
+      "orden": "800523165",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.12,
+      "costes_totales_reales": 0.08,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Limpieza y Reapriete Bomba de Agua"
+    },
+    {
+      "orden": "800523170",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.12,
+      "costes_totales_reales": 0.08,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Limpieza y Reapriete Bomba de Agua"
+    },
+    {
+      "orden": "800523175",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.12,
+      "costes_totales_reales": 0.08,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Limpieza y Reapriete Bomba de Agua"
+    },
+    {
+      "orden": "800523182",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR EDET JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se revisa"
+    },
+    {
+      "orden": "800523183",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.64,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
@@ -234289,6 +236260,33 @@
       "total_costes_plan": 3.28,
       "costes_totales_reales": 3.28,
       "fecha_iw47": "04/10/2026",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523202",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523205",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 2.2,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523211",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 4.37,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
       "texto_notificacion": ""
     },
     {
@@ -234323,6 +236321,24 @@
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
       "total_costes_plan": 1.09,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523246",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.36,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523251",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.12,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
@@ -234364,22 +236380,67 @@
       "texto_notificacion": ""
     },
     {
-      "orden": "800523296",
+      "orden": "800523278",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR DMNV KKMP NLIQ PREC",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.24,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523281",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
     },
     {
-      "orden": "800523305",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
-      "total_costes_plan": 3.28,
+      "orden": "800523285",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
       "texto_notificacion": ""
+    },
+    {
+      "orden": "800523289",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 4.34,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523296",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se revisa"
+    },
+    {
+      "orden": "800523299",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 8.95,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523305",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 3.28,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "se revisa funcionamiento de bomba"
     },
     {
       "orden": "800523306",
@@ -234400,6 +236461,24 @@
       "texto_notificacion": ""
     },
     {
+      "orden": "800523311",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.06,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523318",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.48,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
       "orden": "800523320",
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
@@ -234410,21 +236489,21 @@
     },
     {
       "orden": "800523327",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 3.28,
-      "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "se revisa malla metalica y desgaste de g"
     },
     {
       "orden": "800523329",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR EDET KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR EDET JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se revisa"
     },
     {
       "orden": "800523333",
@@ -234445,9 +236524,45 @@
       "texto_notificacion": ""
     },
     {
+      "orden": "800523347",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
       "orden": "800523355",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se revisa"
+    },
+    {
+      "orden": "800523356",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523367",
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 19.68,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523368",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR EDET KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
@@ -234455,8 +236570,44 @@
     },
     {
       "orden": "800523384",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se revisa"
+    },
+    {
+      "orden": "800523385",
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.24,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523390",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.6,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523397",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523401",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
@@ -234464,8 +236615,26 @@
     },
     {
       "orden": "800523405",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR EDET JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se revisa"
+    },
+    {
+      "orden": "800523409",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR EDET KKMP NLIQ PREC",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.55,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800523413",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. KKMP LINA NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
       "fecha_iw47": "",
@@ -234608,8 +236777,8 @@
     },
     {
       "orden": "800524161",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP MOVM NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP MOVM NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 74.8,
       "fecha_iw47": "02/10/2026",
@@ -234914,12 +237083,12 @@
     },
     {
       "orden": "800529861",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
-      "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "costes_totales_reales": 19.68,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se da seguimiento bevcorp"
     },
     {
       "orden": "800529862",
@@ -234932,39 +237101,39 @@
     },
     {
       "orden": "800529903",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
-      "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "costes_totales_reales": 13.12,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se revisa seccionador"
     },
     {
       "orden": "800529904",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP MOVM NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP MOVM NLIQ PREC",
       "total_costes_plan": 0.0,
-      "costes_totales_reales": 1.19,
-      "fecha_iw47": "",
+      "costes_totales_reales": 14.31,
+      "fecha_iw47": "06/10/2026",
       "texto_notificacion": ""
     },
     {
       "orden": "800529905",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
-      "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "costes_totales_reales": 9.84,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "no se realiza"
     },
     {
       "orden": "800529906",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
-      "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "costes_totales_reales": 9.84,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "revision y actualizacion check list moto"
     },
     {
       "orden": "800529907",
@@ -234986,12 +237155,12 @@
     },
     {
       "orden": "800529909",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR DMNV KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se deja habilitado lectura del sensor"
     },
     {
       "orden": "800529910",
@@ -235004,12 +237173,12 @@
     },
     {
       "orden": "800529911",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "firmware plc no permite conexion"
     },
     {
       "orden": "800529939",
@@ -235085,12 +237254,12 @@
     },
     {
       "orden": "800531557",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "reparacion de tuberia"
     },
     {
       "orden": "800531834",
@@ -235112,74 +237281,74 @@
     },
     {
       "orden": "800531983",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
-      "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se alinea correctamente"
     },
     {
       "orden": "800531984",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
-      "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "salta del guarda por trabamiento"
     },
     {
       "orden": "800531985",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
-      "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "tanque de agua no se llena correctamente"
     },
     {
       "orden": "800531986",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
-      "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se cambia bobina de electrovalvula"
     },
     {
       "orden": "800531987",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
-      "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "preforma liviana"
     },
     {
       "orden": "800531988",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
-      "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se revisa temperatura elevada falta repu"
     },
     {
       "orden": "800531989",
-      "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
-      "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
-      "texto_notificacion": ""
+      "costes_totales_reales": 1.64,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "operador bevcorp, problema mecanico"
     },
     {
       "orden": "800532017",
       "estado_orden": "ORDEN ABIERTA",
-      "estatus_sap": "LIB. IMPR DMNV KKMP NLIQ PREC",
+      "estatus_sap": "LIB. NOTI IMPR DMNV JBFI KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
-      "fecha_iw47": "",
+      "fecha_iw47": "07/10/2026",
       "texto_notificacion": ""
     },
     {
@@ -235193,6 +237362,24 @@
     },
     {
       "orden": "800532019",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 36.09,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "se desarma las bombas"
+    },
+    {
+      "orden": "800532037",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se realiza inspeccion y correccion del H"
+    },
+    {
+      "orden": "800532038",
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
@@ -235203,6 +237390,177 @@
     {
       "orden": "800532040",
       "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP MOVM NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 1.04,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532043",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 26.24,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "se construyen 4 ruedas de dispensador"
+    },
+    {
+      "orden": "800532096",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "revision aire  acondicionado tablero"
+    },
+    {
+      "orden": "800532128",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se resetea y queda ok"
+    },
+    {
+      "orden": "800532129",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "se corrige sensor de cilindro"
+    },
+    {
+      "orden": "800532133",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR DMNV EDET MOVM NLIQ PREC",
+      "total_costes_plan": 257.88,
+      "costes_totales_reales": 257.88,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532393",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Cambio de tuberia por mal estado"
+    },
+    {
+      "orden": "800532396",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "cambio de manguera por fuga agua"
+    },
+    {
+      "orden": "800532401",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Reajuste de banda por alargamiento"
+    },
+    {
+      "orden": "800532406",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "cambio sensor de presion estacion #16"
+    },
+    {
+      "orden": "800532407",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "desmontaje y cambio micro seguridad"
+    },
+    {
+      "orden": "800532408",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "cambio sensor piston molde."
+    },
+    {
+      "orden": "800532409",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "revision presion aire linea baja."
+    },
+    {
+      "orden": "800532410",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "calibracion rodamientos excentricoa."
+    },
+    {
+      "orden": "800532411",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "cambio amortiguador y regulacion leva"
+    },
+    {
+      "orden": "800532413",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "cambio de guia de celeron por rotura"
+    },
+    {
+      "orden": "800532418",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "Alta temperatura alarma variador y daña"
+    },
+    {
+      "orden": "800532419",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "Flujo de agua cerrado por fuga de agua,"
+    },
+    {
+      "orden": "800532427",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "cambio pernos M8*35 paralelismo"
+    },
+    {
+      "orden": "800532428",
+      "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
       "total_costes_plan": 0.0,
       "costes_totales_reales": 0.0,
@@ -235210,7 +237568,709 @@
       "texto_notificacion": ""
     },
     {
-      "orden": "800532043",
+      "orden": "800532429",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532434",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "CAMBIO DE VARILLA ESTIRO"
+    },
+    {
+      "orden": "800532435",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "REPARACION PINZA TRANSFERENCIA."
+    },
+    {
+      "orden": "800532439",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532449",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR DMNV EDET NLIQ PREC",
+      "total_costes_plan": 2487.84,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532450",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR DMNV EDET JBFI MOVM NLIQ*",
+      "total_costes_plan": 3559.0,
+      "costes_totales_reales": 77.24,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "se cambia ejes de los platovelos"
+    },
+    {
+      "orden": "800532712",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "desmontaje y cambio de resosrte"
+    },
+    {
+      "orden": "800532713",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "cambio de acople metalico compenzacion"
+    },
+    {
+      "orden": "800532714",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "mantenimiento piston estiro."
+    },
+    {
+      "orden": "800532715",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 6.56,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "cambio de bobina"
+    },
+    {
+      "orden": "800532716",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532717",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "cambio pernos y calibracion paralelismo"
+    },
+    {
+      "orden": "800532718",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "cambio de pernos sujecion pin"
+    },
+    {
+      "orden": "800532719",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "activacion de espejos"
+    },
+    {
+      "orden": "800532722",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "trabajos de soldadura."
+    },
+    {
+      "orden": "800532724",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "06/10/2026",
+      "texto_notificacion": "calibracion"
+    },
+    {
+      "orden": "800532731",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 16.4,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "se realiza termografia de tableros elect"
+    },
+    {
+      "orden": "800532732",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 16.4,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "se realiza termografia de los motores de"
+    },
+    {
+      "orden": "800532735",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 19.68,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "Se hace termografia ablandados sin mayor"
+    },
+    {
+      "orden": "800532736",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 16.4,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "Se hace termografía de calderos y 2 comp"
+    },
+    {
+      "orden": "800532737",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR DMNV KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532738",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR DMNV JBFI NLIQ PREC",
+      "total_costes_plan": 1277.55,
+      "costes_totales_reales": 36.09,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "/SE DIO  MTTO AL TUNEL TERMOENCOGIBLE SI"
+    },
+    {
+      "orden": "800532739",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532741",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532743",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532744",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532760",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532761",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP MOVM NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 2.25,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532764",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Se reajustan los terminales"
+    },
+    {
+      "orden": "800532765",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Nose puede realizar, se va a hacer LUP"
+    },
+    {
+      "orden": "800532766",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Revision de rodillo de aluminio"
+    },
+    {
+      "orden": "800532777",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR DMNV EDET NLIQ PREC",
+      "total_costes_plan": 1283.41,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532778",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP MOVM NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 136.06,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532779",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 36.09,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "cambio de pastillas frenos."
+    },
+    {
+      "orden": "800532840",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532841",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. NOTI IMPR JBFI KKMP MOVM NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 47.6,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Extracion de pernos rotos moldes soplado"
+    },
+    {
+      "orden": "800532842",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP MOVM NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 47.62,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532843",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR DMNV KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532957",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532966",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532967",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532968",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800532969",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533147",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533148",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533149",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533150",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533151",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "cambio de postes y tulipa"
+    },
+    {
+      "orden": "800533152",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "se realiza el ajuste de todo el sistema"
+    },
+    {
+      "orden": "800533153",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "rectificacion de uña banderola"
+    },
+    {
+      "orden": "800533154",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "cambio de valvula check"
+    },
+    {
+      "orden": "800533155",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533156",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "ajuste de cadena"
+    },
+    {
+      "orden": "800533158",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "templado de cadena"
+    },
+    {
+      "orden": "800533159",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533184",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533185",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533187",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR DMNV KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533188",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR DMNV KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533189",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR DMNV EDET NLIQ PREC",
+      "total_costes_plan": 21.5,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533190",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR DMNV KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533200",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533201",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Cambio de mangueras de 25 mm"
+    },
+    {
+      "orden": "800533202",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Alineacion de rodillo de transferencia"
+    },
+    {
+      "orden": "800533203",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "cambio de guia de celeron"
+    },
+    {
+      "orden": "800533205",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Cambio de portatubo y tubo de venteo"
+    },
+    {
+      "orden": "800533206",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533207",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "07/10/2026",
+      "texto_notificacion": "cambio de candado envolvedor"
+    },
+    {
+      "orden": "800533208",
+      "estado_orden": "ORDEN CERRADA",
+      "estatus_sap": "CTEC NOTI IMPR JBFI KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 3.28,
+      "fecha_iw47": "08/10/2026",
+      "texto_notificacion": "Revision de caja reductora brazo inducto"
+    },
+    {
+      "orden": "800533209",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533210",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533247",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533248",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533254",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533255",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533258",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533259",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533273",
+      "estado_orden": "ORDEN ABIERTA",
+      "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
+      "total_costes_plan": 0.0,
+      "costes_totales_reales": 0.0,
+      "fecha_iw47": "",
+      "texto_notificacion": ""
+    },
+    {
+      "orden": "800533274",
       "estado_orden": "ORDEN ABIERTA",
       "estatus_sap": "LIB. IMPR KKMP NLIQ PREC",
       "total_costes_plan": 0.0,

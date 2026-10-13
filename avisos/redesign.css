@@ -31,3 +31,7 @@ body{background:var(--bg);color:var(--text)}
 @media(max-width:1400px){.filter-toolbar-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.charts-grid-four{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:950px){.sidebar{width:100%;min-width:0;min-height:auto}.topbar{min-height:175px}.filter-toolbar-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.charts-grid-four{grid-template-columns:1fr 1fr}}
 @media(max-width:620px){.topbar{padding:20px 15px;background-position:60% center}.content{padding:12px}.filter-toolbar-grid{grid-template-columns:1fr}.charts-grid-four{grid-template-columns:1fr}.filter-toolbar .sidebar-actions{flex-direction:column}.filter-toolbar .btn{width:100%}}
+
+/* V2: cuatro paneles compactos en una misma fila, más tabla visible */
+@media(min-width:1450px){.charts-grid-four{grid-template-columns:repeat(4,minmax(0,1fr))}.charts-grid-four>.panel-monthly-average{grid-column:auto;order:4}.charts-grid-four>.panel:nth-child(2){order:1}.charts-grid-four>.panel:nth-child(3){order:2}.charts-grid-four>.panel:nth-child(4){order:3}.charts-grid-four>.panel:nth-child(5){order:5}}
+.chart-canvas-wrap{min-height:225px}.chart-canvas-wrap canvas{max-width:100%}.panel-monthly-average{border:2px solid #75b7ff!important}

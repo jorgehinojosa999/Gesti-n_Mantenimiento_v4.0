@@ -1380,14 +1380,35 @@ function renderCharts(
         );
 
 
-    drawHorizontalBars(
-        avgMonth,
-        promedioMes,
-        COLORS.green
-    );
+    drawMonthlyAverageColumns(avgMonth, promedioMes);
 
 }
 
+
+
+// Gráfico mensual de columnas: utiliza el promedio REAL de dias calculado por averageBy.
+function drawMonthlyAverageColumns(canvas, entries) {
+    const {ctx,width,height}=prepareCanvas(canvas);
+    if (!entries.length) {
+        ctx.fillStyle="#64748b";ctx.textAlign="center";ctx.font="13px Segoe UI";
+        ctx.fillText("Sin notificaciones con días registrados",width/2,height/2);return;
+    }
+    const months={ene:0,enero:0,feb:1,febrero:1,mar:2,marzo:2,abr:3,abril:3,may:4,mayo:4,jun:5,junio:5,jul:6,julio:6,ago:7,agosto:7,sep:8,septiembre:8,setiembre:8,oct:9,octubre:9,nov:10,noviembre:10,dic:11,diciembre:11};
+    const monthIndex=label=>{const t=String(label).toLowerCase().trim();const k=t.replace(/[áéíóú]/g,x=>({á:'a',é:'e',í:'i',ó:'o',ú:'u'}[x])).split(/[ \/-]/)[0];return months[k]??months[k.slice(0,3)]??99;};
+    const sorted=[...entries].sort((a,b)=>monthIndex(a[0])-monthIndex(b[0]));
+    const L=38,R=15,T=26,B=46, plotW=Math.max(20,width-L-R),plotH=Math.max(20,height-T-B);
+    const max=Math.max(3,...sorted.map(x=>Number(x[1])||0))*1.2;
+    ctx.textAlign="right";ctx.font="11px Segoe UI";
+    for(let i=0;i<=4;i++){let val=max*i/4,y=T+plotH*(1-i/4);ctx.strokeStyle="#e5edf6";ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(L,y);ctx.lineTo(width-R,y);ctx.stroke();ctx.fillStyle="#64748b";ctx.fillText(val.toFixed(1),L-7,y+4);}
+    const y3=T+plotH*(1-3/max);ctx.save();ctx.setLineDash([5,4]);ctx.strokeStyle="#ef4444";ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(L,y3);ctx.lineTo(width-R,y3);ctx.stroke();ctx.restore();
+    ctx.textAlign="right";ctx.fillStyle="#dc2626";ctx.font="10px Segoe UI";ctx.fillText("Meta 3 días",width-R,y3-5);
+    const step=plotW/sorted.length,bw=Math.min(42,step*.65);
+    sorted.forEach(([label,raw],i)=>{const value=Number(raw)||0;const bh=plotH*value/max;const x=L+step*i+(step-bw)/2,y=T+plotH-bh;
+      ctx.fillStyle=value>3?"#f59e0b":(i===sorted.length-1?"#0755ad":"#2389f7");ctx.fillRect(x,y,bw,bh);
+      ctx.fillStyle="#163b65";ctx.textAlign="center";ctx.font="bold 11px Segoe UI";ctx.fillText(value.toLocaleString('es-EC',{minimumFractionDigits:1,maximumFractionDigits:1}),x+bw/2,Math.max(13,y-6));
+      ctx.fillStyle="#526982";ctx.font="10px Segoe UI";ctx.fillText(String(label).slice(0,9),x+bw/2,height-19);
+    });
+}
 
 // =========================================================
 // TABLA

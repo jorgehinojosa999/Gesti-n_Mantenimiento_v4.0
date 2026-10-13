@@ -35,3 +35,21 @@ body{background:var(--bg);color:var(--text)}
 /* V2: cuatro paneles compactos en una misma fila, más tabla visible */
 @media(min-width:1450px){.charts-grid-four{grid-template-columns:repeat(4,minmax(0,1fr))}.charts-grid-four>.panel-monthly-average{grid-column:auto;order:4}.charts-grid-four>.panel:nth-child(2){order:1}.charts-grid-four>.panel:nth-child(3){order:2}.charts-grid-four>.panel:nth-child(4){order:3}.charts-grid-four>.panel:nth-child(5){order:5}}
 .chart-canvas-wrap{min-height:225px}.chart-canvas-wrap canvas{max-width:100%}.panel-monthly-average{border:2px solid #75b7ff!important}
+
+/* V3: distribución definitiva, cuatro gráficos arriba y dos abajo */
+.charts-grid.charts-grid-four{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:12px!important;align-items:stretch}
+.charts-grid.charts-grid-four>.panel{grid-column:auto!important;grid-row:auto!important;order:initial!important;min-width:0!important;margin:0!important}
+.charts-grid.charts-grid-four>.panel:nth-child(1){order:4!important}
+.charts-grid.charts-grid-four>.panel:nth-child(2){order:1!important}
+.charts-grid.charts-grid-four>.panel:nth-child(3){order:2!important}
+.charts-grid.charts-grid-four>.panel:nth-child(4){order:3!important}
+.charts-grid.charts-grid-bottom{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+.charts-grid.charts-grid-bottom>.panel{min-width:0!important;margin:0!important}
+.charts-grid .panel .chart-canvas-wrap,.charts-grid .panel .chart-canvas-wrap.chart-large{height:260px!important;min-height:0!important;padding:8px 12px 12px!important;position:relative}
+.charts-grid .panel .chart-canvas-wrap canvas{max-width:100%!important;max-height:100%!important}
+.charts-grid .panel .panel-header{min-height:58px}
+/* logo oscuro sobre una base blanca, sin filtro que elimine sus colores */
+.brand-logo-wrap{background:#fff!important;border-radius:9px!important;padding:7px!important;width:188px!important;height:67px!important;overflow:hidden!important}
+.brand-logo{filter:none!important;width:100%!important;height:100%!important;object-fit:contain!important}
+@media(max-width:1350px){.charts-grid.charts-grid-four{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:700px){.charts-grid.charts-grid-four,.charts-grid.charts-grid-bottom{grid-template-columns:1fr!important}.charts-grid .panel .chart-canvas-wrap,.charts-grid .panel .chart-canvas-wrap.chart-large{height:250px!important}}

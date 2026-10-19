@@ -1373,20 +1373,7 @@ function renderCharts(
     // AVISOS POR MES
     // -----------------------------------------------------
 
-    const avisosMes =
-        Object.entries(
-            countBy(
-                data,
-                "mes"
-            )
-        );
-
-
-    drawHorizontalBars(
-        month,
-        avisosMes,
-        COLORS.purple
-    );
+    drawMonthlyStatusTrend(month, data);
 
 
     // -----------------------------------------------------
@@ -1407,6 +1394,104 @@ function renderCharts(
 }
 
 
+
+
+// =========================================================
+// AVISOS POR MES Y ESTADO FINAL: COLUMNAS APILADAS + TENDENCIA
+// Los totales provienen exclusivamente de avisos.json filtrado.
+// =========================================================
+function drawMonthlyStatusTrend(canvas, data) {
+    const { ctx, width: w, height: h } = prepareCanvas(canvas);
+    const monthNames = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+    const monthAliases = {ene:0,feb:1,mar:2,abr:3,may:4,jun:5,jul:6,ago:7,sep:8,set:8,oct:9,nov:10,dic:11};
+    const norm = v => String(v ?? "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+    const groups = new Map();
+    for (const item of data) {
+        const rawMonth = String(item.mes ?? "").trim();
+        const date = String(item.fechaAviso ?? "").trim();
+        const dm = date.match(/^(\d{1,2})[.\/-](\d{1,2})[.\/-](\d{4})$/);
+        const iso = date.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
+        let mi = dm ? Number(dm[2])-1 : iso ? Number(iso[2])-1 : -1;
+        const year = dm ? Number(dm[3]) : iso ? Number(iso[1]) : null;
+        if (mi < 0 || mi > 11) {
+            const token = norm(rawMonth).split(/[\s\/-]+/)[0];
+            mi = monthNames.indexOf(token);
+            if (mi < 0) mi = monthAliases[token.slice(0,3)] ?? -1;
+        }
+        if (mi < 0 || mi > 11) continue;
+        const key = year ? `${year}-${String(mi+1).padStart(2,"0")}` : `sin-anio-${String(mi+1).padStart(2,"0")}`;
+        if (!groups.has(key)) groups.set(key, {key, year, mi, label:monthNames[mi], abierto:0, cerrado:0, revisar:0, total:0});
+        const g = groups.get(key);
+        const status = norm(item.estadoFinal);
+        if (status.includes("cerrad")) g.cerrado++;
+        else if (status.includes("revis")) g.revisar++;
+        else g.abierto++;
+        g.total++;
+    }
+    const months = [...groups.values()].sort((a,b) => (a.year ?? 0)-(b.year ?? 0) || a.mi-b.mi).slice(-6);
+    if (!months.length) {
+        ctx.fillStyle="#64748b";ctx.font="13px Segoe UI";ctx.textAlign="center";
+        ctx.fillText("No hay avisos para los filtros seleccionados",w/2,h/2);return;
+    }
+    const color = {abierto:"#1680ea",cerrado:"#20a464",revisar:"#f97316",line:"#3aa5ed"};
+    const compact = w < 700;
+    const sideW = compact ? 0 : Math.min(205,Math.max(165,w*.22));
+    const left=46, right=sideW+24, top=55, bottom=43;
+    const pw=Math.max(60,w-left-right), ph=Math.max(70,h-top-bottom);
+    const maxTotal=Math.max(...months.map(m=>m.total),1);
+    const ymax=Math.max(5,Math.ceil(maxTotal*1.18/5)*5);
+    const yy=v=>top+ph-(v/ymax)*ph;
+    const xx=i=>left+pw*(i+.5)/months.length;
+    ctx.font="11px Segoe UI";ctx.textAlign="left";
+    const legend=[['Abiertos',color.abierto],['Cerrados',color.cerrado],['Revisar',color.revisar],['Total mensual',color.line]];
+    let lx=left;
+    legend.forEach(([label,c],i)=>{ctx.fillStyle=c;ctx.fillRect(lx,12,10,10);ctx.fillStyle="#34516e";ctx.fillText(label,lx+15,21);lx+=compact?(i===3?0:Math.min(98,pw/4)):i===3?0:113;});
+    for(let i=0;i<=4;i++){
+        const value=ymax*i/4,y=yy(value);
+        ctx.strokeStyle="#e5edf6";ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(left,y);ctx.lineTo(left+pw,y);ctx.stroke();
+        ctx.fillStyle="#667e99";ctx.font="10px Segoe UI";ctx.textAlign="right";ctx.fillText(String(Math.round(value)),left-9,y+4);
+    }
+    const barWidth=Math.max(9,Math.min(62,pw/months.length*.48));
+    months.forEach((m,i)=>{
+        const x=xx(i)-barWidth/2;
+        let base=0;
+        [['abierto',color.abierto],['cerrado',color.cerrado],['revisar',color.revisar]].forEach(([field,c])=>{
+            const val=m[field]; if(!val)return;
+            const y=yy(base+val), bh=yy(base)-y;
+            ctx.fillStyle=c;ctx.fillRect(x,y,barWidth,bh);
+            if(bh>17 && barWidth>21){ctx.font="bold 10px Segoe UI";ctx.textAlign="center";ctx.fillStyle="#fff";ctx.fillText(String(val),xx(i),y+bh/2+3);}
+            base+=val;
+        });
+        ctx.fillStyle="#536c88";ctx.font="11px Segoe UI";ctx.textAlign="center";
+        const yearSuffix=months.some(z=>z.year!==m.year) && m.year ? ` ${String(m.year).slice(2)}` : "";
+        ctx.fillText(m.label.slice(0,3)+yearSuffix,xx(i),h-17);
+    });
+    ctx.strokeStyle=color.line;ctx.lineWidth=2.8;ctx.lineJoin="round";ctx.beginPath();
+    months.forEach((m,i)=>{const x=xx(i),y=yy(m.total);i?ctx.lineTo(x,y):ctx.moveTo(x,y);});ctx.stroke();
+    months.forEach((m,i)=>{
+        const x=xx(i),y=yy(m.total);
+        ctx.beginPath();ctx.arc(x,y,4.4,0,Math.PI*2);ctx.fillStyle="#fff";ctx.fill();ctx.strokeStyle=color.line;ctx.lineWidth=2.5;ctx.stroke();
+        ctx.fillStyle="#102d53";ctx.font="bold 12px Segoe UI";ctx.textAlign="center";ctx.fillText(String(m.total),x,Math.max(39,y-13));
+        if(i>0 && w>550){
+            const prev=months[i-1].total;
+            if(prev>0){const pct=(m.total-prev)/prev*100;ctx.font="bold 10px Segoe UI";ctx.fillStyle=pct>=0?"#148453":"#d94848";
+                ctx.fillText(`${pct>=0?'+':''}${pct.toFixed(0)}%`,x,Math.max(51,y-28));}
+        }
+    });
+    if(!compact){
+        const sx=w-sideW+8, sy=top+10;
+        ctx.fillStyle="#f5f9ff";ctx.fillRect(sx-10,sy-13,sideW-15,ph-5);
+        const totals={abierto:0,cerrado:0,revisar:0,total:0};
+        months.forEach(m=>{Object.keys(totals).forEach(k=>totals[k]+=m[k]);});
+        ctx.fillStyle="#45617f";ctx.textAlign="left";ctx.font="12px Segoe UI";ctx.fillText("Total del período",sx,sy+8);
+        ctx.fillStyle="#0b2b53";ctx.font="bold 29px Segoe UI";ctx.fillText(totals.total.toLocaleString('es-EC'),sx,sy+46);
+        [['Abiertos','abierto',color.abierto],['Cerrados','cerrado',color.cerrado],['Revisar','revisar',color.revisar]].forEach(([label,key,c],i)=>{
+            const y=sy+87+i*43;ctx.fillStyle=c;ctx.beginPath();ctx.arc(sx+5,y-4,5,0,Math.PI*2);ctx.fill();
+            ctx.fillStyle="#35516f";ctx.font="11px Segoe UI";ctx.fillText(label,sx+18,y);
+            ctx.fillStyle="#0b2b53";ctx.font="bold 14px Segoe UI";ctx.fillText(String(totals[key]),sx+18,y+17);
+        });
+    }
+}
 
 // Gráfico mensual de columnas: utiliza el promedio REAL de dias calculado por averageBy.
 function drawMonthlyAverageColumns(canvas, entries) {

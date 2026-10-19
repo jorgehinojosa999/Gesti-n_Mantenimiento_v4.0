@@ -85,3 +85,8 @@ body{background:var(--bg);color:var(--text)}
 .filter-toolbar .filter-toolbar-footer .btn-secondary{background:#f7fbff!important;border:1px solid #9fc8ff!important;color:#086ed6!important}
 @media(max-width:1100px){.filter-toolbar .filter-toolbar-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:700px){.filter-toolbar{padding:15px!important}.filter-toolbar .filter-toolbar-grid{grid-template-columns:1fr!important}.filter-toolbar .filter-toolbar-footer{align-items:stretch;flex-direction:column}.filter-footer-right{flex-direction:column}.filter-toolbar .filter-toolbar-footer .btn{width:100%!important}.filter-toolbar-header h2{font-size:19px}}
+
+/* Gráfico de tendencia mensual: ocupa ancho completo */
+.charts-grid.charts-grid-bottom>.panel-monthly-trend{grid-column:1/-1!important}
+.panel-monthly-trend .chart-canvas-wrap.chart-large{height:365px!important}
+@media(max-width:700px){.panel-monthly-trend .chart-canvas-wrap.chart-large{height:320px!important}}

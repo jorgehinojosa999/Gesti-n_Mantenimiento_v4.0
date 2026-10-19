@@ -9,7 +9,7 @@
          CSS
          ===================================================== -->
 <link href="./styles.css" rel="stylesheet"/>
-<link href="./redesign.css?v=distribucion3" rel="stylesheet"/></head>
+<link href="./redesign.css?v=filtros20261019" rel="stylesheet"/></head>
 <body>
 <div class="app-shell">
 <!-- =====================================================
@@ -89,61 +89,18 @@
 <!-- =================================================
              CONTENIDO
              ================================================= -->
-<main class="content"><section class="filter-toolbar"><div class="filter-toolbar-heading">⚑  Filtros de consulta</div><div class="filter-toolbar-grid"><div class="filter-group">
-<label for="monthFilter">
-                Mes
-            </label>
-<select id="monthFilter">
-<option value="Todas">
-                    Todas
-                </option>
-</select>
-</div><div class="filter-group">
-<label for="dayFilter">Día - Fecha de aviso</label>
-<select id="dayFilter">
-<option value="Todas">Todos los días</option>
-</select>
-</div><div class="filter-group">
-<label for="classFilter">
-                Clasificación Aviso
-            </label>
-<select id="classFilter">
-<option value="Todas">
-                    Todas
-                </option>
-<option value="Emergente">
-                    Emergente
-                </option>
-<option value="Correctivo">
-                    Correctivo
-                </option>
-<option value="Mal levantada">
-                    Mal levantada
-                </option>
-</select>
-</div><div class="filter-group">
-<div class="filter-label">
-                Estado Final Aviso
-            </div>
-<div class="checkbox-list" id="statusChecks"></div>
-</div><div class="filter-group">
-<div class="filter-label">
-                Estado Tiempo
-            </div>
-<div class="checkbox-list" id="timeChecks"></div>
-</div><div class="filter-group">
-<div class="filter-label">
-                Responsable
-            </div>
-<div class="checkbox-list" id="responsibleChecks"></div>
-</div><div class="sidebar-actions">
-<button class="btn btn-primary" id="btnRefresh">
-                ↻ Actualizar ahora
-            </button>
-<button class="btn btn-secondary" id="btnDownload">
-                ↓ Descargar detalle
-            </button>
-</div></div></section>
+<main class="content"><section class="filter-toolbar" aria-label="Filtros de consulta SAP">
+  <div class="filter-toolbar-header"><div class="filter-heading-icon">☷</div><div><h2>Filtros de consulta</h2><p>Consulta y análisis de avisos de mantenimiento SAP</p></div></div>
+  <div class="filter-toolbar-grid">
+    <div class="filter-group filter-field filter-field-month"><label for="monthFilter"><span class="filter-symbol">▦</span> Mes</label><select id="monthFilter"><option value="Todas">Todos los meses</option></select></div>
+    <div class="filter-group filter-field filter-field-day"><label for="dayFilter"><span class="filter-symbol">▣</span> Día – Fecha de aviso</label><select id="dayFilter"><option value="Todas">Todos los días</option></select></div>
+    <div class="filter-group filter-field filter-field-class"><label for="classFilter"><span class="filter-symbol">◆</span> Clasificación aviso</label><select id="classFilter"><option value="Todas">Todas las clasificaciones</option><option value="Emergente">Emergente</option><option value="Correctivo">Correctivo</option><option value="Mal levantada">Mal levantada</option></select></div>
+    <div class="filter-group filter-choice filter-choice-status"><div class="filter-choice-head"><span class="filter-choice-title"><span class="choice-icon">▤</span> Estado final aviso</span><span class="filter-count" id="statusCount">0 seleccionados</span></div><div class="checkbox-list" id="statusChecks"></div></div>
+    <div class="filter-group filter-choice filter-choice-time"><div class="filter-choice-head"><span class="filter-choice-title"><span class="choice-icon">◷</span> Estado de tiempo</span><span class="filter-count" id="timeCount">0 seleccionados</span></div><div class="checkbox-list" id="timeChecks"></div></div>
+    <div class="filter-group filter-choice filter-choice-responsible"><div class="filter-choice-head"><span class="filter-choice-title"><span class="choice-icon">♟</span> Responsable</span><span class="filter-count" id="responsibleCount">0 seleccionados</span></div><div class="checkbox-list" id="responsibleChecks"></div></div>
+    <div class="filter-toolbar-footer"><button type="button" class="btn btn-reset" id="btnReset">↻ &nbsp;Limpiar filtros</button><div class="filter-footer-right"><button type="button" class="btn btn-primary" id="btnRefresh">↻ &nbsp;Actualizar ahora</button><button type="button" class="btn btn-secondary" id="btnDownload">↓ &nbsp;Descargar detalle</button></div></div>
+  </div>
+</section>
 <!-- =================================================
                  KPIs
                  ================================================= -->
@@ -422,6 +379,6 @@
 </div>
 </div>
 </div>
-<script src="./app.js?v=distribucion3"></script>
+<script src="./app.js?v=filtros20261019"></script>
 </body>
 </html>

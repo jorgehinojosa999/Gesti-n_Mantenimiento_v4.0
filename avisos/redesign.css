@@ -53,3 +53,35 @@ body{background:var(--bg);color:var(--text)}
 .brand-logo{filter:none!important;width:100%!important;height:100%!important;object-fit:contain!important}
 @media(max-width:1350px){.charts-grid.charts-grid-four{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:700px){.charts-grid.charts-grid-four,.charts-grid.charts-grid-bottom{grid-template-columns:1fr!important}.charts-grid .panel .chart-canvas-wrap,.charts-grid .panel .chart-canvas-wrap.chart-large{height:250px!important}}
+
+
+/* Filtros visuales renovados - octubre 2026 */
+.filter-toolbar{padding:20px 22px!important;border-radius:17px!important;box-shadow:0 10px 28px rgba(11,52,98,.07)!important}
+.filter-toolbar-header{display:flex;align-items:center;gap:13px;margin-bottom:17px}
+.filter-heading-icon{display:grid;place-items:center;flex:0 0 48px;width:48px;height:48px;background:#e7f1ff;border-radius:12px;color:#0877f9;font-size:31px;font-weight:800}
+.filter-toolbar-header h2{margin:0;font-size:23px;letter-spacing:-.5px;color:#0a2a50}
+.filter-toolbar-header p{margin:4px 0 0;color:#526b89;font-size:13px}
+.filter-toolbar .filter-toolbar-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:14px 16px!important;align-items:stretch}
+.filter-toolbar .filter-group{margin:0!important;min-width:0!important}
+.filter-toolbar .filter-field{border-radius:13px;background:#edf5ff;padding:13px 15px 12px}
+.filter-toolbar .filter-field label{display:flex;align-items:center;gap:9px;color:#092c53;font-size:13px;font-weight:800;margin:0 0 8px}
+.filter-symbol{color:#0877f9;font-size:23px;line-height:1}
+.filter-toolbar .filter-field select{height:42px!important;border-radius:9px!important;background:#fff!important;border:1px solid #aac9f4!important;color:#17385b!important;font-size:13px!important;padding:0 12px!important}
+.filter-toolbar .filter-choice{border-radius:13px;overflow:hidden;padding:0 0 10px;min-height:180px}
+.filter-choice-status{background:#fff0f1}.filter-choice-time{background:#fff8e8}.filter-choice-responsible{background:#edf9f3}
+.filter-choice-head{display:flex;align-items:center;justify-content:space-between;gap:7px;min-height:51px;padding:11px 14px}
+.filter-choice-status .filter-choice-head{background:#ffe8eb}.filter-choice-time .filter-choice-head{background:#fff1ce}.filter-choice-responsible .filter-choice-head{background:#e2f5e9}
+.filter-choice-title{display:flex;align-items:center;gap:9px;font-size:14px;font-weight:800;color:#092c53}
+.choice-icon{font-size:23px;line-height:1}.filter-choice-status .choice-icon{color:#e73c53}.filter-choice-time .choice-icon{color:#e69c05}.filter-choice-responsible .choice-icon{color:#1da965}
+.filter-count{white-space:nowrap;border:1px solid #b8d6fc;border-radius:8px;background:#eef6ff;padding:5px 7px;color:#0a5cba;font-size:11px;font-weight:800}
+.filter-toolbar .filter-choice .checkbox-list{max-height:135px!important;overflow-y:auto!important;background:transparent!important;border:0!important;border-radius:0!important;padding:8px 15px 3px!important;gap:9px!important}
+.filter-toolbar .filter-choice .checkbox-list label{display:flex!important;align-items:center!important;gap:10px!important;margin:0!important;font-size:12px!important;font-weight:500!important;color:#183858!important;cursor:pointer}
+.filter-toolbar .filter-choice .checkbox-list input{width:16px;height:16px;flex:0 0 16px;accent-color:#0877f9;cursor:pointer}
+.filter-toolbar .filter-toolbar-footer{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #e3edf8;padding-top:14px;margin-top:1px}
+.filter-footer-right{display:flex;gap:10px;flex-wrap:wrap}
+.filter-toolbar .filter-toolbar-footer .btn{height:42px!important;padding:0 18px!important;border-radius:10px!important;font-size:12px!important;min-width:0!important;white-space:nowrap}
+.filter-toolbar .filter-toolbar-footer .btn-reset{background:#f7fbff!important;border:1px solid #9fc8ff!important;color:#086ed6!important}
+.filter-toolbar .filter-toolbar-footer .btn-primary{background:#0877f9!important;color:#fff!important}
+.filter-toolbar .filter-toolbar-footer .btn-secondary{background:#f7fbff!important;border:1px solid #9fc8ff!important;color:#086ed6!important}
+@media(max-width:1100px){.filter-toolbar .filter-toolbar-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:700px){.filter-toolbar{padding:15px!important}.filter-toolbar .filter-toolbar-grid{grid-template-columns:1fr!important}.filter-toolbar .filter-toolbar-footer{align-items:stretch;flex-direction:column}.filter-footer-right{flex-direction:column}.filter-toolbar .filter-toolbar-footer .btn{width:100%!important}.filter-toolbar-header h2{font-size:19px}}

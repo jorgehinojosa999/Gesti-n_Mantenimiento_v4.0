@@ -1,0 +1,2 @@
+Reemplazar los cuatro archivos en Gesti-n_Mantenimiento_v4.0/avisos/ y publicar con git add avisos/ && git commit -m "Nuevo diseno filtros avisos" && git push origin main.
+Los archivos preservan la logica SAP y la creacion de OT. IMPORTANTE: la URL firmada de Power Automate que ya estaba en app.js queda expuesta en GitHub Pages; rotarla y mover la invocacion a un backend autenticado.

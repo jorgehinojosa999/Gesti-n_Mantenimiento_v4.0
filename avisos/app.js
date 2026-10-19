@@ -221,6 +221,8 @@ function createCheckboxes(
     prefix
 ) {
 
+    const previous = Array.from(container.querySelectorAll('input[type="checkbox"]')).map(input => ({ value: input.value, checked: input.checked }));
+    const previousMap = new Map(previous.map(item => [item.value, item.checked]));
     container.innerHTML = "";
 
     values.forEach(
@@ -239,8 +241,7 @@ function createCheckboxes(
             input.type =
                 "checkbox";
 
-            input.checked =
-                true;
+            input.checked = previousMap.has(value) ? previousMap.get(value) : true;
 
             input.value =
                 value;
@@ -250,7 +251,7 @@ function createCheckboxes(
 
             input.addEventListener(
                 "change",
-                renderDashboard
+                () => { updateFilterCounts(); renderDashboard(); }
             );
 
 
@@ -279,6 +280,26 @@ function createCheckboxes(
     );
 }
 
+
+function updateFilterCounts() {
+    [[statusChecks, "statusCount"], [timeChecks, "timeCount"], [responsibleChecks, "responsibleCount"]].forEach(([container, id]) => {
+        const count = container.querySelectorAll('input[type="checkbox"]:checked').length;
+        const element = document.getElementById(id);
+        if (element) element.textContent = `${count} seleccionado${count === 1 ? "" : "s"}`;
+    });
+}
+
+function resetFilters() {
+    monthFilter.value = "Todas";
+    configureDays();
+    dayFilter.value = "Todas";
+    classFilter.value = "Todas";
+    [statusChecks, timeChecks, responsibleChecks].forEach(container => {
+        container.querySelectorAll('input[type="checkbox"]').forEach(input => { input.checked = true; });
+    });
+    updateFilterCounts();
+    renderDashboard();
+}
 
 function selectedValues(
     container
@@ -447,6 +468,7 @@ function configureFilters() {
         responsables,
         "responsable"
     );
+    updateFilterCounts();
 
 }
 
@@ -2230,6 +2252,9 @@ btnRefresh.addEventListener(
     }
 );
 
+
+const btnReset = document.getElementById("btnReset");
+if (btnReset) btnReset.addEventListener("click", resetFilters);
 
 btnDownload.addEventListener(
     "click",

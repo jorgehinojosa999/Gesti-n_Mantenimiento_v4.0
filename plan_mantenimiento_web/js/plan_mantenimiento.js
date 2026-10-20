@@ -1245,6 +1245,11 @@ function updateKpis(
     .textContent =
       `${filtered.length.toLocaleString("es-EC")} registros filtrados`;
 
+  $("#kpiMaterialCount").textContent = filtered.length.toLocaleString("es-EC");
+  const activeMonths = new Set();
+  filtered.forEach(({r}) => getMonths(r).forEach(m => activeMonths.add(m)));
+  $("#kpiMonthCount").textContent = activeMonths.size.toLocaleString("es-EC");
+
 }
 
 
@@ -1388,7 +1393,7 @@ function renderTable(
       <tr>
 
         <td
-          colspan="14"
+          colspan="11"
           class="empty">
 
           No existen registros para los filtros seleccionados.
@@ -1406,12 +1411,6 @@ function renderTable(
       rows.map(
         ({r,occ}) => {
 
-
-          const st =
-            statusFor(
-              r,
-              occ
-            );
 
 
           const months =
@@ -1484,25 +1483,6 @@ function renderTable(
                   class="badge ${critBadge(crit)}">
 
                   ${escapeHtml(crit || "N/A")}
-
-                </span>
-
-              </td>
-
-              <td>
-                ${escapeHtml(justOf(r))}
-              </td>
-
-              <td class="num">
-                ${quantity(stockOf(r))}
-              </td>
-
-              <td>
-
-                <span
-                  class="badge ${st.class}">
-
-                  ${st.label}
 
                 </span>
 
@@ -1701,7 +1681,7 @@ function renderCharts(
     x => {
 
       const k =
-        justOf(
+        critOf(
           x.r
         )
         ||
@@ -1755,13 +1735,10 @@ function renderCharts(
                 justification
               ),
 
-            backgroundColor:[
-              "#0b5cb8",
-              "#57a6ea",
-              "#a9c9e8",
-              "#8aa2b8",
-              "#d4e3ef"
-            ],
+            backgroundColor: Object.keys(justification).map(k => {
+              const v = String(k).toUpperCase();
+              return v.includes("ALT") ? "#ef4444" : v.includes("MED") ? "#f59e0b" : v.includes("BAJ") ? "#10b981" : "#94a3b8";
+            }),
 
             borderWidth:2,
 
@@ -2321,7 +2298,7 @@ async function init(){
         <tr>
 
           <td
-            colspan="14"
+            colspan="11"
             class="empty">
 
             Error cargando

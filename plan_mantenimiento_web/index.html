@@ -12,15 +12,7 @@
 <link rel="stylesheet" href="css/plan_mantenimiento.css">
 
 <style>
-/* Solo quedan 2 KPI principales */
-.kpi-grid{
-  grid-template-columns:repeat(2,minmax(240px,1fr)) !important;
-}
-@media(max-width:900px){
-  .kpi-grid{
-    grid-template-columns:1fr !important;
-  }
-}
+/* Los estilos del nuevo diseño están en css/plan_mantenimiento.css */
 </style>
 </head>
 
@@ -35,38 +27,14 @@
     <div class="brand-sub">SAP · Ingeniería</div>
   </div>
 
-  <nav class="side-nav">
-
-    <a href="../" class="nav-link">
-      ⌂ <span>Inicio</span>
-    </a>
-
-    <a href="../avisos/" class="nav-link">
-      ▣ <span>Control Avisos</span>
-    </a>
-
-    <a href="../ordenes/" class="nav-link">
-      ▣ <span>Control Órdenes</span>
-    </a>
-
-    <a href="../planilla-semana/" class="nav-link">
-      ▣ <span>Planilla Semana</span>
-    </a>
-
-    <div class="nav-section">PLANIFICACIÓN</div>
-
-    <a href="./" class="nav-link active">
-      ▦ <span>Plan de Mantenimiento</span>
-    </a>
-
-    <a href="#" class="nav-link">
-      ◫ <span>Repuestos</span>
-    </a>
-
-    <a href="#" class="nav-link">
-      $ <span>Presupuesto</span>
-    </a>
-
+  <nav class="side-nav" aria-label="Módulos del portal">
+    <a href="../" class="nav-link">⌂ <span>Inicio</span></a>
+    <a href="../avisos/" class="nav-link">▣ <span>Control Avisos</span></a>
+    <a href="../ordenes/" class="nav-link">▣ <span>Control Órdenes</span></a>
+    <a href="../seguimiento-avisos/" class="nav-link">▣ <span>Seguimiento Avisos</span></a>
+    <a href="../planilla-semana/" class="nav-link">▣ <span>Planilla Semana</span></a>
+    <a href="./" class="nav-link active" aria-current="page">▦ <span>Plan de Mantenimiento</span></a>
+    <a href="../dashboard-sap/" class="nav-link">▥ <span>Dashboard SAP</span></a>
   </nav>
 </aside>
 
@@ -130,13 +98,13 @@
      ====================================================== -->
 <aside class="filters-card">
 
-  <div class="filters-title">⚲ FILTROS</div>
+  <div class="filters-title">▦ Filtros de consulta <small>Selecciona meses, línea, equipo, sistema y criticidad. Los filtros se combinan automáticamente.</small></div>
 
 
   <!-- MES -->
   <div class="filter-block">
 
-    <div class="filter-label">MES</div>
+    <div class="filter-label">▦ Mes de inicio / intervención</div>
 
     <div id="filterMonth" class="check-list months"></div>
 
@@ -153,7 +121,7 @@
   <!-- LÍNEA -->
   <div class="filter-block">
 
-    <div class="filter-label">LÍNEA</div>
+    <div class="filter-label">▦ Línea</div>
 
     <input
       id="searchLine"
@@ -170,7 +138,7 @@
   <!-- EQUIPO -->
   <div class="filter-block">
 
-    <div class="filter-label">EQUIPO</div>
+    <div class="filter-label">⚙ Equipo</div>
 
     <input
       id="searchEquipment"
@@ -187,7 +155,7 @@
   <!-- SISTEMA -->
   <div class="filter-block">
 
-    <div class="filter-label">SISTEMA</div>
+    <div class="filter-label">▧ Sistema</div>
 
     <input
       id="searchSystem"
@@ -218,7 +186,7 @@
 
     <div class="filter-block">
 
-      <div class="filter-label">CRITICIDAD</div>
+      <div class="filter-label">▲ Criticidad</div>
 
       <div
         id="filterCriticality"
@@ -295,6 +263,14 @@
 
   </article>
 
+  <article class="kpi kpi-quantity">
+    <div class="kpi-icon blue">▤</div>
+    <div><span class="kpi-label">REGISTROS FILTRADOS</span><strong id="kpiMaterialCount">0</strong><small>Filas de demanda</small></div>
+  </article>
+  <article class="kpi kpi-months">
+    <div class="kpi-icon warning">▦</div>
+    <div><span class="kpi-label">MESES PROGRAMADOS</span><strong id="kpiMonthCount">0</strong><small>Meses con demanda</small></div>
+  </article>
 </section>
 
 
@@ -356,9 +332,6 @@
           <th>FRECUENCIA</th>
           <th>MESES PROGRAMADOS</th>
           <th>CRITICIDAD</th>
-          <th>JUSTIFICACIÓN</th>
-          <th class="num">STOCK</th>
-          <th>ESTADO</th>
         </tr>
 
       </thead>
@@ -417,7 +390,7 @@
 
       <div>
 
-        <h2>Valor por justificación</h2>
+        <h2>Valor por criticidad</h2>
 
         <p>
           Distribución de la demanda filtrada.

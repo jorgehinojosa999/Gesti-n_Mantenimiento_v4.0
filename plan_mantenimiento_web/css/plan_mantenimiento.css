@@ -102,3 +102,30 @@ tbody tr:hover{background:#eef7ff}
   .sidebar{display:none}.main{margin-left:0;width:100%}.dashboard-layout{grid-template-columns:1fr}
   .filters-card{position:static;height:auto}.kpi-grid{grid-template-columns:1fr 1fr}.page-header{align-items:flex-start;flex-direction:column}
 }
+
+/* Rediseño 2026: filtros horizontales, tabla simplificada y módulos completos */
+.sidebar{width:192px;background:linear-gradient(180deg,#08294d,#063763);padding:18px 12px}
+.main{margin-left:192px;width:calc(100% - 192px)}
+.brand{padding:10px 6px 20px}.brand-title{font-size:14px}
+.nav-link{font-size:11px;padding:13px 11px;margin:4px 0;border-radius:8px}
+.nav-link.active{background:#087bf2;box-shadow:0 3px 12px #0069d455}
+.page-header{background:linear-gradient(105deg,#ffffff 60%,#e6f3ff);padding:24px 24px}
+.dashboard-layout{display:flex;flex-direction:column;gap:12px;padding:14px 16px}
+.filters-card{height:auto;position:static;overflow:visible;padding:14px 16px 16px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;align-items:start}
+.filters-title{grid-column:1/-1;position:static;border:0;font-size:17px;padding:2px 0 6px}
+.filters-title small{display:block;color:#71849b;font-size:10px;font-weight:500;margin-top:5px}
+.filter-block{background:#eff6ff;border:1px solid #e2eefc;border-radius:10px;padding:12px;min-width:0}
+.filter-label{color:#103e74;font-size:11px}
+.filter-search{background:white;height:34px;font-size:11px}
+.check-list{max-height:100px;overflow:auto;margin-top:8px;padding-right:4px}
+.check-list.months{max-height:100px}
+.check-row{font-size:10px}
+.filter-note{font-size:9px;margin-top:7px}
+.filter-grid-2{display:contents}
+.kpi-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:12px}
+.kpi{min-height:92px}.kpi-quantity{background:#edfcf7}.kpi-months{background:#fff9eb}
+.kpi strong{font-size:clamp(16px,1.8vw,26px)}
+table{min-width:1060px}thead th{font-size:9px}tbody td{font-size:10px}
+@media(max-width:1250px){.filters-card{grid-template-columns:repeat(3,minmax(0,1fr))}.kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:900px){.sidebar{display:none}.main{margin-left:0;width:100%}.filters-card{grid-template-columns:repeat(2,minmax(0,1fr))}.dashboard-layout{padding:10px}.page-header{flex-direction:column;align-items:flex-start}}
+@media(max-width:550px){.filters-card{grid-template-columns:1fr}.kpi-grid{grid-template-columns:1fr!important}.header-actions{flex-wrap:wrap}}

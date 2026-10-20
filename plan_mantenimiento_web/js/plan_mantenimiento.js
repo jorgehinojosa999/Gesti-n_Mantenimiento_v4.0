@@ -1591,6 +1591,52 @@ function monthlyData(){
 }
 
 
+// Etiquetas dibujadas sobre las barras y total en el centro de la dona.
+// No requiere librerías adicionales y responde a los filtros existentes.
+const demandValueLabels = {
+  id: "demandValueLabels",
+  afterDatasetsDraw(chart) {
+    if (chart.canvas.id !== "monthlyChart") return;
+    const {ctx, chartArea} = chart;
+    const dataset = chart.data.datasets[0];
+    const meta = chart.getDatasetMeta(0);
+    ctx.save();
+    ctx.fillStyle = "#0756a5";
+    ctx.font = "bold 11px Arial, sans-serif";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "bottom";
+    meta.data.forEach((bar, i) => {
+      const value = Number(dataset.data[i]) || 0;
+      if (value <= 0) return;
+      const label = "$" + Math.round(value).toLocaleString("es-EC");
+      const maxWidth = Math.max(36, bar.width + 26);
+      ctx.fillText(label, bar.x, Math.max(chartArea.top + 13, bar.y - 5), maxWidth);
+    });
+    ctx.restore();
+  }
+};
+
+const criticidadCenterValue = {
+  id: "criticidadCenterValue",
+  afterDatasetsDraw(chart) {
+    if (chart.canvas.id !== "justificationChart") return;
+    const arc = chart.getDatasetMeta(0).data[0];
+    if (!arc) return;
+    const total = chart.data.datasets[0].data.reduce((a,b) => a + (Number(b)||0), 0);
+    const {ctx} = chart;
+    ctx.save();
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillStyle = "#102d55";
+    ctx.font = "bold 13px Arial, sans-serif";
+    ctx.fillText(money(total), arc.x, arc.y - 7, arc.innerRadius * 1.85);
+    ctx.fillStyle = "#6b829d";
+    ctx.font = "11px Arial, sans-serif";
+    ctx.fillText("Total", arc.x, arc.y + 13);
+    ctx.restore();
+  }
+};
+
 function renderCharts(
   filtered
 ){
@@ -1650,7 +1696,7 @@ function renderCharts(
           maintainAspectRatio:false,
 
           plugins:{
-
+            demandValueLabels: {},
             legend:{
               display:false
             },
@@ -1680,12 +1726,14 @@ function renderCharts(
             },
 
             y:{
-              beginAtZero:true
+              beginAtZero:true,
+              grace:"18%"
             }
 
           }
 
-        }
+        },
+        plugins:[demandValueLabels]
 
       }
 
@@ -1730,6 +1778,26 @@ function renderCharts(
     justificationChart.destroy();
   }
 
+
+  const criticidadLegend = $("#criticidadLegend");
+  if (criticidadLegend) {
+    const order = ["ALTO", "MEDIO", "BAJO", "SIN ASIGNAR"];
+    const sum = Object.values(justification).reduce((a,b)=>a+b,0);
+    const color = {"ALTO":"#ef4444","MEDIO":"#f59e0b","BAJO":"#10b981","SIN ASIGNAR":"#94a3b8"};
+    criticidadLegend.replaceChildren();
+    order.forEach(key => {
+      const amount = Object.entries(justification).reduce((acc,[name,val]) =>
+        acc + (String(name).toUpperCase().includes(key === "ALTO" ? "ALT" : key === "MEDIO" ? "MED" : key === "BAJO" ? "BAJ" : "SIN ASIGNAR") ? val : 0), 0);
+      const item = document.createElement("div");
+      item.className = "crit-legend-item";
+      const dot = document.createElement("span"); dot.className = "crit-dot"; dot.style.background = color[key];
+      const detail = document.createElement("div");
+      const label = document.createElement("strong"); label.textContent = key;
+      const value = document.createElement("b"); value.textContent = money(amount);
+      const pct = document.createElement("small"); pct.textContent = (sum ? amount / sum * 100 : 0).toLocaleString("es-EC", {maximumFractionDigits:1}) + "%";
+      detail.append(label,value,pct); item.append(dot,detail); criticidadLegend.append(item);
+    });
+  }
 
   justificationChart =
     new Chart(
@@ -1777,18 +1845,7 @@ function renderCharts(
 
           plugins:{
 
-            legend:{
-
-              position:"right",
-
-              labels:{
-                boxWidth:10,
-                font:{
-                  size:10
-                }
-              }
-
-            },
+            legend:{ display:false },
 
             tooltip:{
 
@@ -1804,7 +1861,8 @@ function renderCharts(
 
           }
 
-        }
+        },
+        plugins:[criticidadCenterValue]
 
       }
 

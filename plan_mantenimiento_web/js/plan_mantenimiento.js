@@ -300,6 +300,7 @@ async function handleExcelUpload(file){
 
     clearFilterContainers();
     initializeFilters();
+    updateFilterSummaries();
     renderDashboard();
 
     updateDataSourceStatus({
@@ -1009,9 +1010,19 @@ function refreshAllFilters(){
 
 
   applySearchBoxes();
+  updateFilterSummaries();
 
 }
 
+function updateFilterSummaries(){
+  const selections = allSelections();
+  Object.keys(FILTERS).forEach(name => {
+    const node = document.querySelector(`[data-choice="${name}"]`);
+    if(!node) return;
+    const values = selections[name] || [];
+    node.textContent = values.length ? (values.length === 1 ? (MONTH_LABEL[values[0]] || values[0]) : `${values.length} seleccionados`) : "Todos";
+  });
+}
 
 function initializeFilters(){
 
@@ -1245,10 +1256,12 @@ function updateKpis(
     .textContent =
       `${filtered.length.toLocaleString("es-EC")} registros filtrados`;
 
-  $("#kpiMaterialCount").textContent = filtered.length.toLocaleString("es-EC");
-  const activeMonths = new Set();
-  filtered.forEach(({r}) => getMonths(r).forEach(m => activeMonths.add(m)));
-  $("#kpiMonthCount").textContent = activeMonths.size.toLocaleString("es-EC");
+  const monthsWithDemand = new Set();
+  filtered.forEach(({r}) => getMonths(r).forEach(m => {
+    if(!selections.month.length || selections.month.includes(m)) monthsWithDemand.add(m);
+  }));
+  $("#kpiFilteredRecords").textContent = filtered.length.toLocaleString("es-EC");
+  $("#kpiProgrammedMonths").textContent = monthsWithDemand.size.toLocaleString("es-EC");
 
 }
 
@@ -1411,6 +1424,12 @@ function renderTable(
       rows.map(
         ({r,occ}) => {
 
+
+          const st =
+            statusFor(
+              r,
+              occ
+            );
 
 
           const months =
@@ -1685,7 +1704,7 @@ function renderCharts(
           x.r
         )
         ||
-        "SIN CLASIFICAR";
+        "SIN ASIGNAR";
 
 
       justification[k] =
@@ -1735,7 +1754,7 @@ function renderCharts(
                 justification
               ),
 
-            backgroundColor: Object.keys(justification).map(k => {
+            backgroundColor:Object.keys(justification).map(k => {
               const v = String(k).toUpperCase();
               return v.includes("ALT") ? "#ef4444" : v.includes("MED") ? "#f59e0b" : v.includes("BAJ") ? "#10b981" : "#94a3b8";
             }),
@@ -2132,6 +2151,7 @@ async function init(){
 
 
     initializeFilters();
+    updateFilterSummaries();
 
 
     $("#btnUploadExcel")
@@ -2236,6 +2256,8 @@ async function init(){
       );
 
 
+    $("#btnClearInline").addEventListener("click", () => $("#btnClear").click());
+
     $("#btnClear")
       .addEventListener(
         "click",
@@ -2298,7 +2320,7 @@ async function init(){
         <tr>
 
           <td
-            colspan="11"
+            colspan="14"
             class="empty">
 
             Error cargando

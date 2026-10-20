@@ -9,11 +9,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/plan_mantenimiento.css">
+<link rel="stylesheet" href="css/plan_mantenimiento.css?v=12">
 
-<style>
-/* Los estilos del nuevo diseño están en css/plan_mantenimiento.css */
-</style>
+
 </head>
 
 <body>
@@ -27,14 +25,14 @@
     <div class="brand-sub">SAP · Ingeniería</div>
   </div>
 
-  <nav class="side-nav" aria-label="Módulos del portal">
+  <nav class="side-nav">
     <a href="../" class="nav-link">⌂ <span>Inicio</span></a>
     <a href="../avisos/" class="nav-link">▣ <span>Control Avisos</span></a>
     <a href="../ordenes/" class="nav-link">▣ <span>Control Órdenes</span></a>
-    <a href="../seguimiento-avisos/" class="nav-link">▣ <span>Seguimiento Avisos</span></a>
+    <a href="../seguimiento-avisos/" class="nav-link">▤ <span>Seguimiento Avisos</span></a>
     <a href="../planilla-semana/" class="nav-link">▣ <span>Planilla Semana</span></a>
-    <a href="./" class="nav-link active" aria-current="page">▦ <span>Plan de Mantenimiento</span></a>
-    <a href="../dashboard-sap/" class="nav-link">▥ <span>Dashboard SAP</span></a>
+    <a href="./" class="nav-link active">▦ <span>Plan de Mantenimiento</span></a>
+    <a href="../dashboard-sap/" class="nav-link">◫ <span>Dashboard SAP</span></a>
   </nav>
 </aside>
 
@@ -91,134 +89,12 @@
 </div>
 
 <section class="dashboard-layout">
-
-
-<!-- ======================================================
-     FILTROS
-     ====================================================== -->
-<aside class="filters-card">
-
-  <div class="filters-title">▦ Filtros de consulta <small>Selecciona meses, línea, equipo, sistema y criticidad. Los filtros se combinan automáticamente.</small></div>
-
-
-  <!-- MES -->
-  <div class="filter-block">
-
-    <div class="filter-label">▦ Mes de inicio / intervención</div>
-
-    <div id="filterMonth" class="check-list months"></div>
-
-    <div class="filter-note">
-      El mes se busca en MES_DE_INICIO,
-      MES_DE_INTERVENCION_2,
-      MES_DE_INTERVENCION_3 y
-      MES_DE_INTERVENCION_4.
-    </div>
-
-  </div>
-
-
-  <!-- LÍNEA -->
-  <div class="filter-block">
-
-    <div class="filter-label">▦ Línea</div>
-
-    <input
-      id="searchLine"
-      class="filter-search"
-      type="text"
-      placeholder="Buscar línea..."
-    >
-
-    <div id="filterLine" class="check-list scroll"></div>
-
-  </div>
-
-
-  <!-- EQUIPO -->
-  <div class="filter-block">
-
-    <div class="filter-label">⚙ Equipo</div>
-
-    <input
-      id="searchEquipment"
-      class="filter-search"
-      type="text"
-      placeholder="Buscar equipo..."
-    >
-
-    <div id="filterEquipment" class="check-list scroll small"></div>
-
-  </div>
-
-
-  <!-- SISTEMA -->
-  <div class="filter-block">
-
-    <div class="filter-label">▧ Sistema</div>
-
-    <input
-      id="searchSystem"
-      class="filter-search"
-      type="text"
-      placeholder="Buscar sistema..."
-    >
-
-    <div id="filterSystem" class="check-list scroll small"></div>
-
-  </div>
-
-
-  <!-- JUSTIFICACIÓN + CRITICIDAD -->
-  <div class="filter-grid-2">
-
-    <div class="filter-block">
-
-      <div class="filter-label">JUSTIFICACIÓN</div>
-
-      <div
-        id="filterJustification"
-        class="check-list">
-      </div>
-
-    </div>
-
-
-    <div class="filter-block">
-
-      <div class="filter-label">▲ Criticidad</div>
-
-      <div
-        id="filterCriticality"
-        class="check-list">
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <!-- FRECUENCIA -->
-  <div class="filter-block">
-
-    <div class="filter-label">FRECUENCIA</div>
-
-    <div
-      id="filterFrequency"
-      class="check-list">
-    </div>
-
-  </div>
-
-</aside>
-
-
-<!-- ======================================================
-     DASHBOARD
-     ====================================================== -->
+<section class="filters-card" aria-label="Filtros de consulta">
+  <div class="filters-heading"><div><strong>⚲ Filtros de consulta</strong><p>Filtra por período, línea, equipo, sistema y criticidad. Selecciones combinadas automáticamente.</p></div></div>
+  <div class="filters-horizontal"><details class="filter-dropdown" data-filter="month"><summary><span class="filter-label">Mes de inicio / intervención</span><span class="filter-choice" data-choice="month">Todos</span><span class="filter-chevron">⌄</span></summary><div class="filter-popup"><div id="filterMonth" class="check-list scroll"></div></div></details><details class="filter-dropdown" data-filter="line"><summary><span class="filter-label">Línea</span><span class="filter-choice" data-choice="line">Todos</span><span class="filter-chevron">⌄</span></summary><div class="filter-popup"><input id="searchLine" class="filter-search" type="text" placeholder="Buscar línea..." autocomplete="off"><div id="filterLine" class="check-list scroll"></div></div></details><details class="filter-dropdown" data-filter="equipment"><summary><span class="filter-label">Equipo</span><span class="filter-choice" data-choice="equipment">Todos</span><span class="filter-chevron">⌄</span></summary><div class="filter-popup"><input id="searchEquipment" class="filter-search" type="text" placeholder="Buscar equipo..." autocomplete="off"><div id="filterEquipment" class="check-list scroll"></div></div></details><details class="filter-dropdown" data-filter="system"><summary><span class="filter-label">Sistema</span><span class="filter-choice" data-choice="system">Todos</span><span class="filter-chevron">⌄</span></summary><div class="filter-popup"><input id="searchSystem" class="filter-search" type="text" placeholder="Buscar sistema..." autocomplete="off"><div id="filterSystem" class="check-list scroll"></div></div></details><details class="filter-dropdown" data-filter="criticality"><summary><span class="filter-label">Criticidad</span><span class="filter-choice" data-choice="criticality">Todos</span><span class="filter-chevron">⌄</span></summary><div class="filter-popup"><div id="filterCriticality" class="check-list scroll"></div></div></details></div>
+  <div class="filters-extra"><div class="filters-additional"><details class="filter-dropdown" data-filter="justification"><summary><span class="filter-label">Justificación</span><span class="filter-choice" data-choice="justification">Todos</span><span class="filter-chevron">⌄</span></summary><div class="filter-popup"><div id="filterJustification" class="check-list scroll"></div></div></details><details class="filter-dropdown" data-filter="frequency"><summary><span class="filter-label">Frecuencia</span><span class="filter-choice" data-choice="frequency">Todos</span><span class="filter-chevron">⌄</span></summary><div class="filter-popup"><div id="filterFrequency" class="check-list scroll"></div></div></details></div><button type="button" class="btn btn-secondary" id="btnClearInline">↻ Limpiar filtros</button></div>
+</section>
 <div class="content">
-
-
 <!-- KPI -->
 <section class="kpi-grid">
 
@@ -263,16 +139,9 @@
 
   </article>
 
-  <article class="kpi kpi-quantity">
-    <div class="kpi-icon blue">▤</div>
-    <div><span class="kpi-label">REGISTROS FILTRADOS</span><strong id="kpiMaterialCount">0</strong><small>Filas de demanda</small></div>
-  </article>
-  <article class="kpi kpi-months">
-    <div class="kpi-icon warning">▦</div>
-    <div><span class="kpi-label">MESES PROGRAMADOS</span><strong id="kpiMonthCount">0</strong><small>Meses con demanda</small></div>
-  </article>
+  <article class="kpi kpi-green"><div class="kpi-icon blue">▤</div><div><span class="kpi-label">REGISTROS FILTRADOS</span><strong id="kpiFilteredRecords">0</strong><small>Filas de demanda</small></div></article>
+  <article class="kpi kpi-amber"><div class="kpi-icon warning">▦</div><div><span class="kpi-label">MESES PROGRAMADOS</span><strong id="kpiProgrammedMonths">0</strong><small>Meses con demanda</small></div></article>
 </section>
-
 
 <!-- TABLA -->
 <section class="panel table-panel">
@@ -332,6 +201,9 @@
           <th>FRECUENCIA</th>
           <th>MESES PROGRAMADOS</th>
           <th>CRITICIDAD</th>
+          
+          
+          
         </tr>
 
       </thead>
@@ -393,7 +265,7 @@
         <h2>Valor por criticidad</h2>
 
         <p>
-          Distribución de la demanda filtrada.
+          Distribución de la demanda filtrada por criticidad.
         </p>
 
       </div>
@@ -420,7 +292,7 @@
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 
 <!-- v=7 fuerza cargar JS nuevo -->
-<script src="js/plan_mantenimiento.js?v=8"></script>
+<script src="js/plan_mantenimiento.js?v=12"></script>
 
 </body>
 </html>

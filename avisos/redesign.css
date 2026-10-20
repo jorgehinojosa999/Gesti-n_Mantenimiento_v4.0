@@ -90,3 +90,39 @@ body{background:var(--bg);color:var(--text)}
 .charts-grid.charts-grid-bottom>.panel-monthly-trend{grid-column:1/-1!important}
 .panel-monthly-trend .chart-canvas-wrap.chart-large{height:365px!important}
 @media(max-width:700px){.panel-monthly-trend .chart-canvas-wrap.chart-large{height:320px!important}}
+
+/* Distribución aprobada: 3 gráficos arriba y 3 abajo */
+.charts-grid.charts-grid-four,
+.charts-grid.charts-grid-bottom {
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:12px!important;
+  align-items:stretch!important;
+}
+.charts-grid.charts-grid-four>.panel,
+.charts-grid.charts-grid-bottom>.panel,
+.charts-grid.charts-grid-four>.panel-monthly-average,
+.charts-grid.charts-grid-bottom>.panel-monthly-trend {
+  grid-column:auto!important;
+  grid-row:auto!important;
+  order:initial!important;
+  margin:0!important;
+  min-width:0!important;
+  width:100%!important;
+}
+.charts-grid .panel .chart-canvas-wrap,
+.charts-grid .panel .chart-canvas-wrap.chart-large,
+.panel-monthly-trend .chart-canvas-wrap.chart-large {
+  height:275px!important;
+  min-height:275px!important;
+  padding:10px 9px 12px!important;
+  position:relative;
+}
+.charts-grid .panel .panel-header{min-height:60px!important}
+.charts-grid .panel .chart-canvas-wrap canvas{max-width:100%!important;max-height:100%!important}
+@media(max-width:1100px){
+  .charts-grid.charts-grid-four,.charts-grid.charts-grid-bottom{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:700px){
+  .charts-grid.charts-grid-four,.charts-grid.charts-grid-bottom{grid-template-columns:1fr!important}
+}

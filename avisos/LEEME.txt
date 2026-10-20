@@ -1,0 +1,5 @@
+Control de Avisos SAP - distribución 3 arriba y 3 abajo.
+Reemplazar index.html, app.js, styles.css y redesign.css dentro de avisos/.
+Gráfico mensual: enero al último mes con datos del año más reciente, sin línea, porcentajes ni resumen lateral.
+Los valores se calculan con los avisos filtrados.
+Publicar: git add avisos/ && git commit -m "Alinear seis graficos" && git push origin main

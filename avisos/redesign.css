@@ -126,3 +126,17 @@ body{background:var(--bg);color:var(--text)}
 @media(max-width:700px){
   .charts-grid.charts-grid-four,.charts-grid.charts-grid-bottom{grid-template-columns:1fr!important}
 }
+
+/* CORRECCIÓN FINAL: seis tarjetas en dos filas de tres */
+@media (min-width: 1101px) {
+  .charts-grid.charts-grid-four, .charts-grid.charts-grid-bottom {
+    grid-template-columns: repeat(3, minmax(0,1fr)) !important;
+  }
+}
+.charts-grid.charts-grid-four > .panel, .charts-grid.charts-grid-bottom > .panel {
+  grid-column: auto !important; grid-row: auto !important; order: 0 !important;
+  min-width: 0 !important; width: auto !important;
+}
+.charts-grid.charts-grid-bottom > .panel-monthly-trend {grid-column:auto!important}
+.charts-grid .panel .chart-canvas-wrap {height:300px!important;min-height:300px!important}
+.charts-grid .panel .panel-header {min-height:65px!important}

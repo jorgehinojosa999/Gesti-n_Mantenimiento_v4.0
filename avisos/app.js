@@ -1535,9 +1535,7 @@ function renderTable(
 
                 item.textoNotificacion,
 
-                item.costoReal,
-
-                (String(item.orden ?? "").trim() ? "OT EXISTENTE" : "CREAR OT")
+                item.costoReal
 
             ];
 

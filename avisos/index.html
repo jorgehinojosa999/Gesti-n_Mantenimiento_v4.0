@@ -30,13 +30,17 @@
                 </span>
 </div>
 </div>
-<!-- NAVEGACIÓN DEL PORTAL -->
-<nav style="display:flex;flex-direction:column;gap:8px;margin:16px 0 18px;">
-<a href="../" style="display:block;padding:10px 12px;border-radius:7px;color:#fff;text-decoration:none;background:rgba(255,255,255,.08);font-weight:700;">⌂ Inicio</a>
-<a href="./" style="display:block;padding:10px 12px;border-radius:7px;color:#fff;text-decoration:none;background:#2196e5;font-weight:700;">▣ Control Avisos</a>
-<a href="../ordenes/" style="display:block;padding:10px 12px;border-radius:7px;color:#fff;text-decoration:none;background:rgba(255,255,255,.08);font-weight:700;">↗ Control Órdenes</a>
-<a href="../planilla-semana/" style="display:block;padding:10px 12px;border-radius:7px;color:#fff;text-decoration:none;background:rgba(255,255,255,.08);font-weight:700;">▣ Planilla Semana</a>
+<!-- NAVEGACIÓN DEL PORTAL: mismos módulos de la portada -->
+<nav class="portal-module-nav" aria-label="Módulos del portal">
+  <a href="../"><span class="module-nav-icon">⌂</span> Inicio</a>
+  <a href="./" class="active" aria-current="page"><span class="module-nav-icon">▣</span> Control Avisos</a>
+  <a href="../ordenes/"><span class="module-nav-icon">⚒</span> Control Órdenes</a>
+  <a href="../seguimiento-avisos/"><span class="module-nav-icon">▤</span> Seguimiento Avisos</a>
+  <a href="../planilla-semana/"><span class="module-nav-icon">▦</span> Planilla Semana</a>
+  <a href="../plan_mantenimiento_web/index.html?v=6"><span class="module-nav-icon">▥</span> Plan de Mantenimiento</a>
+  <a href="../dashboard_sap/"><span class="module-nav-icon">▧</span> Dashboard SAP</a>
 </nav>
+
 <!-- =================================================
              FILTROS
              ================================================= -->

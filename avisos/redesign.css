@@ -140,3 +140,10 @@ body{background:var(--bg);color:var(--text)}
 .charts-grid.charts-grid-bottom > .panel-monthly-trend {grid-column:auto!important}
 .charts-grid .panel .chart-canvas-wrap {height:300px!important;min-height:300px!important}
 .charts-grid .panel .panel-header {min-height:65px!important}
+
+/* Navegación completa: misma estructura de módulos que la portada */
+.sidebar .portal-module-nav{display:flex!important;flex-direction:column;gap:5px;margin:15px 0 18px!important}
+.sidebar .portal-module-nav a{display:flex;align-items:center;gap:10px;min-height:37px;padding:10px 12px;border-radius:8px;color:#dbe9f9;text-decoration:none;background:rgba(255,255,255,.075);font-size:12px;font-weight:700;transition:background .15s ease}
+.sidebar .portal-module-nav a:hover{background:#176cba!important;transform:none}
+.sidebar .portal-module-nav a.active{background:#1689e9;color:#fff}
+.sidebar .portal-module-nav .module-nav-icon{display:inline-flex;justify-content:center;min-width:16px;font-size:13px}

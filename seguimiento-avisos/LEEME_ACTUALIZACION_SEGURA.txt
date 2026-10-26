@@ -1,0 +1,12 @@
+ACTUALIZACION DE SEGUIMIENTO DE AVISOS - SIN PERDIDA DE DATOS
+
+1. Antes de publicar, guarda una copia de los archivos actuales de seguimiento-avisos.
+2. Sustituye UNICAMENTE app.js en seguimiento-avisos/ por el incluido.
+3. NO ejecutes scripts SQL, NO borres tablas ni el bucket de fotografias.
+4. No reemplaces config.js: conserva la configuracion actual de Supabase.
+5. El estado se obtiene de IW28 (estadoAviso / estadoFinal / MECE).
+6. Si IW28 no confirma un estado, se conserva el estado guardado en Supabase.
+7. No se realizan escrituras masivas a Supabase: el estado se refleja al visualizar el seguimiento.
+8. Las fotos, criticidad y otros campos registrados siguen intactos.
+9. Para probar: recarga la pagina (Ctrl+F5) y verifica avisos abiertos y cerrados.
+10. Si deseas que el nuevo estado quede grabado en Supabase, hace falta otra fase con permisos y respaldo previo.

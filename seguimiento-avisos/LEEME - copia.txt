@@ -1,0 +1,15 @@
+INSTALACION - SEGUIMIENTO AVISOS SAP
+
+1. Copiar index.html, styles.css, app.js y config.js en seguimiento-avisos/ del repositorio.
+2. Abrir Supabase > Project Settings > API Keys y copiar SOLO la clave publica publishable (sb_publishable_...) o anon.
+3. Pegarla en config.js en REEMPLAZAR_CON_CLAVE_PUBLICA. NO usar secret ni service_role.
+4. Publicar en GitHub Pages y entrar con el email y contrasena creados en Supabase Authentication.
+5. Probar con datos de prueba y desde dos navegadores. Verificar la carga de foto y que Ver foto abre enlace temporal.
+
+AVISOS:
+- Esta cuenta compartida NO valida identidades Microsoft 365. Cualquiera que conozca las credenciales podra entrar.
+- GitHub Pages publica ../data/avisos.json y ../data/ordenes_sap.json sin autenticacion. El formulario de login solo protege el acceso de Supabase, NO protege esos archivos SAP. Para confidencialidad real, mover los JSON a un servicio protegido.
+- El boton Quitar se reemplaza por 'Sin eliminacion' porque la tabla no tiene politica DELETE; evita prometer una funcion inexistente.
+- IndexedDB antiguo NO se migra automaticamente; los datos previos quedan solo en el navegador original.
+- La lista muestra los 1000 seguimientos mas recientes. Para superar ese volumen implementar paginacion.
+- No se han hecho pruebas reales contra el proyecto remoto. Antes de cargar datos empresariales verificar autorizacion de Tesalia CBC.

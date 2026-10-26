@@ -14,6 +14,7 @@ const displayDate=d=>d?`${String(d.getUTCDate()).padStart(2,"0")}/${String(d.get
 const months=["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
 const state=v=>{const s=str(v).toUpperCase();if(s.includes("CERRAD")||/\bCTEC\b/.test(s))return "cerrada";return "abierta"};
 let rows=[],sourceStatus="",signature="";
+let unmatchedCount=0;
 let indexes={},allIds=[],lastFiltered=[],renderToken=0; const DIMENSIONS={anio:"_year",mes:"_month",clase:"_classOrder",tipo:"_activity",estado:"_estado"};
 const avisosOrder=["orden","orden de trabajo","n orden","nro orden","numero orden","numero de orden","orden mantenimiento","orden asociada","orden sap","orden_1"];
 const avisosDesc=["descripcion_1","descripcion 1","descripcion","texto breve","texto breve aviso","descripcion aviso","texto aviso"];

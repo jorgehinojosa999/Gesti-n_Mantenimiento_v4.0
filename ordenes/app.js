@@ -354,8 +354,8 @@
     }
 
     function cruzarProgramacion(){
+        // Mostrar TODA la planilla, incluso cuando una OT aún no está en el JSON SAP.
         return state.programacion
-            .filter(p => state.sap.has(p.orden))
             .map(p => {
                 const s = state.sap.get(p.orden) || {};
                 const fechaIw = fechaDesdeDMY(s.fecha_iw47);
@@ -374,7 +374,7 @@
 
                 return {
                     ...p,
-                    estado_orden: s.estado_orden || "REVISAR",
+                    estado_orden: s.estado_orden || "NO ENCONTRADA EN SAP",
                     estado_tiempo: estadoTiempo,
                     estatus_sap: s.estatus_sap || "",
                     total_costes_plan: s.total_costes_plan ?? null,
@@ -466,12 +466,15 @@
         const total = rows.length;
         const cerradas = rows.filter(r=>r.estado_orden==="ORDEN CERRADA").length;
         const abiertas = rows.filter(r=>r.estado_orden==="ORDEN ABIERTA").length;
+        const noEncontradas = rows.filter(r=>r.estado_orden==="NO ENCONTRADA EN SAP").length;
         const dias = rows.map(r=>r.dias_desfase).filter(v=>Number.isFinite(v));
         $("kpiTotal").textContent = fmt.format(total);
         $("kpiCerradas").textContent = fmt.format(cerradas);
         $("kpiAbiertas").textContent = fmt.format(abiertas);
         $("kpiCierre").textContent = `${total ? (cerradas/total*100).toFixed(1) : "0.0"}%`;
         $("kpiPromedio").textContent = dias.length ? (dias.reduce((a,b)=>a+b,0)/dias.length).toFixed(1) : "0.0";
+        const aviso = $("avisoSinSAP");
+        if(aviso) aviso.textContent = `${fmt.format(noEncontradas)} registros de la vista actual no encontrados en IW39. Se muestran para evitar omisiones.`;
     }
 
     function donut(name, canvas, rows, colors){
@@ -640,11 +643,11 @@
             state.programacion=resultado.rows;
             reconstruirFiltros();
             actualizarDashboard(false);
-            const cruzadas=cruzarProgramacion().length;
+            const cruzadas=state.programacion.filter(p=>state.sap.has(p.orden)).length;
             $("archivoCargado").textContent=
                 `${file.name} · Hoja: ${resultado.nombre} · ` +
                 `${fmt.format(state.programacion.length)} filas válidas · ` +
-                `${fmt.format(cruzadas)} OT encontradas en SAP · Vista temporal`;
+                `${fmt.format(cruzadas)} registros coinciden con SAP · ${fmt.format(state.programacion.length-cruzadas)} sin coincidencia · Vista temporal`;
         }catch(err){
             console.error(err);
             $("archivoCargado").textContent="No se pudo cargar la planilla.";
@@ -664,10 +667,10 @@
             if(state.programacion.length){
                 reconstruirFiltros();
                 actualizarDashboard(false);
-                const cruzadas = cruzarProgramacion().length;
+                const cruzadas = state.programacion.filter(p=>state.sap.has(p.orden)).length;
                 $("archivoCargado").textContent =
                     `Última programación publicada · ${fmt.format(state.programacion.length)} filas · ` +
-                    `${fmt.format(cruzadas)} OT encontradas en SAP`;
+                    `${fmt.format(cruzadas)} registros coinciden con SAP · ${fmt.format(state.programacion.length-cruzadas)} sin coincidencia`;
             }else{
                 $("archivoCargado").textContent =
                     "No existe programación publicada todavía.";
@@ -711,10 +714,10 @@
             if(state.programacion.length){
                 reconstruirFiltros();
                 actualizarDashboard(false);
-                const cruzadas = cruzarProgramacion().length;
+                const cruzadas = state.programacion.filter(p=>state.sap.has(p.orden)).length;
                 $("archivoCargado").textContent =
                     `Última programación publicada · ${fmt.format(state.programacion.length)} filas · ` +
-                    `${fmt.format(cruzadas)} OT encontradas en SAP`;
+                    `${fmt.format(cruzadas)} registros coinciden con SAP · ${fmt.format(state.programacion.length-cruzadas)} sin coincidencia`;
             }else{
                 $("archivoCargado").textContent =
                     "Datos SAP listos. Aún no existe programacion.json publicado.";

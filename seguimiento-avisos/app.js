@@ -11,7 +11,16 @@ const hasNoti=s=>/\bNOTI\b/i.test(String(s||''));
 const escapeHtml=s=>String(s??'—').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const criticalLevels=['Alta','Media','Baja'];
 const months=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
-function getState(a,o){const ot=norm(a.orden);const estado=String(o?.estatus_sap||o?.status_sistema_planner||a.estadoSAPOrden||'');return ot&&hasNoti(estado)?'Aviso resuelto':'Aviso abierto';}
+// IW28 tiene prioridad: el estado de la OT no equivale al cierre del aviso.
+// null significa que SAP no confirma el estado: se mantiene el valor guardado.
+function getState(a,o){
+  const avisoEstado=String(a?.estadoAviso||a?.estadoFinal||'').trim();
+  const avisoCodigo=String(a?.statusAvisoIW28||'').trim().toUpperCase();
+  if(/aviso\s+cerrad[oa]|\bcerrad[oa]\b/i.test(avisoEstado)||/\bMECE\b/.test(avisoCodigo))return 'Aviso resuelto';
+  if(/aviso\s+abiert[oa]|\babiert[oa]\b/i.test(avisoEstado))return 'Aviso abierto';
+  // No inferir que el aviso está cerrado solo porque la OT tiene NOTI/CTEC.
+  return null;
+}
 async function getJSON(url){const r=await fetch(url+'?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error(`No se pudo leer ${url} (${r.status})`);const j=await r.json();if(!Array.isArray(j.data))throw Error(`Formato no reconocido: ${url}`);return j;}
 function getLinea(a){
   // Admite las denominaciones habituales de línea en las exportaciones SAP.
@@ -19,11 +28,18 @@ function getLinea(a){
   for(const key of candidates){if(a?.[key]!=null&&String(a[key]).trim())return String(a[key]).trim();}
   return 'Sin línea';
 }
-function getInfo(a){const o=ordenes.get(norm(a.orden));return {aviso:String(a.notificacion),orden:a.orden||'',descripcion:[a.descripcion,a.descripcion1,a.descripcion2].filter(Boolean).join(' · '),fecha_aviso:a.fechaAviso||'',fecha_ejecucion:o?.fecha_iw47||a.fechaContab||'',texto_notificacion:o?.texto_notificacion||a.textoNotificacion||'',estado:getState(a,o),status_sap:o?.estatus_sap||a.estadoSAPOrden||'',origen_iw47:Boolean(o?.texto_notificacion||o?.fecha_iw47),linea:getLinea(a)};}
+function getInfo(a){const o=ordenes.get(norm(a.orden));return {aviso:String(a.notificacion),orden:a.orden||'',descripcion:[a.descripcion,a.descripcion1,a.descripcion2].filter(Boolean).join(' · '),fecha_aviso:a.fechaAviso||'',fecha_ejecucion:o?.fecha_iw47||a.fechaContab||'',texto_notificacion:o?.texto_notificacion||a.textoNotificacion||'',estado:getState(a,o)||'Estado sin confirmar',status_sap:o?.estatus_sap||a.estadoSAPOrden||'',origen_iw47:Boolean(o?.texto_notificacion||o?.fecha_iw47),linea:getLinea(a)};}
 function field(label,value){return `<div class="field"><small>${escapeHtml(label)}</small><b>${escapeHtml(value||'—')}</b></div>`;}
 function showSelection(a){seleccion=a;const v=getInfo(a);$('fields').innerHTML=field('N.º aviso',v.aviso)+field('Orden de trabajo',v.orden)+field('Línea',v.linea)+field('Fecha aviso',v.fecha_aviso)+field('Fecha ejecución / IW47',v.fecha_ejecucion)+field('Descripción',v.descripcion)+field('Texto notificación',v.texto_notificacion)+field('Estado SAP orden',v.status_sap)+field('Resultado',v.estado);$('detail').hidden=false;$('photo').value='';$('preview').hidden=true;$('message').textContent='Aviso encontrado. Adjunta obligatoriamente una fotografía para agregarlo.';$('detail').scrollIntoView({behavior:'smooth',block:'start'});}
 function dateParts(value){const s=String(value||'').trim();let m=s.match(/^(\d{1,2})[/.\-](\d{1,2})[/.\-](\d{4})/);if(m)return {year:m[3],month:String(+m[2]).padStart(2,'0')};m=s.match(/^(\d{4})-(\d{2})-(\d{2})/);if(m)return {year:m[1],month:m[2]};return {year:'',month:''};}
-function effectiveRecord(v){const a=avisos.get(norm(v.aviso));if(!a)return v;const sap=getInfo(a);return {...v,...sap,criticidad:v.criticidad||null,foto_path:v.foto_path};}
+function effectiveRecord(v){
+  const a=avisos.get(norm(v.aviso));
+  if(!a)return v; // No se borra ni altera un seguimiento ausente del JSON.
+  const sap=getInfo(a);
+  // La fuente SAP solo actualiza el estado cuando IW28 lo confirma.
+  // Conservar los datos del usuario, fotos, fechas y textos ya guardados.
+  return {...v,estado:getState(a,ordenes.get(norm(a.orden)))||v.estado||'Estado sin confirmar'};
+}
 function populateSelect(id,values,label){const el=$(id),current=el.value;el.replaceChildren(new Option(label,''));for(const value of values)el.add(new Option(value,value));el.value=values.includes(current)?current:'';}
 function buildFilters(){const lines=[...new Set(registros.map(v=>v.linea||'Sin línea'))].sort((a,b)=>a.localeCompare(b,'es'));populateSelect('filterLinea',lines,'Todas las líneas');const dates=registros.map(v=>dateParts(v.fecha_aviso));const years=[...new Set(dates.map(x=>x.year).filter(Boolean))].sort((a,b)=>b.localeCompare(a));populateSelect('filterAnio',years,'Todos los años');const monthNums=[...new Set(dates.map(x=>x.month).filter(Boolean))].sort();const el=$('filterMes'),current=el.value;el.replaceChildren(new Option('Todos los meses',''));for(const m of monthNums)el.add(new Option(months[Number(m)-1],m));el.value=monthNums.includes(current)?current:'';}
 function getFiltered(){const term=norm($('filter').value).toLowerCase();return registros.filter(v=>{const d=dateParts(v.fecha_aviso);return (!term||String(v.aviso).toLowerCase().includes(term)||String(v.orden||'').toLowerCase().includes(term)||String(v.descripcion||'').toLowerCase().includes(term))&&(!$('filterLinea').value||(v.linea||'Sin línea')===$('filterLinea').value)&&(!$('filterMes').value||d.month===$('filterMes').value)&&(!$('filterAnio').value||d.year===$('filterAnio').value)&&(!$('filterCriticidad').value||(v.criticidad||'Sin asignar')===$('filterCriticidad').value)&&(!$('filterEstado').value||v.estado===$('filterEstado').value);});}

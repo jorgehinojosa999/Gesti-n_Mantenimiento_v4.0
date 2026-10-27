@@ -9,6 +9,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./supabase-config.js?v=20261027_1"></script>
 </head>
 <body>
 
@@ -138,11 +140,14 @@
                     ↑ Importar Excel
                 </label>
                 <input id="archivoExcel" type="file" accept=".xlsx,.xls,.xlsm" hidden>
+                <button id="btnEntrar" type="button" class="btn">🔐 Iniciar sesión</button>
+                <button id="btnSalir" type="button" class="btn" hidden>Cerrar sesión</button>
                 <span id="archivoCargado" class="import-status">
                     Cargue la planilla diaria para visualizar las OT.
                 </span>
             </div>
 
+            <div id="estadoCompartido" class="estado-compartido" aria-live="polite">Verificando almacenamiento compartido...</div>
             <div id="avisoSinSAP" style="font-size:12px;color:#b45309;margin:8px 0 14px;font-weight:600" aria-live="polite"></div>
 
             <!-- KPI -->
@@ -350,6 +355,6 @@
 
     </main>
 
-    <script src="./app.js?v=20261026_1"></script>
+    <script src="./app.js?v=20261027_1"></script>
 </body>
 </html>

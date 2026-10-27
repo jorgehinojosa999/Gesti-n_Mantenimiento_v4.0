@@ -1,6 +1,67 @@
 (() => {
     const $ = id => document.getElementById(id);
     const fmt = new Intl.NumberFormat("es-EC");
+    const CONFIG = window.ORDENES_SUPABASE || {};
+    const backendActivo = Boolean(CONFIG.url && CONFIG.anonKey && !CONFIG.url.includes('TU_PROYECTO'));
+    const sb = backendActivo && window.supabase ? window.supabase.createClient(CONFIG.url, CONFIG.anonKey) : null;
+    let sesionActual = null;
+    const fuenteCompartida = () => Boolean(sb && sesionActual);
+    const textoEstado = msg => { const el=$("estadoCompartido"); if(el) el.textContent=msg; };
+    async function verificarSesion(){
+        if(!sb){textoEstado("Sin configurar: se usa programación publicada en GitHub (solo lectura)."); return;}
+        const {data,error}=await sb.auth.getSession();
+        if(error) throw error;
+        sesionActual=data.session;
+        $("btnEntrar").hidden=Boolean(sesionActual);
+        $("btnSalir").hidden=!sesionActual;
+        textoEstado(sesionActual ? `Conectado: ${sesionActual.user.email}` : "Inicia sesión para cargar y consultar la programación compartida.");
+    }
+    function filaParaGuardar(x){
+        const {fecha_obj, id, ...campos}=x;
+        return { ...campos, id: undefined };
+    }
+    async function guardarCompartido(rows){
+        if(!fuenteCompartida()) throw new Error("Inicia sesión en la base de datos compartida antes de importar.");
+        if(!rows.length) throw new Error("El Excel no contiene filas válidas.");
+        // Se almacena la última planilla completa como documento JSON único.
+        // Evita truncamientos por paginación y conserva todas las filas/operaciones.
+        const {error}=await sb.from('ordenes_programacion').upsert({
+            clave:'planilla_actual', datos:rows.map(filaParaGuardar),
+            actualizado_en:new Date().toISOString(), archivo:window.__nombreArchivo || 'Planilla Excel'
+        },{onConflict:'clave'});
+        if(error) throw new Error(`No se pudo guardar en Supabase: ${error.message}`);
+    }
+    async function cargarCompartido(){
+        if(!fuenteCompartida()) return null;
+        const {data,error}=await sb.from('ordenes_programacion')
+            .select('datos,actualizado_en,archivo').eq('clave','planilla_actual').maybeSingle();
+        if(error) throw new Error(`No se pudo consultar Supabase: ${error.message}`);
+        if(!data) return {cantidad:0, ultima_actualizacion:'--'};
+        state.programacion=(Array.isArray(data.datos)?data.datos:[]).map((x,i)=>({
+            ...x, id:i, orden:normalizarOrden(x.orden), fecha_obj:fechaDesdeDMY(x.fecha)
+        })).filter(x=>x.orden && x.fecha_obj);
+        return {cantidad:state.programacion.length,
+            ultima_actualizacion:new Date(data.actualizado_en).toLocaleString('es-EC'),
+            archivo:data.archivo};
+    }
+    async function cargarProgramacionPreferida(){
+        if(fuenteCompartida()){
+            const resultado=await cargarCompartido();
+            if(resultado && resultado.cantidad){
+                textoEstado(`Compartida: ${resultado.cantidad.toLocaleString('es-EC')} filas · ${resultado.ultima_actualizacion}`);
+                return resultado;
+            }
+            // Si aún no hay planilla central, conserva la vista publicada sin borrar datos.
+        }
+        return cargarProgramacionPublicada();
+    }
+    function mensajeCarga(prog){
+        if(state.programacion.length){
+            reconstruirFiltros(); actualizarDashboard(false);
+            const cruzadas=state.programacion.filter(p=>state.sap.has(p.orden)).length;
+            $("archivoCargado").textContent=`${fuenteCompartida() && prog?.cantidad ? 'Programación compartida' : 'Programación publicada'} · ${fmt.format(state.programacion.length)} filas · ${fmt.format(cruzadas)} coinciden con SAP · ${fmt.format(state.programacion.length-cruzadas)} sin coincidencia`;
+        }else $("archivoCargado").textContent="Todavía no existe programación guardada.";
+    }
 
     const state = {
         charts: {},
@@ -640,6 +701,10 @@
             const data=await file.arrayBuffer();
             const wb=XLSX.read(data,{type:"array",cellDates:true});
             const resultado=leerProgramacion(wb);
+            if(!fuenteCompartida()) throw new Error("Para guardar y compartir el Excel, configura Supabase e inicia sesión. No se han modificado los datos existentes.");
+            window.__nombreArchivo=file.name;
+            $("archivoCargado").textContent="Guardando planilla para todas las computadoras...";
+            await guardarCompartido(resultado.rows);
             state.programacion=resultado.rows;
             reconstruirFiltros();
             actualizarDashboard(false);
@@ -647,7 +712,7 @@
             $("archivoCargado").textContent=
                 `${file.name} · Hoja: ${resultado.nombre} · ` +
                 `${fmt.format(state.programacion.length)} filas válidas · ` +
-                `${fmt.format(cruzadas)} registros coinciden con SAP · ${fmt.format(state.programacion.length-cruzadas)} sin coincidencia · Vista temporal`;
+                `${fmt.format(cruzadas)} registros coinciden con SAP · ${fmt.format(state.programacion.length-cruzadas)} sin coincidencia · Guardado para todas las computadoras`;
         }catch(err){
             console.error(err);
             $("archivoCargado").textContent="No se pudo cargar la planilla.";
@@ -657,31 +722,39 @@
         }
     });
 
+    async function refrescarDatos(){
+        await cargarSAP();
+        const prog=await cargarProgramacionPreferida();
+        mensajeCarga(prog);
+    }
     $("btnActualizar").addEventListener("click",async()=>{
-        const btn=$("btnActualizar");
-        btn.disabled=true;btn.textContent="Actualizando...";
-        try{
-            await cargarSAP();
-            const prog = await cargarProgramacionPublicada();
-
-            if(state.programacion.length){
-                reconstruirFiltros();
-                actualizarDashboard(false);
-                const cruzadas = state.programacion.filter(p=>state.sap.has(p.orden)).length;
-                $("archivoCargado").textContent =
-                    `Última programación publicada · ${fmt.format(state.programacion.length)} filas · ` +
-                    `${fmt.format(cruzadas)} registros coinciden con SAP · ${fmt.format(state.programacion.length-cruzadas)} sin coincidencia`;
-            }else{
-                $("archivoCargado").textContent =
-                    "No existe programación publicada todavía.";
-            }
-        }catch(err){
-            console.error(err);alert(err.message);
-            setFuente("statusIW39","IW39",false);setFuente("statusIW47","IW47",false);setFuente("statusMapa","Mapa",false);
-        }finally{
-            btn.disabled=false;btn.textContent="↻ Actualizar ahora";
-        }
+        const btn=$("btnActualizar"); btn.disabled=true;btn.textContent="Actualizando...";
+        try{await verificarSesion();await refrescarDatos();}
+        catch(err){console.error(err);alert(err.message);}
+        finally{btn.disabled=false;btn.textContent="↻ Actualizar ahora";}
     });
+    $("btnEntrar")?.addEventListener("click",async()=>{
+        if(!sb){alert("Configura primero ordenes/supabase-config.js");return;}
+        const email=prompt("Correo electrónico autorizado en Supabase:");
+        if(!email)return;
+        const password=prompt("Contraseña de Supabase:");
+        if(password===null)return;
+        const {error}=await sb.auth.signInWithPassword({email:email.trim(),password});
+        if(error){alert("No se pudo iniciar sesión: "+error.message);return;}
+        await verificarSesion();await refrescarDatos();
+    });
+    $("btnSalir")?.addEventListener("click",async()=>{
+        if(sb)await sb.auth.signOut();
+        await verificarSesion();await refrescarDatos();
+    });
+    // Consulta cambios de otras computadoras cada minuto, sin alterar los filtros.
+    setInterval(async()=>{
+        if(!fuenteCompartida())return;
+        try{
+            const prog=await cargarCompartido();
+            if(prog?.cantidad){mensajeCarga(prog);}
+        }catch(err){console.warn("Sincronización diferida:",err);}
+    },60000);
 
     $("btnLimpiar").addEventListener("click",()=>{
         $("filtroMes").value="";$("filtroDia").value="";$("filtroEstado").value="";$("filtroTiempo").value="";
@@ -707,25 +780,10 @@
     });
 
     (async()=>{
-        try{
-            await cargarSAP();
-            const prog = await cargarProgramacionPublicada();
-
-            if(state.programacion.length){
-                reconstruirFiltros();
-                actualizarDashboard(false);
-                const cruzadas = state.programacion.filter(p=>state.sap.has(p.orden)).length;
-                $("archivoCargado").textContent =
-                    `Última programación publicada · ${fmt.format(state.programacion.length)} filas · ` +
-                    `${fmt.format(cruzadas)} registros coinciden con SAP · ${fmt.format(state.programacion.length-cruzadas)} sin coincidencia`;
-            }else{
-                $("archivoCargado").textContent =
-                    "Datos SAP listos. Aún no existe programacion.json publicado.";
-            }
-        }catch(err){
+        try{await verificarSesion();await refrescarDatos();}
+        catch(err){
             console.error(err);
-            $("archivoCargado").textContent="No se pudieron cargar los datos SAP.";
-            setFuente("statusIW39","IW39",false);setFuente("statusIW47","IW47",false);setFuente("statusMapa","Mapa",false);
+            $("archivoCargado").textContent="Error al cargar datos: "+err.message;
         }
     })();
 })();

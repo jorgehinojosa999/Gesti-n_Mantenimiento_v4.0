@@ -1,20 +1,20 @@
-// =====================================================
+// ==================================================
+// CONFIGURACIÓN SUPABASE
 // PLANILLA DIARIA DE MANTENIMIENTO
 // TESALIA CBC
-// CONEXIÓN CON SUPABASE
-// =====================================================
+// ==================================================
 
-// 1. URL del proyecto Supabase
 window.PLANILLA_SUPABASE_URL =
-    'https://tscvnimoivnoxvelssvz.supabase.co';
+    "https://tscvnimoivnoxvelssvz.supabase.co";
 
-// 2. Clave pública de Supabase
-// Copiar desde:
-// Supabase > Settings > API Keys > Publishable key
-
+// Reemplazar con la clave pública de Supabase.
+// Debe comenzar con sb_publishable_
 window.PLANILLA_SUPABASE_KEY =
-    Tesalia.2018;
+    "Tesalia.2018";
 
-// =====================================================
-// FIN DE CONFIGURACIÓN
-// =====================================================
+// Configuración de la aplicación
+window.PLANILLA_CONFIG = {
+    nombre: "Planilla Diaria de Mantenimiento",
+    empresa: "Tesalia CBC",
+    tabla: "planilla_diaria_actividades"
+};

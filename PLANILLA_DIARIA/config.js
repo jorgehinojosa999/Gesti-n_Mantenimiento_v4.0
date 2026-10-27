@@ -1,7 +1,7 @@
 // PLANILLA DIARIA TESALIA CBC
 
 window.PLANILLA_SUPABASE_URL =
-    "https://tscvnimoivnoxvelssvz.supabase.co/rest/v1/";
+    "https://tscvnimoivnoxvelssvz.supabase.co/";
 
 window.PLANILLA_SUPABASE_KEY =
     "sb_publishable_hW0tHMY5z_s-0fREs1YzXQ_rdK8OjE2";

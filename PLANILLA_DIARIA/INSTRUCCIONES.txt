@@ -1,8 +1,19 @@
-PLANILLA DIARIA - INSTALACIÓN
-1. Ejecuta supabase/crear_tabla.sql en SQL Editor del proyecto existente.
-2. Configura URL y clave pública en planilla-diaria/config.js. Nunca uses service_role.
-3. En Supabase Authentication crea o invita usuarios autorizados.
-4. Copia planilla-diaria/ a la raíz del repositorio, sin modificar ordenes/.
-5. git add planilla-diaria/ && git commit -m "Agregar planilla diaria" && git push origin main
-6. Abre /planilla-diaria/ e inicia sesión.
-NOTA: El ZIP contiene la página funcional de captura y consulta, pero NO migra automáticamente el histórico. La migración inicial de programacion.json debe realizarse una vez, después de validar la fecha máxima y la correspondencia de campos. No cargar el histórico desde cada navegador.
+PLANILLA DIARIA - HISTÓRICO EXCEL + INGRESO MANUAL
+
+1) En Supabase > SQL Editor ejecutar el contenido de supabase/AMPLIAR_TABLA.sql.
+2) Copiar index.html, app.js, styles.css, config.js e importar_excel.js a la carpeta PLANILLA_DIARIA del repositorio. NO copiar la carpeta contenedora completa.
+3) Publicar en GitHub:
+   git add PLANILLA_DIARIA/
+   git commit -m "Agregar importacion historico Planilla Diaria"
+   git push origin main
+4) Abrir la web, Ctrl+F5 e iniciar sesión.
+5) Pulsar «Importar histórico Excel» y seleccionar el archivo original. Se lee ÚNICAMENTE la hoja PLANILLA DIARIA.
+6) Esperar al mensaje de finalización. Se cargan todas las fechas, también 2027.
+7) Registrar actividades futuras con «+ Nueva actividad».
+
+IMPORTANTE:
+- La importación usa lotes de 150 y una clave de huella por contenido; repetir la misma importación no duplica las filas idénticas. Filas idénticas en Excel se consolidan. Si se modifica una fila en Excel, se considerará nueva.
+- Los registros importados previamente no se sobrescriben.
+- La página ahora consulta los registros por páginas de 1000 para superar el límite de Supabase.
+- El SQL no cambia las políticas RLS existentes. Si aparece error 42501 o de permisos, revisar las políticas para usuarios autenticados.
+- Para mostrar/editar todas las 21 columnas en la tabla visual se requeriría ampliar la vista; los datos sí se conservan en Supabase y el formulario incluye los campos nuevos.

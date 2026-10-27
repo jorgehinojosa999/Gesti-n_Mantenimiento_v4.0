@@ -13,7 +13,7 @@ window.PLANILLA_SUPABASE_URL =
 // Supabase > Settings > API Keys > Publishable key
 
 window.PLANILLA_SUPABASE_KEY =
-    'Tesalia.2018';
+    Tesalia.2018;
 
 // =====================================================
 // FIN DE CONFIGURACIÓN

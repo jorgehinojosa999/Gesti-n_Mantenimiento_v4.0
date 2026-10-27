@@ -1,0 +1,8 @@
+PLANILLA DIARIA + IW39
+
+1. Copiar a PLANILLA_DIARIA/ los archivos index.html, app.js, importar_excel.js e iw39_referencia.json. Mantener config.js y styles.css existentes si ya funcionan.
+2. Ejecutar git add PLANILLA_DIARIA/ && git commit -m "Autocompletar Planilla Diaria desde IW39" && git push origin main.
+3. Actualizar con Ctrl+F5. Ingresar número de orden en Nueva actividad: al salir del campo se completan área (C), equipo (E), actividad (I).
+4. Al importar Excel, solo se rellenan datos faltantes con la referencia IW39.
+5. ATENCIÓN: En los archivos IW39 adjuntos la columna I tiene el encabezado Liberación real (fecha). Se respeta exactamente la columna I solicitada. Si se pretendía el texto de actividad, habrá que cambiar el origen.
+6. El JSON es una foto de los Excel disponibles; para incorporar órdenes nuevas hay que regenerarlo y publicarlo.

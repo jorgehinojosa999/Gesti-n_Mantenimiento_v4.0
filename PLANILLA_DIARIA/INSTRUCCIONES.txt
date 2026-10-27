@@ -1,19 +1,18 @@
-PLANILLA DIARIA - HISTÓRICO EXCEL + INGRESO MANUAL
+PLANILLA DIARIA · 12 COLUMNAS
 
-1) En Supabase > SQL Editor ejecutar el contenido de supabase/AMPLIAR_TABLA.sql.
-2) Copiar index.html, app.js, styles.css, config.js e importar_excel.js a la carpeta PLANILLA_DIARIA del repositorio. NO copiar la carpeta contenedora completa.
-3) Publicar en GitHub:
+1. En Supabase > SQL Editor ejecuta supabase/ACTUALIZAR_TABLA_12_COLUMNAS.sql.
+2. Copia los CINCO archivos index.html, app.js, importar_excel.js, styles.css y config.js dentro de la carpeta PLANILLA_DIARIA del repositorio, reemplazando los anteriores.
+3. En la raíz del repositorio ejecuta:
    git add PLANILLA_DIARIA/
-   git commit -m "Agregar importacion historico Planilla Diaria"
+   git commit -m "Planilla diaria 12 columnas e importacion historica"
    git push origin main
-4) Abrir la web, Ctrl+F5 e iniciar sesión.
-5) Pulsar «Importar histórico Excel» y seleccionar el archivo original. Se lee ÚNICAMENTE la hoja PLANILLA DIARIA.
-6) Esperar al mensaje de finalización. Se cargan todas las fechas, también 2027.
-7) Registrar actividades futuras con «+ Nueva actividad».
+4. En la web presiona Ctrl+F5 e inicia sesión.
+5. Haz clic en Importar histórico Excel y selecciona el Excel que tenga la hoja PLANILLA DIARIA.
+6. Luego usa Nueva actividad para ingresar manualmente.
 
-IMPORTANTE:
-- La importación usa lotes de 150 y una clave de huella por contenido; repetir la misma importación no duplica las filas idénticas. Filas idénticas en Excel se consolidan. Si se modifica una fila en Excel, se considerará nueva.
-- Los registros importados previamente no se sobrescriben.
-- La página ahora consulta los registros por páginas de 1000 para superar el límite de Supabase.
-- El SQL no cambia las políticas RLS existentes. Si aparece error 42501 o de permisos, revisar las políticas para usuarios autenticados.
-- Para mostrar/editar todas las 21 columnas en la tabla visual se requeriría ampliar la vista; los datos sí se conservan en Supabase y el formulario incluye los campos nuevos.
+Campos de la hoja: Fecha, No. orden de trabajo, Nombre área, Descripción equipo, Descripción actividad, Ejecutante, Hora, Tiempo real, Hora inicio, Hora fin, Total HH (min), Supervisor asignado.
+Se mantienen los nombres de columnas ya usados por Supabase para no perder información.
+El Excel se lee por encabezados y, cuando falta alguno, por las posiciones A,C,G,H,I,J,K,L,M,N,P,Q que mostraste.
+No se sobreescriben registros históricos idénticos. Si una fila cambia, se considera otro registro.
+El campo import_key debe tener índice único. La clave de acceso de usuarios NO se escribe en config.js.
+Si aparece error por una columna adicional obligatoria de tu tabla, comparte el texto exacto del error para ajustar la compatibilidad.

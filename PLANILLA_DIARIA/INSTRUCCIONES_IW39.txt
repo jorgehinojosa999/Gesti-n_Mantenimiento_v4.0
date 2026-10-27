@@ -1,7 +1,0 @@
-PLANILLA DIARIA - IW39 CORREGIDO
-
-Área: columna C. Equipo: columna E. Actividad: columna F (Texto breve).
-
-Reemplazar app.js e iw39_referencia.json dentro de PLANILLA_DIARIA/ en el repositorio.
-No modificar config.js ni Supabase. Publicar con git add PLANILLA_DIARIA/; git commit -m "Corregir actividad IW39 columna F"; git push origin main. Actualizar página Ctrl+F5.
-Los datos ya guardados en Supabase no se modifican automáticamente.

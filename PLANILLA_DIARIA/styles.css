@@ -3,3 +3,7 @@
 #importar{background:#047857}#progresoImportacion{font-size:13px;color:#065f46;white-space:pre-wrap}#progresoImportacion.error{color:#b91c1c}
 
 .sap-estado{display:inline-block;padding:5px 10px;border-radius:20px;font-size:12px;font-weight:700;white-space:nowrap}.sap-abierta{background:#dcfce7;color:#166534}.sap-cerrada{background:#fee2e2;color:#991b1b}.sap-revisar{background:#fef3c7;color:#92400e}
+
+.btn-eliminar{background:#b91c1c;color:#fff;border:0;border-radius:6px;padding:7px 10px;cursor:pointer}.btn-eliminar:hover{background:#7f1d1d}
+
+#eliminarEnModal[hidden]{display:none!important}td:last-child{min-width:155px;white-space:nowrap}td:last-child button{margin:2px}

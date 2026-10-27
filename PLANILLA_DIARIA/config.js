@@ -1,7 +1,20 @@
-// PLANILLA DIARIA - Proyecto Supabase "Planilla Mantenimiento"
-// URL construida a partir del identificador del proyecto mostrado en tu panel.
-window.PLANILLA_SUPABASE_URL = 'https://tscvnimoivnoxvelssvz.supabase.co';
+// =====================================================
+// PLANILLA DIARIA DE MANTENIMIENTO
+// TESALIA CBC
+// CONEXIÓN CON SUPABASE
+// =====================================================
 
-// Pega aquí la clave PUBLICABLE completa (sb_publishable_...) de Settings > API Keys.
-// No uses claves sb_secret_ ni service_role.
-window.PLANILLA_SUPABASE_KEY = '';
+// 1. URL del proyecto Supabase
+window.PLANILLA_SUPABASE_URL =
+    'https://tscvnimoivnoxvelssvz.supabase.co';
+
+// 2. Clave pública de Supabase
+// Copiar desde:
+// Supabase > Settings > API Keys > Publishable key
+
+window.PLANILLA_SUPABASE_KEY =
+    'Tesalia.2018';
+
+// =====================================================
+// FIN DE CONFIGURACIÓN
+// =====================================================

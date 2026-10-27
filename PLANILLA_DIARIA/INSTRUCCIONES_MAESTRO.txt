@@ -1,0 +1,16 @@
+FORMULARIO NUEVA ACTIVIDAD - MAESTRO EQUIPOS
+
+Reemplazar PLANILLA_DIARIA/index.html y PLANILLA_DIARIA/app.js.
+Subir data/maestro_equipos.json y data/tecnicos_ejecutantes.json a la carpeta data/ del repositorio.
+Mantener config.js y todos los demás archivos existentes.
+
+Área: DescripcionUbicacion. Equipo: DescripcionEquipo filtrado por área.
+Ejecutante: nombre del técnico; el código SAP aparece en el desplegable.
+Hora: horas decimales (ej. 1.5 = 90 minutos).
+Tiempo real y total HH (min) = hora * 60.
+Hora fin = hora inicio + hora; si cruza medianoche muestra hora del día siguiente.
+Descripción de actividad manual, sin sobrescritura IW39.
+La funcionalidad de estados IW39 y datos existentes permanece intacta.
+
+IMPORTANTE: Se guarda el nombre del ejecutante en el campo existente ejecutante, para no cambiar la tabla Supabase.
+Si se necesita guardar el código SAP en una columna separada, se requiere un ajuste de base de datos.

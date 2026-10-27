@@ -1,0 +1,152 @@
+{
+  "tecnicos": [
+    {
+      "sap": "E_MEC 06",
+      "nombre": "Carlo Joel Caiza Novoa"
+    },
+    {
+      "sap": "E_MEC 08",
+      "nombre": "Angel Alberto Caiza Caiza"
+    },
+    {
+      "sap": "E_MEC 01",
+      "nombre": "Jaime Rene Caiza Olivo"
+    },
+    {
+      "sap": "E_MEC 02",
+      "nombre": "Jorge Enrique Cajas Nolasco"
+    },
+    {
+      "sap": "E_SOP 03",
+      "nombre": "Angel Javier Casa Caiza"
+    },
+    {
+      "sap": "E_MEC 04",
+      "nombre": "Jhostin Alexander Oyos Chango"
+    },
+    {
+      "sap": "E_MEC 03",
+      "nombre": "Darwin Santiago Ñacato Avelino"
+    },
+    {
+      "sap": "E_MEC 07",
+      "nombre": "Segundo Juan Jacome Caiza"
+    },
+    {
+      "sap": "E_MEC 05",
+      "nombre": "Jimmy Randy Simbaña Guana"
+    },
+    {
+      "sap": "E_MEC 09",
+      "nombre": "Walter German Paucar Paucar"
+    },
+    {
+      "sap": "E_OPE 00",
+      "nombre": "Erick Altamirano"
+    },
+    {
+      "sap": "E_AUT 01",
+      "nombre": "Alex Rene Anasi Nasimba"
+    },
+    {
+      "sap": "E_ELE 05",
+      "nombre": "Carlos Mauricio Cumbajin Changoluisa"
+    },
+    {
+      "sap": "E_ELE 03",
+      "nombre": "Jorge Washington Guerrero Albaracin"
+    },
+    {
+      "sap": "E_ELE 02",
+      "nombre": "Jose Eduardo Iza Llumiquinga"
+    },
+    {
+      "sap": "E_INS 01",
+      "nombre": "Gerardo Israel Quezada Salazar"
+    },
+    {
+      "sap": "E_ELE 00",
+      "nombre": "Kevin Gutierrez"
+    },
+    {
+      "sap": "E_ELE 04",
+      "nombre": "Luis Wladimir Pilataxi Ayol"
+    },
+    {
+      "sap": "E_OPE 00",
+      "nombre": "Operador de Equipo"
+    },
+    {
+      "sap": "E_IEF 01",
+      "nombre": "Pablo Vinicio Chango Tayupanta"
+    },
+    {
+      "sap": "E_IEF 03",
+      "nombre": "Luis Oswaldo Iza Rodriguez"
+    },
+    {
+      "sap": "E_IEF 04",
+      "nombre": "Fernando German Quintuña"
+    },
+    {
+      "sap": "E_IEF 00",
+      "nombre": "Luis Alfredo Vera Vera"
+    },
+    {
+      "sap": "E_OPE 00",
+      "nombre": "Externo"
+    },
+    {
+      "sap": "COORD",
+      "nombre": "Marco Brito"
+    },
+    {
+      "sap": "COORD",
+      "nombre": "Victor Guayasamin"
+    },
+    {
+      "sap": "COORD",
+      "nombre": "Estalyn Quinaluisa"
+    },
+    {
+      "sap": "COORD",
+      "nombre": "Erick Paneluisa"
+    },
+    {
+      "sap": "COORD",
+      "nombre": "Wladimir Pilataxi"
+    },
+    {
+      "sap": "COORD",
+      "nombre": "Juan Guanochanga"
+    },
+    {
+      "sap": "COORD",
+      "nombre": "Luis Paredes"
+    },
+    {
+      "sap": "EXTERNO",
+      "nombre": "Victor Guayasamin"
+    },
+    {
+      "sap": "E_OPE 00",
+      "nombre": "Estalyn Quinaluisa"
+    },
+    {
+      "sap": "E_OPE 00",
+      "nombre": "Jorge Suntaxi"
+    },
+    {
+      "sap": "E_OPE 00",
+      "nombre": "Jorge Romero"
+    },
+    {
+      "sap": "E_OPE 00",
+      "nombre": "Luis Collaguaso"
+    },
+    {
+      "sap": "E_ELE 00",
+      "nombre": "Gabriel España"
+    }
+  ]
+}

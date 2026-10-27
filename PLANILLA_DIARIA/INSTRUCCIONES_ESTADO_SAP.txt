@@ -1,0 +1,3 @@
+Los archivos JSON se guardan siempre en la carpeta data/ de la raiz.
+Rutas: data/iw39_referencia.json y data/iw39_estados.json
+La pagina PLANILLA_DIARIA/app.js usa ../data/ para ambos.

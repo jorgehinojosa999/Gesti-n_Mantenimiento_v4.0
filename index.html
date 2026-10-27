@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>Portal de Mantenimiento SAP | Tesalia CBC</title>
+<title>Portal de Mantenimiento 4.0 | Tesalia CBC</title>
 <style>
 :root{--nav:#061d38;--nav2:#092d53;--blue:#0675e8;--text:#102945;--muted:#64748b;--bg:#f1f6fb;--border:#e0e9f2}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:'Segoe UI',Arial,sans-serif}a{color:inherit}
@@ -27,9 +27,75 @@
 @media(max-width:780px){.sidebar{position:relative;width:100%;padding:13px}.sidebar-logo{width:190px;margin:0 0 10px}.brand{padding:4px 10px 10px}.nav{display:flex;overflow-x:auto;margin-top:10px;padding-bottom:6px}.nav a{white-space:nowrap;padding:10px}.future,.soon,.slogan{display:none}.main{margin:0}.hero{min-height:280px}.hero-content{padding:24px 20px 45px;width:100%}.hero::before{background:linear-gradient(90deg,#fffffff5,#ffffffc9 70%,#ffffff80)}.hero-photo{width:100%}.hero h1{font-size:30px}.hero-logo{width:185px;height:48px}.hero p{font-size:13px}.cards{grid-template-columns:1fr}.card--sap{grid-column:auto}.card--sap .features{display:block}.section-heading h2{font-size:20px}}
 @media(max-width:420px){.hero-tags{gap:6px;font-size:10px}.hero-tags span:not(:last-child){padding-right:6px}.card-inner{padding:16px}.card p{font-size:12px}.features{font-size:11px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* Introducción Portal de Mantenimiento 4.0 */
+.intro-overlay{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;overflow:hidden;background:radial-gradient(ellipse at 78% 20%,#13599a 0%,#092b51 38%,#031427 82%);color:#fff;transition:opacity .65s ease,visibility .65s ease}
+.intro-overlay.is-hidden{opacity:0;visibility:hidden;pointer-events:none}
+.intro-overlay::before{content:"";position:absolute;inset:-50%;background:repeating-linear-gradient(90deg,transparent 0 79px,#60c3ff13 80px 81px),repeating-linear-gradient(0deg,transparent 0 79px,#60c3ff13 80px 81px);transform:perspective(600px) rotateX(50deg) scale(1.2);animation:intro-grid 7s linear infinite;opacity:.65}
+.intro-overlay::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 28%,#46a8ff12 48%,transparent 65%);animation:intro-scan 3.5s linear infinite}
+.intro-inner{position:relative;z-index:1;width:min(840px,92vw);text-align:center;padding:35px 18px}
+.intro-logo{width:min(260px,65vw);height:85px;object-fit:contain;background:#fff;border-radius:14px;padding:13px 25px;box-shadow:0 0 45px #42b5ff35;animation:intro-enter .8s both}
+.intro-eyebrow{margin:28px 0 9px;color:#8ed5ff;font-size:12px;letter-spacing:4px;font-weight:800;animation:intro-enter .7s .35s both}
+.intro-title{margin:0;font-size:clamp(32px,6.5vw,70px);font-weight:900;letter-spacing:-1.6px;line-height:1.05;text-shadow:0 0 38px #268dff60;animation:intro-enter .8s .6s both}
+.intro-title span{color:#53b8ff}
+.intro-subtitle{font-size:clamp(13px,2.3vw,19px);letter-spacing:1px;color:#c6e8ff;margin:20px auto 28px;animation:intro-enter .7s 1.1s both}
+.intro-steps{display:flex;justify-content:center;flex-wrap:wrap;gap:9px;animation:intro-enter .7s 1.55s both}
+.intro-steps span{border:1px solid #76caff50;border-radius:100px;padding:9px 15px;background:#ffffff0e;font-size:12px;font-weight:650}
+.intro-progress{height:3px;background:#ffffff20;border-radius:4px;margin:35px auto 18px;max-width:540px;overflow:hidden}
+.intro-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,#0075eb,#75e1ff);animation:intro-load 5s linear forwards}
+.intro-skip{background:transparent;border:1px solid #91d4ff8a;color:#fff;border-radius:9px;padding:11px 20px;font:600 13px 'Segoe UI',Arial,sans-serif;cursor:pointer;position:relative;z-index:2}
+.intro-skip:hover,.intro-skip:focus-visible{background:#ffffff25;outline:2px solid #91d4ff}
+@keyframes intro-enter{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes intro-load{to{width:100%}}
+@keyframes intro-grid{to{transform:perspective(600px) rotateX(50deg) translateY(80px) scale(1.2)}}
+@keyframes intro-scan{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+@media(prefers-reduced-motion:reduce){.intro-overlay *,.intro-overlay::before,.intro-overlay::after{animation:none!important}.intro-progress span{width:100%}}
+
 </style>
 </head>
 <body>
+
+<!-- Introducción animada: aparece una vez por pestaña/sesión -->
+<div id="introPortal" class="intro-overlay is-hidden" role="dialog" aria-modal="true" aria-label="Bienvenida al Portal de Mantenimiento 4.0" hidden>
+  <div class="intro-inner">
+    <img class="intro-logo" src="./assets/portada/tesalia-cbc-logo.png" alt="Tesalia CBC">
+    <div class="intro-eyebrow">INGENIERÍA · MACHACHI</div>
+    <h2 class="intro-title">PORTAL DE<br><span>MANTENIMIENTO 4.0</span></h2>
+    <p class="intro-subtitle">Ingeniería · Tecnología · Confiabilidad</p>
+    <div class="intro-steps"><span>Planificación</span><span>Órdenes SAP</span><span>Avisos</span><span>Programación</span><span>Indicadores</span></div>
+    <div class="intro-progress" aria-hidden="true"><span></span></div>
+    <button class="intro-skip" id="introOmitir" type="button">Ingresar al portal →</button>
+  </div>
+</div>
+<script>
+(function(){
+  'use strict';
+  const intro=document.getElementById('introPortal');
+  const boton=document.getElementById('introOmitir');
+  const clave='portal_mantenimiento_4_intro_v1';
+  let visto=false;
+  try{visto=sessionStorage.getItem(clave)==='1';}catch(e){}
+  if(visto||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  let temporizador;
+  let cerrado=false;
+  function cerrar(){
+    if(cerrado)return;
+    cerrado=true;
+    clearTimeout(temporizador);
+    intro.classList.add('is-hidden');
+    document.body.style.overflow='';
+    try{sessionStorage.setItem(clave,'1');}catch(e){}
+    setTimeout(()=>{intro.hidden=true;},700);
+  }
+  intro.hidden=false;
+  document.body.style.overflow='hidden';
+  requestAnimationFrame(()=>intro.classList.remove('is-hidden'));
+  boton.addEventListener('click',cerrar);
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!cerrado)cerrar();});
+  temporizador=setTimeout(cerrar,5000);
+})();
+</script>
+
 <div class="shell">
 <aside class="sidebar" aria-label="Navegación principal">
   <div class="sidebar-logo"><img src="./assets/portada/tesalia-cbc-logo.png" alt="Tesalia CBC"></div>

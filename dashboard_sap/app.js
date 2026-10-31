@@ -74,4 +74,54 @@ async function load(force=false){try{const results=await Promise.allSettled([rea
  const lineas=rawLineas?.data && !Array.isArray(rawLineas.data)?rawLineas.data:{};
  for(const x of rows){x._linea=str(lineas[x._orden]||x._linea||'');}
 for(const x of rows){x._kind=kind(x);x._planRaw=str(field(x,['plan_mant_prev','Plan mant.prev.','Plan mant.pre','Plan mant. pre','Plan mant.prev','Plan mantenimiento preventivo','plan_mant_pre','plan_mant_prev','plan_mantenimiento','Plan mant.pre.']));x._planType=x._planRaw?'Preventivo (con plan)':'Correctivo (sin plan)';x._classOrder=clsOrder(x);x._activity=typ(x);x._rawStatus=statusRaw(x);x._planCost=number(field(x,['total_costes_plan','TotalCostesPlan','Total costes plan','totalcostesplan','coste_planificado']));x._realCost=number(field(x,['costes_totales_reales','Cst.tot.reales','cst_tot_reales','csttotreales','coste_real']));x._year=x._fecha?String(x._fecha.getUTCFullYear()):'';x._month=x._fecha?months[x._fecha.getUTCMonth()]:'';}indexData();filters();render()}$('status').textContent=`IW39: ${fmt(rows.length)} órdenes · Actividad PM recibida: ${fmt(rows.filter(x=>activityCode(x)).length)} · Autónomo: ${fmt(rows.filter(x=>x._kind==='autonomo').length)} · Preventivo: ${fmt(rows.filter(x=>x._kind==='preventivo').length)} · Con actividad PM clasificada: ${fmt(rows.filter(x=>x._kind!=='sin-clasificar').length)} · Avisos: ${fmt(avisos.length)} · Programación: ${fmt(prog.length)} · JSON IW39: ${orders.update||"sin fecha registrada"} · Consultado: ${new Date().toLocaleTimeString('es-EC')}`}catch(e){$('status').textContent='Error de lectura: '+e.message;console.error(e)}}
-setupSlicers();document.querySelectorAll('.tab').forEach(b=>{const active=modes.has(b.dataset.mode);b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});let searchTimer; $('buscar').addEventListener('input',()=>{clearTimeout(searchTimer);searchTimer=setTimeout(()=>scheduleRender(false),260)});$('actualizar').addEventListener('click',()=>load(true));$('limpiar').addEventListener('click',()=>{for(const id of Object.keys(selected))selected[id].clear();$('buscar').value='';scheduleRender(true)});document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{const value=t.dataset.mode;if(value==='todas'){modes=new Set(['todas']);}else{if(modes.has('todas'))modes.clear();if(modes.has(value)){if(modes.size>1)modes.delete(value);}else modes.add(value);}document.querySelectorAll('.tab').forEach(b=>{const active=modes.has(b.dataset.mode);b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});scheduleRender(true)}));load(true);setInterval(()=>{if(!document.hidden)load()},60000);
+setupSlicers();document.querySelectorAll('.tab').forEach(b=>{const active=modes.has(b.dataset.mode);b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});let searchTimer; $('buscar').addEventListener('input',()=>{clearTimeout(searchTimer);searchTimer=setTimeout(()=>scheduleRender(false),260)});$('actualizar').addEventListener('click',actualizarDesdeBoton);$('limpiar').addEventListener('click',()=>{for(const id of Object.keys(selected))selected[id].clear();$('buscar').value='';scheduleRender(true)});document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{const value=t.dataset.mode;if(value==='todas'){modes=new Set(['todas']);}else{if(modes.has('todas'))modes.clear();if(modes.has(value)){if(modes.size>1)modes.delete(value);}else modes.add(value);}document.querySelectorAll('.tab').forEach(b=>{const active=modes.has(b.dataset.mode);b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});scheduleRender(true)}));load(true);setInterval(()=>{if(!document.hidden)load()},60000);
+
+// Integración opcional con el ejecutador IW39 de esta PC.
+// El servicio solo escucha en 127.0.0.1 y exige un código temporal.
+const IW39_LOCAL='http://127.0.0.1:8765';
+const IW39_TOKEN_KEY='iw39_local_token';
+const waitIW39=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+async function requestIW39(path,options={}){
+ const token=sessionStorage.getItem(IW39_TOKEN_KEY)||'';
+ const response=await fetch(IW39_LOCAL+path,{...options,headers:{'X-IW39-Token':token,...(options.headers||{})},cache:'no-store',signal:AbortSignal.timeout(12000)});
+ const result=await response.json();
+ if(!response.ok)throw Error(result.error||'Error '+response.status);
+ return result;
+}
+async function actualizarDesdeBoton(){
+ const btn=$('actualizar');if(btn.disabled)return;
+ btn.disabled=true;const label=btn.textContent;
+ try{
+  btn.textContent='Conectando…';
+  let estado;
+  try{estado=await requestIW39('/health')}catch(err){
+   if(err.message.includes('Failed to fetch')||err.name==='TimeoutError'||err.message.includes('NetworkError')){
+    await load(true);alert('Se recargaron los datos publicados en GitHub. Para descargar IW39 desde SAP, inicia primero el servicio local ACTUALIZAR_DESDE_WEB.cmd en esta computadora.');return;
+   }
+   if(err.message.includes('autorización')||err.message.includes('autorizacion')||err.message.includes('401')){
+    const token=prompt('Ingresa el código de autorización mostrado en la ventana del actualizador local:');
+    if(!token){await load(true);return;}
+    sessionStorage.setItem(IW39_TOKEN_KEY,token.trim());
+    estado=await requestIW39('/health');
+   }else throw err;
+  }
+  if(!confirm('¿Ejecutar IW39 en SAP y publicar los JSON nuevos en GitHub? El proceso puede tardar varios minutos.')){await load(true);return;}
+  const job=await requestIW39('/run',{method:'POST'});
+  btn.textContent='IW39 ejecutándose…';
+  let finished=false;
+  for(let n=0;n<720;n++){
+   await waitIW39(5000);
+   const progress=await requestIW39('/status');
+   if(progress.state==='success'){finished=true;break;}
+   if(progress.state==='error')throw Error(progress.error||'Falló el ejecutador IW39');
+  }
+  if(!finished)throw Error('El proceso sigue ejecutándose. Revisa la ventana del servicio local.');
+  await waitIW39(10000);
+  await load(true);
+  alert('Actualización IW39 terminada. Se recargaron los datos disponibles en GitHub.');
+ }catch(err){
+  if(/autorizaci[oó]n|401/.test(err.message)){sessionStorage.removeItem(IW39_TOKEN_KEY);alert('Código de autorización incorrecto. Vuelve a presionar Actualizar e ingresa el código de la ventana local.');}
+  else alert('No se pudo completar la actualización desde SAP: '+err.message);
+  await load(true);
+ }finally{btn.disabled=false;btn.textContent=label;}
+}

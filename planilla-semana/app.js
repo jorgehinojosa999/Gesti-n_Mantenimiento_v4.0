@@ -10,6 +10,8 @@ const KEY="Ingenieria2026";
 
 let av=[],ot=[],maestro=[],sel=null,base=new Date(),did=null;
 let items=[];
+let cargaPlanillaSecuencia=0;
+let planillaCargada=false;
 
 const $=x=>document.getElementById(x);
 const v=(o,...k)=>{for(const x of k){if(o?.[x]!=null&&String(o[x]).trim())return String(o[x]).trim()}return""};
@@ -18,7 +20,12 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 
 function mon(d){let x=new Date(d),n=x.getDay()||7;x.setDate(x.getDate()-n+1);x.setHours(0,0,0,0);return x}
 function fmt(d){return d.toLocaleDateString("es-EC")}
-function parse(s){let p=String(s||"").split("-");return new Date(+p[0],+p[1]-1,+p[2])}
+function parse(s){
+  const iso=fechaParaSupabase(s);
+  if(!iso)return new Date(NaN);
+  const [y,m,d]=iso.split("-").map(Number);
+  return new Date(y,m-1,d);
+}
 
 // Convierte fechas SAP DD/MM/AAAA a ISO AAAA-MM-DD para columnas DATE de Supabase.
 // También admite fechas ISO y comprueba que sean fechas reales.
@@ -54,15 +61,18 @@ function fechaVisible(valor){
 function rng(){let a=mon(base),b=new Date(a);b.setDate(a.getDate()+6);return[a,b]}
 
 async function cargarPlanilla(){
+  // No permitir que una consulta anterior sobrescriba una consulta más reciente.
+  const secuencia=++cargaPlanillaSecuencia;
   const {data,error}=await db
     .from("planilla_semana")
     .select("*")
     .order("fecha_ejecucion",{ascending:true})
     .order("id",{ascending:true});
 
-  if(error) throw error;
+  if(error)throw error;
+  if(secuencia!==cargaPlanillaSecuencia)return;
 
-  items=(data||[]).map(x=>({
+  const nuevos=(data||[]).map(x=>({
     id:x.id,
     tipo:x.tipo||"",
     numero:x.numero||"—",
@@ -78,6 +88,21 @@ async function cargarPlanilla(){
     fechaEjecucion:x.fecha_ejecucion||"",
     estado:x.estado_sap||""
   }));
+  items=nuevos;
+  planillaCargada=true;
+  render();
+}
+
+// Consulta independiente de los JSON SAP: buscar nunca debe vaciar la planilla.
+async function refrescarPlanilla(){
+  try{
+    await cargarPlanilla();
+  }catch(e){
+    console.error("Error al consultar planilla_semana:",e);
+    $("msg").textContent="No se pudo actualizar la planilla compartida: "+(e.message||e);
+    // Conservar los registros que ya se mostraban, incluso si falla la red.
+    render();
+  }
 }
 
 async function load(){
@@ -177,7 +202,8 @@ function descO(o,n){
   return d
 }
 
-function search(){
+function search(event){
+  if(event?.preventDefault)event.preventDefault();
   let n=$("numero").value.trim();
   let o=ot.find(x=>v(x,"orden","Orden","numeroOrden")===n);
   let a=av.find(x=>v(x,"notificacion","Notificacion","aviso","Aviso")===n);
@@ -197,7 +223,9 @@ function search(){
   }:null;
 
   $("msg").textContent=sel?"Registro encontrado.":"No encontrado en IW28/IW39.";
-  paint()
+  paint();
+  // La búsqueda SAP no modifica items, base ni la semana seleccionada.
+  render();
 }
 
 function paint(){
@@ -305,7 +333,7 @@ function render(){
 
   let r=items.filter(x=>{
     let d=parse(x.fechaEjecucion);
-    return d>=a&&d<=b&&(!q||JSON.stringify(x).toLowerCase().includes(q))
+    return !Number.isNaN(d.getTime())&&d>=a&&d<=b&&(!q||JSON.stringify(x).toLowerCase().includes(q))
   });
 
   $("tb").innerHTML=r.map(x=>`<tr>
@@ -316,7 +344,7 @@ function render(){
     <td>${fmt(parse(x.fechaEjecucion))}</td>
     <td>${x.tipo==="MANUAL"?"—":esc(x.estado||"—")}</td>
     <td><button class="trash" onclick="ask(${Number(x.id)})">🗑</button></td>
-  </tr>`).join("")||'<tr><td colspan="7">Sin trabajos programados esta semana.</td></tr>';
+  </tr>`).join("")||(planillaCargada?'<tr><td colspan="7">Sin trabajos programados esta semana.</td></tr>':'<tr><td colspan="7">No se ha podido confirmar la carga de la planilla. Revise la conexión.</td></tr>');
 
   $("kt").textContent=r.length;
   $("ka").textContent=r.filter(x=>x.tipo==="AVISO").length;
@@ -331,7 +359,8 @@ window.ask=id=>{
   $("modal").classList.remove("hide")
 };
 
-$("del").onclick=async()=>{
+$("del").onclick=async(e)=>{
+  e.preventDefault();
   if($("clave").value!==KEY)return alert("Clave incorrecta.");
 
   $("del").disabled=true;
@@ -351,14 +380,19 @@ $("del").onclick=async()=>{
   }
 };
 
-$("cancel").onclick=()=>$("modal").classList.add("hide");
+$("cancel").onclick=e=>{e.preventDefault();$("modal").classList.add("hide")};
+// Evitar submit implícito cuando los botones están dentro de un formulario.
+["buscar","agregar","manualAgregar","prev","next","del","cancel"].forEach(id=>{
+  const boton=$(id);
+  if(boton && boton.tagName==="BUTTON")boton.type="button";
+});
 $("buscar").onclick=search;
-$("numero").onkeydown=e=>{if(e.key==="Enter")search()};
-$("agregar").onclick=add;
+$("numero").onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();search(e)}};
+$("agregar").onclick=e=>{e.preventDefault();add()};
 $("manualUbicacion").onchange=cargarEquipos;
-$("manualAgregar").onclick=addManual;
-$("prev").onclick=()=>{base.setDate(base.getDate()-7);render()};
-$("next").onclick=()=>{base.setDate(base.getDate()+7);render()};
+$("manualAgregar").onclick=e=>{e.preventDefault();addManual()};
+$("prev").onclick=e=>{e.preventDefault();base.setDate(base.getDate()-7);render()};
+$("next").onclick=e=>{e.preventDefault();base.setDate(base.getDate()+7);render()};
 $("q").oninput=render;
 
 load();

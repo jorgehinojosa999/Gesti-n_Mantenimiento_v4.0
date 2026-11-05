@@ -126,6 +126,7 @@ async function load(){
     console.error(e);
     $("msg").textContent="Error al cargar datos. Revise conexión, Supabase o archivos JSON.";
   }
+  if(!planillaCargada)await refrescarPlanilla();
   render();
 }
 
@@ -225,7 +226,7 @@ function search(event){
   $("msg").textContent=sel?"Registro encontrado.":"No encontrado en IW28/IW39.";
   paint();
   // La búsqueda SAP no modifica items, base ni la semana seleccionada.
-  render();
+  // No invocar render(): la tabla semanal es independiente de la búsqueda SAP.
 }
 
 function paint(){
@@ -327,15 +328,22 @@ async function addManual(){
 }
 
 function render(){
-  let[a,b]=rng(),q=$("q").value.toLowerCase();
+  let[a,b]=rng();
+  const campoFiltro=$("q");
+  const q=(campoFiltro?.value||"").trim().toLowerCase();
 
   $("week").textContent=$("week2").textContent=fmt(a)+" - "+fmt(b);
 
   let r=items.filter(x=>{
     let d=parse(x.fechaEjecucion);
-    return !Number.isNaN(d.getTime())&&d>=a&&d<=b&&(!q||JSON.stringify(x).toLowerCase().includes(q))
+    return !Number.isNaN(d.getTime())&&d>=a&&d<=b
   });
 
+  const enSemana=items.filter(x=>{
+    const d=parse(x.fechaEjecucion);
+    return !Number.isNaN(d.getTime()) && d>=a && d<=b;
+  });
+  console.debug("Planilla semanal:",{totalSupabase:items.length,enSemana:enSemana.length,visibles:r.length,filtro:q,desde:fechaParaSupabase(`${a.getFullYear()}-${String(a.getMonth()+1).padStart(2,"0")}-${String(a.getDate()).padStart(2,"0")}`)});
   $("tb").innerHTML=r.map(x=>`<tr>
     <td><span class="tag ${esc(x.tipo)}">${esc(x.tipo)}</span></td>
     <td>${esc(x.numero||"—")}</td>

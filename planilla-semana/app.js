@@ -19,6 +19,38 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 function mon(d){let x=new Date(d),n=x.getDay()||7;x.setDate(x.getDate()-n+1);x.setHours(0,0,0,0);return x}
 function fmt(d){return d.toLocaleDateString("es-EC")}
 function parse(s){let p=String(s||"").split("-");return new Date(+p[0],+p[1]-1,+p[2])}
+
+// Convierte fechas SAP DD/MM/AAAA a ISO AAAA-MM-DD para columnas DATE de Supabase.
+// También admite fechas ISO y comprueba que sean fechas reales.
+function fechaParaSupabase(valor){
+  if(valor==null || String(valor).trim()==="")return null;
+  const texto=String(valor).trim();
+  let anio,mes,dia;
+  let m=texto.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
+  if(m){[,anio,mes,dia]=m;}
+  else{
+    m=texto.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+    if(!m)throw new Error("Formato de fecha no válido: "+texto);
+    [,dia,mes,anio]=m;
+  }
+  const y=Number(anio),mo=Number(mes),d=Number(dia);
+  const fecha=new Date(y,mo-1,d);
+  if(fecha.getFullYear()!==y || fecha.getMonth()!==mo-1 || fecha.getDate()!==d){
+    throw new Error("Fecha inexistente: "+texto);
+  }
+  return `${anio}-${String(mo).padStart(2,"0")}-${String(d).padStart(2,"0")}`;
+}
+
+// Muestra fechas almacenadas como ISO en el formato habitual de la planilla.
+function fechaVisible(valor){
+  if(!valor)return "—";
+  try{
+    const iso=fechaParaSupabase(valor);
+    const [y,m,d]=iso.split("-");
+    return `${d}/${m}/${y}`;
+  }catch(e){return String(valor);}
+}
+
 function rng(){let a=mon(base),b=new Date(a);b.setDate(a.getDate()+6);return[a,b]}
 
 async function cargarPlanilla(){
@@ -192,13 +224,13 @@ async function add(){
     const {error}=await db.from("planilla_semana").insert({
       tipo:sel.tipo,
       numero:sel.numero||null,
-      fecha_aviso:sel.tipo==="AVISO" && sel.fechaAviso ? sel.fechaAviso : null,
+      fecha_aviso:sel.tipo==="AVISO" ? fechaParaSupabase(sel.fechaAviso) : null,
       descripcion_ubicacion:null,
       ubic_tecnica:null,
       descripcion_equipo:null,
       equipo:null,
       descripcion_trabajo:sel.descripcion||"Sin descripción",
-      fecha_ejecucion:fecha,
+      fecha_ejecucion:fechaParaSupabase(fecha),
       estado_sap:sel.estado||null
     });
 
@@ -243,7 +275,7 @@ async function addManual(){
       descripcion_equipo:equipoDesc,
       equipo:equipoCodigo,
       descripcion_trabajo:trabajo,
-      fecha_ejecucion:fecha,
+      fecha_ejecucion:fechaParaSupabase(fecha),
       estado_sap:"MANUAL"
     });
 
@@ -279,7 +311,7 @@ function render(){
   $("tb").innerHTML=r.map(x=>`<tr>
     <td><span class="tag ${esc(x.tipo)}">${esc(x.tipo)}</span></td>
     <td>${esc(x.numero||"—")}</td>
-    <td>${x.tipo==="AVISO"?esc(x.fechaAviso||"—"):"—"}</td>
+    <td>${x.tipo==="AVISO"?esc(fechaVisible(x.fechaAviso)):"—"}</td>
     <td>${esc(x.descripcion||"—")}</td>
     <td>${fmt(parse(x.fechaEjecucion))}</td>
     <td>${x.tipo==="MANUAL"?"—":esc(x.estado||"—")}</td>

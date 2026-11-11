@@ -66,8 +66,13 @@
       <main class="content">
         <nav class="mobile-quick-nav" aria-label="Navegación móvil"><a href="#mapa">⚙ Máquinas</a><a href="#ranking">▥ Ranking</a><a href="#detalle">▤ Histórico</a><button type="button" id="mobileFilterButton">☰ Filtros</button></nav>
         <div class="page-head"><div><div class="breadcrumbs">PORTAL DE MANTENIMIENTO / INFORMANCE / COMPARATIVO DE MÁQUINAS</div><h1>Analítica de paros <span>2025 vs. 2026</span></h1><p>Equipos visibles por línea, identificados desde Asset + Reason Lvl1 · Comparativo 2025–2026</p></div>
-          <div class="action-row"><button class="secondary-btn" id="demoButton" title="Reiniciar datos demostrativos">◉ Ver ejemplo</button><button class="secondary-btn" id="summaryButton">▥ Cargar resumen privado</button><input type="file" id="summaryInput" accept=".json" hidden /><button class="primary-btn" id="uploadButton">＋ Cargar Excel / CSV</button><input type="file" id="filesInput" accept=".xlsx,.xls,.csv" multiple hidden /></div>
+          <div class="action-row"><button class="primary-btn" id="downloadInformance" type="button">⬇ Descargar Informance y actualizar</button><button class="secondary-btn" id="demoButton" title="Reiniciar datos demostrativos">◉ Ver ejemplo</button><button class="secondary-btn" id="summaryButton">▥ Cargar resumen privado</button><input type="file" id="summaryInput" accept=".json" hidden /><button class="primary-btn" id="uploadButton">＋ Cargar Excel / CSV</button><input type="file" id="filesInput" accept=".xlsx,.xls,.csv" multiple hidden /></div>
         </div>
+        <section id="downloadPanel" class="download-panel" hidden>
+          <div class="download-fields"><label>Mes desde<input id="downloadDesde" type="month" min="2025-01" max="2026-12"></label><label>Mes hasta<input id="downloadHasta" type="month" min="2025-01" max="2026-12"></label><label class="download-check"><input id="downloadRepetir" type="checkbox"> Volver a descargar meses existentes</label><button class="primary-btn" id="startDownload" type="button">Iniciar descarga y actualizar</button></div>
+          <div id="downloadStatus" role="status" class="download-msg">Se abrirá Chrome en este equipo para descargar los reportes. Microsoft puede solicitar autenticación.</div>
+          <pre id="downloadLog" class="download-log" aria-label="Últimos mensajes de la descarga"></pre>
+        </section>
         <div class="notice" role="status" id="importStatus"><span class="notice-dot">ⓘ</span><span><strong>Modo demostración:</strong> los indicadores mostrados son ilustrativos. Importa los históricos 2025 y 2026 para calcularlos con tus datos reales.</span><button id="clearButton" class="linklike" hidden>Eliminar carga</button></div>
 
         <section class="kpi-strip" aria-label="Indicadores generales">

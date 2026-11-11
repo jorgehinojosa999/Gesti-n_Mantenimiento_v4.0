@@ -1,0 +1,24 @@
+INFORMANCE V6 – BOTÓN WEB PARA DESCARGAR Y ACTUALIZAR
+
+INSTALACIÓN (Windows, en el PC de trabajo):
+1) Descomprime TODO este ZIP en una carpeta privada fuera del repositorio GitHub.
+2) Debe existir tu archivo V14 en:
+   C:\Users\jhinojosa\OneDrive - Embotelladora la Mariposa,S.A\0000. Paquete_Informance\Informance_Todo_En_Uno_v14.py
+   y la carpeta HISTORICOS al lado. Si el V14 está en otro lugar define INFORMANCE_SCRIPT_V14.
+3) Doble clic en INICIAR_DESDE_EL_PORTAL.bat.
+4) Abre http://127.0.0.1:8765/informance_3d_2025_2026/
+5) Pulsa "Descargar Informance y actualizar", selecciona los meses, y confirma.
+6) Cuando se complete la descarga, el mismo programa recalcula los indicadores.
+
+Si un mes ya existe, V14 puede omitirlo; marca "Volver a descargar" para forzar.
+Microsoft puede solicitar MFA. La contraseña NO se almacena aquí.
+
+SEGURIDAD:
+- Servidor solo escucha 127.0.0.1, no es público.
+- El botón NO puede ejecutar Python desde GitHub Pages sin un agente local.
+- Los archivos reales se mantienen en tu PC. NO subas cache_privada a GitHub.
+- En GitHub Pages el botón dirige al controlador local, que debe estar activo en el mismo equipo.
+- Para actualizar datos en un celular remoto, hace falta backend corporativo privado autorizado.
+
+NO subas el ZIP entero, ni SINCRONIZADOR_AUTOMATICO.py, ni HISTORICOS o cache_privada a GitHub.
+Para el portal público sube solo la carpeta portal/informance_3d_2025_2026 con index.html, app.js, app.css y assets. Sin backend privado, GitHub Pages no presentará los datos privados automáticamente.

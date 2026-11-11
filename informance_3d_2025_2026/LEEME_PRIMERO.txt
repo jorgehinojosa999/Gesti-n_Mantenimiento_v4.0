@@ -1,24 +1,20 @@
-INFORMANCE V6 – BOTÓN WEB PARA DESCARGAR Y ACTUALIZAR
+INFORMANCE V7 - MES ACTUAL (UN CLIC)
 
-INSTALACIÓN (Windows, en el PC de trabajo):
-1) Descomprime TODO este ZIP en una carpeta privada fuera del repositorio GitHub.
-2) Debe existir tu archivo V14 en:
+1. Extrae TODO este ZIP en una carpeta PRIVADA fuera de GitHub, por ejemplo C:\Informance_V7.
+2. Cierra la ventana CMD del sincronizador V6 (libera el puerto 8765).
+3. Confirma que existe tu V14 en:
    C:\Users\jhinojosa\OneDrive - Embotelladora la Mariposa,S.A\0000. Paquete_Informance\Informance_Todo_En_Uno_v14.py
-   y la carpeta HISTORICOS al lado. Si el V14 está en otro lugar define INFORMANCE_SCRIPT_V14.
-3) Doble clic en INICIAR_DESDE_EL_PORTAL.bat.
-4) Abre http://127.0.0.1:8765/informance_3d_2025_2026/
-5) Pulsa "Descargar Informance y actualizar", selecciona los meses, y confirma.
-6) Cuando se complete la descarga, el mismo programa recalcula los indicadores.
+4. Doble clic en INICIAR_DESDE_EL_PORTAL.bat.
+5. Abre http://127.0.0.1:8765/informance_3d_2025_2026/
+6. Clic en "Actualizar mes actual desde Informance".
 
-Si un mes ya existe, V14 puede omitirlo; marca "Volver a descargar" para forzar.
-Microsoft puede solicitar MFA. La contraseña NO se almacena aquí.
+El mes se determina con la fecha LOCAL de Windows; se llama al V14 con
+--desde AAAA-MM --hasta AAAA-MM --repetir.
+V14 descarga, verifica Machachi/7 lineas y periodo, guarda respaldo en RESPALDOS,
+y sustituye el Excel de HISTORICOS si el nuevo es valido.
+El sincronizador vuelve a procesar y el navegador actualiza los indicadores.
 
-SEGURIDAD:
-- Servidor solo escucha 127.0.0.1, no es público.
-- El botón NO puede ejecutar Python desde GitHub Pages sin un agente local.
-- Los archivos reales se mantienen en tu PC. NO subas cache_privada a GitHub.
-- En GitHub Pages el botón dirige al controlador local, que debe estar activo en el mismo equipo.
-- Para actualizar datos en un celular remoto, hace falta backend corporativo privado autorizado.
-
-NO subas el ZIP entero, ni SINCRONIZADOR_AUTOMATICO.py, ni HISTORICOS o cache_privada a GitHub.
-Para el portal público sube solo la carpeta portal/informance_3d_2025_2026 con index.html, app.js, app.css y assets. Sin backend privado, GitHub Pages no presentará los datos privados automáticamente.
+SOLO LA CARPETA portal/informance_3d_2025_2026/ puede publicarse en GitHub.
+No publicar SINCRONIZADOR_AUTOMATICO.py, .bat, cache_privada, Excel, JSON privados.
+En GitHub Pages el boton abre el controlador local; la ejecución real solo funciona
+con el servidor en 127.0.0.1 desde el mismo PC.

@@ -349,59 +349,70 @@ if(['127.0.0.1','localhost'].includes(location.hostname)){
 }
 
 
-// Botón V6: únicamente disponible cuando la página se sirve desde el agente local.
+// V7: un clic = descargar el mes actual del PC, validar y reemplazar.
+// No utiliza valores del reloj del navegador: el mes lo decide Python/Windows.
 const IS_LOCAL_AGENT=['127.0.0.1','localhost'].includes(location.hostname);
 let downloadToken=null;
 let previousJobState='idle';
 function setDownloadMessage(text){const element=document.getElementById('downloadStatus');if(element)element.textContent=text;}
+async function refreshLatestSummary(){
+  if(typeof actualizarAutomaticamente==='function') await actualizarAutomaticamente();
+}
 function configureDownload(){
   const button=document.getElementById('downloadInformance');
   const panel=document.getElementById('downloadPanel');
-  const start=document.getElementById('startDownload');
-  if(!button||!panel||!start)return;
-  const month=new Date().toISOString().slice(0,7);
-  document.getElementById('downloadDesde').value=month;
-  document.getElementById('downloadHasta').value=month;
+  if(!button||!panel)return;
   if(!IS_LOCAL_AGENT){
-    button.textContent='⬇ Abrir controlador de Informance';
+    button.textContent='⬇ Abrir controlador local de Informance';
     button.onclick=()=>{
-      const ok=window.confirm('Para ejecutar Python necesitas tener el sincronizador V6 abierto en tu computadora. ¿Abrir el controlador local en otra pestaña?');
+      const ok=window.confirm('Para descargar el mes actual debes tener el sincronizador V7 abierto en este PC. ¿Abrir el controlador local?');
       if(ok)window.open('http://127.0.0.1:8765/informance_3d_2025_2026/','_blank','noopener');
     };
     return;
   }
-  button.onclick=()=>{panel.hidden=!panel.hidden;if(!panel.hidden)panel.scrollIntoView({behavior:'smooth',block:'nearest'});};
-  start.onclick=async()=>{
-    const desde=document.getElementById('downloadDesde').value;
-    const hasta=document.getElementById('downloadHasta').value;
-    const repetir=document.getElementById('downloadRepetir').checked;
-    if(!desde||!hasta||desde>hasta){setDownloadMessage('Selecciona un rango válido.');return;}
-    start.disabled=true;setDownloadMessage('Solicitando descarga...');
+  button.onclick=async()=>{
+    panel.hidden=false;
+    panel.scrollIntoView({behavior:'smooth',block:'nearest'});
+    button.disabled=true;
+    setDownloadMessage('Solicitando la descarga del mes actual y el reemplazo seguro del Excel anterior...');
     try{
-      if(!downloadToken){let t=await fetch('/api/token',{cache:'no-store'});if(!t.ok)throw Error('No se pudo verificar el controlador');downloadToken=(await t.json()).token;}
-      let r=await fetch('/api/descargar',{method:'POST',headers:{'Content-Type':'application/json','X-Informance-CSRF':downloadToken},body:JSON.stringify({desde,hasta,repetir})});
-      let data=await r.json();if(!r.ok)throw Error(data.error||'La descarga no pudo iniciarse');
-      setDownloadMessage('Descarga iniciada. Revisa Chrome para completar cualquier inicio de sesión corporativo.');
-    }catch(e){setDownloadMessage('⚠ '+e.message);start.disabled=false;}
+      if(!downloadToken){
+        const response=await fetch('/api/token',{cache:'no-store'});
+        if(!response.ok)throw Error('No se pudo verificar el controlador');
+        downloadToken=(await response.json()).token;
+      }
+      const response=await fetch('/api/descargar_actual',{
+        method:'POST',
+        headers:{'Content-Type':'application/json','X-Informance-CSRF':downloadToken},
+        body:'{}'
+      });
+      const result=await response.json();
+      if(!response.ok)throw Error(result.error||'La descarga no pudo iniciarse');
+      const label=document.getElementById('currentMonthLabel');
+      if(label)label.textContent=result.mes;
+      setDownloadMessage('Descarga '+result.mes+' iniciada. Si Microsoft solicita autenticación, complétala en Chrome.');
+    }catch(error){
+      setDownloadMessage('⚠ '+error.message);
+      button.disabled=false;
+    }
   };
   pollDownload();setInterval(pollDownload,2500);
 }
 async function pollDownload(){
   if(!IS_LOCAL_AGENT)return;
   try{
-    let r=await fetch('/api/descarga_estado',{cache:'no-store'});if(!r.ok)return;
-    let job=await r.json();
-    const start=document.getElementById('startDownload');const log=document.getElementById('downloadLog');
-    if(start)start.disabled=job.state==='running';
+    const response=await fetch('/api/descarga_estado',{cache:'no-store'});
+    if(!response.ok)return;
+    const job=await response.json();
+    const button=document.getElementById('downloadInformance');
+    const log=document.getElementById('downloadLog');
+    if(button)button.disabled=job.state==='running';
     if(log)log.textContent=job.log||'';
-    if(job.state==='running')setDownloadMessage('⏳ Descargando '+(job.range||'')+' · Deja Chrome abierto; la página se actualizará al terminar.');
-    if(job.state==='done')setDownloadMessage('✓ Descarga finalizada. El dashboard se actualiza con los nuevos Excel válidos.');
-    if(job.state==='error')setDownloadMessage('⚠ '+(job.error||'La descarga no finalizó correctamente')+'. Verifica los mensajes de la consola.');
-    if(job.state!==previousJobState&&job.state==='done'){
-      // El watcher regular también detecta los cambios, pero forzamos consulta al completar.
-      if(typeof actualizarAutomaticamente==='function')await actualizarAutomaticamente();
-    }
+    if(job.state==='running')setDownloadMessage('⏳ Descargando '+(job.range||'mes actual')+'. Mantén Chrome abierto.');
+    if(job.state==='done')setDownloadMessage('✓ Descarga terminada. El archivo anterior se respaldó si existía; actualizando indicadores.');
+    if(job.state==='error')setDownloadMessage('⚠ '+(job.error||'La descarga no finalizó correctamente'));
+    if(job.state!==previousJobState&&job.state==='done')await refreshLatestSummary();
     previousJobState=job.state;
-  }catch(e){setDownloadMessage('⚠ No se pudo consultar el estado de la descarga: '+e.message);}
+  }catch(error){setDownloadMessage('⚠ No se pudo consultar la descarga: '+error.message);}
 }
 configureDownload();

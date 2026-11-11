@@ -230,7 +230,7 @@ class Handler(SimpleHTTPRequestHandler):
         return origin in ('http://127.0.0.1:'+str(self.server.server_port),'http://localhost:'+str(self.server.server_port))
     def do_POST(self):
         if not self.valid_host():return self.json_response({'error':'Host no autorizado'},403)
-        if urlparse(self.path).path!='/api/descargar':return self.json_response({'error':'Ruta no permitida'},404)
+        if urlparse(self.path).path not in ('/api/descargar','/api/descargar_actual'):return self.json_response({'error':'Ruta no permitida'},404)
         if not self.valid_origin():return self.json_response({'error':'Solo se permite ejecutar desde el portal local'},403)
         if self.headers.get('X-Informance-CSRF')!=CSRF_TOKEN:return self.json_response({'error':'Sesión inválida'},403)
         if 'application/json' not in self.headers.get('Content-Type',''):return self.json_response({'error':'Se necesita JSON'},415)
@@ -238,17 +238,22 @@ class Handler(SimpleHTTPRequestHandler):
             length=int(self.headers.get('Content-Length','0'))
             if length<2 or length>1500:raise ValueError('Petición demasiado grande')
             req=json.loads(self.rfile.read(length).decode('utf-8'))
-            desde=req.get('desde','');hasta=req.get('hasta','')
-            if not valid_month(desde) or not valid_month(hasta) or desde>hasta:raise ValueError('Rango de meses inválido')
-            if (int(hasta[:4])-int(desde[:4]))*12+int(hasta[-2:])-int(desde[-2:])>23:raise ValueError('Máximo 24 meses por ejecución')
-            repetir=req.get('repetir',False)
-            if not isinstance(repetir,bool):raise ValueError('Parámetro repetir incorrecto')
+            if urlparse(self.path).path == '/api/descargar_actual':
+                # Mes actual de Windows; nunca se confía en fechas enviadas por la web.
+                desde=hasta=dt.datetime.now().strftime('%Y-%m')
+                repetir=True  # V14 crea respaldo y sustituye solo tras verificar el Excel nuevo.
+            else:
+                desde=req.get('desde','');hasta=req.get('hasta','')
+                if not valid_month(desde) or not valid_month(hasta) or desde>hasta:raise ValueError('Rango de meses inválido')
+                if (int(hasta[:4])-int(desde[:4]))*12+int(hasta[-2:])-int(desde[-2:])>23:raise ValueError('Máximo 24 meses por ejecución')
+                repetir=req.get('repetir',False)
+                if not isinstance(repetir,bool):raise ValueError('Parámetro repetir incorrecto')
             if not AUTOMATIZADOR.is_file():return self.json_response({'error':'No se encuentra V14 en '+str(AUTOMATIZADOR)},409)
             with JOB_LOCK:
                 if JOB['state']=='running':return self.json_response({'error':'Ya hay una descarga en ejecución'},409)
                 JOB['state']='running'
             threading.Thread(target=ejecutar_descarga,args=(desde,hasta,repetir),daemon=True).start()
-            return self.json_response({'accepted':True,'message':'Descarga de Informance iniciada'},202)
+            return self.json_response({'accepted':True,'message':'Descarga de Informance iniciada','mes':desde,'reemplazar':repetir},202)
         except (ValueError,UnicodeError,json.JSONDecodeError) as exc:return self.json_response({'error':str(exc)},400)
     def __init__(self,*args,**kwargs):super().__init__(*args,directory=str(ROOT),**kwargs)
     def do_GET(self):

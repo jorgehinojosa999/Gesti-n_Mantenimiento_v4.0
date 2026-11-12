@@ -122,17 +122,66 @@ function buildMachine(kind){
  return g;
 }
 function makeLabel(name,a,b,valid,mode,selected){
- // Texturas a 2.5x: los rótulos siguen nítidos al acercar la cámara o usar pantallas HiDPI.
- const scale=2.5;const c=document.createElement('canvas');c.width=Math.round(440*scale);c.height=Math.round(152*scale);const ctx=c.getContext('2d');ctx.scale(scale,scale);
- ctx.clearRect(0,0,440,152);
- ctx.fillStyle=selected?'#0d446e':'#ffffff';ctx.strokeStyle=selected?'#0b6097':'#99bbd0';ctx.lineWidth=4;
- ctx.beginPath();ctx.roundRect(3,3,434,146,16);ctx.fill();ctx.stroke();
- ctx.textAlign='center';ctx.fillStyle=selected?'#ffffff':'#173b59';ctx.font='bold 29px Arial';ctx.fillText(name.slice(0,24),220,37);
- ctx.font='bold 23px Arial';ctx.fillStyle=selected?'#b7d9f1':'#2372b3';ctx.fillText('2025   '+a.toFixed(1)+(mode==='hours'?' h':' ev'),112,82);
- ctx.fillStyle=selected?'#9be5e4':'#118f9a';ctx.fillText('2026   '+b.toFixed(1)+(mode==='hours'?' h':' ev'),330,82);
- let diff=valid&&a>0?(b-a)/a*100:null,txt=diff==null?'Sin comparación':diff<0?'🔵 '+Math.abs(diff).toFixed(1)+'% reducción':diff>0?'⚠ +'+diff.toFixed(1)+'% aumento':'Sin cambio';
- ctx.fillStyle=diff==null?(selected?'#ecf6ff':'#657d91'):diff<0?'#1f6fd1':diff>0?'#ff6347':'#657d91';ctx.font='bold 26px Arial';ctx.fillText(txt,220,124);
- const texture=new THREE.CanvasTexture(c);texture.colorSpace=THREE.SRGBColorSpace;texture.generateMipmaps=true;texture.minFilter=THREE.LinearMipmapLinearFilter;texture.magFilter=THREE.LinearFilter;texture.anisotropy=Math.min(8,renderer.capabilities.getMaxAnisotropy());const sprite=new THREE.Sprite(new THREE.SpriteMaterial({map:texture,transparent:true,depthTest:false}));sprite.scale.set(2.2,.76,1);sprite.renderOrder=9;return sprite;
+ // Los colores expresan el resultado de la comparación de horas/eventos visibles.
+ // No se muestra un porcentaje inventado cuando 2025 es cero.
+ const eps=0.0001;
+ let status='neutral';
+ if(valid){
+  if(b>a+eps) status='increase';
+  else if(a>b+eps) status='reduction';
+  else status='equal';
+ }
+ const palette={
+  reduction:{bg:'#1569c7',border:'#084a94',text:'#ffffff',muted:'#e8f2ff',stripe:'#90c3ff'},
+  increase:{bg:'#ff6347',border:'#c33c27',text:'#ffffff',muted:'#fff3ed',stripe:'#ffd0bf'},
+  equal:{bg:'#edf2f6',border:'#adc3d4',text:'#183957',muted:'#506c83',stripe:'#94acc0'},
+  neutral:{bg:'#edf2f6',border:'#adc3d4',text:'#183957',muted:'#506c83',stripe:'#94acc0'}
+ }[status];
+ const pct=a>eps?Math.abs((b-a)/a*100):null;
+ const changeText=status==='increase'?(pct===null?'NUEVO PARO EN 2026':`+${pct.toFixed(1)}% AUMENTO`)
+  :status==='reduction'?`${pct.toFixed(1)}% REDUCCIÓN`
+  :status==='equal'?'SIN VARIACIÓN':'SIN COMPARACIÓN';
+ // Canvas de alta resolución para conservar la nitidez de las texturas 3D.
+ const scale=3;
+ const c=document.createElement('canvas');
+ c.width=480*scale;c.height=174*scale;
+ const ctx=c.getContext('2d');ctx.scale(scale,scale);
+ ctx.clearRect(0,0,480,174);
+ ctx.fillStyle=palette.bg;
+ ctx.strokeStyle=selected?'#ffd34a':palette.border;
+ ctx.lineWidth=selected?7:4;
+ ctx.beginPath();ctx.roundRect(5,5,470,164,16);ctx.fill();ctx.stroke();
+ ctx.fillStyle=palette.stripe;ctx.fillRect(18,17,5,140);
+ ctx.textAlign='center';ctx.textBaseline='middle';
+ ctx.fillStyle=palette.text;ctx.font='bold 29px Arial';
+ ctx.fillText(String(name).slice(0,28),240,38,424);
+ ctx.fillStyle=palette.muted;ctx.font='bold 21px Arial';
+ const unit=mode==='hours'?' h':' ev';
+ const format=n=>Number(n||0).toLocaleString('es-EC',{maximumFractionDigits:1});
+ ctx.fillText('2025  '+format(a)+unit,127,86,200);
+ ctx.fillText('2026  '+format(b)+unit,355,86,200);
+ ctx.fillStyle=palette.text;ctx.font='bold 26px Arial';
+ // Triángulo de alerta, dibujado como vector sobre el lienzo.
+ if(status==='increase'){
+  ctx.beginPath();ctx.moveTo(96,124);ctx.lineTo(114,156);ctx.lineTo(78,156);ctx.closePath();
+  ctx.fillStyle='#fff3d2';ctx.fill();
+  ctx.fillStyle='#a83d24';ctx.font='bold 25px Arial';ctx.fillText('!',96,147);
+  ctx.fillStyle=palette.text;ctx.fillText(changeText,287,140,327);
+ }else{
+  if(status==='reduction'){
+   ctx.fillStyle='#ffffff';ctx.beginPath();ctx.moveTo(75,126);ctx.lineTo(99,126);ctx.lineTo(99,142);ctx.lineTo(110,142);ctx.lineTo(87,158);ctx.lineTo(64,142);ctx.lineTo(75,142);ctx.closePath();ctx.fill();
+  }
+  ctx.fillStyle=palette.text;ctx.fillText(changeText,status==='reduction'?288:240,140,status==='reduction'?327:422);
+ }
+ const texture=new THREE.CanvasTexture(c);
+ texture.colorSpace=THREE.SRGBColorSpace;
+ texture.generateMipmaps=true;
+ texture.minFilter=THREE.LinearMipmapLinearFilter;
+ texture.magFilter=THREE.LinearFilter;
+ texture.anisotropy=Math.min(8,renderer.capabilities.getMaxAnisotropy());
+ const sprite=new THREE.Sprite(new THREE.SpriteMaterial({map:texture,transparent:true,depthTest:false}));
+ sprite.scale.set(2.48,.90,1);sprite.renderOrder=9;
+ return sprite;
 }
 function setMachines(items,selected,valid,mode){
  lastItems=items||[];lastMode=mode;

@@ -21,42 +21,33 @@
       <a class="nav-link" href="#detalle"><span>⚒</span> Historial de fallas</a>
       <div class="side-divider"></div>
       <div class="filter-heading"><span class="filter-icon">☷</span><strong>FILTROS INFORMANCE</strong><button id="resetFilters" class="icon-button small" title="Limpiar filtros" aria-label="Limpiar filtros">↻</button></div>
-      <div class="side-filters">
-        <label>Asset · Línea<select id="assetFilter"><option value="">Todos los activos</option></select></label>
-        <label>Logical Date · Mes<select id="monthFilter"><option value="">Todos los meses</option><option value="1">Enero</option><option value="2">Febrero</option><option value="3">Marzo</option><option value="4">Abril</option><option value="5">Mayo</option><option value="6">Junio</option><option value="7">Julio</option><option value="8">Agosto</option><option value="9">Septiembre</option><option value="10">Octubre</option><option value="11">Noviembre</option><option value="12">Diciembre</option></select></label>
-        <label>Comparación<select id="coverageFilter"><option value="matched">Mismos meses de ambos años</option><option value="all">Todos los meses disponibles</option></select></label>
-        <label>Shift · Turno<select id="shiftFilter"><option value="">Todos los turnos</option></select></label>
-        <label>Super Reason<select id="superFilter"><option value="">Todas las categorías</option></select></label>
-        <label>Reason Lvl1<select id="r1Filter"><option value="">Todos los sistemas</option></select></label>
-        <label>Reason Lvl2<select id="r2Filter"><option value="">Todas las causas</option></select></label>
-        <details class="advanced" open><summary>Más filtros (17 columnas) <span>⌄</span></summary>
-          <div class="advanced-grid">
-            <label>Logical Date · desde día/mes<input type="text" id="dateFrom" placeholder="01/01" inputmode="numeric" maxlength="5" /></label>
-            <label>Logical Date · hasta día/mes<input type="text" id="dateTo" placeholder="31/12" inputmode="numeric" maxlength="5" /></label>
-            <label>Start Time · desde<input id="startFrom" type="time" /></label>
-            <label>Start Time · hasta<input id="startTo" type="time" /></label>
-            <label>End Time · desde<input id="endFrom" type="time" /></label>
-            <label>End Time · hasta<input id="endTo" type="time" /></label>
-            <label>Seconds · mínimo<input id="secondsMin" type="number" step="any" placeholder="Sin límite" /></label>
-            <label>Seconds · máximo<input id="secondsMax" type="number" step="any" placeholder="Sin límite" /></label>
-            <label>Minutes · mínimo<input id="minutesMin" type="number" step="any" placeholder="Sin límite" /></label>
-            <label>Minutes · máximo<input id="minutesMax" type="number" step="any" placeholder="Sin límite" /></label>
-            <label>Hours · mínimo<input id="hoursMin" type="number" step="any" placeholder="Sin límite" /></label>
-            <label>Hours · máximo<input id="hoursMax" type="number" step="any" placeholder="Sin límite" /></label>
-            <label>Start Cycles · mínimo<input id="startCyclesMin" type="number" step="any" placeholder="Sin límite" /></label>
-            <label>Start Cycles · máximo<input id="startCyclesMax" type="number" step="any" placeholder="Sin límite" /></label>
-            <label>Start Unit<select id="startUnitFilter"><option value="">Todas las unidades</option></select></label>
-            <label>End Cycles · mínimo<input id="endCyclesMin" type="number" step="any" placeholder="Sin límite" /></label>
-            <label>End Cycles · máximo<input id="endCyclesMax" type="number" step="any" placeholder="Sin límite" /></label>
-            <label>End Unit<select id="endUnitFilter"><option value="">Todas las unidades</option></select></label>
-            <label>Actual Start/End Ratio · mínimo<input id="actualMin" type="number" step="any" placeholder="Sin límite" /></label>
-            <label>Actual Start/End Ratio · máximo<input id="actualMax" type="number" step="any" placeholder="Sin límite" /></label>
-            <label>Listed Start/End Ratio · mínimo<input id="listedMin" type="number" step="any" placeholder="Sin límite" /></label>
-            <label>Listed Start/End Ratio · máximo<input id="listedMax" type="number" step="any" placeholder="Sin límite" /></label>
-          </div>
-        </details>
-        <label>Fecha ambigua de CSV<select id="dateFormat"><option value="mdy">MM/DD/AAAA (Informance)</option><option value="dmy">DD/MM/AAAA</option></select></label>
-        <button class="primary-btn filter-apply" id="applyFilters">Aplicar filtros</button>
+      <div class="side-filters" id="multiFilterArea">
+        <div class="filter-help">Elige una o varias opciones por campo. Las opciones proceden de los datos cargados.</div>
+        <div class="multi-filter" data-field="assetFilter"><label>Asset</label><button class="multi-trigger" type="button" aria-expanded="false">Todas las líneas ▾</button><div class="multi-panel" hidden><input class="multi-search" type="search" placeholder="Buscar líneas…" aria-label="Buscar Asset"><div class="multi-actions"><button class="multi-all" type="button">Seleccionar todas</button><button class="multi-none" type="button">Limpiar</button></div><div class="multi-items"></div></div></div>
+        <div class="multi-filter" data-field="logicalDateFilter"><label>Logical Date</label><button class="multi-trigger" type="button" aria-expanded="false">Todos los meses ▾</button><div class="multi-panel" hidden><input class="multi-search" type="search" placeholder="Buscar año o mes…" aria-label="Buscar Logical Date"><div class="multi-actions"><button class="multi-all" type="button">Seleccionar todas</button><button class="multi-none" type="button">Limpiar</button></div><div class="multi-items"></div></div></div>
+        <div class="multi-filter" data-field="superFilter"><label>Super Reason</label><button class="multi-trigger" type="button" aria-expanded="false">Todas las categorías ▾</button><div class="multi-panel" hidden><input class="multi-search" type="search" placeholder="Buscar categorías…" aria-label="Buscar Super Reason"><div class="multi-actions"><button class="multi-all" type="button">Seleccionar todas</button><button class="multi-none" type="button">Limpiar</button></div><div class="multi-items"></div></div></div>
+        <div class="multi-filter" data-field="r1Filter"><label>Reason Lvl1</label><button class="multi-trigger" type="button" aria-expanded="false">Todos los sistemas ▾</button><div class="multi-panel" hidden><input class="multi-search" type="search" placeholder="Buscar sistemas…" aria-label="Buscar Reason Lvl1"><div class="multi-actions"><button class="multi-all" type="button">Seleccionar todas</button><button class="multi-none" type="button">Limpiar</button></div><div class="multi-items"></div></div></div>
+        <div class="multi-filter" data-field="r2Filter"><label>Reason Lvl2</label><button class="multi-trigger" type="button" aria-expanded="false">Todas las causas ▾</button><div class="multi-panel" hidden><input class="multi-search" type="search" placeholder="Buscar causas…" aria-label="Buscar Reason Lvl2"><div class="multi-actions"><button class="multi-all" type="button">Seleccionar todas</button><button class="multi-none" type="button">Limpiar</button></div><div class="multi-items"></div></div></div>
+        <div class="filter-help" id="filterDataNotice" role="status"></div>
+        <div class="filter-summary" id="filterSelectionCount"></div>
+        <button class="primary-btn filter-apply" id="applyFilters" type="button">Aplicar filtros</button>
+        <!-- Valores internos para compatibilidad: no se utilizan como controles visibles. -->
+        <div hidden>
+          <select id="assetFilter"><option value="">Todos los activos</option></select>
+          <select id="monthFilter"><option value="">Todos los meses</option></select>
+          <select id="superFilter"><option value="">Todas las categorías</option></select>
+          <select id="r1Filter"><option value="">Todos los sistemas</option></select>
+          <select id="r2Filter"><option value="">Todas las causas</option></select>
+          <select id="shiftFilter"><option value="">Todos los turnos</option></select>
+          <select id="startUnitFilter"><option value="">Todas las unidades</option></select>
+          <select id="endUnitFilter"><option value="">Todas las unidades</option></select>
+          <select id="coverageFilter"><option value="all" selected>Todos los meses disponibles</option><option value="matched">Mismos meses de ambos años</option></select>
+          <select id="dateFormat"><option value="mdy" selected>MM/DD/AAAA</option><option value="dmy">DD/MM/AAAA</option></select>
+          <input id="dateFrom"><input id="dateTo"><input id="startFrom"><input id="startTo"><input id="endFrom"><input id="endTo">
+          <input id="secondsMin"><input id="secondsMax"><input id="minutesMin"><input id="minutesMax"><input id="hoursMin"><input id="hoursMax">
+          <input id="startCyclesMin"><input id="startCyclesMax"><input id="endCyclesMin"><input id="endCyclesMax">
+          <input id="actualMin"><input id="actualMax"><input id="listedMin"><input id="listedMax">
+        </div>
       </div>
       <div class="sidebar-foot"><span class="status-light"></span> Plataforma de análisis · uso local de archivos</div>
     </aside>

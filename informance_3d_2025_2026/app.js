@@ -33,6 +33,53 @@ const clean = v => String(v??'').trim();
 const normalize = s => clean(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\s+/g,' ').trim();
 const safe = s => String(s).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 
+// Filtros múltiples. Conjunto vacío significa "sin restricción".
+const MULTI_FIELDS = {assetFilter:'Asset',logicalDateFilter:'Logical Date',superFilter:'Super Reason',r1Filter:'Reason Lvl1',r2Filter:'Reason Lvl2'};
+const MULTI_DEFAULTS = {assetFilter:'Todas las líneas',logicalDateFilter:'Todos los meses',superFilter:'Todas las categorías',r1Filter:'Todos los sistemas',r2Filter:'Todas las causas'};
+const multiSelected = Object.fromEntries(Object.keys(MULTI_FIELDS).map(id=>[id,new Set()]));
+function logicalPeriod(row){return `${row.year}-${String(row.month).padStart(2,'0')}`;}
+function multiValue(row,id){return id==='logicalDateFilter'?logicalPeriod(row):clean(row.raw[MULTI_FIELDS[id]]);}
+function multiAllows(row,id){const values=multiSelected[id];return !values.size||values.has(multiValue(row,id));}
+function filteredAssetLabel(){const chosen=multiSelected.assetFilter;return chosen.size===1?[...chosen][0]:chosen.size?`${chosen.size} líneas seleccionadas`:'Todas las líneas';}
+function closeMultiPanels(except){for(const block of document.querySelectorAll('.multi-filter')){if(block===except)continue;block.querySelector('.multi-panel').hidden=true;block.querySelector('.multi-trigger').setAttribute('aria-expanded','false');}}
+function updateMultiLabel(id){const box=document.querySelector(`.multi-filter[data-field="${id}"]`);if(!box)return;const sel=multiSelected[id],label=box.querySelector('.multi-trigger');label.textContent=sel.size===0?MULTI_DEFAULTS[id]+' ▾':sel.size===1?[...sel][0]+' ▾':`${sel.size} opciones seleccionadas ▾`;label.title=sel.size?[...sel].join(', '):MULTI_DEFAULTS[id];}
+function renderMultiOptions(id){
+ const wrap=document.querySelector(`.multi-filter[data-field="${id}"]`);if(!wrap)return;
+ const selected=multiSelected[id];const counts=new Map();
+ for(const row of state.rows){if(state.summaryMode&&id==='r2Filter')continue;const val=multiValue(row,id);if(val)counts.set(val,(counts.get(val)||0)+(row.eventCount||1));}
+ for(const val of [...selected])if(!counts.has(val))selected.delete(val);
+ const opts=[...counts].sort((a,b)=>a[0].localeCompare(b[0],'es'));
+ const container=wrap.querySelector('.multi-items');container.replaceChildren();
+ for(const [val,count] of opts){const line=document.createElement('label');line.className='multi-option';
+  const checkbox=document.createElement('input');checkbox.type='checkbox';checkbox.value=val;checkbox.checked=selected.has(val);
+  const name=document.createElement('span');name.textContent=id==='logicalDateFilter'?val.replace(/^(\d{4})-(\d{2})$/,(_,y,m)=>`${MONTHS[Number(m)]} ${y}`):val;
+  const amount=document.createElement('small');amount.textContent=fmt(count,0);amount.title='Eventos en los datos cargados';
+  checkbox.addEventListener('change',()=>{checkbox.checked?selected.add(val):selected.delete(val);updateMultiLabel(id);updateFilterStatus();render();});
+  line.append(checkbox,name,amount);container.append(line);
+ }
+ if(!opts.length){const empty=document.createElement('p');empty.className='multi-empty';empty.textContent='No hay valores disponibles en los datos cargados.';container.append(empty);}
+ updateMultiLabel(id);
+}
+function updateFilterStatus(){
+ const parts=Object.entries(multiSelected).filter(([,s])=>s.size).map(([id,s])=>`${MULTI_FIELDS[id]}: ${s.size}`);
+ $('filterSelectionCount').textContent=parts.length?'Filtros activos · '+parts.join(' · '):'Todos los valores disponibles, sin restricciones';
+ $('filterDataNotice').textContent=state.summaryMode
+  ? 'Resumen automático: solo contiene Asset, mes y equipo; Super Reason está fijado en paradas electromecánicas y Reason Lvl2 no tiene causas reales. Para ver todas las categorías y causas, debes importar el Excel/CSV original o ampliar el resumen del backend.'
+  : 'Se muestran todos los valores distintos presentes en los datos cargados. Marca varias opciones; las selecciones se combinan entre campos.';
+}
+function clearMultiFilters(){for(const field of Object.keys(multiSelected))multiSelected[field].clear();for(const field of Object.keys(multiSelected))renderMultiOptions(field);updateFilterStatus();}
+function setupMultiFilters(){
+ for(const id of Object.keys(MULTI_FIELDS)){
+  const wrap=document.querySelector(`.multi-filter[data-field="${id}"]`);if(!wrap)continue;
+  const trigger=wrap.querySelector('.multi-trigger'),panel=wrap.querySelector('.multi-panel'),search=wrap.querySelector('.multi-search');
+  trigger.addEventListener('click',()=>{const willOpen=panel.hidden;closeMultiPanels(wrap);panel.hidden=!willOpen;trigger.setAttribute('aria-expanded',String(willOpen));if(willOpen)search.focus();});
+  search.addEventListener('input',()=>{const term=normalize(search.value);for(const row of wrap.querySelectorAll('.multi-option'))row.hidden=!normalize(row.textContent).includes(term);});
+  wrap.querySelector('.multi-all').addEventListener('click',()=>{for(const row of wrap.querySelectorAll('.multi-option'))if(!row.hidden){multiSelected[id].add(row.querySelector('input').value);row.querySelector('input').checked=true;}updateMultiLabel(id);updateFilterStatus();render();});
+  wrap.querySelector('.multi-none').addEventListener('click',()=>{multiSelected[id].clear();for(const input of wrap.querySelectorAll('.multi-option input'))input.checked=false;updateMultiLabel(id);updateFilterStatus();render();});
+ }
+ document.addEventListener('click',e=>{if(!e.target.closest('.multi-filter'))closeMultiPanels();});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMultiPanels();});
+}
 // Inventario por línea: únicamente equipos físicos identificados mediante Reason Lvl1.
 // No inferir equipos por Reason Lvl2 ni por el nombre de Asset.
 const REASON_EQUIPOS = Object.freeze({
@@ -56,17 +103,18 @@ const FLOW_ORDER=['sopladora','desencajonadora','lavadora','visorvacias','rinser
 function readCatalog(){try{const val=JSON.parse(localStorage.getItem('informance_catalog_v3')||'{}');return typeof val==='object'&&val&&!Array.isArray(val)?val:{};}catch{return {};}}
 function catalogKey(asset){return normalize(asset||'');}
 function getVisibleMachines(){
- const asset=$('assetFilter')?.value||'';
+ const choices=multiSelected.assetFilter;
  const detected=new Set();
- for(const r of state.rows){if(asset&&clean(r.raw.Asset)!==asset)continue;const id=machineId(r);if(id)detected.add(id);}
- const overrides=asset?state.catalogOverrides[catalogKey(asset)]||{}:{};
+ for(const r of state.rows){if(!eligible(r))continue;const id=machineId(r);if(id)detected.add(id);}
+ const single=choices.size===1?[...choices][0]:'';
+ const overrides=single?state.catalogOverrides[catalogKey(single)]||{}:{};
  for(const [id,enabled] of Object.entries(overrides)){if(enabled)detected.add(id);else detected.delete(id);}
  return FLOW_ORDER.map(id=>MACHINES.find(m=>m.id===id)).filter(m=>m&&detected.has(m.id));
 }
 function keepSelection(visible){if(!visible.some(m=>m.id===state.selected))state.selected=visible[0]?.id||'';}
 function updateMachineSelect(visible){const select=$('machineSelect');select.replaceChildren();for(const m of visible)select.add(new Option(m.name,m.id));if(visible.length)select.value=state.selected;else select.add(new Option('Sin equipos identificados',''));}
 function updateCatalogPanel(){
- const asset=$('assetFilter').value,btn=$('catalogButton');btn.disabled=!asset;
+ const asset=multiSelected.assetFilter.size===1?[...multiSelected.assetFilter][0]:'',btn=$('catalogButton');btn.disabled=!asset;
  $('catalogNotice').textContent=asset?'La línea '+asset+' muestra equipos detectados en los históricos de 2025–2026. Puedes añadir o esconder equipos físicamente instalados. La configuración queda en este navegador.':'Selecciona un Asset concreto para ajustar su inventario.';
  const area=$('catalogList');area.replaceChildren();if(!asset)return;
  const found=new Set(state.rows.filter(r=>clean(r.raw.Asset)===asset).map(machineId).filter(Boolean)),override=state.catalogOverrides[catalogKey(asset)]||{};
@@ -141,36 +189,19 @@ function setDemo(){
  state.selected='llenadora';state.view3d=true;$('filesInput').value='';$('modeTag').textContent='MODO DEMOSTRACIÓN';
  if($('clearButton'))$('clearButton').hidden=true;
  $('importStatus').innerHTML='<span class="notice-dot">ⓘ</span><span><strong>Datos simulados:</strong> las líneas y sus equipos en este ejemplo son ilustrativos. En la carga real, el inventario se detecta por Asset + Reason Lvl1.</span>';
- updateOptions();$('assetFilter').value='SIPA 16 · PET (ejemplo)';render();
+ clearMultiFilters();updateOptions();multiSelected.assetFilter.add('SIPA 16 · PET (ejemplo)');renderMultiOptions('assetFilter');render();
 }
 function updateOptions(){
- const fields={assetFilter:'Asset',shiftFilter:'Shift',superFilter:'Super Reason',r1Filter:'Reason Lvl1',r2Filter:'Reason Lvl2',startUnitFilter:'Start Unit',endUnitFilter:'End Unit'};
- for(let [id,col] of Object.entries(fields)){
-  let sel=$(id),value=sel.value,first=sel.options[0]?.textContent||'Todos';
-  let counts=new Map();
-  for(const r of state.rows){
-   const val=clean(r.raw[col]);
-   if(!val)continue;
-   counts.set(val,(counts.get(val)||0)+1);
-  }
-  let values=[...counts.keys()].sort((a,b)=>a.localeCompare(b,'es'));
-  sel.replaceChildren();
-  sel.add(new Option(first,''));
-  for(let v of values){
-   const label=(id==='assetFilter'||id==='r1Filter'||id==='r2Filter'||id==='superFilter')?`${v} (${fmt(counts.get(v),0)})`:v;
-   sel.add(new Option(label,v));
-  }
-  if(values.includes(value))sel.value=value;
- }
+ // Los cinco desplegables se construyen desde TODOS los registros disponibles, no desde lo ya filtrado.
+ for(const id of Object.keys(MULTI_FIELDS))renderMultiOptions(id);
+ updateFilterStatus();
 }
 function dateBound(id){let s=$(id).value.trim();if(!s)return null;let m=s.match(/^(\d{1,2})\/(\d{1,2})$/);if(!m)return null;let d=+m[1],mon=+m[2];return d>0&&d<=31&&mon>0&&mon<=12?mon*100+d:null;}
 function betweenValue(r,name){const from=$(`${name}Min`).value,to=$(`${name}Max`).value;let v=name==='hours'?r.hours:r.nums[({seconds:'Seconds',minutes:'Minutes',startCycles:'Start Cycles',endCycles:'End Cycles',actual:'Actual Start/End Ratio',listed:'Listed Start/End Ratio'})[name]];if(from&&!(v!==null&&v>=+from))return false;if(to&&!(v!==null&&v<=+to))return false;return true;}
 function timeFits(value,from,to){let f=$(from).value,t=$(to).value;if(!f&&!t)return true;if(value===null)return false;let a=f?timeMinutes(f):0,b=t?timeMinutes(t):1439;return a<=b?value>=a&&value<=b:value>=a||value<=b;}
-function eligible(r){for(const [id,col] of [['assetFilter','Asset'],['shiftFilter','Shift'],['superFilter','Super Reason'],['r1Filter','Reason Lvl1'],['r2Filter','Reason Lvl2'],['startUnitFilter','Start Unit'],['endUnitFilter','End Unit']]){let s=$(id).value;if(s&&clean(r.raw[col])!==s)return false;}
- if($('monthFilter').value&&r.month!==Number($('monthFilter').value))return false;
- let a=dateBound('dateFrom'),b=dateBound('dateTo'),md=r.month*100+r.day;if(a&&b&&a>b){if(md<a&&md>b)return false;}else{if(a&&md<a||b&&md>b)return false;}
- if(!timeFits(r.start,'startFrom','startTo')||!timeFits(r.end,'endFrom','endTo'))return false;
- return ['seconds','minutes','hours','startCycles','endCycles','actual','listed'].every(n=>betweenValue(r,n));
+function eligible(r){
+ for(const id of Object.keys(MULTI_FIELDS))if(!multiAllows(r,id))return false;
+ return true;
 }
 function currentRows(){
  // El dashboard es SOLO de máquinas; Uptime, paros programados, transporte y causas externas no entran en las cifras.
@@ -256,7 +287,7 @@ function renderRanking(summary,visible){
  if(!rows.length){const tr=document.createElement('tr'),td=document.createElement('td');td.colSpan=6;td.textContent='Sin equipos identificados en esta línea';tr.append(td);body.append(tr);}
  const sum=accum(state.filtered);const tr=document.createElement('tr');tr.className='total-row';const delta=compare(sum.a,sum.b,state.hasBoth);
  for(const v of ['','TOTAL EQUIPOS',fmt(sum.a),fmt(sum.b),delta.delta===null?'—':fmt(delta.delta),delta.percent===null?'—':fmt(delta.percent)+' %']){const td=document.createElement('td');td.textContent=v;tr.append(td);}body.append(tr);
- const unassigned=state.rows.filter(r=>(!$('assetFilter').value||r.raw.Asset===$('assetFilter').value)&&!machineId(r)).length;
+ const unassigned=state.rows.filter(r=>multiAllows(r,'assetFilter')&&!machineId(r)).length;
  state.unassigned=unassigned;
  $('mappingCoverage').textContent=`${fmt(state.filtered.reduce((a,r)=>a+(r.eventCount||1),0),0)} eventos de máquinas · ${fmt(unassigned,0)} registros no asociados a máquinas en los históricos cargados.`;
 }
@@ -283,9 +314,9 @@ function render(){
  const rows=currentRows(),summary=machineSummary(rows),visible=getVisibleMachines();
  keepSelection(visible);updateMachineSelect(visible);renderTotals(rows);renderMachines(summary,visible);renderSelection(summary);
  renderRanking(summary,visible);renderChart(rows);renderDetails(rows);
- $('visibleCount').textContent=`${visible.length} equipos representados · ${$('assetFilter').value||'todas las líneas'}`;
- $('lineSceneLabel').textContent=($('assetFilter').value||'Todas las líneas')+' · '+visible.length+' equipos';
- $('sceneHeading').textContent='Mapa 3D · '+($('assetFilter').value||'Todas las líneas');
+ $('visibleCount').textContent=`${visible.length} equipos representados · ${filteredAssetLabel()}`;
+ $('lineSceneLabel').textContent=(filteredAssetLabel())+' · '+visible.length+' equipos';
+ $('sceneHeading').textContent='Mapa 3D · '+(filteredAssetLabel());
  $('machineView3d').hidden=!state.view3d;$('machineCardView').hidden=state.view3d;
  $('view3D').classList.toggle('active-view',state.view3d);$('viewCards').classList.toggle('active-view',!state.view3d);
  if(window.Informance3D?.setMachines)window.Informance3D.setMachines(visible.map(m=>({...m,stats:summary.map.get(m.id)})),state.selected,state.hasBoth,state.mode);
@@ -302,7 +333,7 @@ function renderMapping(){
 function csvCell(v){let s=clean(v);if(/^[=+@\-\t\r]/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"';}
 function exportRows(){let fields=['Año','Máquina asignada',...FIELDS],lines=[fields.map(csvCell).join(',')];for(let r of state.filtered){let m=MACHINES.find(x=>x.id===machineId(r));let vals=[r.year,m?m.name:'Sin asignar',...FIELDS.map(c=>r.raw[c])];lines.push(vals.map(csvCell).join(','));}let blob=new Blob(['\ufeff',lines.join('\r\n')],{type:'text/csv;charset=utf-8;'});let link=document.createElement('a'),url=URL.createObjectURL(blob);link.href=url;link.download='Informance_Comparativo_2025_2026_Filtrado.csv';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 async function uploadFiles(files){if(!files.length)return;let successful=[],errors=[],duplicate=0,skipped=0;let button=$('uploadButton');button.disabled=true;let notice=$('importStatus');notice.textContent='Importando históricos en tu navegador...';for(let file of files){try{let rows=await parseFile(file);successful.push({name:file.name,rows});}catch(e){errors.push(clean(e.message||e));}}
- if(successful.length){if(state.demo){state.rows=[];state.keys=new Set();state.demo=false;state.summaryMode=false;state.manual.clear();state.files=0;for(let x of $('sidebar').querySelectorAll('.side-filters input'))x.value='';for(let x of $('sidebar').querySelectorAll('.side-filters select'))if(x.id!=='dateFormat')x.selectedIndex=0;}for(let entry of successful){state.files++;for(let r of entry.rows){let sig=signature(r);if(state.keys.has(sig)){duplicate++;continue;}state.keys.add(sig);state.rows.push(r);}if(!entry.rows.length)skipped++;}state.selected='';$('modeTag').textContent='DATOS IMPORTADOS';updateOptions();$('assetFilter').selectedIndex=1;render();}
+ if(successful.length){if(state.demo){state.rows=[];state.keys=new Set();state.demo=false;state.summaryMode=false;state.manual.clear();state.files=0;for(let x of $('sidebar').querySelectorAll('.side-filters input'))x.value='';for(let x of $('sidebar').querySelectorAll('.side-filters select'))if(x.id!=='dateFormat')x.selectedIndex=0;}for(let entry of successful){state.files++;for(let r of entry.rows){let sig=signature(r);if(state.keys.has(sig)){duplicate++;continue;}state.keys.add(sig);state.rows.push(r);}if(!entry.rows.length)skipped++;}state.selected='';$('modeTag').textContent='DATOS IMPORTADOS';clearMultiFilters();updateOptions();render();}
  notice.replaceChildren();let dot=document.createElement('span');dot.className='notice-dot';dot.textContent=errors.length?'⚠':'✓';let text=document.createElement('span');text.textContent=`${state.demo?'Sigue el modo demostración.':'Datos cargados: '+fmt(state.rows.length,0)+' registros únicos · '+state.files+' archivos · '+duplicate+' duplicados omitidos.'}${errors.length?' Errores: '+errors.join(' | '):''}${skipped?' · '+skipped+' archivos sin eventos válidos de 2025–2026.':''}`;notice.append(dot,text);if(!state.demo){let clear=document.createElement('button');clear.className='linklike';clear.textContent='Eliminar carga';clear.addEventListener('click',setDemo);notice.append(clear);}button.disabled=false;}
 function showMobileFilters(visible){
  const side=$('sidebar'),shade=$('mobileShade');
@@ -327,7 +358,7 @@ async function uploadPrivateSummary(file, silently=false){
     const row=convert(raw,file.name);if(row){row.eventCount=ev;out.push(row);}
   }
   if(!out.length)throw Error('El archivo no contiene períodos válidos.');
-  const savedAsset=silently?$('assetFilter').value:'';
+  const savedFilters=silently?Object.fromEntries(Object.entries(multiSelected).map(([k,v])=>[k,new Set(v)])):{};
   state.rows=out;state.keys=new Set();state.demo=false;state.summaryMode=true;state.files=parsed.source_files||0;state.manual.clear();
   $('modeTag').textContent='HISTÓRICOS REALES · RESUMEN';
   if(!silently){
@@ -335,16 +366,17 @@ async function uploadPrivateSummary(file, silently=false){
     for(const x of $('sidebar').querySelectorAll('.side-filters select'))x.selectedIndex=0;
     $('coverageFilter').value='matched';
   }
+  if(!silently)clearMultiFilters();
+  else for(const [id,values] of Object.entries(savedFilters)){multiSelected[id].clear();for(const v of values)multiSelected[id].add(v);}
   updateOptions();
-  $('assetFilter').value=savedAsset&&[...$('assetFilter').options].some(o=>o.value===savedAsset)?savedAsset:'Sipa 16';
   if(!silently)state.selected='';render();
   $('importStatus').textContent='✓ SINCRONIZACIÓN AUTOMÁTICA · '+fmt(parsed.total_source_rows||0,0)+' registros de origen · '+out.length+' grupos mensuales · último cambio: '+(parsed.updated_at||'actualizado')+'. La comparación se limita a meses equivalentes. No hay detalle de fallas en este resumen.';
   $('detailTable').closest('section').querySelector('h2').textContent='Resumen mensual de equipos · Para detalle importa los Excel originales';
  }catch(error){$('importStatus').textContent='⚠ No fue posible abrir el resumen privado: '+error.message;}
 }
 
-function wire(){$('machineSelect').addEventListener('change',e=>{selectMachine(e.target.value);});$('uploadButton').addEventListener('click',()=>$('filesInput').click());$('summaryButton').addEventListener('click',()=>$('summaryInput').click());$('summaryInput').addEventListener('change',e=>uploadPrivateSummary(e.target.files[0]));$('filesInput').addEventListener('change',e=>uploadFiles([...e.target.files]));$('demoButton').addEventListener('click',setDemo);$('clearButton').addEventListener('click',setDemo);$('exportButton').addEventListener('click',exportRows);$('applyFilters').addEventListener('click',()=>{render();if(window.innerWidth<=900)showMobileFilters(false);});$('resetFilters').addEventListener('click',()=>{for(let x of $('sidebar').querySelectorAll('.side-filters input'))x.value='';for(let x of $('sidebar').querySelectorAll('.side-filters select'))x.selectedIndex=0;$('coverageFilter').value='matched';render();});$('toggleSidebar').addEventListener('click',()=>showMobileFilters(!$('sidebar').classList.contains('open')));$('mobileFilterButton').addEventListener('click',()=>showMobileFilters(true));$('mobileShade').addEventListener('click',()=>showMobileFilters(false));document.addEventListener('keydown',e=>{if(e.key==='Escape')showMobileFilters(false);});$('sidebar').querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>showMobileFilters(false)));$('toggleValues').addEventListener('click',()=>{state.mode=state.mode==='hours'?'events':'hours';render();$('toggleValues').title=state.mode==='hours'?'Mostrando horas':'Mostrando eventos';});$('mappingButton').addEventListener('click',()=>{$('mappingPanel').hidden=!$('mappingPanel').hidden;if(!$('mappingPanel').hidden){renderMapping();$('mappingPanel').scrollIntoView({behavior:'smooth',block:'start'});}});$('hideMapping').addEventListener('click',()=>$('mappingPanel').hidden=true);
- for(let e of $('sidebar').querySelectorAll('.side-filters input,.side-filters select'))e.addEventListener(e.tagName==='SELECT'?'change':'change',()=>{if(e.id!=='dateFormat')render();});
+function wire(){$('machineSelect').addEventListener('change',e=>{selectMachine(e.target.value);});$('uploadButton').addEventListener('click',()=>$('filesInput').click());$('summaryButton').addEventListener('click',()=>$('summaryInput').click());$('summaryInput').addEventListener('change',e=>uploadPrivateSummary(e.target.files[0]));$('filesInput').addEventListener('change',e=>uploadFiles([...e.target.files]));$('demoButton').addEventListener('click',setDemo);$('clearButton').addEventListener('click',setDemo);$('exportButton').addEventListener('click',exportRows);$('applyFilters').addEventListener('click',()=>{render();if(window.innerWidth<=900)showMobileFilters(false);});$('resetFilters').addEventListener('click',()=>{clearMultiFilters();render();});$('toggleSidebar').addEventListener('click',()=>showMobileFilters(!$('sidebar').classList.contains('open')));$('mobileFilterButton').addEventListener('click',()=>showMobileFilters(true));$('mobileShade').addEventListener('click',()=>showMobileFilters(false));document.addEventListener('keydown',e=>{if(e.key==='Escape')showMobileFilters(false);});$('sidebar').querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>showMobileFilters(false)));$('toggleValues').addEventListener('click',()=>{state.mode=state.mode==='hours'?'events':'hours';render();$('toggleValues').title=state.mode==='hours'?'Mostrando horas':'Mostrando eventos';});$('mappingButton').addEventListener('click',()=>{$('mappingPanel').hidden=!$('mappingPanel').hidden;if(!$('mappingPanel').hidden){renderMapping();$('mappingPanel').scrollIntoView({behavior:'smooth',block:'start'});}});$('hideMapping').addEventListener('click',()=>$('mappingPanel').hidden=true);
+
  $('view3D').addEventListener('click',()=>{state.view3d=true;render();});
  $('viewCards').addEventListener('click',()=>{state.view3d=false;render();});
  $('catalogButton').addEventListener('click',()=>{$('catalogPanel').hidden=!$('catalogPanel').hidden;updateCatalogPanel();});
@@ -353,7 +385,7 @@ function wire(){$('machineSelect').addEventListener('change',e=>{selectMachine(e
  window.selectInformanceMachine=selectMachine;
  // Si la empresa bloquea el CDN de Three.js, mostrar tarjetas funcionales automáticamente.
  setTimeout(()=>{if(!window.Informance3D&&state.view3d){state.view3d=false;render();$('webglMessage').textContent='Vista 3D no disponible en este navegador. Se muestra la vista Tarjetas.';}},5500);
- setDemo();}
+ setupMultiFilters();setDemo();}
 wire();
 
 // Descarga remota: el módulo HTTPS se inicializa desde remote.js.

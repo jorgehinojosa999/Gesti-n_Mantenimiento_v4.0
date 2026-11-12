@@ -143,7 +143,26 @@ function setDemo(){
  $('importStatus').innerHTML='<span class="notice-dot">ⓘ</span><span><strong>Datos simulados:</strong> las líneas y sus equipos en este ejemplo son ilustrativos. En la carga real, el inventario se detecta por Asset + Reason Lvl1.</span>';
  updateOptions();$('assetFilter').value='SIPA 16 · PET (ejemplo)';render();
 }
-function updateOptions(){const fields={assetFilter:'Asset',shiftFilter:'Shift',superFilter:'Super Reason',r1Filter:'Reason Lvl1',r2Filter:'Reason Lvl2',startUnitFilter:'Start Unit',endUnitFilter:'End Unit'};for(let [id,col] of Object.entries(fields)){let sel=$(id),value=sel.value,first=sel.options[0]?.textContent||'Todos',values=[...new Set(state.rows.map(r=>clean(r.raw[col])).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es'));sel.replaceChildren();sel.add(new Option(first,''));for(let v of values)sel.add(new Option(v,v));if(values.includes(value))sel.value=value;}}
+function updateOptions(){
+ const fields={assetFilter:'Asset',shiftFilter:'Shift',superFilter:'Super Reason',r1Filter:'Reason Lvl1',r2Filter:'Reason Lvl2',startUnitFilter:'Start Unit',endUnitFilter:'End Unit'};
+ for(let [id,col] of Object.entries(fields)){
+  let sel=$(id),value=sel.value,first=sel.options[0]?.textContent||'Todos';
+  let counts=new Map();
+  for(const r of state.rows){
+   const val=clean(r.raw[col]);
+   if(!val)continue;
+   counts.set(val,(counts.get(val)||0)+1);
+  }
+  let values=[...counts.keys()].sort((a,b)=>a.localeCompare(b,'es'));
+  sel.replaceChildren();
+  sel.add(new Option(first,''));
+  for(let v of values){
+   const label=(id==='assetFilter'||id==='r1Filter'||id==='r2Filter'||id==='superFilter')?`${v} (${fmt(counts.get(v),0)})`:v;
+   sel.add(new Option(label,v));
+  }
+  if(values.includes(value))sel.value=value;
+ }
+}
 function dateBound(id){let s=$(id).value.trim();if(!s)return null;let m=s.match(/^(\d{1,2})\/(\d{1,2})$/);if(!m)return null;let d=+m[1],mon=+m[2];return d>0&&d<=31&&mon>0&&mon<=12?mon*100+d:null;}
 function betweenValue(r,name){const from=$(`${name}Min`).value,to=$(`${name}Max`).value;let v=name==='hours'?r.hours:r.nums[({seconds:'Seconds',minutes:'Minutes',startCycles:'Start Cycles',endCycles:'End Cycles',actual:'Actual Start/End Ratio',listed:'Listed Start/End Ratio'})[name]];if(from&&!(v!==null&&v>=+from))return false;if(to&&!(v!==null&&v<=+to))return false;return true;}
 function timeFits(value,from,to){let f=$(from).value,t=$(to).value;if(!f&&!t)return true;if(value===null)return false;let a=f?timeMinutes(f):0,b=t?timeMinutes(t):1439;return a<=b?value>=a&&value<=b:value>=a||value<=b;}
@@ -171,7 +190,20 @@ function machineId(r){
  return REASON_EQUIPOS[normalize(r.raw['Reason Lvl1'])]||null;
 }
 function accum(rows){const result={a:0,b:0,e25:0,e26:0};for(let r of rows){if(r.year===2025){result.a+=r.hours;result.e25+=(r.eventCount||1);}else if(r.year===2026){result.b+=r.hours;result.e26+=(r.eventCount||1);}}return result;}
-function compare(a,b,valid){if(!valid)return {text:'Sin comparación',className:'neutral',delta:null,percent:null};if(a<=0){return b<=0?{text:'Sin variación',className:'neutral',delta:0,percent:0}:{text:'Nuevo en 2026',className:'bad',delta:b,percent:null};}const pct=(b-a)/a*100;return {text:pct<-.04?`▼ ${fmt(Math.abs(pct))}% reducción`:pct>.04?`▲ +${fmt(pct)}% incremento`:'Sin variación',className:pct<-.04?'good':pct>.04?'bad':'neutral',delta:b-a,percent:pct};}
+function compare(a,b,valid){
+ if(!valid)return {text:'Sin comparación',className:'neutral',delta:null,percent:null};
+ if(a<=0){
+  return b<=0
+   ? {text:'Sin variación',className:'neutral',delta:0,percent:0}
+   : {text:'⚠ Nuevo en 2026',className:'bad',delta:b,percent:null};
+ }
+ const pct=(b-a)/a*100;
+ return {
+  text:pct<-.04?`🔵 ${fmt(Math.abs(pct))}% reducción`:pct>.04?`⚠ +${fmt(pct)}% aumento`:'Sin variación',
+  className:pct<-.04?'good':pct>.04?'bad':'neutral',
+  delta:b-a,percent:pct
+ };
+}
 function machineSummary(rows){let map=new Map(MACHINES.map(m=>[m.id,{...m,...accum([])}]));let unknown=[];for(let r of rows){let id=machineId(r);if(!id){unknown.push(r);continue;}let item=map.get(id);if(r.year===2025){item.a+=r.hours;item.e25+=(r.eventCount||1);}else{item.b+=r.hours;item.e26+=(r.eventCount||1);}}return{map,unknown};}
 function renderMachines(summary,visible){
  const upper=visible.filter(m=>FLOW_ORDER.indexOf(m.id)<=FLOW_ORDER.indexOf('secador'));
@@ -237,9 +269,9 @@ function renderTotals(rows){
  $('total26').textContent=state.rows.some(r=>r.year===2026)?fmt(sums.b)+' h':'Sin datos';
  $('events25').textContent=fmt(sums.e25,0)+' eventos de equipos';$('events26').textContent=fmt(sums.e26,0)+' eventos de equipos';
  $('totalDelta').textContent=c.percent!==null?(c.percent>0?'+':'')+fmt(c.percent)+' %':'N/D';
- $('deltaLabel').textContent=c.className==='good'?'REDUCCIÓN DE HORAS':c.className==='bad'?'INCREMENTO DE HORAS':'VARIACIÓN DE HORAS';
+ $('deltaLabel').textContent=c.className==='good'?'REDUCCIÓN DE HORAS':c.className==='bad'?'ALERTA DE AUMENTO':'VARIACIÓN DE HORAS';
  $('deltaAbsolute').textContent=c.delta===null?'Se necesitan ambos años':`${c.delta>0?'+':''}${fmt(c.delta)} h frente a 2025`;
- $('deltaIcon').textContent=c.className==='good'?'↓':c.className==='bad'?'↑':'–';
+ $('deltaIcon').textContent=c.className==='good'?'🔵':c.className==='bad'?'⚠':'–';
  $('deltaCard').className='headline-kpi kpi-delta'+(c.className==='bad'?' bad':c.className==='neutral'?' unknown':'');
  const mo=state.monthsCommon;
  if($('coverageFilter').value==='matched'&&mo.length)$('coverageText').textContent='Meses equivalentes: '+mo.map(i=>MONTHS[i]).join(', ');

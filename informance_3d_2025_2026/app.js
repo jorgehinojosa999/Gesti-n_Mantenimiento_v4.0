@@ -62,12 +62,13 @@ function renderMultiOptions(id){
 }
 function updateFilterStatus(){
  const parts=Object.entries(multiSelected).filter(([,s])=>s.size).map(([id,s])=>`${MULTI_FIELDS[id]}: ${s.size}`);
+ const cm=Number($('compareMonth')?.value||0);if(cm)parts.unshift('Mes comparativo: '+MONTHS[cm]+' 2025 / 2026');
  $('filterSelectionCount').textContent=parts.length?'Filtros activos · '+parts.join(' · '):'Todos los valores disponibles, sin restricciones';
  $('filterDataNotice').textContent=state.summaryMode
   ? 'Resumen automático: solo contiene Asset, mes y equipo; Super Reason está fijado en paradas electromecánicas y Reason Lvl2 no tiene causas reales. Para ver todas las categorías y causas, debes importar el Excel/CSV original o ampliar el resumen del backend.'
   : 'Se muestran todos los valores distintos presentes en los datos cargados. Marca varias opciones; las selecciones se combinan entre campos.';
 }
-function clearMultiFilters(){for(const field of Object.keys(multiSelected))multiSelected[field].clear();for(const field of Object.keys(multiSelected))renderMultiOptions(field);updateFilterStatus();}
+function clearMultiFilters(){if($('compareMonth'))$('compareMonth').value='';for(const field of Object.keys(multiSelected))multiSelected[field].clear();for(const field of Object.keys(multiSelected))renderMultiOptions(field);updateFilterStatus();}
 function setupMultiFilters(){
  for(const id of Object.keys(MULTI_FIELDS)){
   const wrap=document.querySelector(`.multi-filter[data-field="${id}"]`);if(!wrap)continue;
@@ -105,7 +106,11 @@ function catalogKey(asset){return normalize(asset||'');}
 function getVisibleMachines(){
  const choices=multiSelected.assetFilter;
  const detected=new Set();
- for(const r of state.rows){if(!eligible(r))continue;const id=machineId(r);if(id)detected.add(id);}
+ for(const r of state.rows){
+  // El inventario de la línea no desaparece al elegir un mes sin fallas.
+  if(!multiAllows(r,'assetFilter')||!multiAllows(r,'r1Filter'))continue;
+  const id=machineId(r);if(id)detected.add(id);
+ }
  const single=choices.size===1?[...choices][0]:'';
  const overrides=single?state.catalogOverrides[catalogKey(single)]||{}:{};
  for(const [id,enabled] of Object.entries(overrides)){if(enabled)detected.add(id);else detected.delete(id);}
@@ -200,7 +205,13 @@ function dateBound(id){let s=$(id).value.trim();if(!s)return null;let m=s.match(
 function betweenValue(r,name){const from=$(`${name}Min`).value,to=$(`${name}Max`).value;let v=name==='hours'?r.hours:r.nums[({seconds:'Seconds',minutes:'Minutes',startCycles:'Start Cycles',endCycles:'End Cycles',actual:'Actual Start/End Ratio',listed:'Listed Start/End Ratio'})[name]];if(from&&!(v!==null&&v>=+from))return false;if(to&&!(v!==null&&v<=+to))return false;return true;}
 function timeFits(value,from,to){let f=$(from).value,t=$(to).value;if(!f&&!t)return true;if(value===null)return false;let a=f?timeMinutes(f):0,b=t?timeMinutes(t):1439;return a<=b?value>=a&&value<=b:value>=a||value<=b;}
 function eligible(r){
- for(const id of Object.keys(MULTI_FIELDS))if(!multiAllows(r,id))return false;
+ const selectedMonth=Number($('compareMonth')?.value||0);
+ if(selectedMonth && r.month!==selectedMonth)return false;
+ // Si se selecciona un mes comparativo, Logical Date deja de restringir a un año concreto.
+ for(const id of Object.keys(MULTI_FIELDS)){
+  if(selectedMonth && id==='logicalDateFilter')continue;
+  if(!multiAllows(r,id))return false;
+ }
  return true;
 }
 function currentRows(){
@@ -305,6 +316,8 @@ function renderTotals(rows){
  $('deltaIcon').textContent=c.className==='good'?'🔵':c.className==='bad'?'⚠':'–';
  $('deltaCard').className='headline-kpi kpi-delta'+(c.className==='bad'?' bad':c.className==='neutral'?' unknown':'');
  const mo=state.monthsCommon;
+ const cm=Number($('compareMonth')?.value||0);
+ if(cm){$('coverageText').textContent=MONTHS[cm]+' 2025 vs. '+MONTHS[cm]+' 2026'+(!state.hasBoth?' · faltan datos de un año':'');return;}
  if($('coverageFilter').value==='matched'&&mo.length)$('coverageText').textContent='Meses equivalentes: '+mo.map(i=>MONTHS[i]).join(', ');
  else if($('coverageFilter').value==='matched'&&!mo.length)$('coverageText').textContent='Sin meses coincidentes · datos disponibles';
  else $('coverageText').textContent='Todos los meses disponibles';
@@ -375,7 +388,7 @@ async function uploadPrivateSummary(file, silently=false){
  }catch(error){$('importStatus').textContent='⚠ No fue posible abrir el resumen privado: '+error.message;}
 }
 
-function wire(){$('machineSelect').addEventListener('change',e=>{selectMachine(e.target.value);});$('uploadButton').addEventListener('click',()=>$('filesInput').click());$('summaryButton').addEventListener('click',()=>$('summaryInput').click());$('summaryInput').addEventListener('change',e=>uploadPrivateSummary(e.target.files[0]));$('filesInput').addEventListener('change',e=>uploadFiles([...e.target.files]));$('demoButton').addEventListener('click',setDemo);$('clearButton').addEventListener('click',setDemo);$('exportButton').addEventListener('click',exportRows);$('applyFilters').addEventListener('click',()=>{render();if(window.innerWidth<=900)showMobileFilters(false);});$('resetFilters').addEventListener('click',()=>{clearMultiFilters();render();});$('toggleSidebar').addEventListener('click',()=>showMobileFilters(!$('sidebar').classList.contains('open')));$('mobileFilterButton').addEventListener('click',()=>showMobileFilters(true));$('mobileShade').addEventListener('click',()=>showMobileFilters(false));document.addEventListener('keydown',e=>{if(e.key==='Escape')showMobileFilters(false);});$('sidebar').querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>showMobileFilters(false)));$('toggleValues').addEventListener('click',()=>{state.mode=state.mode==='hours'?'events':'hours';render();$('toggleValues').title=state.mode==='hours'?'Mostrando horas':'Mostrando eventos';});$('mappingButton').addEventListener('click',()=>{$('mappingPanel').hidden=!$('mappingPanel').hidden;if(!$('mappingPanel').hidden){renderMapping();$('mappingPanel').scrollIntoView({behavior:'smooth',block:'start'});}});$('hideMapping').addEventListener('click',()=>$('mappingPanel').hidden=true);
+function wire(){ $('compareMonth')?.addEventListener('change',()=>{updateFilterStatus();render();});$('machineSelect').addEventListener('change',e=>{selectMachine(e.target.value);});$('uploadButton').addEventListener('click',()=>$('filesInput').click());$('summaryButton').addEventListener('click',()=>$('summaryInput').click());$('summaryInput').addEventListener('change',e=>uploadPrivateSummary(e.target.files[0]));$('filesInput').addEventListener('change',e=>uploadFiles([...e.target.files]));$('demoButton').addEventListener('click',setDemo);$('clearButton').addEventListener('click',setDemo);$('exportButton').addEventListener('click',exportRows);$('applyFilters').addEventListener('click',()=>{render();if(window.innerWidth<=900)showMobileFilters(false);});$('resetFilters').addEventListener('click',()=>{clearMultiFilters();render();});$('toggleSidebar').addEventListener('click',()=>showMobileFilters(!$('sidebar').classList.contains('open')));$('mobileFilterButton').addEventListener('click',()=>showMobileFilters(true));$('mobileShade').addEventListener('click',()=>showMobileFilters(false));document.addEventListener('keydown',e=>{if(e.key==='Escape')showMobileFilters(false);});$('sidebar').querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>showMobileFilters(false)));$('toggleValues').addEventListener('click',()=>{state.mode=state.mode==='hours'?'events':'hours';render();$('toggleValues').title=state.mode==='hours'?'Mostrando horas':'Mostrando eventos';});$('mappingButton').addEventListener('click',()=>{$('mappingPanel').hidden=!$('mappingPanel').hidden;if(!$('mappingPanel').hidden){renderMapping();$('mappingPanel').scrollIntoView({behavior:'smooth',block:'start'});}});$('hideMapping').addEventListener('click',()=>$('mappingPanel').hidden=true);
 
  $('view3D').addEventListener('click',()=>{state.view3d=true;render();});
  $('viewCards').addEventListener('click',()=>{state.view3d=false;render();});

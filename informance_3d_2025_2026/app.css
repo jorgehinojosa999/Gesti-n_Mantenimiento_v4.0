@@ -131,3 +131,11 @@
 .filter-help{border-left:3px solid #66c5ed;padding:5px 7px}
 .filter-summary{font-weight:700}
 @media(max-width:900px){.multi-panel{max-height:44vh}.multi-items{max-height:27vh}}
+
+/* V13 · Comparación mensual real sobre ambos años */
+.month-compare{border:1px solid #95c9ef;border-radius:10px;padding:10px;background:linear-gradient(155deg,#134b7b,#0b3156);display:grid;gap:7px}
+.month-compare label{font-size:12px;color:#e8f5ff;font-weight:850}
+.month-compare select{font-size:13px;min-height:42px;font-weight:750;border:1px solid #5da5dd;border-radius:8px;background:#fff;color:#174b77;padding:8px;width:100%}
+.month-compare small{font-size:10px;color:#c1e0f3;line-height:1.5}
+.webgl-canvas{height:650px}
+@media(max-width:650px){.webgl-canvas{height:440px}}

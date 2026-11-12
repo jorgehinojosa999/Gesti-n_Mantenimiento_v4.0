@@ -6,7 +6,9 @@ const notice=document.getElementById('webglMessage');
 const scene=new THREE.Scene(); scene.background=new THREE.Color('#e2edf7'); scene.fog=new THREE.Fog('#e2edf7',19,38);
 const camera=new THREE.PerspectiveCamera(36,1,.1,120);camera.position.set(7,10,16);
 const renderer=new THREE.WebGLRenderer({antialias:true,alpha:false,powerPreference:'default'});
-renderer.setPixelRatio(Math.min(2,devicePixelRatio||1));renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
+// Resolución física del lienzo según la pantalla, limitada para no sobrecargar la GPU.
+const renderDPR=()=>Math.min(2.25, Math.max(1,window.devicePixelRatio||1));
+renderer.setPixelRatio(renderDPR());renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
 renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.3;
 const canvas=renderer.domElement;holder.insertBefore(canvas,holder.firstChild);
 const controls=new OrbitControls(camera,canvas);controls.enableDamping=true;controls.dampingFactor=.075;controls.minDistance=5;controls.maxDistance=36;controls.maxPolarAngle=1.46;controls.target.set(0,0.9,0);
@@ -120,7 +122,8 @@ function buildMachine(kind){
  return g;
 }
 function makeLabel(name,a,b,valid,mode,selected){
- const c=document.createElement('canvas');c.width=440;c.height=152;const ctx=c.getContext('2d');
+ // Texturas a 2.5x: los rótulos siguen nítidos al acercar la cámara o usar pantallas HiDPI.
+ const scale=2.5;const c=document.createElement('canvas');c.width=Math.round(440*scale);c.height=Math.round(152*scale);const ctx=c.getContext('2d');ctx.scale(scale,scale);
  ctx.clearRect(0,0,440,152);
  ctx.fillStyle=selected?'#0d446e':'#ffffff';ctx.strokeStyle=selected?'#0b6097':'#99bbd0';ctx.lineWidth=4;
  ctx.beginPath();ctx.roundRect(3,3,434,146,16);ctx.fill();ctx.stroke();
@@ -129,7 +132,7 @@ function makeLabel(name,a,b,valid,mode,selected){
  ctx.fillStyle=selected?'#9be5e4':'#118f9a';ctx.fillText('2026   '+b.toFixed(1)+(mode==='hours'?' h':' ev'),330,82);
  let diff=valid&&a>0?(b-a)/a*100:null,txt=diff==null?'Sin comparación':diff<0?'▼ '+Math.abs(diff).toFixed(1)+'% reducción':diff>0?'▲ +'+diff.toFixed(1)+'% aumento':'Sin cambio';
  ctx.fillStyle=diff==null?(selected?'#ecf6ff':'#657d91'):diff<0?'#10c28e':diff>0?'#ee6048':'#657d91';ctx.font='bold 26px Arial';ctx.fillText(txt,220,124);
- const texture=new THREE.CanvasTexture(c);texture.colorSpace=THREE.SRGBColorSpace;const sprite=new THREE.Sprite(new THREE.SpriteMaterial({map:texture,transparent:true,depthTest:false}));sprite.scale.set(2.2,.76,1);sprite.renderOrder=9;return sprite;
+ const texture=new THREE.CanvasTexture(c);texture.colorSpace=THREE.SRGBColorSpace;texture.generateMipmaps=true;texture.minFilter=THREE.LinearMipmapLinearFilter;texture.magFilter=THREE.LinearFilter;texture.anisotropy=Math.min(8,renderer.capabilities.getMaxAnisotropy());const sprite=new THREE.Sprite(new THREE.SpriteMaterial({map:texture,transparent:true,depthTest:false}));sprite.scale.set(2.2,.76,1);sprite.renderOrder=9;return sprite;
 }
 function setMachines(items,selected,valid,mode){
  lastItems=items||[];lastMode=mode;
@@ -152,7 +155,7 @@ function setMachines(items,selected,valid,mode){
  if(notice)notice.textContent=count?`Vista 3D · ${count} equipos para la línea filtrada. Toca una máquina para ver el detalle.`:'Sin equipos físicos detectados para la línea. Usa «Configurar equipos» para añadir los existentes.';
  resize();
 }
-function resize(){const w=Math.max(1,holder.clientWidth),h=Math.max(1,holder.clientHeight);if(w<20||h<20)return;camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h,false);}
+function resize(){const w=Math.max(1,holder.clientWidth),h=Math.max(1,holder.clientHeight);if(w<20||h<20)return;camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setPixelRatio(renderDPR());renderer.setSize(w,h,false);}
 const observer=new ResizeObserver(resize);observer.observe(holder);window.addEventListener('resize',resize);
 canvas.addEventListener('click',event=>{const rect=canvas.getBoundingClientRect();pointer.x=((event.clientX-rect.left)/rect.width)*2-1;pointer.y=-((event.clientY-rect.top)/rect.height)*2+1;raycaster.setFromCamera(pointer,camera);const hits=raycaster.intersectObjects(pickables,false);const id=hits[0]?.object?.userData?.machineId;if(id&&window.selectInformanceMachine)window.selectInformanceMachine(id);});
 let running=true;function draw(){if(!running)return;requestAnimationFrame(draw);controls.update();if(holder.clientWidth>20&&holder.clientHeight>20)renderer.render(scene,camera);}

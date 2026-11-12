@@ -51,6 +51,15 @@
 @keyframes intro-scan{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
 @media(prefers-reduced-motion:reduce){.intro-overlay *,.intro-overlay::before,.intro-overlay::after{animation:none!important}.intro-progress span{width:100%}}
 
+
+/* Módulo Informance 3D integrado al portal principal */
+.card--informance{--accent:#1163b5;--tint:#e0f0ff;--decor:radial-gradient(circle at 73% 53%,#95dbff 0 16%,transparent 17%),linear-gradient(155deg,transparent 12%,#9bd0fe 12% 15%,transparent 15% 25%,#b5dbfb 25% 28%,transparent 28% 45%,#8cbde8 45% 48%,transparent 48%);grid-column:1/-1;min-height:208px;border-color:#b9d9f5;background:linear-gradient(115deg,#fff 0%,#f8fbff 70%,#eaf4ff 100%)}
+.card--informance .card-inner{max-width:82%}
+.card--informance .icon{font-size:18px;letter-spacing:-.8px}
+.card--informance .features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px 22px;max-width:720px}
+.card--informance .open{background:#1163b5}
+@media(max-width:1120px){.card--informance .card-inner{max-width:100%}.card--informance .features{margin-left:0}}
+@media(max-width:780px){.card--informance{grid-column:auto}.card--informance .features{grid-template-columns:1fr}.card--informance .card-inner{max-width:100%}}
 </style>
 </head>
 <body>
@@ -108,9 +117,8 @@
     <a href="./planilla-semana/"><span class="nav-icon">▦</span>Planilla Semana</a>
     <a href="./plan_mantenimiento_web/index.html?v=6"><span class="nav-icon">▤</span>Plan de Mantenimiento</a>
     <a href="./dashboard_sap/"><span class="nav-icon">▥</span>Dashboard SAP</a>
-  
-<a href="./informance_3d_2025_2026/" style="display:inline-flex;align-items:center;gap:8px;margin:8px;padding:11px 15px;border-radius:9px;background:#0b75c5;color:#fff;text-decoration:none;font-weight:700;font-family:Arial,sans-serif" title="Comparativo de paros por máquina 2025 vs 2026">◈ Análisis 3D · Paros 2025–2026</a>
-</nav>
+    <a href="./informance_3d_2025_2026/" title="Análisis de paros 2025 vs. 2026"><span class="nav-icon">◈</span>Informance 3D · Paros</a>
+  </nav>
   <div class="future">PRÓXIMAMENTE</div><div class="soon">▤ &nbsp; Presupuesto</div><div class="soon">▣ &nbsp; Repuestos</div>
   <div class="slogan">PERSONAS QUE<br>REFRESCAN UN<br>FUTURO MEJOR</div>
 </aside>
@@ -134,6 +142,19 @@
       <article class="card card--planilla"><div class="card-inner"><div class="card-header"><div class="icon">PS</div><h3>Planilla Semana de Ingeniería</h3></div><p>Programación semanal compartida de trabajos de Ingeniería, integrada con Avisos, Órdenes SAP e ingresos manuales.</p><ul class="features"><li>Programación semanal</li><li>Avisos y Órdenes SAP</li><li>Ingreso manual por línea y equipo</li><li>Información compartida entre usuarios</li></ul><a class="open" href="./planilla-semana/">Abrir Planilla Semana →</a></div></article>
       <article class="card card--plan"><div class="card-inner"><div class="card-header"><div class="icon">PM</div><h3>Plan de Mantenimiento</h3></div><p>Consulta de la demanda del plan de mantenimiento, materiales, valorización, recurrencias y disponibilidad de repuestos.</p><ul class="features"><li>Filtro por mes, línea y equipo</li><li>Mes de inicio e intervenciones 2, 3 y 4</li><li>Demanda valorizada por mantenimiento</li><li>Criticidad, justificación y stock</li></ul><a class="open" href="./plan_mantenimiento_web/index.html?v=6">Abrir Plan de Mantenimiento →</a></div></article>
       <article class="card card--sap"><div class="card-inner"><div class="card-header"><div class="icon">SAP</div><h3>Dashboard de Mantenimiento SAP</h3></div><p>Indicadores de órdenes de trabajo, estados SAP, costos y notificaciones, actualizados desde los datos publicados.</p><ul class="features"><li>Órdenes abiertas y cerradas</li><li>Porcentaje de cierre</li><li>Costos planificados y reales</li><li>Consulta de órdenes y notificaciones</li></ul><a class="open" href="./dashboard_sap/">Abrir Dashboard SAP →</a></div></article>
+      <article class="card card--informance" aria-label="Análisis de Paros Informance 3D">
+        <div class="card-inner">
+          <div class="card-header"><div class="icon">3D</div><h3>Análisis de Paros Informance 3D</h3></div>
+          <p>Comparativo de horas de paro 2025 vs. 2026 con visualización interactiva de equipos por línea de producción.</p>
+          <ul class="features">
+            <li>Mapa 3D de máquinas y equipos</li>
+            <li>Comparación del mismo mes entre ambos años</li>
+            <li>Ranking de horas de paro por equipo</li>
+            <li>Actualización de históricos mediante agente Windows</li>
+          </ul>
+          <a class="open" href="./informance_3d_2025_2026/" title="Abrir análisis de paros en Informance 3D">Abrir Informance 3D →</a>
+        </div>
+      </article>
     </div>
     <div class="next"><strong>Portal preparado para crecer:</strong> posteriormente podremos incorporar Presupuesto, Repuestos y otros módulos sin cambiar la dirección principal.</div>
   </section>

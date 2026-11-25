@@ -1,0 +1,28 @@
+CORRECCIÓN DE ACTUALIZACIÓN NOVIEMBRE – Dashboard SAP
+
+DIAGNÓSTICO DEL RAR: app.js ya contiene Nov y Dic; no es un problema del gráfico.
+La web usa ../data/iw39_actividad_pm_planes.json, NO los Excel de OneDrive.
+El log incluido muestra PermissionError al abrir IW39_OT_2026-10.xlsx el 31/10.
+Ese error evidencia una actualización fallida, pero no prueba el estado actual del monitor.
+
+ARCHIVOS QUE SE MODIFICAN
+- dashboard_sap/actualizar_dashboard_sap.py: reintenta archivos temporalmente bloqueados, procesa Nov y muestra meses.
+- dashboard_sap/monitor_iw39.py: se conserva el existente.
+- app.js / index.html / styles.css: se conservan sin modificaciones.
+
+PASOS
+1. Haz copia de seguridad de actualizar_dashboard_sap.py y de la carpeta data.
+2. Copia actualizar_dashboard_sap.py en la carpeta dashboard_sap de tu repositorio.
+3. Cierra los archivos Excel abiertos y verifica que IW39_OT_2026-11.xlsx esté sincronizado en OneDrive.
+4. Ejecuta ACTUALIZAR_NOVIEMBRE_PRUEBA.cmd desde esta carpeta (modifica las rutas si es necesario).
+5. Verifica que la consola muestre 2026-11 en MESES PROCESADOS.
+6. Para publicar, ejecuta ACTUALIZAR_NOVIEMBRE_PUBLICAR.cmd. Requiere git configurado.
+7. Abre la web, pulsa Ctrl+F5 y revisa el estado 'JSON IW39' mostrado arriba.
+8. Si utilizas monitor_iw39.py, reinícialo luego de reemplazar el script.
+
+IMPORTANTE
+- Los archivos de histórico mensuales no se copian ni editan.
+- Si Nov aparece en MESES PROCESADOS pero la gráfica queda sin Nov, comprueba
+  Fecha ref. de las órdenes del archivo de noviembre; la página agrupa por esa fecha.
+- Si el JSON local sí cambia pero la web no, verifica git push y GitHub Pages.
+- Evita publicar datos confidenciales de SAP en un repositorio público sin autorización.

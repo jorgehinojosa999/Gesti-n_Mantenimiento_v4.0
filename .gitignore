@@ -1,0 +1,71 @@
+*.rar
+*.zip
+*.7z
+*.tar
+*.gz
+
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+credentials.json
+secrets.json
+
+node_modules/
+vendor/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.swp
+~$*
+*.cache
+
+
+Thumbs.db
+Desktop.ini
+.DS_Store
+$RECYCLE.BIN/
+
+
+.vscode/
+.idea/
+.history/
+.vs/
+
+
+*.db
+*.sqlite
+*.sqlite3
+*.sql.gz
+
+DIAGNOSTICOS/
+BACKUPS/
+RESPALDOS/
+logs/
+
+# ==========================================
+# ARCHIVOS DE EJECUCION E INSTALADORES
+# ==========================================
+*.exe
+*.msi
+*.dll
+*.iso
+
+# ==========================================
+# COBERTURA Y PRUEBAS
+# ==========================================
+coverage/
+.coverage
+htmlcov/

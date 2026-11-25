@@ -1,0 +1,16 @@
+INSTALACION DESDE CMD - UNA SOLA VEZ
+1. Descomprime esta carpeta, preferiblemente en dashboard_sap/monitor_eventos del repositorio.
+2. Abre CMD en la carpeta descomprimida (explorador: escribe cmd en la barra de dirección).
+3. Ejecuta: py INSTALAR_DESDE_CMD.py
+4. Si encuentra varias carpetas, confirma la ruta HISTORICO y la ruta del repositorio.
+5. Para iniciar inmediatamente: schtasks /Run /TN TESALIA_IW39_POR_CAMBIOS
+6. Para comprobar estado: schtasks /Query /TN TESALIA_IW39_POR_CAMBIOS /V /FO LIST
+7. Logs en iw39_eventos.log. La sesión de Windows debe estar iniciada y OneDrive conectado.
+8. Para no duplicar procesos, desactiva tarea antigua: schtasks /Change /TN TESALIA_IW39_DASHBOARD_AUTOMATICO /DISABLE
+
+IMPORTANTE
+- No es un servicio cloud: cuando la computadora está apagada no hay detección; al iniciar sesión comprueba si hubo cambios.
+- Requiere Git con acceso previamente configurado para push y que el script existente actualizar_dashboard_sap.py funcione.
+- El monitor no lee directamente GitHub Pages; publica los JSON a GitHub y la página debe recargarse para mostrarlos.
+- Para que refresque la vista sin F5, el frontend requiere actualización periódica de JSON o gestión de visibilidad.
+- Instalar no ejecuta el monitor hasta que se inicie la tarea (o el siguiente inicio de sesión).
